@@ -5,7 +5,7 @@ description:
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
-url: //pencil2d.github.io
+url: https://pencil2d.github.io
 
 # Jekyll configuration
 
@@ -36,7 +36,7 @@ titlecase: true
 
 
 # Site owner
-owner: chchwy
+owner:
   name: chchwy
   email: chchwy@gmail.com
   twitter:
