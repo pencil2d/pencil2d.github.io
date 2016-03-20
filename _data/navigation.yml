@@ -1,6 +1,26 @@
 # Site navigation links
 
-- title:
-  url:
-  excerpt:
+- title: Download
+  url: /Download/
+  excerpt: "Download the executables."
+  image:
+  
+- title: Blog
+  url: /blog/
+  excerpt: "blog"
+  image:
+ 
+- title: Community
+  url: /community/
+  excerpt: "Join the Pencil2D community!"
+  image:
+
+- title: Docs
+  url: /docs/
+  excerpt: "User Manual"
+  image:
+ 
+- title: Contribute
+  url: /contribute/
+  excerpt: "contribute"
   image:
