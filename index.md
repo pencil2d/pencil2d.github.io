@@ -9,12 +9,12 @@ title: "Home"
 
 <div class="tile">
   <h2 class="post-title">Easy to Use</h2>
-  <p class="post-excerpt">Compatible with popular libraries like <a href="http://bourbon.io">Bourbon</a>, <a href="http://neat.bourbon.io/">Neat</a>, and <a href="http://github.com/octopress/octopress">Octopress</a> to help build and deploy your site with ease.</p>
+  <p class="post-excerpt"></p>
 </div><!-- /.tile -->
 
 <div class="tile">
   <h2 class="post-title">Bitmap/Vector</h2>
-  <p class="post-excerpt">Designed to put the focus on you and your writing. Headers, navigation, sidebars, and footers have been purposely deemphasized.</p>
+  <p class="post-excerpt"></p>
 </div><!-- /.tile -->
 
 <div class="tile">
@@ -24,7 +24,7 @@ title: "Home"
 
 <div class="tile">
   <h2 class="post-title">Open Sources</h2>
-  <p class="post-excerpt">Packed with layouts and modules. Include Disqus comments, social sharing buttons, and table of contents on one or all pages.</p>
+  <p class="post-excerpt">The source code of Pencil2D is completely open.</p>
 </div><!-- /.tile -->
 
 </div>

@@ -1,19 +1,38 @@
 ---
 layout: article
 title: "Downloads"
+comments: true
 ---
 
 ### Pencil2D 0.5.4
 
-- [Windows 7, 8, 10](https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip)
-- [Mac OS X](https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-mac.zip)
-- [Linux](http://goo.gl/BP40t)
+<div class="tiles">
+
+  <div class="tile">
+    <h2 class="post-title">Windows</h2>
+    <p class="post-excerpt"> <a href="https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip">Pencil2D 0.5.4 </a></p>
+  </div><!-- /.tile -->
+  
+  <div class="tile">
+    <h2 class="post-title">Mac OS X</h2>
+    <p class="post-excerpt"> <a href="https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-mac.zip">Pencil2D 0.5.4 </a></p>
+  </div><!-- /.tile -->
+  
+  <div class="tile">
+    <h2 class="post-title">Linux</h2>
+    <p class="post-excerpt"> <a href="http://goo.gl/BP40t">Pencil2D 0.5.4 </a></p>
+  </div><!-- /.tile -->
+
+</div>
+<div style="clear:both"></div>
 
 #### Debian & Ubuntu
 
 ```
 sudo apt-get install pencil2d
 ```
+
+[0]: https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip
 
 
 
