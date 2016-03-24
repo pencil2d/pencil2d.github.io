@@ -5,12 +5,13 @@ title: Frequently Asked Questions
 
 # FAQ
 
-http://www.pencil2d.org/wordpress/wp-content/uploads/2015/11/pencil2d-FAQ_rough.png
+<http://www.pencil2d.org/wordpress/wp-content/uploads/2015/11/pencil2d-FAQ_rough.png>
 
 Insert Pretty Artwork Here!
-THIS PAGE IS UNDER HEAVY CONSTRUCTION
 
-NOTE: Since people seem to be asking the same things over and over, we'll provide everyone with a much needed FAQ, please bear in mind we are working hard on solving stuff. If you'd like to point out other "frequently asked questions" please do it in the following thread:
+**THIS PAGE IS UNDER HEAVY CONSTRUCTION**
+
+> NOTE: Since people seem to be asking the same things over and over, we'll provide everyone with a much needed FAQ, please bear in mind we are working hard on solving stuff. If you'd like to point out other "frequently asked questions" please do it in the following thread:
 
 DON'T SEE YOUR ISSUE IN THE FAQ? ASK HERE!
 
@@ -67,13 +68,13 @@ DON'T SEE YOUR ISSUE IN THE FAQ? ASK HERE!
 </tbody>
 </table>
 
-##Where's the [Insert OS here] version? Why isn't my [OS] version updated?
+## Where's the [Insert OS here] version? Why isn't my [OS] version updated?
 
 Right now it's rather difficult to get Pencil2D working on every OS side by side, particularly since the devs don't have exclusive access to machines with different Operating Systems.
 
 So far there are Windows, Mac and Linux versions that work, but for Pencil2D to grow we need developers that have access to these machines in order to contribute. If you'd like, please consider donating some of your time to improve this wonderful tool!
 
-##Understanding Pencil2D Save files
+## Understanding Pencil2D Save files
 
 When you save your animation file in Pencil2D there are several things that you'll get.
 
@@ -110,11 +111,11 @@ Now this one is a little bit more complicated. Let’s take another look at the 
 
 WARNING: bool_thiscall Phonon::FactoryPrivate::createBackend(void) phonon backend plugin could not be loaded
 
-“C:\Qt\4.8.5-VC2010\plugins”
+"C:\Qt\4.8.5-VC2010\plugins"
 
-“C:\Qt\4.8.5-VC2010\bin”
+"C:\Qt\4.8.5-VC2010\bin"
 
-“C:\Qt\4.8.5-VC2010\lib”
+"C:\Qt\4.8.5-VC2010\lib"
 
 Yup. Another plugin is missing. Let’s get back to work.
 
