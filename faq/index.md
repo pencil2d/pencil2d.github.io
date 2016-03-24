@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Frequently Asked Questions
+comments: true
 ---
 
 # FAQ
