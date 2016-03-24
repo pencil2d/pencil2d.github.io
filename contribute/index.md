@@ -21,8 +21,12 @@ Pencil2D source code is released under [GPLv2][2].
 
 - Please use the [Issue Tracker][3] on Github to report bugs.
 
+#### Help translate
+
+- Help translate at [Onesky][4], a online translation collaborate platform.
 
 [0]: https://github.com/pencil2d/pencil
 [1]: https://github.com/pencil2d/pencil/archive/master.zip  "Source Archive"
 [2]: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html "GPLv2"
 [3]: https://github.com/pencil2d/pencil/issues "Issue Tracker"
+[4]: http://osjoq5e.oneskyapp.com/collaboration/ "OneSky"
