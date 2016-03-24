@@ -10,7 +10,7 @@ There are lots of ways to contribute to the Pencil2D project: coding, testing, i
 
 #### Source Code
 
-The Pencil2D source code can be obtained either by downloading a [source archive][1], or by using a Git (source control) client. If you are just starting out or you want to build a particular Pencil2D release, downloading a source archive is recommended. Otherwise, get the Mozilla Source Code via Git.
+The Pencil2D source code can be obtained either by downloading a [source archive][1], or by using a Git (source control) client. If you are just starting out or you want to build a particular Pencil2D release, downloading a source archive is recommended. Otherwise, get the Source Code via Git.
 
 Pencil2D source code is released under [GPLv2][2].
 
