@@ -4,12 +4,12 @@
   url: /download/
   excerpt: "Download the executables."
   image:
-  
+
 - title: Blog
   url: /blog/
   excerpt: "blog"
   image:
- 
+
 - title: Community
   url: /
   excerpt: "Join the Pencil2D community!"
@@ -19,13 +19,13 @@
   url: /doc/
   excerpt: "User Manual"
   image:
- 
+
 - title: Contribute
   url: /contribute/
   excerpt: "contribute"
   image:
-  
-  - title: FAQ
+
+- title: FAQ
   url: /faq/
   excerpt: "FAQ"
   image:
