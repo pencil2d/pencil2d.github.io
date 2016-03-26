@@ -2,12 +2,7 @@
 
 - title: Download
   url: /download/
-  excerpt: "Download the executables."
-  image:
-
-- title: Blog
-  url: /blog/
-  excerpt: "blog"
+  excerpt: "Download the software executables"
   image:
 
 - title: Community
@@ -15,17 +10,27 @@
   excerpt: "Join the Pencil2D community!"
   image:
 
+- title: News
+  url: /blog/
+  excerpt: "Announcements & News related to Pencil2D"
+  image:
+
 - title: Docs
   url: /doc/
-  excerpt: "User Manual"
+  excerpt: "User Manual & Tutorials"
   image:
 
 - title: Contribute
   url: /contribute/
-  excerpt: "contribute"
+  excerpt: "Contribute to the Pencil2D project"
   image:
 
 - title: FAQ
   url: /faq/
-  excerpt: "FAQ"
+  excerpt: "Frequently Asked Questions"
+  image:
+
+- title: Tutorials
+  url: /tutorials/
+  excerpt: "Pencil2D Video Tutorials!"
   image:
