@@ -2,3 +2,9 @@
 
 - title: Home
   url: "/"
+  
+- title: Facebook
+  url: "https://www.facebook.com/pencil2dsoft/"
+  
+- title: GitHub
+  url: "https://github.com/pencil2d/pencil"
