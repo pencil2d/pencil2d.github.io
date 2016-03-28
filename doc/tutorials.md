@@ -1,12 +1,10 @@
 ---
 layout: article
-title: Frequently Asked Questions
+title: Pencil2D Software Video Tutorials
 comments: true
 ---
 
 ![Pencil2D Tutorials Header](/images/Pencil2D_Tutorials.png)
-
-# Pencil2D Software Video Tutorials
 
 Welcome to Pencil2D Tutorials Page!
 
