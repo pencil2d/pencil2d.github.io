@@ -11,62 +11,7 @@ title: Frequently Asked Questions
 
 > **NOTE#2:** Video and Sound related solutions only work with version 0.5.4b for Windows 7 SP1, NEWER Pencil2D versions will have the video and sound plugins DISABLED meanwhile developers fix the appropriate libraries
 
-<table border="1" bgcolor="white"><caption>FAQ TABLE OF CONTENTS</caption>
-<tbody>
-<tr>
-<th>PROBLEM</th>
-<th>OS SPECIFIC FIX</th>
-</tr>
-<tr>
-<td><a href="/faq/#nightlybuilds">¿What are Nightly Builds?</a></td>
-<td>ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#autosave">Auto-Save Feature</a></td>
-<td>ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#videxport">Video Export</a></td>
-<td>ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#vidimport">Video Import</a></td>
-<td>NONE</td>
-</tr>
-<tr>
-<td><a href="/faq/#soundimport">Sound Import</a></td>
-<td> WIN ONLY</td>
-</tr>
-<tr>
-<td><a href="/faq/#gifexport">GIF Export</a></td>
-<td> ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#savefiles">Understanding Pencil Save Files</a></td>
-<td> ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#copypaste">Copy &amp; Paste in Place</a></td>
-<td> ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#buglife">Development Help</a></td>
-<td> ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#slowpoke">Slow Drawing / Stroke Lag</a> (WIP)</td>
-<td> ALL</td>
-</tr>
-<tr>
-<td><a href="/faq/#corruptfiles">Corrupt Files</a> (WIP)</td>
-<td>NONE</td>
-</tr>
-<tr>
-<td><a href="/faq/#pencilprob">Pencil Problems</a> (WIP)</td>
-<td>NONE</td>
-</tr>
-</tbody>
-</table>
+{% include toc.html %}
 
 ## Where's the [Insert OS here] version? Why isn't my [OS] version updated?
 
@@ -74,7 +19,7 @@ Right now it's rather difficult to get Pencil2D working on every OS side by side
 
 So far there are Windows, Mac and Linux versions that work, but for Pencil2D to grow we need developers that have access to these machines in order to contribute. If you'd like, please consider donating some of your time to improve this wonderful tool!
 
-## <a name="nightlybuilds"></a>I hear about these "Nightly Builds" over and over but what are those?
+## I hear about these "Nightly Builds" over and over but what are those?
 
 Nightly Builds are basically bleeding edge, experimental, versions meant for bug testing and to show update on development. You have to understand these aren't final versions and can break easily.
 
@@ -82,14 +27,14 @@ However whenever you have an issue with your current pencil2d installation or po
 
 **Nightly Builds** [DOWNLOAD HERE](/download/)
 
-## <a name="savefiles"></a>Understanding Pencil2D Save files
+## Understanding Pencil2D Save files
 
 When you save your animation file in Pencil2D there are several things that you'll get.
 
 Pencil2D saves a .PCL file (or a PCLX for bleeding edge versions) that is exclusive to the software. It is not an image or a video file, that means it does NOT hold inside of it any image or sound you imported or created. It's more like an address book, which locates all those resources you've created or imported!
 A New folder is automatically created in the same location next to your .PCL file. It's name should be like something like this [MyFileName.pcl.data]This folder contains all of your actual drawn keyframes saved as numbered .PNG images! as well as Your current colour palette info plus your "vector shapes" information are included there as .xml and .vec files respectively.If you import sound for example (see partial solution below), you'll also see a copy of the actual sound file in this folder. All of the resources in the folder are absolutely necessary for Pencil2D to understand how your animation is going to be displayed when you preview it inside the program.
 
-## <a name="autosave"></a>Pencil keeps crashing (/sob) / Something happened and I couldn't save my work!
+## Pencil keeps crashing (/sob) / Something happened and I couldn't save my work!
 
 Fortunately Pencil2D has an autosave feature for those moments when you forget to save!
 
@@ -105,13 +50,13 @@ Also when you activate that without having saved, ever, after 15 changes you’l
 
 > **NOTE#1**: "Most solutions work only with version 0.5.4b for Windows 7 SP1, **NEWER** versions will have the **Video and Sound plugins DISABLED**"
 
-## <a name="vidimport"></a>So it seems I can’t import videos, what's up?
+## So it seems I can’t import videos, what's up?
 
 Let’s take a look at the extremely useful console window. Apparently, a necessary plugin is missing. What you have to do is go HERE http://ffmpeg.zeranoe.com/builds/ and download FFmpeg git-3bedc99 32bit Static. Extract, and go to the bin folder. There you will find ffmpeg.exe. Copy it. Then, inside the Pencil2D folder, create a new folder named “plugins“. Paste ffmpeg.exe there, and voilà: You can now import videos for study, rotoscoping, or any other use you want.
 
 Caution: You absolutely need to have a bitmap or vector layer selected before you import the video, or bad stuff will happen.
 
-## <a name="soundimport"></a>When I import sounds, I can see it on the layer, but I can’t hear anything?!
+## When I import sounds, I can see it on the layer, but I can’t hear anything? (Windows only)
 
 Well the thing is, right now Pencil is incapable of importing sound as it is, unless you tinker with the program itself. Since it’s annoying to download the whole 260 mb Qt Package just for a few plugins I managed to trim it down to the essentials (a.k.a the needed plugins)
 
@@ -130,7 +75,7 @@ Here’s a link to a zip file containing all the files.
 
 Hope this helps, cheers!
 
-## <a name="videxport"></a>Hey, but I can’t export videos either!?
+## Hey, but I can’t export videos either!?
 
 …Yeah, I still haven’t figured this one out. The program either looks like it exports the video perfectly, but when I look, there’s no file anywhere to be found, or it just crashes. I usually export in image sequences to further edit them in other programs, but the option to export directly to video file would be really nice to have.
 
@@ -159,7 +104,7 @@ There's another quick video to learn how to export images from pencil2d and impo
 [![Watch on Youtube!](http://img.youtube.com/vi/4VUr2yCkm0U/hqdefault.jpg)](https://youtu.be/4VUr2yCkm0U)
 
 
-## <a name="gifexport"></a>Man what the hell, -sigh- at least it imports / exports to GIF, right?
+## Man what the hell, -sigh- at least it imports / exports to GIF, right?
 
 Entry Added on (04-FEB-2016)
 
@@ -175,7 +120,7 @@ GifAnimation App is an open-source (free), lightweight and portable software tha
 
 For our MAC users we recommend searching the Apple Store, although an anonymous user has pointed out that GifFun https://www.stone.com/GIFfun/ might do the trick, but you’ll have to use it at your own risk.
 
-## <a name="copypaste"></a>Can I copy and paste in place specific content from one frame to another inside Pencil2D?
+## Can I copy and paste in place specific content from one frame to another inside Pencil2D?
 
 Yes, to COPY a portion of your drawing, you can use the selection tool (dotted marquee) select a partial section of your drawing and press CTRL+C. You'll know you did it correctly because the selection box will dissappear. Go to a new frame you have already created or create one now, then pres CTRL + V, and your selection will be pasted in place.
 
@@ -185,7 +130,7 @@ Here's a video tutorial that explains this plus a bonus (hackish) method to mirr
 
 [![Watch on Youtube!](http://img.youtube.com/vi/37Ui5KbVqk4/hqdefault.jpg)](https://youtu.be/37Ui5KbVqk4)
 
-## <a name="buglife"></a>I like Pencil2D but... it is a bit buggy :'( , what can i do?
+## I like Pencil2D but... it is a bit buggy :'( , what can i do?
 
 We feel you, but every great piece of software you might know began in a humble way. Right now Pencil is in need of developers experienced or willing to learn QT framework and C++ as well as proactive users that want to help however they can.
 
@@ -193,15 +138,15 @@ Pencil2D won't get hot just by looking at it, in fact there's more chances that 
 
 For more information on how to contribute to Pencil2D's code visit our [Github Respository](https://github.com/pencil2d/pencil#pencil2d-animation)
 
-## <a name="slowpoke"></a>In newer versions drawing is just too slow, what happened?
+## In newer versions drawing is just too slow, what happened?
 
 ---This answer is a work In progress
 
-## <a name="corruptfiles"></a>OMG Pencil Crashed and my files are unusable / corrupted!!!11!1! /cry!!!
+## OMG Pencil Crashed and my files are unusable / corrupted!!!11!1! /cry!!!
 
 ---This answer is a work In progress. This will be more of a preventive guide to avoid getting your pencil files dragged to hell, because usually it's near impossible to recover them once this happens.
 
-## <a name="pencilprob"></a>Pencil just can't get anything right man, it's crashing left and right
+## Pencil just can't get anything right man, it's crashing left and right
 
 ---This answer is a work In progress. This will be a list of dont's to avoid crashing the program.
 
