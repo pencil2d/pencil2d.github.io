@@ -1,16 +1,18 @@
 ---
 layout: article
 title: Frequently Asked Questions
+comments: true
 ---
 
 ![Pencil2D Tutorials Header](/images/Pencil2D_Tutorials.png)
 
-# <a name="tutorial"></a> Pencil2D Software Video Tutorials
+# Pencil2D Software Video Tutorials
 
-Welcome to Pencil2D Tutorials Page!, please use the menu on your left to select a tutorial or click any of the links below.
+Welcome to Pencil2D Tutorials Page!
 
 > If you have a specific tutorial you'd like to be made, let us know in the comments so we can review it.
 > I'f you would like to contribute a tutorial of your own, point us to it so we can feature it.
+
 
 <table>
   <tbody>
@@ -19,35 +21,35 @@ Welcome to Pencil2D Tutorials Page!, please use the menu on your left to select 
       <th>Language</th>
     </tr>
     <tr>
-      <td><a href="/tutorials/#colorvecbit">Pencil2D Vector & Bitmap Coloring Overview</a></td>
+      <td><a href="#colorvecbit">Pencil2D Vector & Bitmap Coloring Overview</a></td>
       <td>English</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#gif">Making Animated GIF's with Pencil2D & GifAnimation Application</a></td>
+      <td><a href="#gif">Making Animated GIF's with Pencil2D & GifAnimation Application</a></td>
       <td>English</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#copypaste">How to Copy & Paste Drawings in Pencil2D</a></td>
+      <td><a href="#copypaste">How to Copy & Paste Drawings in Pencil2D</a></td>
       <td>English</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#pcl2blend">Pencil2D to Blender VSE</a></td>
+      <td><a href="#pcl2blend">Pencil2D to Blender VSE</a></td>
       <td>English</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#pcl2shot">Pencil2D to Shotcut</a></td>
+      <td><a href="#pcl2shot">Pencil2D to Shotcut</a></td>
       <td>English</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#pcleng">Other Pencil English Tutorials</a></td>
+      <td><a href="#pcleng">Other Pencil English Tutorials</a></td>
       <td>English / No Audio</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#pclspa">Other Pencil Spanish Tutorials</a></td>
+      <td><a href="#pclspa">Other Pencil Spanish Tutorials</a></td>
       <td>Spanish / No Audio</td>
     </tr>
     <tr>
-      <td><a href="/tutorials/#pclpor">Other Pencil Portuguese Tutorials</a></td>
+      <td><a href="#pclpor">Other Pencil Portuguese Tutorials</a></td>
       <td>Portuguese</td>
     </tr>
     </tbody>
