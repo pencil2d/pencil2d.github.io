@@ -26,11 +26,11 @@
   image:
 
 - title: FAQ
-  url: /faq/
+  url: /doc/faq/
   excerpt: "Frequently Asked Questions"
   image:
 
 - title: Tutorials
-  url: /tutorials/
+  url: /doc/tutorials/
   excerpt: "Pencil2D Video Tutorials!"
   image:
