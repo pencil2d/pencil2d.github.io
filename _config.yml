@@ -19,7 +19,6 @@ kramdown:
 highlighter: rouge
 gems:
   - jekyll-sitemap
-  - jekyll-gist
 
 
 # Octopress configuration
