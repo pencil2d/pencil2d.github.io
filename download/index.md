@@ -4,49 +4,37 @@ title: "Downloads"
 comments: true
 ---
 
-### Pencil2D 0.5.4
+## Nightly build
 
-<div class="tiles">
+Nightly builds are the bleedig edge (most up to date) versions of Pencil2D, which contains the most recent fixes and features.
 
-  <div class="tile">
-    <h2 class="post-title">Windows</h2>
-    <p class="post-excerpt">
-      <a href="https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip">Pencil2D 0.5.4 </a>
-    </p>
-  </div><!-- /.tile -->
-  
-  <div class="tile">
-    <h2 class="post-title">Mac OS X</h2>
-    <p class="post-excerpt">
-      <a href="https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-mac.zip">Pencil2D 0.5.4 </a>
-    </p>
-  </div><!-- /.tile -->
-  
-  <div class="tile">
-    <h2 class="post-title">Linux</h2>
-    <p class="post-excerpt"> 
-      <a href="http://goo.gl/BP40t">Pencil2D 0.5.4 </a>
-    </p>
-  </div><!-- /.tile -->
+| Windows 32 bit   | Windows 64 bit    | Mac             | Linux             |
+| :--------------: | :---------------: | :-------------: | :---------------: |
+| [Download][0]    | [Download][1]     | [Download][2]   | [Download][3]     |
 
-</div>
-<div style="clear:both"></div>
+[0]: https://goo.gl/0rbHu6
+[1]: https://goo.gl/5pZXED
+[2]: https://goo.gl/PXsLCI
+[3]: https://goo.gl/NQuJYr
 
-#### Debian & Ubuntu
 
+#### Pencil2D 0.5.4 (Deprecated)
+Old, unstable and no longer supported! Download it at your own risk. 
+
+**These versions WILL NOT work for Windows 8+ or MAC OSX releases below 10.9 (Mavericks)**
+
+| Windows 32 bit   | Mac             | Linux             |
+| :--------------: | :-------------: | :---------------: |
+| [Download][4]    | [Download][5]   | [Download][6]     |
+
+[4]: https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip
+[5]: https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-mac.zip
+[6]: http://goo.gl/BP40t
+
+##### Debian & Ubuntu
+Command line:
 ```
 sudo apt-get install pencil2d
 ```
-
-#### Nightly build
-
-Nightly builds are the bleedig edge versions of Pencil2D, which contains the most recent fixes and features.
-
-Download: [[Windows][0]] [[Mac][1]] [[Linux][2]]
-
-[0]: https://goo.gl/yunJod
-[1]: https://goo.gl/yunJod
-[2]: https://goo.gl/0A0qys
-
 
 
