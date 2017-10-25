@@ -6,15 +6,13 @@ comments: true
 
 <div class="tiles">
   <div class="tile">
-    <img src="/images/community-forum.png">
-    <p>
-    <h2 class="post-title" style="text-align:center">Forum</h2>
-    </p>
+    <a href="https://www.pencil2d.org/?post_type=forum"><img src="/images/community-forum.png"></a>
+    <a href="https://www.pencil2d.org/?post_type=forum"><h2 class="post-title" style="text-align:center">Forum</h2></a>
   </div>
 
   <div class="tile">
-  <img src="/images/community-facebook.png">
-    <h2 class="post-title" style="text-align:center">Facebook</h2>
+    <a href="https://www.facebook.com/pencil2dsoft/"><img src="/images/community-facebook.png"></a>
+    <a href="https://www.facebook.com/pencil2dsoft/"><h2 class="post-title" style="text-align:center">Facebook</h2></a>
   </div>
 
   <div class="tile">
