@@ -234,7 +234,7 @@
 	text-align: center;
 	color: $white;
 	@include media($large) {
-		background-size: cover;
+		background-size: contain;
 	}
 }
 .page-lead-content {
