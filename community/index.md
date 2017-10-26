@@ -25,11 +25,12 @@ comments: true
   </div>
 
   <div class="tile community-tile">
-    <h2 class="post-title">Google+</h2>
+    <a href="https://plus.google.com/110216414160031527824" target="_blank"><img src="/images/community-googleplus.png"></a>
+    <a href="https://plus.google.com/110216414160031527824" target="_blank"><h2 class="post-title">Google+</h2></a>
   </div>
 
   <div class="tile community-tile">
-    <a hre="https://www.tumblr.com/tagged/pencil2d" target="_blank"><h2 class="post-title">Tumblr</h2></a>
+    <a href="https://www.tumblr.com/tagged/pencil2d" target="_blank"><h2 class="post-title">Tumblr</h2></a>
   </div>
 
 </div>
