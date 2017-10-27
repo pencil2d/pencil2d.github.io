@@ -21,6 +21,7 @@ comments: true
   </div>
 
   <div class="tile community-tile">
+  <a href="https://www.youtube.com/results?sp=CAJQFA%253D%253D&search_query=Pencil2D" target="_blank"><img src="/images/community-youtube.png"></a>
     <a href="https://www.youtube.com/results?sp=CAJQFA%253D%253D&search_query=Pencil2D" target="_blank"><h2 class="post-title">Youtube</h2></a>
   </div>
 
