@@ -1,12 +1,9 @@
 ---
-layout: article
-title: Pencil2D Software Video Tutorials
+layout: page
+title: Tutorials
 comments: true
+tagline: Welcome to Pencil2D Tutorials Page!
 ---
-
-![Pencil2D Tutorials Header](/images/Pencil2D_Tutorials.png)
-
-Welcome to Pencil2D Tutorials Page!
 
 > If you have a specific tutorial you'd like to be made, let us know in the comments so we can review it.
 > I'f you would like to contribute a tutorial of your own, point us to it so we can feature it.

@@ -1,38 +1,29 @@
 ---
+#
+# Here you can change the text shown in the Home page before the Latest Posts section.
+#
+# Edit cayman-blog's home layout in _layouts instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
 layout: home
-permalink: /
-title: ""
 ---
 
-&nbsp;
 <div class="tiles">
-
-<div class="tile">
-  <h2 class="post-title">Minimal Design</h2>
-  <p class="post-excerpt">Pencil2D is lightweight and easy to use so you can focus on animating and not what button to hit next.</p>
-</div><!-- /.tile -->
-
-<div class="tile">
-  <h2 class="post-title">Raster & Vector Drawing</h2>
-  <p class="post-excerpt">Pencil2D allows you to seamlessly switch between raster and vector workflows, allowing you to sketch, ink & paint on the go.</p>
-</div><!-- /.tile -->
-
-<div class="tile">
-  <h2 class="post-title">Cross-Platform</h2>
-  <p class="post-excerpt">Pencil2D is cross-platform and runs on Windows, Mac OSX and Linux.</p>
-</div><!-- /.tile -->
-
-<div class="tile">
-  <h2 class="post-title">Open Source</h2>
-  <p class="post-excerpt">The source code of Pencil2D is completely open and the software is free to use even commercially!</p>
-</div><!-- /.tile -->
-
+  <div class="tile">
+    <h2>Minimal Design</h2>
+    <p>Lightweight and easy to use so you can focus on animating and not what button to hit next.</p>
+  </div>
+  <div class="tile">
+    <h2>Raster & Vector</h2>
+    <p>Seamlessly switch between raster and vector workflows, allowing you to sketch, ink & paint on the go.</p>
+  </div>
+  <div class="tile">
+    <h2>Cross-Platform</h2>
+    <p>Pencil2D is cross-platform and runs on Windows, Mac OSX and Linux.</p>
+  </div>
+  <div class="tile">
+    <h2>Open Source & Free</h2>
+    <p>Pencil2D is completely open source and free to use even commercially!</p>
+  </div>
+  <div style="clear:both">
 </div>
-
-<!--    
-<div class="tiles">
-{% for post in site.posts %}
-	{% include post-grid.html %}
-{% endfor %}
-</div>
--->

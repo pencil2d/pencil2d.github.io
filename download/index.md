@@ -1,8 +1,9 @@
 ---
-layout: article
-title: "Downloads"
-comments: true
+layout: page
+title: Download
+tagline: Get the latest Pencil2D here!
 ---
+
 
 ## Nightly build
 
@@ -17,8 +18,14 @@ Nightly builds are the bleedig edge (most up to date) versions of Pencil2D, whic
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
 
+### Debian & Ubuntu
 
-#### Pencil2D 0.5.4 (Deprecated)
+Command line:
+```
+sudo apt-get install pencil2d
+```
+
+### Pencil2D 0.5.4 (Deprecated)
 Old, unstable and no longer supported! Download it at your own risk. 
 
 **These versions WILL NOT work for Windows 8+ or MAC OSX releases below 10.9 (Mavericks)**
@@ -30,11 +37,3 @@ Old, unstable and no longer supported! Download it at your own risk.
 [4]: https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-win.zip
 [5]: https://bitbucket.org/chchwy/pencil2d/downloads/Pencil2D-dev-0.5.4b-mac.zip
 [6]: http://goo.gl/BP40t
-
-##### Debian & Ubuntu
-Command line:
-```
-sudo apt-get install pencil2d
-```
-
-

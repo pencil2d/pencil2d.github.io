@@ -1,11 +1,10 @@
 ---
-layout: article
-title: Frequently Asked Questions
+layout: page
+title: FAQ
+tagline: Frequently Asked Questions
 ---
 
-![Alt text](/images/Pencil2d_FAQ.png "FAQ: Insert Pretty Artwork Here!")
-
-# THIS PAGE IS UNDER HEAVY CONSTRUCTION
+### THIS PAGE IS UNDER HEAVY CONSTRUCTION
 
 > **NOTE#1:** Since people seem to be asking the same things over and over, we'll provide everyone with a much needed FAQ, please bear in mind we are working hard on solving stuff. If you'd like to suggest other "frequently asked questions" please do it in the comments. Note that you'll have to login into a DISQUS friendly account to comment in this page.
 

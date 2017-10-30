@@ -1,32 +1,35 @@
 ---
-layout: archive
+layout: page
 title: Contribute
+tagline: "Pencil2D is an open source project, developed 100% by volunteers."
 comments: true
 ---
 
-Pencil2D is an open source project; all the code, documents and website are contributed by our community of volunteers. Here you can learn about how to contribute to the Pencil2D project.
+Pencil2D is a not-for-profit, community-driven free and open source project. All the code, documents and website are contributed by our community of volunteers.
 
-There are lots of ways to contribute to the Pencil2D project: coding, testing, improving the translation, or contributing to the documentation. This guide provides useful information that help you get started as a Pencil2D contributor.
+There are lots of ways to contribute to the Pencil2D project: coding, testing, improving translations or contributing to the documentation.
 
-### Source Code
+# Contributing to the code base
 
-The Pencil2D source code can be obtained either by downloading a [source archive][1], or by using a Git (source control) client. If you are just starting out or you want to build a particular Pencil2D release, downloading a source archive is recommended. Otherwise, get the Source Code via Git.
+Pencil2D is developed based on **C++** and **Qt framework**. We are happy to receive contributors.
 
-Pencil2D source code is released under [GPLv2][2].
+The source code can be obtained from [Github][0] and you can find a development document [here][1].
 
-- GitHub: <https://github.com/pencil2d/pencil>
-- [Source archive][1]
+If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you get started.
 
-### Report a Bug or Request a Feature
+# Resport bugs
 
-- Please use the [Issue Tracker][3] on Github to report bugs.
+Something's wrong? Tell us by reporting it directly on our [Issue Tracker][3].
 
-### Want to help translate the Pencil2D UI?
+# Help Translate Pencil2D
 
-- Just go to [Onesky][4], a online translation collaboration platform.
+Want to help translate the Pencil2D UI? Go to [Onesky][4], a online translation collaboration platform.
+
+
 
 [0]: https://github.com/pencil2d/pencil
-[1]: https://github.com/pencil2d/pencil/archive/master.zip  "Source Archive"
+[1]: https://github.com/pencil2d/pencil/wiki  "Development Wiki"
 [2]: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html "GPLv2"
 [3]: https://github.com/pencil2d/pencil/issues "Issue Tracker"
 [4]: http://osjoq5e.oneskyapp.com/collaboration/ "OneSky"
+[5]: https://discord.gg/8FxdV2g "Discord Pencil2D"

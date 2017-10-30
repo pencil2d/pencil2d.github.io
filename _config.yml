@@ -1,51 +1,32 @@
-# Site wide configuration
+title: Pencil2D Animation
+description: An easy, intuitive tool to make 2D hand-drawn animations.
+show_downloads: true
 
-title: Pencil2D
-description: "Pencil2D is a free and open-source 2D animation software available for Windows, Mac OS, and Linux."
-logo: Pencil2d_logo.jpg # 120x120 px default image used for Twitter summary card
-teaser: # 400x250 px default teaser image used in image archive grid
-locale: en
-url: https://pencil2d.github.io
-#url: http://localhost:4000
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://pencil2d.github.io" # change this to the base hostname & protocol for your site
 
-# Jekyll configuration
+google_analytics: UA-5266256-7
+# cayman-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+cayman-blog:
+  date_format: "%-d %B, %Y"
 
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: /:categories/:title/
-kramdown:
-  toc_levels: 1..2
-highlighter: rouge
-gems:
-  - jekyll-sitemap
+disqus-shortname: pencil2d
+theme: # leave it empty
 
+# social
+author: "Pencil2D"
+image: /thumbnail-jumbo.png
 
-# Octopress configuration
-
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/
-post_layout: article
-page_layout: article
-
-# Format titles with titlecase?
-titlecase: true
-
-
-# Site owner
-owner:
-  name: chchwy
-  email: chchwy@gmail.com
-  twitter:
-  google:
-    ad-client:
-    ad-slot:
-  bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname: pencil2d
-
-
-exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+twitter:
+  username: pencil2d
+#  site:
+facebook:
+  #publisher: 1592372034171500
+  #profile_id: 1809805629
+  #app_id: 1798910940422432 # cayman-blog
+  authors: pencil2dsoft
+  #admins:
+github:
+  owner_url: "https://github.com/pencil2d/pencil"
+  owner_name: "pencil2d"
