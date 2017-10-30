@@ -11,7 +11,7 @@ comments: true
 
 Pencil was originally an application created by Patrick Corrieri by the end of 2005 under the name “Pencil Planner”. It was a simple yet effective pencil test (a.k.a. line test) programme. It included a drawing area, a single-track timeline where keyframes could be added, previous and next onion skins. The drawing tools were a pencil and an eraser, along with a colour chooser. The animation could be played at a specified frame rate, and in addition it was possible to add a background image and a background sound. It was developed under Qt 3 and made available on Macintosh and then Windows platforms under GPL license. The Mac version could output QuickTime files. There were two releases v0.1 and v0.2. This is a screenshot of v0.2:
 
-![v0.2 screenshot]()
+![v0.2 screenshot](/images/pascal-vision-d-000.jpg)
 
 When I became aware of this programme, I realised that it could be evolved into an application for making traditional animations rather than just pencil tests. Obviously what was needed was more drawing tools to fill shapes with colours, and some selection tools to move things around. I got in touch with Patrick, and started implementing those functions, along with cleaning the original code.
 
@@ -19,13 +19,13 @@ I also implemented tablet support. This became v0.3 of Pencil, released in Octob
 
 Another fundamental of traditional animation is to be able to organise separate elements (background, character, or parts of it) into different superimposed layers. This definitely called for the possibility of superimposing layers. On the other hand, I also convinced myself that vector graphics rather than raster (bitmap) graphics were useful for making animated drawings. Vector graphics can be rendered at any resolution, can easily be deformed and resized, colours can be readjusted, etc. They are quite well suited to render the traditional animation style: contours filled with some colours – inherited from the “cell(uloid)” style. Therefore I decided to introduce not only raster layers, but vector layers as well. Yet I wanted vector drawing to have the same artistic feel as raster drawing, so I implemented the same tools for both layers – although some of them such as the pencil and brush behaved differently.This lead to v0.4 released in January 2007. Below is a screenshot:
 
-![v0.4 screenshot]()
+![v0.4 screenshot](/images/pascal-vision-d-001.jpg)
 
 It was a huge jump from the previous versions. A lot of the original software was rewritten at this stage. Although incomplete, buggy, and still very unsatisfactory at many levels as an animation programme, it had the capacity to produce decent animations. At that time, Patrick told me that he was pleased to follow these developments but did not have the time or capacity to get further involved in them, so he kindly agreed to grant me administration of the project. This was perfect timing as I had already invested a lot of efforts (in particular on the vector side) and started developing a personal vision of what the application should be in its final version. I considered creating a new project with a new name, but failing to find anything better than “Pencil”, I kept the existing sourceforge project. I supplemented it with a newly designed website, a forum, and later and wiki to get more feedback and public attention.
 
 From then, I brought many refinements (some of them being quite unknown such as curved gradients) and got some occasional help from people such as Benjamin Raverdy, and Mark Schmelzenbach, although I remained mostly the only developer. The latest version v0.4.4 to date (released in early 2008) looks like this:
 
-![v0.4.4 scrrenshot]()
+![v0.4.4 scrrenshot](/images/pascal-vision-d-002.jpg)
 
 As of May 2010, this version is downloaded about 1000 times a day, according to the Sourceforge statistics.
 
@@ -54,9 +54,9 @@ So far I have developed Pencil mainly by myself and for myself. Now that several
 
 As I once wrote on the Pencil website, I have always liked drawing and the art of creating motion from a series of drawings. As a child, I used to make animation by drawing pictures on each page of a notebook. It was fun and simple, but not so convenient and quite limited (compared to a real animation film featuring colours, sound, etc).
 
-Diplaying pictures and playing sound is an ability that computers quickly acquired. As a result, a lot of animation software naturally emerged over time. However the usual input systems (keyboard and mouse) used by computers, along with conventional software design, have kept those programmes remote from the original drawing experience of traditional animation. Fortunately, pen tablets and later tablet PC appeared and made it possible to get an experience much closer to actual drawing. Still I found that existing animation programmes were either
+Displaying pictures and playing sound is an ability that computers quickly acquired. As a result, a lot of animation software naturally emerged over time. However the usual input systems (keyboard and mouse) used by computers, along with conventional software design, have kept those programmes remote from the original drawing experience of traditional animation. Fortunately, pen tablets and later tablet PC appeared and made it possible to get an experience much closer to actual drawing. Still I found that existing animation programmes were either
 
-![Touch screen]()
+<img src="/images/pascal-vision-d-003.jpg" style="float:right">
 
 - not taking advantage of the tablet
 - not recreating the drawing experience of traditional animation, or not completely satisfactory in their design
@@ -85,4 +85,42 @@ Because of its potential, it also appeared that it may be used in the future for
 
 However, these are not the primary goal of Pencil at present.
 
-Finally, Pencil might be the basis for an integrated solution for animation project management, often referred to as “animation studio”.
+Finally, Pencil might be the basis for an integrated solution for animation project management, often referred to as "animation studio".
+
+![Animation Studio](/images/pascal-vision-d-004.jpg)
+
+In order to allow the secondary usages, Pencil will be designed in a very modular way from v0.5 and beyond.
+
+## 3.4 The general interface
+
+### 3.4.1 Appearance
+
+Visually, Pencil should be dominated by the drawing/viewing area since it is focused on drawing.
+
+Tools, options, and other technical elements should appear around this area in a non-obstrusive way and kept to a minimum. Their graphical representation should also assume a simple (but pleasing) appearance to let the user work with some "peace of mind". 
+
+-------
+
+In that respect, the current Windows version has some unnecessary embossing lines and approximate layout which leaves an uncomfortable impression. The Mac version displays unnecessary boxes around each tool.
+
+![](/images/pascal-vision-d-005.jpg)
+![](/images/pascal-vision-d-006.jpg)
+![](/images/pascal-vision-d-007.jpg)
+
+--------
+
+The platforms of reference will be pen tablet laptop computers and single-screen desktop/laptop computers, although we might also consider multi-screen usage. To satisfy different users, the interface will be customisable to a large degree, although predefined, thoroughly thought interface environments will be provided by default for each usage and platform.
+
+Ideally, Pencil should be a multidocument application; open documents could be indicated by a series of tabs at the top of the screen.
+
+### 3.4.2 Multiple usages/environments
+
+The current and only usage of Pencil is creating animations. When (or if) secondary usages become available, it is expected that Pencil will have some option to switch between those environments. It may appear as a menu in Pencil menu bar or as a series of buttons at the top of the screen (easier for tablet users), or even as a splash screen option. 
+
+The idea behind the different usage environments is to display (or possibly alter) only the elements which are relevant for a given usage.
+
+For example, the current interface of Pencil is dedicated to drawing animations. It has the following elements : A layer/timeline palette displaying both layers and their associated tracks, a colour palette, a tool palette, a parameter/option palette, and a display palette. A menu bar (or a function bar with buttons when using a tablet) contains the basic file/edit functions (open, save, import, export, undo, redo) and some more specific functions.
+
+![Pencil2D UI](/images/pascal-vision-d-008.jpg)
+
+to be continued...
