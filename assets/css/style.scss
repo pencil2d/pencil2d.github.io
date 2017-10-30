@@ -2,3 +2,25 @@
 ---
 
 @import 'jekyll-theme-cayman-blog';
+
+.page-header {
+    background-color: #005cc0;
+    background-image: linear-gradient(120deg, #005cc0, #004699);
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    color: #005cc0;
+}
+
+.site-nav .page-link {
+    color: #005cc0;
+}
+
+.btn, .btn:hover {
+    color: #fff;
+}
+
+site-footer .my-svg-icon:hover {
+    color: #005cc0;
+    fill: #005cc0;
+}
