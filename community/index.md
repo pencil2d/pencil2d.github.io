@@ -33,7 +33,6 @@ comments: true
 
   <div class="community-tile">
     <a href="https://www.tumblr.com/tagged/pencil2d" target="_blank"><img src="/images/community-tumblr.jpg"></a>
-    <a href="https://www.tumblr.com/tagged/pencil2d" target="_blank"><img src="/images/community-tumblr.png"></a>
     <a href="https://www.tumblr.com/tagged/pencil2d" target="_blank"><h2 class="post-title">Tumblr</h2></a>
   </div>
 
