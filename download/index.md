@@ -2,6 +2,7 @@
 layout: page
 title: Download
 tagline: Get the latest Pencil2D here!
+comments: true
 ---
 
 
