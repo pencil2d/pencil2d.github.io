@@ -5,6 +5,10 @@ author: Gordie
 published: true
 ---
 
+> Orignial post: [link][10]
+
+[10]: https://www.pencil2d.org/2013/07/newsletter-1/
+
 Hi everyone! A few months ago we launched the website <www.pencil2d.org> to host Pencil2D, a fork of the original Pencil software, written by Pascal Naidon and Patrick Corrieri, which was no longer being maintained.
 
 While it has taken some time to start this new project, it has now taken off. Matt Chang is our new developer and while he is hard at work.
