@@ -5,7 +5,7 @@ tagline: Get the latest Pencil2D here!
 comments: true
 ---
 
-## Stable version 0.6-RC (15 Nov 2017)
+## Pencil2D 0.6-RC Stable (15 Nov 2017)
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
@@ -20,12 +20,12 @@ comments: true
 
 Nightly builds are the bleeding edge (most up to date) versions of Pencil2D, which contains the most recent fixes and features.
 
-| Windows 32 bit   | Windows 64 bit    | Mac             | Linux             |
+| Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
 | [Download][0]    | [Download][1]     | [Download][2]   | [Download][3]     |
 
-[0]: https://goo.gl/0rbHu6
-[1]: https://goo.gl/5pZXED
+[0]: https://goo.gl/5pZXED
+[1]: https://goo.gl/0rbHu6
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
 
