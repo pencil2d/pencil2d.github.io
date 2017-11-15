@@ -16,9 +16,16 @@ comments: true
 [2]: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-mac-2017-11-15.zip
 [3]: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-linux-2017-11-15.AppImage
 
+### Debian & Ubuntu
+
+Command line:
+```
+sudo apt-get install pencil2d
+```
+
 ## Nightly build
 
-Nightly builds are the bleeding edge (most up to date) versions of Pencil2D, which contains the most recent fixes and features.
+Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features.
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
@@ -28,11 +35,4 @@ Nightly builds are the bleeding edge (most up to date) versions of Pencil2D, whi
 [1]: https://goo.gl/0rbHu6
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
-
-### Debian & Ubuntu
-
-Command line:
-```
-sudo apt-get install pencil2d
-```
 
