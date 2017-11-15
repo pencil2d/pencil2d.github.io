@@ -5,7 +5,7 @@ tagline: Get the latest Pencil2D here!
 comments: true
 ---
 
-## Pencil2D 0.6-RC Stable (15 Nov 2017)
+## Pencil2D 0.6-RC  (15 Nov 2017)
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
