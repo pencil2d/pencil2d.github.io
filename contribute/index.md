@@ -20,7 +20,7 @@ You can report bugs and make feature requests in our **[Issue Tracker][3]**. The
 ## Translate Pencil2D
 
 Pencil2D has been translated into more than 10 languages by many generous volunteer translators from all over the world.
-You can translate Pencil2D to your language by joining us on **[Transifex][4]**, an online translation collaboration platform.
+Join us on **[Transifex][4]** to translate Pencil2D to your language!.
 
 ## Contributing code
 
