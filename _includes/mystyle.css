@@ -134,3 +134,21 @@
         margin-bottom:.809em
     }
 }
+
+.download-tiles {
+    text-align: center;
+    margin-top: 2em;
+}
+.download-tile {
+    width: 21%;
+    min-width: 120px;
+    float: left;
+    border: solid 1px #ccc;
+    padding: 2em 1em 2em 1em;
+    margin: 2%;
+    box-sizing: border-box;
+}
+
+.download-size { color: #aaa; }
+path{fill:#00438c;}
+path:hover{fill:#ef8003;}
