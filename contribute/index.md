@@ -7,7 +7,7 @@ comments: true
 
 Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, community-driven free and open source project. All the code, documents and website are contributed by our community of volunteers.
 
-# You can help improve Pencil2D, too!
+## You can help improve Pencil2D, too!
 
 There are lots of ways to contribute to Pencil2D project: coding, testing, improving translations or contributing to the documentation.
 
