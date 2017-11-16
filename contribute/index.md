@@ -26,7 +26,7 @@ Join us on **[Transifex][4]** to translate Pencil2D to your language!
 
 Do you like to code? Pencil2D is completely open source on [Github][0]. Get started quickly with our [development document][1] and start building and fixing bugs in just a few steps. 
 
-You have to use **C++** and **Qt** to work on Pencil2D. If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you get started.
+You have to use **C++** and **Qt** to work on Pencil2D. If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
 
 
 [0]: https://github.com/pencil2d/pencil
