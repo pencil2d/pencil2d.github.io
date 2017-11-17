@@ -56,7 +56,7 @@ Command line:
 sudo apt-get install pencil2d
 ```
 
-## Nightly build
+## Nightly build <a name="nightlybuild"></a>
 
 Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features.
 
