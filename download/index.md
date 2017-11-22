@@ -60,16 +60,11 @@ sudo apt-get install pencil2d
 
 Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features.
 
-<div class="download-table">
-
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
 | [Download][0]    | [Download][1]     | [Download][2]   | [Download][3]     |
-
-</div>
 
 [0]: https://goo.gl/5pZXED
 [1]: https://goo.gl/0rbHu6
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
-
