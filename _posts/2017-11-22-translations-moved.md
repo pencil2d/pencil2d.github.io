@@ -8,7 +8,7 @@ comments: true
 
 Hello friends of Pencil2D,
 
-The Pencil2D translation platform has moved to **[Transifex][0]**. From now on, all work on translations will happen there. You can still access to the old [OneSky project][1] but it will no longer be maintained and updated.
+The translation platform of Pencil2D has moved to **[Transifex][0]**. From now on, all work on translations will happen there. You can still access to the old [OneSky project][1] but it will no longer be maintained and updated.
 
 Visit our new translation project: <https://www.transifex.com/pencil2d/pencil2d/>
 
