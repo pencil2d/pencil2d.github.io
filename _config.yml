@@ -11,6 +11,9 @@ google_analytics: UA-5266256-7
 cayman-blog:
   date_format: "%-d %B, %Y"
 
+plugins:
+  - jekyll-feed
+
 disqus-shortname: pencil2d
 theme: # leave it empty
 
