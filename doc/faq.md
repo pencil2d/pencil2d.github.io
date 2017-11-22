@@ -68,7 +68,7 @@ It will be a lot bigger, BUT, you will be able to import the file now!
 
 ## Hey, I can’t export videos!?
 
-This issue has been fixed. Please make sure you are using the latest Pencil2D version! (0.6 or later)
+This issue has been fixed. Please using the latest version (0.6 or later) to export videos.
 
 ## Can I copy and paste in place specific content from one frame to another inside Pencil2D?
 
