@@ -86,7 +86,7 @@ We feel you, but every great piece of software you might know began in a humble 
 
 Pencil2D won't get hot just by looking at it, in fact there's more chances that you'll hate it the more you look at it. We need YOU for miracles to happen! [Consider donating your time](/contribute/) to report bugs, create art or just hang out with us at the forum while we wait for the next release.
 
-For more information on how to contribute to Pencil2D's code visit our [Github Respository](https://github.com/pencil2d/pencil#pencil2d-animation)
+For more information on how to contribute to Pencil2D please visit the **[Contribute](http://pencil2d.github.io/contribute/)** Page.
 
 ## OMG Pencil Crashed and my files are unusable / corrupted!!!11!1! /cry!!!
 
