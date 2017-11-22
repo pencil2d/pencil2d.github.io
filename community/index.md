@@ -27,8 +27,8 @@ comments: true
   </div>
 
   <div class="community-tile">
-    <a href="https://plus.google.com/110216414160031527824" target="_blank"><img src="/images/community-googleplus.jpg"></a>
-    <a href="https://plus.google.com/110216414160031527824" target="_blank"><h2 class="post-title">Google+</h2></a>
+    <a href="https://plus.google.com/communities/101311036131376070915" target="_blank"><img src="/images/community-googleplus.jpg"></a>
+    <a href="https://plus.google.com/communities/101311036131376070915" target="_blank"><h2 class="post-title">Google+</h2></a>
   </div>
 
   <div class="community-tile">

@@ -152,3 +152,7 @@
 .download-size { color: #aaa; }
 path{fill:#00438c;}
 path:hover{fill:#ef8003;}
+
+.download-table table {
+    table-layout: fixed;
+}
