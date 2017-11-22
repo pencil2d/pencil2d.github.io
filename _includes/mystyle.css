@@ -16,7 +16,8 @@
     max-width:68em;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:1.618em    
+    margin-bottom:1.618em;
+    padding-bottom: 1em;
 }
 
 @media screen and (min-width: 30em) and (max-width: 42em) {
