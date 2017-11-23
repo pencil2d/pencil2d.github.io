@@ -33,3 +33,13 @@ facebook:
 github:
   owner_url: "https://github.com/pencil2d/pencil"
   owner_name: "pencil2d"
+
+download:
+  win64: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win64-2017-11-15.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win32-2017-11-15.zip 
+  mac: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-mac-2017-11-15.zip
+  linux: https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-linux-2017-11-15.AppImage
+  win64-size: 40MB
+  win32-size: 34.8MB
+  mac-size: 41.7MB
+  linux-size: 37.5MB

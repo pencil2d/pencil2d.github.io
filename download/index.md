@@ -10,39 +10,39 @@ comments: true
 <div class="download-tiles">
 <div></div>
 <div class="download-tile">
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win64-2017-11-15.zip">
+  <a href="{{ site.download.win64 }}">
     {% include win_icon.svg %} 
   </a><br>
   Windows 64 bit <br>
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win64-2017-11-15.zip">Download</a>
-  <div class="download-size">40MB</div>
+  <a href="{{ site.download.win64 }}">Download</a>
+  <div class="download-size">{{ site.download.win64-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win32-2017-11-15.zip">
+  <a href="{{ site.download.win32 }}">
     {% include win_icon.svg %}
   </a><br>
   Windows 32 bit <br>
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-win32-2017-11-15.zip">Download</a>
-  <div class="download-size">34.8MB</div>
+  <a href="{{ site.download.win32 }}">Download</a>
+  <div class="download-size">{{ site.download.win32-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-mac-2017-11-15.zip">
+  <a href="{{ site.download.mac }}">
     {% include mac_icon.svg %}
   </a><br>
   Mac <br>
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-mac-2017-11-15.zip">Download</a>
-  <div class="download-size">41.7MB</div>
+  <a href="{{ site.download.mac }}">Download</a>
+  <div class="download-size">{{ site.download.mac-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-linux-2017-11-15.AppImage">
+  <a href="{{ site.download.linux }}">
     {% include linux_icon.svg %}
   </a><br>
   Linux <br>
-  <a href="https://github.com/pencil2d/pencil/releases/download/0.6-rc/pencil2d-linux-2017-11-15.AppImage">Download</a>
-  <div class="download-size">37.5MB</div>
+  <a href="{{ site.download.linux }}">Download</a>
+  <div class="download-size">{{ site.download.linux-size }}</div>
 </div>
 
 </div>
