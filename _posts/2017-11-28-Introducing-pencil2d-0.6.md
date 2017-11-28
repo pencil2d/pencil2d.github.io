@@ -26,13 +26,14 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 ## Color Wheel
 
-[picture]
+A picture is worth a thousand words. <br>
+<img src="/images/color-wheel.gif">
 
 ## Color Grid
 
-[picture]
-
 It’s now possible to show your palette as a grid, which is handy for those who don’t rely on labelling their colors. In addition, you can now also change the size of the swatches withc 3 sizes.
+
+<img src="/images/color-grid.gif">
 
 ## Colored Onion skins
 
