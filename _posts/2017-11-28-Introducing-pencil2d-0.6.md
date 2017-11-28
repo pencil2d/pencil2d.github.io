@@ -9,15 +9,17 @@ published: false
 comments: false
 ---
 
-Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened: Pencil2D 0.6 released today! You can get it from http://pencil2d.github.io/download/.
+Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
-Let’s unwrap it a little bit, and take a look at what’s inside.
+**Pencil2D 0.6 released today!** 
+
+Please download it [here](http://pencil2d.github.io/download/). Let’s unwrap it a little bit, and take a look at what’s inside.
 
 ## 0.6 is much more stable than 0.5.4
 
-Thanks to all the [contributors][0], there are tons of bugs have been fixed in the 0.6. We can say with confidence that Pencil2D 0.6 is more stable than old 0.5.4. Now you can simply enjoy animating without worrying too much about losing your work.
+Thanks to all the [contributors][0], tons of bugs have been fixed in the 0.6. We can say with confidence that Pencil2D 0.6 is more stable than old 0.5.4. Now you can simply enjoy animating without worrying too much about losing your work.
 
-But please keep in mind, there are still some [known issues][] and developers are working hard to resolve them. Please don't hesitate to [tell us][1] if you encounter any issues. Your report will help Pencil2D get better.
+But please keep in mind, there are still some [known issues](#known_issues) and developers are working hard to resolve them. Please don't hesitate to [tell us][1] if you encounter any issues. Your report will help Pencil2D get better.
 
 [0]: https://github.com/pencil2d/pencil/graphs/contributors
 [1]: https://github.com/pencil2d/pencil/issues
@@ -36,13 +38,17 @@ It’s now possible to show your palette as a grid, which is handy for those who
 
 Hard to know what are in previous or next frames? Display the onion skins of “previous frames” as **red** and the onion skins of "next frames" as **blue** to see them clearly.
 
-## Export your animation to mp4, avi or gif
+## Export your animation to mp4, avi or animated gif
 
-Finally, the movie export is working. Go to the menu → File → Export and export your animation to the following formats: animated gif, avi, mp4 or wmv.
+Finally, the movie export is working. Go to the menu → File → Export and export your animation to the following formats: **gif, avi, mp4 or wmv**.
 
 ## 12 languages available
 
-Pencil2D are making things easier for non English speakers. Thanks to all the hard work of volunteer translators, 12 languages are now available within Pencil2D, includes: English, Czech, Danish, German, Spanish, French, Hungarian, Italian, Japanese, Portuguese, Russian, and Traditional Chinese. You can also change languages in preferences if you like.  
+Pencil2D are making things easier for non English speakers. Thanks to all the hard work of volunteer translators, 12 languages are now available within Pencil2D, includes: 
+
+English, Czech, Danish, German, Spanish, French, Hungarian, Italian, Japanese, Portuguese, Russian, and Traditional Chinese.
+
+You can also change languages in preferences if you like.  
 
 There is still a lot of work to do. If Pencil2D is not yet available in your language, you can translate it or improve the existing translations by joining our [Transifex translation project][3].
 
@@ -52,54 +58,55 @@ There is still a lot of work to do. If Pencil2D is not yet available in your lan
 
 - Playback in a given start/end frame range.
 - Relative/absolute mode of onion skins.
-- Select a range of frames (Shift + LMB).
-- Select/deselect individual frames (Ctrl +LMB)
-- Select a frame and all the frames after it (Alt + LMB)
-- Move a single frame (LMB Selected + Drag)
-- Move a frame and all the frames at its right (Alt + LMB +Drag)
+- Select a range of frames `(Shift + LMB)`.
+- Select/deselect individual frames `(Ctrl +LMB)`
+- Select a frame and all the frames after it `(Alt + LMB)`
+- Move a single frame `(LMB Selected + Drag)`
+- Move a frame and all the frames at its right `(Alt + LMB +Drag)`
 - Added an option to change the number of frames of onion skin in prefrences.
 
 ## Drawing Tool Improvements
 
-- Brush quick-sizing (Shift + Drag Left/Right)
-- Brush feather quick-sizing (Ctrl + Drag Left/Right)
-- Fast Hand Tool (by holding Space bar).
-- Fast Eyedropper (Alt).
-- Move tool can rotate selection area by Ctrl + Drag Left/Right.
-- Smudge tool is working on Bitmap layer for creating coloring effects similar to oil painting. Hold Alt key to get liquify effect.
+- Brush quick-sizing `(Shift + Drag Left/Right)`
+- Brush feather quick-sizing `(Ctrl + Drag Left/Right)`
+- Fast Hand Tool `(holding Space bar)`.
+- Fast Eyedropper `(Alt)`.
+- Move tool can rotate selection area by `Ctrl + Drag Left/Right`.
+- Smudge tool is now working on bitmap layers for creating oil painting-like effects. Hold `Alt` to get liquify effects.
 - 3-level stroke stablizer.
 - Dotted Cursor available in prefrences.
 
-## UI improvements
+## Interfaces Improvements
 
-- Show/Hide Grid (G)
+- Show/Hide Grid `(G)`
 - Show zoom ratio on the status bar
 - Added a **Windows** menu to show/hide panels.
-- Added a menu option “lock window” to lock panels.
+- Added a menu option **Lock Windows** to lock panels.
 - Changed Layer display order.
 
-## More features and improvements
+## More Features and Improvements
 
-- Added Alpha Channel to color palette.
+- Added alpha channel to color palette.
 - Added .pcl/.pclx file associations and icons on MacOS.
-- Removed Fill Tool bleeding into other layers.
-- Improved Fill Tool bitmap area fill algorithm.
+- Removed `Fill Tool` bleeding into other layers.
+- Improved `Fill Tool` bitmap area fill algorithm.
 - Color selection was separated between Bitmap & Vector Layers (Changing the colors of Color Palette changes will affect only vector colors).
-- Implemented Canvas “freehand” Rotation. (ALT + Right Click)
-- Implemented persistent camera frame to Preview export size (Can be hidden by hiding the camera layer)
+- Implemented canvas “freehand” rotation. `(ALT + RMB and drag)`
+- Implemented persistent camera frame to preview export results (hide it by hiding the camera layer)
 - Implemented selection horizontal & vertical Mirroring (“Flipping”)
-- Implemented range feature for Movie Export.
+- Export movies in a given range.
 
 ## Fixes
 
-- Re-implemented Camera Tweening.
+- Re-implemented camera tweening.
 - Removed gradient background from preferences.
-- Fixed Sound Import and Playback.
+- Fixed sound import and playback.
 - Fixed auto-save.
-- Fixed Shortcut Mapping.
+- Fixed shortcut mappings.
 - Misc bug fixes.
 
-## Known issues
+## Known Issues
+<a name="known_issues"></a>
 
 - Vector Engine is being reworked, the functionalities are limited and it’s not yet ready for production use.
 - You will be able to undo a “frame deletion”, but cannot redo it.
@@ -115,3 +122,7 @@ Pencil2D is a free and open source project. Please consider supporting the proje
 
 [4]: /community
 [5]: /contribute
+
+## Contributors
+
+
