@@ -49,7 +49,7 @@ It’s now possible to show your palette as a grid, which is handy for those who
 
 <img src="/images/color-onionskin.png" style="border:solid 1px #999;float:right">
 
-Hard to know what are in previous or next frames? Display the onion skins of “previous frames” as **red** and the onion skins of "next frames" as **blue** to see them clearly.
+Hard to know what are in previous frames or next frames? Display the onion skins of "previous frames" as **red** and the onion skins of "next frames" as **blue** to see them clearly.
 
 <div style="clear:both"></div>
 
