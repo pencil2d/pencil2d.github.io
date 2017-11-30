@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Pencil2D 0.6"
 tagline: ""
-categories: "Release Note"
+categories: "ReleaseNote"
 image: /images/pencil_icon.png
 author: "The Pencil2D team"
 published: false
@@ -26,7 +26,7 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 ## Color Wheel
 
-Select a color? A before and after picture says everything.
+Select a color? Take a look at the new Color Wheel!
 <br>
 <table>
 <tr>
@@ -47,7 +47,11 @@ It’s now possible to show your palette as a grid, which is handy for those who
 
 ## Colored Onion skins
 
+<img src="/images/color-onionskin.png" style="border:solid 1px #999;float:right">
+
 Hard to know what are in previous or next frames? Display the onion skins of “previous frames” as **red** and the onion skins of "next frames" as **blue** to see them clearly.
+
+<div style="clear:both"></div>
 
 ## Export your animation to mp4, avi or animated gif
 
