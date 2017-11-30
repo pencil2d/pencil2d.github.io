@@ -26,7 +26,7 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 ## Color Wheel
 
-Select a color? Take a look at the new Color Wheel!
+Choosing colors is not frustrating anymoe. Take a look at the new Color Wheel! 
 <br>
 <table>
 <tr>
