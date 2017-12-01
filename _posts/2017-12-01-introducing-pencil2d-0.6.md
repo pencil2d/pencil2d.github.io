@@ -36,7 +36,12 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 </tr>
 <tr>
 <td><img src="/images/color054.png" style="" style="border:solid 1px #999"></td>
-<td><img src="/images/color-wheel.gif" style="" style="border:solid 1px #999"></td>
+<td>
+  <video width="166" height="314" autoplay loop style="border:solid 1px #999">
+    <source src="/images/color-wheel.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</td>
 </tr>
 </table>
 
