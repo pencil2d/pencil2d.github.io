@@ -13,8 +13,8 @@ comments: true
   </div>
 
   <div class="community-tile">
-    <a href="https://www.facebook.com/pencil2dsoft/" target="_blank"><img src="/images/community-facebook.jpg"></a>
-    <a href="https://www.facebook.com/pencil2dsoft/" target="_blank"><h2 class="post-title">Facebook</h2></a>
+    <a href="https://www.facebook.com/groups/709024775972087/" target="_blank"><img src="/images/community-facebook.jpg"></a>
+    <a href="https://www.facebook.com/groups/709024775972087/" target="_blank"><h2 class="post-title">Facebook</h2></a>
     Great place to meet other Pencil2D users
   </div>
 
