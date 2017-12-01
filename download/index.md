@@ -5,7 +5,7 @@ tagline: Let's start animating immediately!
 comments: true
 ---
 
-## Pencil2D v0.6  (30 Nov 2017)
+## Pencil2D v0.6  (1 Dec 2017)
 
 <div class="download-tiles">
 <div></div>
