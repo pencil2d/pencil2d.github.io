@@ -11,7 +11,7 @@ comments: true
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
-**Pencil2D 0.6 released today!** 
+**Pencil2D 0.6 was released today!**
 
 Please download it [here](http://pencil2d.github.io/download/). Let’s unwrap it a little bit, and take a look at what’s inside.
 
@@ -19,7 +19,7 @@ Please download it [here](http://pencil2d.github.io/download/). Let’s unwrap i
 
 Thanks to all the [contributors][0], tons of bugs have been fixed in the 0.6. We can say with confidence that Pencil2D 0.6 is more stable than old 0.5.4. Now you can simply enjoy animating without worrying too much about losing your work.
 
-But please keep in mind, there are still some [known issues](#known_issues) and developers are working hard to resolve them. Please don't hesitate to [tell us][1] if you encounter any issues. Your report will help Pencil2D get better.
+But please keep in mind, there are still some [known issues](#known_issues) and developers are working hard to resolve them. Please don't hesitate to [tell us][1] if you encounter any issues. Your report will help us make Pencil2D better.
 
 [0]: https://github.com/pencil2d/pencil/graphs/contributors
 [1]: https://github.com/pencil2d/pencil/issues
@@ -68,7 +68,7 @@ Finally, the movie export is working. Go to the menu → File → Export and exp
 
 ## 12 languages available
 
-Pencil2D are making things easier for non English speakers. Thanks to all the hard work of volunteer translators, 12 languages are now available within Pencil2D, includes: 
+Pencil2D are making things easier for non English speakers. Thanks to all the hard work of volunteer translators, 12 languages are now available within Pencil2D, includes:
 
 **English, Czech, Danish, German, Spanish, French, Hungarian, Italian, Japanese, Portuguese, Russian, and Traditional Chinese.**
 
@@ -113,7 +113,8 @@ There is still a lot of work to do. If Pencil2D is not yet available in your lan
 ## More Features and Improvements
 
 - Added alpha channel to color palette.
-- Added .pcl/.pclx file associations and icons on MacOS.
+- Added .pcl/.pclx file associations and icons on mac OS.
+- Added command line interface (run with the -h flag for details)
 - Color selection behavior was separated Bitmap & Vector Layers (Using the color wheel on bitmap layers will only affect the active color and not the Color Palette swatches. In Vector Layers, changing any swatch will affect only vector colors)
 - Implemented canvas “freehand” rotation. `(ALT + RMB and drag)`
 - Implemented persistent camera frame ("passepartout") to preview canvas & export size (Can be hidden by hiding the camera layer)
@@ -146,4 +147,3 @@ Pencil2D is a free and open source project. Please consider supporting the proje
 
 [4]: /community
 [5]: /contribute
-
