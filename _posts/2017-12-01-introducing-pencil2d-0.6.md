@@ -9,6 +9,8 @@ published: true
 comments: true
 ---
 
+<img src="/images/pencil2d_horizontal_banner_1024x256_trans.png">
+
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
 **Pencil2D 0.6 was released today!**
