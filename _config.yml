@@ -5,6 +5,8 @@ show_downloads: true
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://pencil2d.github.io" # change this to the base hostname & protocol for your site
 
+permalink: /:year/:month/:title.html
+
 google_analytics: UA-5266256-7
 # cayman-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

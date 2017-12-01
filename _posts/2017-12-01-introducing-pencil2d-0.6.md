@@ -2,11 +2,11 @@
 layout: post
 title: "Introducing Pencil2D 0.6"
 tagline: ""
-categories: "ReleaseNote"
+categories: "Release Note"
 image: /images/pencil_icon.png
 author: "The Pencil2D team"
-published: false
-comments: false
+published: true
+comments: true
 ---
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
@@ -26,7 +26,7 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 ## Color Wheel
 
-Choosing colors is not frustrating anymoe. Take a look at the new Color Wheel! 
+ Take a look at the new Color Wheel! Choosing colors is not frustrating anymoe.
 <br>
 <table>
 <tr>
