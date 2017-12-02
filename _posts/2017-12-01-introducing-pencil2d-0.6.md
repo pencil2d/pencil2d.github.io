@@ -15,7 +15,7 @@ Christmas is getting close, and it’s about time to unwrap one of the presents 
 
 **Pencil2D 0.6 was released today!**
 
-Please download it [here](http://pencil2d.github.io/download/). Let’s unwrap it a little bit, and take a look at what’s inside.
+Please download it [here](http://pencil2d.github.io/download/). Let’s take a look at what’s inside.
 
 ## 0.6 is much more stable than 0.5.4
 
