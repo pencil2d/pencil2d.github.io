@@ -114,23 +114,23 @@ User **Jeetman** has contributed with this small workaround while the developmen
 
 Here is a quick fix for **HDTV display problems**. This may work for all HDTV’s, but I know that it definitely works on a SAMSUNG HDTV with recommended screen setting of 3840 x 2160. This may also work on other programs. I used this fix to correctly display the paint program that I use (paint shop pro X6) as well.
 
-![Pencil2D Text / Icons Random Size](https://imgur.com/B4foGNT)
+[Pencil2D Text / Icons Random Size](https://imgur.com/B4foGNT)
 
 If you’ve installed Penci2D and are using Windows 10 and an HDTV, Your screen display may look like the picture above.
 
-![Pencil2D Shortcut](https://imgur.com/vuimYoi)
+[Pencil2D Shortcut](https://imgur.com/vuimYoi)
 
 To fix this, find your Pencil2D shortcut which is usually on the desktop but can be on the taskbar or in your start up.
 
-![Pencil2D shortcut Properties](https://imgur.com/uZMJZ5m)
+[Pencil2D shortcut Properties](https://imgur.com/uZMJZ5m)
 
 Once you locate your Pencil2D shortcut, right-click on the Pencil2D shortcut, click on properties.
 
-![Shortcut Compatibility Tab](https://imgur.com/7CGHznT)
+[Shortcut Compatibility Tab](https://imgur.com/7CGHznT)
 
 The properties menu will open. Left-click on the ‘Compatibility’ tab on the top.
 
-![OS Compatibility Menu](https://imgur.com/VCa6jlt)
+[OS Compatibility Menu](https://imgur.com/VCa6jlt)
 
 The Compatibility menu will come up. Do the following:
 
@@ -143,7 +143,7 @@ Under Settings: ‘Override high DPI scaling behavior’ – CHECK THE BOX
 
 Under Settings: ‘Scaling performed by’ change ‘Application’ to ‘System’ by left-clicking the flyout and choosing ‘System’. Click Apply then OK.
 
-![Fixed Pencil2D Compatibility](https://imgur.com/PEjjKnG)
+[Fixed Pencil2D Compatibility](https://imgur.com/PEjjKnG)
 
 Run Pencil2D (from the shortcut icon you just modified). Your display should look as shown above.
 
