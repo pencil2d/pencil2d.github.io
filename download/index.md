@@ -56,9 +56,14 @@ Last Updated on 1 December 2017. See
 
 ### Debian & Ubuntu
 
-Command line:
 ```
 sudo apt-get install pencil2d
+```
+
+### Homebrew Cask (macOS)
+
+```
+brew cask install pencil2d
 ```
 
 ## Nightly build <a name="nightlybuild"></a>
