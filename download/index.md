@@ -8,8 +8,8 @@ comments: true
 ## Current Stable Version (v0.6)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 1 December 2017. 
-<a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6?
+Last Updated on 1 December 2017. Discover 
+<a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6.
 </blockquote>
 
 <div class="download-tiles">
