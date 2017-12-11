@@ -16,7 +16,6 @@ cayman-blog:
 #plugins:
 #  - jekyll-feed
 
-disqus-shortname: pencil2d
 theme: # leave it empty
 
 # social
