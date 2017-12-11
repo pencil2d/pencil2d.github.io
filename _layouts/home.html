@@ -6,7 +6,7 @@ layout: default
   
   <h3>Latest News</h3>
   <ul class="home-post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
       <li>
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
         <a class="home-post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
