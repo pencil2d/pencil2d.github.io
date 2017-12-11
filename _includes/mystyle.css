@@ -141,13 +141,14 @@
     margin-top: 1em;
 }
 .download-tile {
-    width: 21%;
+    width: 18%;
     min-width: 120px;
     float: left;
     border: solid 1px #ccc;
-    padding: 2em 1em 2em 1em;
-    margin: 2%;
+    padding: 2em 0.5em 2em 0.5em;
+    margin: 1%;
     box-sizing: border-box;
+	font-size: 0.9em;
 }
 
 .download-size { color: #aaa; }

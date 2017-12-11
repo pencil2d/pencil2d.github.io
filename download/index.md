@@ -42,12 +42,21 @@ Last Updated on 1 December 2017. See
 </div>
 
 <div class="download-tile">
-  <a href="{{ site.download.linux }}">
+  <a href="{{ site.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
-  Linux <br>
-  <a href="{{ site.download.linux }}">Download</a>
-  <div class="download-size">{{ site.download.linux-size }}</div>
+  Linux 64 bit<br>
+  <a href="{{ site.download.linux64 }}">Download</a>
+  <div class="download-size">{{ site.download.linux64-size }}</div>
+</div>
+
+<div class="download-tile">
+  <a href="{{ site.download.linux32 }}">
+    {% include linux_icon.svg %}
+  </a><br>
+  Linux 32 bit<br>
+  <a href="{{ site.download.linux32 }}">Download</a>
+  <div class="download-size">{{ site.download.linux32-size }}</div>
 </div>
 
 </div>
