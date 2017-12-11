@@ -157,3 +157,15 @@ path:hover{fill:#ef8003;}
 .download-table table {
     table-layout: fixed;
 }
+
+.home-post-list {
+    padding-left:20px;
+    list-style-type:circle;
+}
+.home-post-list li { margin-bottom: 0.5em;}
+.home-post-link {}
+.home-post-meta {
+    float: right;
+    color:#828282;
+    font-size: 0.8em;
+}
