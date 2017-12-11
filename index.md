@@ -25,7 +25,7 @@ layout: home
     <h2>Open Source & Free</h2>
     <p>Pencil2D is completely open source and free to use even commercially!</p>
   </div>
-  <div style="clear:both">
+  <div style="clear:both"></div>
 </div>
 
 <div style="text-align:center">
