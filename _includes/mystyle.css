@@ -148,7 +148,7 @@
     padding: 2em 0.5em 2em 0.5em;
     margin: 1%;
     box-sizing: border-box;
-	font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .download-size { color: #aaa; }
@@ -170,3 +170,14 @@ path:hover{fill:#ef8003;}
     color:#828282;
     font-size: 0.8em;
 }
+.showreel {
+  width:100%;min-height:250px;
+}
+@media screen and (min-width: 64em) {
+.showreel {
+  width:100%;min-height:450px;
+} }
+@media screen and (min-width: 42em) and (max-width: 64em) {
+.showreel {
+  width:100%;min-height:330px;
+} }

@@ -28,6 +28,6 @@ layout: home
   <div style="clear:both"></div>
 </div>
 
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aa9PCu_UZpg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<div style="">
+<iframe class="showreel" src="https://www.youtube.com/embed/aa9PCu_UZpg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
