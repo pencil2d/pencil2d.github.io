@@ -77,7 +77,7 @@ brew cask install pencil2d
 
 ## Nightly build <a name="nightlybuild"></a>
 
-Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The link will direct you to Google Drive, please right-click a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
+Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
