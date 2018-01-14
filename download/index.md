@@ -63,6 +63,10 @@ Last Updated on 1 December 2017. See
 <div style="clear:both"></div>
 
 
+### Arch Linux
+
+Pencil2D is available for Arch Linux through the package [pencil2d](https://aur.archlinux.org/packages/pencil2d) on the AUR. If you are not yet familiar with the process of building and installing packages from the AUR, please follow [the tutorial on the Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages).
+
 ### Debian & Ubuntu
 
 ```
