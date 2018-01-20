@@ -14,7 +14,7 @@ This page contains a list of potential project ideas that we are keen to develop
 + Check out our application tips.
 + Join us on Discord and talk to your potential mentors:
 
-![Pencil2D Discord](/images/Discord-Logo+Wordmark-Color.svg)](https://discord.gg/4PCtGXq)
+![Pencil2D Discord(/images/Discord-Logo+Wordmark-Color.svg)](https://discord.gg/4PCtGXq)
 
 {% include toc.html %}
 
@@ -22,7 +22,7 @@ This page contains a list of potential project ideas that we are keen to develop
 
 You'll be following GSoC's application process [instructions](https://google.github.io/gsocguides/student/). And we'll be asking you to make at least one small initial pull request before the application deadline (3 April 2018), to help us assess you as a developer.
 
-Getting started earlier is better, so you have more time to learn, make contributions, and make a good proposal.
+> Getting started earlier is better, so you have more time to learn, make contributions, and make a good proposal.
 
 Your application should include the following:
 
@@ -69,7 +69,7 @@ To assist you in finding a great project to challenge your abilities, we list th
 
 ## GSoC 2018 Project Ideas
 
-#Project Idea #1
+###Project Idea #1
 
 `GSoC Note: Depending on how your organization operates, the source of material for your Ideas Page may come from an existing list of projects maintained by your community year-round, from potential mentors as they are recruited, or from the org admin. Regardless of how it is generated, an Ideas Page should have the following:`
 
@@ -89,13 +89,13 @@ How it could be done (rough programming ideas, algorithm suggestions, suggested 
 Why it should be done (ie. How does it benefit the project?)
 How it is aligned with Pencil2D's vision (Project Purpose Check)
 
-#Project Idea #2
+###Project Idea #2
 
-#Project Idea #3
+###Project Idea #3
 
-#Project Idea #4
+###Project Idea #4
 
-#Project Idea #5
+###Project Idea #5
 
 ##Sharing proposals (February-April 2018)
 _Students Guide_
