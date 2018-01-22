@@ -15,7 +15,7 @@ This page contains a list of potential project ideas that we are keen to develop
 + Join us on our dedicated channels and talk to your potential mentors, so everyone can learn and benefit from these interactions:
   + [Pencil2D's public Github repository]()
   + [Pencil2D IRC Channel #pencil2D]()
-  + [![Pencil2D Discord](/images/Discord-Logo+Wordmark-Color.png)](https://discord.gg/4PCtGXq)
+  + [Pencil2D Discord](https://discord.gg/4PCtGXq)
 
 ## Mentors
 
