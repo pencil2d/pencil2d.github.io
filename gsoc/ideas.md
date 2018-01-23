@@ -38,8 +38,11 @@ Without further ado, here are some of the ideas we have hand-picked which you ma
 ### Preview Widget
 
 **Difficulty:** Easy
+
 **Project Core Objective:** Add a window which displays a preview of the canvas
+
 **Description:**
+
 Often when a user is painting, especially with a detailed scene, they are zoomed
 into a small area. To show the user how their small changes are affecting the
 appearance of the whole canvas, we would like to add an external "Preview"
@@ -50,16 +53,23 @@ main canvas.
 This could be implemented as a QDialog, or perhaps even better as
 as QDockWidget, so it can be in it's own window, or attached to the side of the
 main window.
+
 **Project Category:** New Feature
+
 **Skills required:** C++, Qt
+
 **Mentor:** Matt Chang (chchwy)
+
 **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
 ### Shape Tool and Library
 
 **Difficulty:** Easy
+
 **Project Core Objective:** Add a tool which allows users to easily place a variety of shapes
+
 **Description:**
+
 A new tool should be added which allows you to select a shape from a library (or
 some other way of selecting from many different shape options), and then draw
 that shape on the canvas instantly with the desired scale and rotation simply
@@ -72,15 +82,21 @@ Implementing this feature will require adding support for the tool on both
 bitmap and vector layers. The library should include the following shpaes (but
 is not limited to only these shapes): rectangles, circles, squares, n-gons, and
 stars.
+
 **Project Category:** New Feature
+
 **Skills required:** C++, experience with vector graphics (very useful)
+
 **Co-Mentors:** Matt Chang (chchwy), Connor Deptuck (scribblemaniac)
 
 ### Lasso Tool
 
 **Difficulty:** Intermediate
+
 **Project Core Objective:** Add a lasso selection tool to Pencil2D
+
 **Description:**
+
 A lasso selection tool is a common tool in image editing applications, and you
 can look to any of them (ex. GIMP, Photoshop, Krita) for an idea of how it
 should work, although it may be under a different name such as a "Free Selection"
@@ -104,16 +120,23 @@ but will automatically fit the selection to the contours of the image/layer. To
 determine how this is done, you will need to do some research into
 implementations of this feature in other open source project, or find relevant
 research papers.
+
 **Project Category:** New Feature
+
 **Skills required:** C++, computer vision experience (extension only)
+
 **Mentor:** Matt Chang (chchwy)
+
 **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
 ### Sound Scrubbing
 
 **Difficulty:** Intermediate
+
 **Project Core Objective:** Improve the timeline to add sound-scrubbing support
+
 **Description:**
+
 Pencil2D recently re-enabled sound layer support which is very important to any
 animation really. A common feature in video editing applications is to allow
 the playback of sound when moving the timeline cursor. This reduces the time it
@@ -126,16 +149,23 @@ to play automatically when the cursor moves. You will have to figure out exactly
 what part of the sound layers should play in response to specific cursor move
 events. There also should be some option to enables/disable this feature since
 some may find it annoying or not useful.
+
 **Project Category:** Enhancement
+
 **Skills required:** C++, Qt (useful, but optional for application), Jack Audio (not required, and not currently in use, but may be worth investigating to implement alongside this project)
+
 **Mentor:** Matt Chang (chchwy)
+
 **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
 ### Improve Free Transform Tools
 
 **Difficulty:** Intermediate
+
 **Project Core Objective:** Improve the free transform tools
+
 **Description:**
+
 Free transform tools are those that allow manipulation of the transformation of
 a selected area. We currently have an implementation of this which can be used
 by selecting an area and then using the move tool to move, scale, and rotate the
@@ -152,16 +182,23 @@ perspective transformations to vectors. The scope of that task may be limited to
 only the bitmap layers if it proves too difficult to perform properly on vector
 paths, however the other transformation should work on both bitmap and vector
 selections.
+
 **Project Category:** Enhancement
+
 **Skills required:** C++, Qt
+
 **Mentor:** Matt Chang (chchwy)
+
 **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
 ### Timeline Rewrite
 
 **Difficulty:** Hard
+
 **Project Core Objective:** Rewrite the timeline for better optimization and extensibility
+
 **Description:**
+
 The timeline we are currently using is a very old remnant of the Pencil program
 from which Pencil2D was forked nearly 5 years ago. Problems with it include it's
 non-native display, poor speed performance, and it was coded in a way that is
@@ -180,15 +217,21 @@ implement many of the remaining sections and features. If you manage to
 implement all of the features from the old timeline, you may look into
 implementing some new timeline/layer features which pique your interest. A
 strong background in Qt will be needed for this project.
+
 **Project Categories:** Optimization, Enhancement, Non-Functional
+
 **Skills required:** C++, Qt, UX skills (useful, not strictly necessary)
+
 **Co-Mentors:** Connor Deptuck (scribblemaniac), Matt Chang (chchwy)
 
 ### MyPaint Integration
 
 **Difficulty:** Hard
+
 **Project Core Objective:** Integrate, or make significant progress towards integrating MyPaint into Pencil2D.
+
 **Description:**
+
 Nearly two years ago, the developer François Téchené (username: feeef) created a
 branch of Pencil2D which worked to integrate the MyPaint library into Pencil2D.
 MyPaint is a painting-oriented image manipulation library which has support for
@@ -214,9 +257,13 @@ master, but to make as much progress towards this as you think is realistically
 possible within the 3-month time frame that you have. The MyPaint branch must
 get fixed and integrated at some point in our future, so any progress you can
 make will be beneficial to our project as a whole.
+
 **Project Categories:** New Feature, Bug Fixes
+
 **Skills required:** C++, mypaint experience (useful, but optional for application)
+
 **Mentor:** Matt Chang (chchwy)
+
 **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
 ## More Ideas
