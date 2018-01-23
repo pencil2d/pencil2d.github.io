@@ -8,13 +8,12 @@ comments: true
 {% include toc.html %}
 
 ## Getting Started
-This page contains a list of potential project ideas that we are keen to develop during GSoC 2018. If you would like to apply as a GSoC student, please follow these three steps to get started:
+This page contains a list of potential project ideas that we are keen to develop during GSoC 2018. If you would like to apply as a GSoC student, please follow these steps to get started:
 
-+ Read through this page and identify the project ideas you find interesting. Play around with our tools!
-+ Check out our 
++ Read through this page and identify the project ideas you find interesting. Play around with our tools and see if you like it!
 + Join us on our dedicated channels and talk to your potential mentors, so everyone can learn and benefit from these interactions:
-  + [Pencil2D's public Github repository]()
-  + [Pencil2D IRC Channel #pencil2D]()
+  + [Pencil2D's public Github repository](https://github.com/pencil2d/pencil)
+  + [Pencil2D IRC Channel #pencil2D](http://webchat.freenode.net/?channels=#pencil2d)
   + [Pencil2D Discord](https://discord.gg/4PCtGXq)
 
 ## Mentors
