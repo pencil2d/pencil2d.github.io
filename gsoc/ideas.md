@@ -270,7 +270,7 @@ make will be beneficial to our project as a whole.
 
 Are you interested in Pencil2D, but none of the idea above interested you? If
 this is the case, fear not! We have many, many more things you can work on. The
-current best place to find these things is on our [Feature Request Roadmap](https://github.com/pencil2d/pencil/issues/800)
+current best place to find these things is on our [Feature Request Roadmap](https://github.com/pencil2d/pencil/issues/540)
 which is a compilation of nearly all of the features we are considering adding
 to Pencil2D. Our [Priority spreadsheet](https://docs.google.com/spreadsheets/d/1c2GOMLolfCu6qpwxZ-ZLcb_VIZUeeJd0P-PU8WzJZc4/edit?usp=sharing)
 provides a more short-term view of what we plan on working on. Also browsing our
