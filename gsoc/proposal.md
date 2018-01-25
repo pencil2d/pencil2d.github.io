@@ -16,17 +16,18 @@ comments: true
 }
 </style>
 
-## Requirements
+# Requirements
+
 Here are a couple requirements for all people submitting proposals, please
 review them carefully to make sure you fulfill all of the criteria:
 
 - You must [join our Discord server](https://discord.gg/8FxdV2g) and introduce
-yourself on the #gsoc-2018 channel. We use Discord as one of the primary forms
+yourself on the `#gsoc-2018` channel. We use Discord as one of the primary forms
 of communication among developers (as well as Github), so it is the best place
 to talk about your proposal and get to know the developers. Some of the other
 channels are dedicated to the community where you can find and interact with
 many of the Pencil2D users.
-- You must have a fairly good grasp of C++. All of our code is written in C++
+- You must have a fairly good grasp of **C++**. All of our code is written in C++
 and there is simply not enough time to learn the language from scratch and
 program your project. If you do not know how to program in C++, or are not very
 good at it, but think you can learn the language quickly, then please make note
@@ -38,25 +39,26 @@ information.
 Additionally, there are some skills that we do not require for our submissions,
 but are very beneficial to have. If you have any of these skills, please say so
 in your proposal:
-- Git. Git is the version control system which we, and the majority of open
+- **Git.** Git is the version control system which we, and the majority of open
 source software use to manage our code. You will need to know the basics of
 using Git to contribute to our project, however if you are not yet familiar with
 it then be prepared to learn it during the Community Bonding period.
-- Qt. Pencil2D is built on top of the Qt5 framework, so experience with this is
+- **Qt.** Pencil2D is built on top of the Qt5 framework, so experience with this is
 a big bonus, and may even be necessary if your proposal requires significant
 changes to the GUI.
-- Animating. Experience with making animations, either in Pencil2D or in
+- **Animating.** Experience with making animations, either in Pencil2D or in
 professional software is very useful. Understanding the possible workflows of
 our users helps with designing features that provide a positive user experience.
 This is more important for some issues, such as x-sheets, where understanding
 how the feature is used in other environments is key to implementing it in a way
 which is intuitive and useful to animators of all experience levels.
-- FFmpeg/libavcodec or other video processing libraries. If your proposal is at
+- **FFmpeg/libavcodec or other video processing libraries.** If your proposal is at
 all related to import/export, having experience with the relevant libraries is
 obviously useful. We currently use FFMpeg for video export, but we have a new
 exporter in development which will support other backends.
 
-## The Idea
+# The Idea
+
 The primary purpose of any proposal is to submit the idea that you would like to
 work on. Choosing the right idea is something only you can do, as it should
 reflect your unique skillset and interests. We have compiled
@@ -77,14 +79,17 @@ Above all, the idea you propose should be something you are interested in
 working on and that you believe you are capable of completing within the 3 month
 timeline of the Google Summer of Code program.
 
-## Proposal Template
+# Proposal Template
+
 Here is a proposal template that we have developed. All applications should have
 at least all of these sections filled out. Feel free to copy this this template
 to use as a starting point for your application.
 
 **The Template:**
 <hr/>
+
 ### About Me
+
 Introduce yourself here. Include all the basics and your background.
 Specifically include:
 - Any relevant experience you have (especially with C++). See the Requirements
@@ -112,6 +117,7 @@ Feel free to add any other information here that you think we might be
 interested in, such as your hobbies or what you are going to school for.
 
 ### The Idea
+
 This section is for everything relevant to what you are actually proposing. Here
 are the key points you should have:
 - What do you want to achieve? Provide a 1-2 sentence summary, and then get into
@@ -131,6 +137,7 @@ papers?
 - Have you worked on a similar project before? What did you learn from it?
 
 ### Works Cited
+
 If you used any sources, they must be cited. Use APA format if you can, but the
 important part is providing enough information to convey where you got all of
 your information from. If you are reading this text, then you probably need to
@@ -138,32 +145,34 @@ cite the page you got this template from.
 
 <hr/>
 
-## Improving Your Chances
+# Improving Your Chances
+
 In addition to following all of the guidelines above, here are a few things you
 can do to better the chances of your proposal being selected:
-- Interact with the community. We have a lively community of animators and
+
+- **Interact with the community.** We have a lively community of animators and
 artists who use our software, and more people are joining everyday. Interacting
 with the community on any of
 [our platforms](https://pencil2d.github.io/community/) is a great way to get to
 start getting involved with our project. Whoever is selected will have to do
 some of this anyway during the Community Bonding period, but it certainly helps
-to get a head start!
-- Contribute. Unlike some other GSoC organizations, we do not have a patch
+to get a head start! <br/><br/>
+- **Contribute.** Unlike some other GSoC organizations, we do not have a patch
 requirement. However, if you do make a pull request on our Github repository
 with a fix to one of
 [our many issues](https://github.com/pencil2d/pencil/issues) or some new
 feature, that shows that you already have a development environment set up and
 have explored at least some of our source code. This reflects very well on you
-and helps show us that you have the skills to see your proposal through.
-- Using Pencil2D. Many of our developers are not animators, but it's still
+and helps show us that you have the skills to see your proposal through. <br/><br/>
+- **Using Pencil2D.** Many of our developers are not animators, but it's still
 important that we understand how our application is used. It is highly
 recommended that you experiment with the program until you understand how it all
 works. Making a small little animation is a great way to do this, and posting
 the animation in our showcase channel on Discord is a good way to show off the
 work you've done. Don't worry if you don't think it is any good, it is a
 judgement-free zone. It is your familiarity with Pencil2D, not your art skills
-that we are interested in here.
-- Be creative. Any of the above points show initiative, but feel free to come up
+that we are interested in here. <br/><br/>
+- **Be creative.** Any of the above points show initiative, but feel free to come up
 with your own ways of showing what this project means to you. Yes we are hoping
 to have something useful done by the end of summer, but ultimately we are
 looking for lifelong contributors. Anything that shows your passion for our
