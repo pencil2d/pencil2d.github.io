@@ -60,9 +60,10 @@
     }
 }
 .toc ul {
-    margin-top:1.618em;
-    margin-bottom:1.618em;
-    border:1px solid #ddd;
+    margin:0 1em 1em 1em;
+    border-color:#ddd;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
     list-style-type: none;
     padding-left: 0;
 }
