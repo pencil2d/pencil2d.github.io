@@ -7,7 +7,8 @@ comments: true
 
 {% include toc.html %}
 
-## Getting Started
+# Getting Started
+
 This page contains a list of potential project ideas that we are keen to develop during GSoC 2018. If you would like to apply as a GSoC student, please follow these steps to get started:
 
 + Play around with our tools! Trying out Pencil2D should be a first step for everyone so that they know this project interesting and is right for them. Trying the program is useful for starting to understand all that we have done and all that we still have to do.
@@ -15,7 +16,7 @@ This page contains a list of potential project ideas that we are keen to develop
 + Join us on our dedicated GSoC channel on [Discord](https://discord.gg/8FxdV2g) and talk to your potential mentors, so we can get to know each other and you can meet our community.
 + Read through and follow our [Proposal Guidelines](proposal.html) to make your submission the best it can be!
 
-## Mentors
+# Mentors
 
 Pencil2D contributing mentors are working professionals that are suitable for various projects, and we're sure they will be able to provide you with the nurturing feedback you require for your proposal. Mentors for each project are selected based on their technical expertise and how it fits best a given project while taking into consideration the needs of each student. While you are assigned a specific mentor, you will find that many of the Pencil2D developers will be willing to give you feedback and help on the public development channels. For this reason, you are encouraged to use these channels for questions which developers other than your mentor will be able to answer for a potentially faster response.
 
@@ -26,16 +27,17 @@ Demonstrating your skills by contributing to an open source project like Pencil2
 
 When you've gotten a feel for our program and it's code, you should start discussing with the Pencil2D development community the project you'd like to do, and developing a specific project plan. We recommend discussing what you're thinking in #gsoc-2018 channel of our Discord server (see previous section), so it's easy to get quick feedback from whoever is online.
 
-## Project Ideas Overview
+# Project Ideas Overview
+
 For any of the proposed project you will need to research Pencil2D codebase, read GitHub issues to understand how the project has evolved, and talk with developers to put together a complete project proposal. It's also fine for you to come up with your own project ideas. The projects proposed below stem from key areas that we'd like to improve after taking into account our users and other developers' insights.
 
 To assist you in finding a great project to challenge your abilities, we list the skills that are required, but also try to emphasize where strong skills with particular tools are likely to be critical for any given project. While it is definitely possible to learn any of these skills and still finish the project, we must balance our desire to help you learn with a realistic understanding of what can be achieved in the limited time we have together. If you are truly passionate about a particular project, but do not have the required skills, please note this on your proposal, and take the initiative to learn the skills necessary on your own. Then let the developers know that your situation has changed and we will re-evaluate your submission.
 
-## GSoC 2018 Project Ideas
+# GSoC 2018 Project Ideas
 
 Without further ado, here are some of the ideas we have hand-picked which you may be interested in.
 
-### Preview Widget
+## I. Preview Widget
 
 **Difficulty:** Easy
 
@@ -54,15 +56,12 @@ This could be implemented as a QDialog, or perhaps even better as
 as QDockWidget, so it can be in it's own window, or attached to the side of the
 main window.
 
-**Project Category:** New Feature
+- **Project Category:** New Feature
+- **Skills required:** C++, Qt
+- **Mentor:** Matt Chang (chchwy)
+- **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, Qt
-
-**Mentor:** Matt Chang (chchwy)
-
-**Backup Mentor:** Connor Deptuck (scribblemaniac)
-
-### Shape Tool and Library
+## II. Shape Tool and Library
 
 **Difficulty:** Easy
 
@@ -83,13 +82,11 @@ bitmap and vector layers. The library should include the following shpaes (but
 is not limited to only these shapes): rectangles, circles, squares, n-gons, and
 stars.
 
-**Project Category:** New Feature
+- **Project Category:** New Feature
+- **Skills required:** C++, experience with vector graphics (very useful)
+- **Co-Mentors:** Matt Chang (chchwy), Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, experience with vector graphics (very useful)
-
-**Co-Mentors:** Matt Chang (chchwy), Connor Deptuck (scribblemaniac)
-
-### Lasso Tool
+## III. Lasso Tool
 
 **Difficulty:** Intermediate
 
@@ -121,15 +118,12 @@ determine how this is done, you will need to do some research into
 implementations of this feature in other open source project, or find relevant
 research papers.
 
-**Project Category:** New Feature
+- **Project Category:** New Feature
+- **Skills required:** C++, computer vision experience (extension only)
+- **Mentor:** Matt Chang (chchwy)
+- **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, computer vision experience (extension only)
-
-**Mentor:** Matt Chang (chchwy)
-
-**Backup Mentor:** Connor Deptuck (scribblemaniac)
-
-### Sound Scrubbing
+## IV. Sound Scrubbing
 
 **Difficulty:** Intermediate
 
@@ -150,15 +144,12 @@ what part of the sound layers should play in response to specific cursor move
 events. There also should be some option to enables/disable this feature since
 some may find it annoying or not useful.
 
-**Project Category:** Enhancement
+- **Project Category:** Enhancement
+- **Skills required:** C++, Qt (useful, but optional for application), Jack Audio (not required, and not currently in use, but may be worth investigating to implement alongside this project)
+- **Mentor:** Matt Chang (chchwy)
+- **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, Qt (useful, but optional for application), Jack Audio (not required, and not currently in use, but may be worth investigating to implement alongside this project)
-
-**Mentor:** Matt Chang (chchwy)
-
-**Backup Mentor:** Connor Deptuck (scribblemaniac)
-
-### Improve Free Transform Tools
+## V. Improve Free Transform Tools
 
 **Difficulty:** Intermediate
 
@@ -183,15 +174,12 @@ only the bitmap layers if it proves too difficult to perform properly on vector
 paths, however the other transformation should work on both bitmap and vector
 selections.
 
-**Project Category:** Enhancement
+- **Project Category:** Enhancement
+- **Skills required:** C++, Qt
+- **Mentor:** Matt Chang (chchwy)
+- **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, Qt
-
-**Mentor:** Matt Chang (chchwy)
-
-**Backup Mentor:** Connor Deptuck (scribblemaniac)
-
-### Timeline Rewrite
+## VI. Timeline Rewrite
 
 **Difficulty:** Hard
 
@@ -218,13 +206,11 @@ implement all of the features from the old timeline, you may look into
 implementing some new timeline/layer features which pique your interest. A
 strong background in Qt will be needed for this project.
 
-**Project Categories:** Optimization, Enhancement, Non-Functional
+- **Project Categories:** Optimization, Enhancement, Non-Functional
+- **Skills required:** C++, Qt, UX skills (useful, not strictly necessary)
+- **Co-Mentors:** Connor Deptuck (scribblemaniac), Matt Chang (chchwy)
 
-**Skills required:** C++, Qt, UX skills (useful, not strictly necessary)
-
-**Co-Mentors:** Connor Deptuck (scribblemaniac), Matt Chang (chchwy)
-
-### MyPaint Integration
+## VII. MyPaint Integration
 
 **Difficulty:** Hard
 
@@ -258,15 +244,12 @@ possible within the 3-month time frame that you have. The MyPaint branch must
 get fixed and integrated at some point in our future, so any progress you can
 make will be beneficial to our project as a whole.
 
-**Project Categories:** New Feature, Bug Fixes
+- **Project Categories:** New Feature, Bug Fixes
+- **Skills required:** C++, mypaint experience (useful, but optional for application)
+- **Mentor:** Matt Chang (chchwy)
+- **Backup Mentor:** Connor Deptuck (scribblemaniac)
 
-**Skills required:** C++, mypaint experience (useful, but optional for application)
-
-**Mentor:** Matt Chang (chchwy)
-
-**Backup Mentor:** Connor Deptuck (scribblemaniac)
-
-## More Ideas
+# More Ideas
 
 Are you interested in Pencil2D, but none of the idea above interested you? If
 this is the case, fear not! We have many, many more things you can work on. The
@@ -277,6 +260,6 @@ provides a more short-term view of what we plan on working on. Also browsing our
 [Github issues](https://github.com/pencil2d/pencil/issues) can be a good way to
 get ideas for new features or find things to fix or improve.
 
-## Conclusion
+# Conclusion
 
 We hope to hear from you! And on behalf of everyone in the Pencil2D team we thank you for being interested in this wonderful project. We're always happy to help volunteers get started contributing in our open source project!
