@@ -9,13 +9,20 @@ Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, commu
 
 ## You can help improve Pencil2D, too!
 
-There are lots of ways to contribute to Pencil2D project: coding, testing, improving translations or contributing to the documentation.
+Pencil2D is developed by passionate people on their spare time.
+If you like this software, and you want it to get better, you can help!
+
+- Programmers, we need your skills!
+- Writers, you can help improve the documentation.
+- Artists, show us what you've done with Pencil2D!
+- Everyone can help by testing the software, giving feedback and by spreading the word.
+
 
 ## Report a bug
 
-One of the easiest and most effective ways to improve Pencil2D is **reporting bugs**.
+One of the easiest and most effective ways to improve Pencil2D is **Reporting Bugs**.
 
-You can report bugs and make feature requests in our **[Issue Tracker][3]**. The [Pencil2D Issue Tracker][3] contains a list of pending tasks across a variety of topics, information, and progress of tasks. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
+You can do that via our **[Issue Tracker][3]**. The [Issue Tracker][3] is a place with a list of tasks across all aspect of Pencil2D, includes bugs, feature requests and progress of tasks. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
 
 ## Translate Pencil2D
 
