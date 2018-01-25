@@ -219,11 +219,14 @@ strong background in Qt will be needed for this project.
 **Description:**
 
 Nearly two years ago, the developer François Téchené (username: feeef) created a
-branch of Pencil2D which worked to integrate the MyPaint library into Pencil2D.
+branch of Pencil2D which worked to integrate the [MyPaint library]((https://github.com/mypaint/libmypaint)) into Pencil2D.
+
 MyPaint is a painting-oriented image manipulation library which has support for
 a wide variety of brushes and hardware (drawing tablets particularly). It has
 become a standard in the open source community with many drawing program using
-it or at least providing the option to use it. Integrating MyPaint is a high
+it or at least providing the option to use it. 
+
+Integrating MyPaint is a high
 priority task for us as enables better compatibility with a variety of hardware,
 provides the brush tools that digital artists are used to, and enables higher
 quality artwork to be produced in-app, which is all very much inline with our
@@ -237,8 +240,9 @@ that need to be addressed before it can be merged into our master code. These
 issues include: the vector engine, zooming artifacts, rotating the canvas, and
 perhaps more bugs which we have not found yet. In addition to the bugs, this
 branch is very old now, and will require significant work just to merge it with
-the hundreds of commits that have occurred since it was forked. Our expectation
-is not necessarily for you to fix everything and integrate the changes into
+the hundreds of commits that have occurred since it was forked.
+
+Our expectation is not necessarily for you to fix everything and integrate the changes into
 master, but to make as much progress towards this as you think is realistically
 possible within the 3-month time frame that you have. The MyPaint branch must
 get fixed and integrated at some point in our future, so any progress you can
