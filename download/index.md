@@ -101,10 +101,10 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
 **msvcp140.dll is missing**
 
-Please download and install [Visual C++ Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=48145) from Microsoft website. `vc_redist.x64.exe` is for Pencil2D 64bit and `vc_redist.x86.exe` is for Pencil2D 32bit.
+- Please download and install [Visual C++ Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=48145) from Microsoft website. `vc_redist.x64.exe` is for Pencil2D 64bit and `vc_redist.x86.exe` is for Pencil2D 32bit.
 
 **api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
-Please follow the instructions of this [page](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
+- Please follow the instructions of this [Microsoft Help Page](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
 
 
