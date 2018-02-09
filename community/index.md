@@ -7,8 +7,8 @@ comments: true
 
 <div class="tiles" style="text-align:center">
   <div class="community-tile">
-    <a href="https://www.pencil2d.org/?post_type=forum" target="_blank"><img src="/images/community-forum.jpg"></a>
-    <a href="https://www.pencil2d.org/?post_type=forum" target="_blank"><h2 class="post-title">Forum</h2></a>
+    <a href="https://discuss.pencil2d.org/" target="_blank"><img src="/images/community-forum.jpg"></a>
+    <a href="https://discuss.pencil2d.org/" target="_blank"><h2 class="post-title">Forum</h2></a>
     Community forum for all Pencil2D animators
   </div>
 
