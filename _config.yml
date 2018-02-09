@@ -13,7 +13,8 @@ google_analytics: UA-5266256-7
 cayman-blog:
   date_format: "%-d %B, %Y"
 
-#plugins:
+plugins:
+  - jekyll-redirect-from
 #  - jekyll-feed
 
 theme: # leave it empty
