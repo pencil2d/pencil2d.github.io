@@ -18,6 +18,7 @@ tagline: Welcome to Pencil2D Tutorials Page!
 | [Spanish Pencil2D Video Tutorials](#pclspa)    | Spanish            |
 | [Portuguese Pencil2D Video Tutorials](#pclpor) | Portuguese         |
 
+<br>
 
 # <a name="griffy"></a> Pencil2D Tutorial: The Basics by Griffy
 
@@ -25,9 +26,13 @@ tagline: Welcome to Pencil2D Tutorials Page!
 
 {% include youtubePlayer.html vid="CxtuzEopW94" %}
 
+<hr>
+
 # <a name="rotate"></a> How to Rotate Image
 
 {% include youtubePlayer.html vid="8AzdWEDPBG0" %}
+
+<hr>
 
 # <a name="ca"></a> How to Scroll Background in Camera layer
 
