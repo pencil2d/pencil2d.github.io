@@ -7,6 +7,8 @@
     <img src="/images/pencil_icon.png" style="float:left; width:54px; margin-right: 10px;">
     {% if page.layout != 'home' %}
       <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {% else %}
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {% endif %}
 
     {% if page_paths %}
