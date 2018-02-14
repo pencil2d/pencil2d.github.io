@@ -5,7 +5,7 @@ tagline: Frequently Asked Questions
 comments: true
 ---
 
-> **NOTE:** Since people are asking the same things over and over, we provide a much needed FAQ, please bear in mind we are working hard on solving stuff. If you'd like to suggest other "frequently asked questions" please leave comments. Note that you'll have to login into a DISQUS account to comment in this page.
+> **NOTE:** Since people are asking the same things over and over, we provide a much needed FAQ, please bear in mind we are working hard on solving stuff. If you'd like to suggest other "frequently asked questions" please leave comments.
 
 {% include toc.html %}
 
