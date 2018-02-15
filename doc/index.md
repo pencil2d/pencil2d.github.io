@@ -2,6 +2,7 @@
 layout: page
 title: User's Guide
 tagline: Getting Started with Pencil2D
+redirect_from: /documentation/
 ---
 
 Welcome to the Pencil2D User's Manual Page!
