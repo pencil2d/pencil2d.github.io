@@ -30,6 +30,14 @@
     font-size: 0.9em;
 }
 
+.doc-tile {
+    max-width:68em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1.618em;
+    padding: 2em 0.5em 2em 0.5em;
+}
+
 @media screen and (min-width: 30em) and (max-width: 42em) {
     .tile {
         float: left;
@@ -50,6 +58,12 @@
         margin: 1%;
         box-sizing: border-box;
         font-size: 0.9em;
+    }
+    .doc-tile {
+        float: left;
+        width: 45%;
+        margin-right:5%;
+        border: solid 1px #999;
     }
 }
 
@@ -73,6 +87,12 @@
         margin: 1%;
         box-sizing: border-box;
         font-size: 0.9em;
+    }
+    .doc-tile {
+        float: left;
+        width: 31%;
+        margin-right:2%;
+        border: solid 1px #ccc;
     }
 }
 
@@ -170,6 +190,7 @@
     margin-top: 1em;
 }
 
+.doc-title { padding-top: 1em; }
 
 .download-size { color: #aaa; }
 path{fill:#00438c;}

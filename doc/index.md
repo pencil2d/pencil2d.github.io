@@ -3,22 +3,37 @@ layout: page
 title: User's Guide
 tagline: Getting Started with Pencil2D
 redirect_from: /documentation/
----
+tutorial_link: "/doc/tutorials"
+faq_link: "/doc/faq"
+user_manual_link: "/doc/user_manual"---
 
-Welcome to the Pencil2D User's Manual Page!
+<div><!-- --></div>
 
-# [Video Tutorials][0]
+<div class="tiles" style="text-align:center">
 
-Check out a series of video that help you learn how to use Pencil2D.
+  <div class="doc-tile">
+    <a href="{{ page.tutorial_link }}" >
+      {% include iconmonstr-video-2.svg %}
+    </a>
+    <a href="{{ page.tutorial_link }}" ><h2 class="doc-title">Tutorials</h2></a>
+    A series of video tutorials for beginners
+  </div>
 
-# [FAQ][1]
+  <div class="doc-tile">
+    <a href="{{ page.faq_link }}">
+      {% include iconmonstr-help-4.svg %}
+    </a>
+    <a href="{{ page.faq_link }}"><h2 class="doc-title">FAQ</h2></a>
+    Frequently asked questions <br/><br/>
+  </div>
 
-"Frequently asked questions"
+  <div class="doc-tile">
+    <a href="{{ page.user_manual_link }}">
+      {% include iconmonstr-book-11.svg %}
+    </a>
+    <a href="{{ page.user_manual_link }}"><h2 class="doc-title">User's Manual</h2></a>
+    Walk you through the basics of using Pencil2D
+  </div>
 
-# [User's Guide][2]
-
-Comming soon..
-
-[0]: /doc/tutorials "Video Tutorials"
-[1]: /doc/faq "FAQ"
-[2]: /doc/manual
+</div>
+<div style="clear:both"></div>
