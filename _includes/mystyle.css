@@ -20,6 +20,16 @@
     padding-bottom: 1em;
 }
 
+.download-tile {
+    float: left;
+    width: 98%;
+    border: solid 1px #ccc;
+    padding: 1em 0.5em 0.5em 0.5em;
+    margin: 1%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
 @media screen and (min-width: 30em) and (max-width: 42em) {
     .tile {
         float: left;
@@ -31,6 +41,15 @@
         width: 45%;
         margin-right:5%;
         border: solid 1px #999;
+    }
+    .download-tile {
+        float: left;
+        width: 31%;
+        border: solid 1px #ccc;
+        padding: 2em 0.5em 2em 0.5em;
+        margin: 1%;
+        box-sizing: border-box;
+        font-size: 0.9em;
     }
 }
 
@@ -45,6 +64,15 @@
         width: 31%;
         margin-right:2%;
         border: solid 1px #ccc;
+    }
+    .download-tile {
+        float: left;
+        width: 18%;
+        border: solid 1px ccc;
+        padding: 2em 0.5em 2em 0.5em;
+        margin: 1%;
+        box-sizing: border-box;
+        font-size: 0.9em;
     }
 }
 
@@ -141,16 +169,7 @@
     text-align: center;
     margin-top: 1em;
 }
-.download-tile {
-    width: 18%;
-    min-width: 120px;
-    float: left;
-    border: solid 1px #ccc;
-    padding: 2em 0.5em 2em 0.5em;
-    margin: 1%;
-    box-sizing: border-box;
-    font-size: 0.9em;
-}
+
 
 .download-size { color: #aaa; }
 path{fill:#00438c;}
