@@ -5,7 +5,8 @@ tagline: Getting Started with Pencil2D
 redirect_from: /documentation/
 tutorial_link: "/doc/tutorials"
 faq_link: "/doc/faq"
-user_manual_link: "/doc/user_manual"---
+user_manual_link: "/doc/user_manual"
+---
 
 <div><!-- --></div>
 
