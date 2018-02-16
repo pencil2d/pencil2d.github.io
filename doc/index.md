@@ -8,7 +8,7 @@ faq_link: "/doc/faq"
 user_manual_link: "/doc/user_manual"
 ---
 
-> We are looking for community's support to help improve the documentations. Pencil2D cannot grow and attract more users without you. Contributing to the manual is less technical, so if you know a little about [markdown][0], feel free to [join us](https://discord.gg/8FxdV2g)!
+> We are looking for community's support to help improve the documentation. Pencil2D cannot grow and attract more users without you. Contributing to the manual is less technical, so if you know a little about [markdown][0], feel free to [join us](https://discord.gg/8FxdV2g)!
 
 [0]: https://daringfireball.net/projects/markdown/syntax
 
