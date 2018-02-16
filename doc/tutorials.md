@@ -2,7 +2,7 @@
 layout: page
 title: Tutorials
 comments: true
-tagline: Welcome to Pencil2D Tutorials Page!
+tagline: Learning how to animate in Pencil2D!
 ---
 
 > If you have a specific tutorial you'd like to be made, let us know in the comments so we can review it.
