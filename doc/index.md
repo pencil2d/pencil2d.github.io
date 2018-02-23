@@ -3,9 +3,9 @@ layout: page
 title: User's Guide
 tagline: Getting Started with Pencil2D
 redirect_from: /documentation/
-tutorial_link: "/doc/tutorials"
-faq_link: "/doc/faq"
-user_manual_link: "/doc/user_manual"
+tutorial_link: "/doc/tutorials.html"
+faq_link: "/doc/faq.html"
+user_manual_link: "/doc/user_manual.html"
 ---
 
 > We are looking for community's support to help improve the documentation. Pencil2D cannot grow and attract more users without you. Contributing to the manual is less technical, so if you know a little about [markdown][0], feel free to [join us](https://discord.gg/8FxdV2g)!
