@@ -7,6 +7,8 @@ url: "https://pencil2d.github.io" # change this to the base hostname & protocol 
 
 permalink: /:year/:month/:title.html
 
+# exclude: [ "/forums" ]
+
 google_analytics: UA-5266256-7
 # cayman-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
