@@ -9,6 +9,10 @@ comments: true
 
 {% include toc.html %}
 
+## The program can't start because some .dll file is missing!
+
+Depending on the name of the missing file, this error can occur for different reasons. Please see [the Troubleshooting section of our download page](/download/#troubleshooting) for some of the most common cases. If your particular case isn't solved there, please [let us know](/community/).
+
 ## Where's the [Insert OS here] version? Why isn't my [OS] version updated?
 
 At the time of writing, Pencil2D can run on:

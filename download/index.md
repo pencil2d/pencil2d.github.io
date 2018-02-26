@@ -12,6 +12,11 @@ Last Updated on 1 December 2017. See
 <a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6.
 </blockquote>
 
+<blockquote style="color:#898989;font-size:0.8em">
+If you have trouble running the program, please see the
+<a href="#troubleshooting">Troubleshooting section</a> below.
+</blockquote>
+
 <div class="download-tiles">
 <div></div>
 <div class="download-tile">
@@ -92,7 +97,7 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Qt5Widgets.dll was not found**
 
@@ -101,10 +106,8 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
 **msvcp140.dll is missing**
 
-- Please install `vc_redist.x64.exe` or `vc_redist.x86.exe`, you can find it in the same folder of Pencil2D.exe after you extract the zip.
+- Please install `vcredist_x64.exe` or `vcredist_x86.exe`, you can find it in the same folder of Pencil2D.exe after you extract the zip.
 
 **api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
 - Please follow the instructions of this [Microsoft Help Page](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
-
-
