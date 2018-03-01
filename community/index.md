@@ -2,7 +2,7 @@
 layout: page
 title: Community
 tagline: Communities for everyone to share their work
-comments: true
+comments: false
 forum_link: https://discuss.pencil2d.org/
 fb_link: https://www.facebook.com/groups/709024775972087/
 discord_link: https://discord.gg/8FxdV2g
