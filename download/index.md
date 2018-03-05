@@ -9,10 +9,7 @@ comments: true
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 1 December 2017. See  
-<a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6.
-</blockquote>
-
-<blockquote style="color:#898989;font-size:0.8em">
+<a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6.<br>
 If you have trouble running the program, please see the
 <a href="#troubleshooting">Troubleshooting section</a> below.
 </blockquote>
