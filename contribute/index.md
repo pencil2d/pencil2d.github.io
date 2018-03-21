@@ -5,24 +5,18 @@ tagline: "Pencil2D is an open source project, developed 100% by volunteers."
 comments: true
 ---
 
-Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, community-driven free and open source project. All the code, documents and website are contributed by our community of volunteers.
+Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, community-driven free and open source project.
 
 ## You can help improve Pencil2D, too!
 
 Pencil2D is developed by passionate people on their spare time.
 If you like this software, and you want it to get better, you can help!
 
-- Programmers, we need your skills!
-- Writers, you can help improve the documentation.
-- Artists, show us what you've done with Pencil2D!
-- Everyone can help by testing the software, giving feedback and by spreading the word.
-
-
 ## Report a bug
 
-One of the easiest and most effective ways to improve Pencil2D is **Reporting Bugs**.
+**Reporting Bugs** is one of the easiest and most effective ways to improve Pencil2D.
 
-You can do that via our **[Issue Tracker][3]**. The [Issue Tracker][3] is a place with a list of tasks across all aspect of Pencil2D, includes bugs, feature requests and progress of tasks. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
+Please report the bugs you found to **[Pencil2D Issue Tracker][3]**. It is a place with a list of tasks across all aspect of Pencil2D, includes bugs, feature requests and progress of tasks. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
 
 ## Translate Pencil2D
 
@@ -31,9 +25,9 @@ Join us on **[Transifex][4]** to translate Pencil2D to your language!
 
 ## Contributing code
 
-Do you like to code? Pencil2D is completely open source on [Github][0]. Get started quickly with our [development document][1] and start building and fixing bugs in just a few steps. 
+Do you like programming? Get started quickly with our [development document][1] and start building and fixing bugs in just a few steps. 
 
-You have to use **C++** and **Qt** to work on Pencil2D. If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
+Pencil2D is developed in **C++** and **Qt Framework**. If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
 
 
 [0]: https://github.com/pencil2d/pencil
