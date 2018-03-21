@@ -6,7 +6,7 @@ comments: false
 forum_link: https://discuss.pencil2d.org/
 fb_link: https://www.facebook.com/groups/709024775972087/
 discord_link: https://discord.gg/8FxdV2g
-youtube_linK: https://www.youtube.com/results?sp=CAJQFA%253D%253D&search_query=Pencil2D
+youtube_link: https://www.youtube.com/channel/UCexMjl4rq8OyzAc7C03uKCQ
 google_plus_link: https://plus.google.com/communities/101311036131376070915
 tumblr_link: https://www.tumblr.com/tagged/pencil2d
 ---
