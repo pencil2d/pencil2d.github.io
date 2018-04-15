@@ -41,14 +41,3 @@ github:
 bitbucket:
   url: "https://bitbucket.org/chchwy/pencil2d"
 
-download:
-  win64: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-win64-0.6.0-ffmpeg341.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-win32-0.6.0.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-mac-0.6.0.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-linux-amd64-0.6.0.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-linux-i386-0.6.0.AppImage
-  win64-size: 49.6MB
-  win32-size: 43.7MB
-  mac-size: 41.7MB
-  linux64-size: 37.6MB
-  linux32-size: 58.3MB

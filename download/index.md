@@ -3,13 +3,25 @@ layout: page
 title: Download
 tagline: Let's start animating immediately! 
 comments: true
+download:
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.1/pencil2d-win64-0.6.1.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.1/pencil2d-win32-0.6.1.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.1/pencil2d-mac-0.6.1.zip
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.1/pencil2d-linux-amd64-0.6.1.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-linux-i386-0.6.0.AppImage
+  win64-size: 49.1MB
+  win32-size: 35.4MB
+  mac-size: 41.1MB
+  linux64-size: 37.8MB
+  linux32-size: 58.3MB
 ---
 
-## Current Stable Version (v0.6)
+## Current Stable Version (v0.6.1)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 1 December 2017. See  
-<a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6.<br>
+Last Updated on 15 April 2018. 
+<!-- See <a href="/2017/12/introducing-pencil2d-0.6.html">What's New</a> in v0.6 -->
+<br>
 If you have trouble running the program, please see the
 <a href="#troubleshooting">Troubleshooting section</a> below.
 </blockquote>
@@ -17,48 +29,48 @@ If you have trouble running the program, please see the
 <div class="download-tiles">
 <div></div>
 <div class="download-tile">
-  <a href="{{ site.download.win64 }}">
+  <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %} 
   </a><br>
   Windows 64 bit <br>
-  <a href="{{ site.download.win64 }}">Download</a>
-  <div class="download-size">{{ site.download.win64-size }}</div>
+  <a href="{{ page.download.win64 }}">Download</a>
+  <div class="download-size">{{ page.download.win64-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="{{ site.download.win32 }}">
+  <a href="{{ page.download.win32 }}">
     {% include win_icon.svg %}
   </a><br>
   Windows 32 bit <br>
-  <a href="{{ site.download.win32 }}">Download</a>
-  <div class="download-size">{{ site.download.win32-size }}</div>
+  <a href="{{ page.download.win32 }}">Download</a>
+  <div class="download-size">{{ page.download.win32-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="{{ site.download.mac }}">
+  <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
   </a><br>
   Mac <br>
-  <a href="{{ site.download.mac }}">Download</a>
-  <div class="download-size">{{ site.download.mac-size }}</div>
+  <a href="{{ page.download.mac }}">Download</a>
+  <div class="download-size">{{ page.download.mac-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="{{ site.download.linux64 }}">
+  <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
   Linux 64 bit<br>
-  <a href="{{ site.download.linux64 }}">Download</a>
-  <div class="download-size">{{ site.download.linux64-size }}</div>
+  <a href="{{ page.download.linux64 }}">Download</a>
+  <div class="download-size">{{ page.download.linux64-size }}</div>
 </div>
 
 <div class="download-tile">
-  <a href="{{ site.download.linux32 }}">
+  <a href="{{ page.download.linux32 }}">
     {% include linux_icon.svg %}
   </a><br>
   Linux 32 bit<br>
-  <a href="{{ site.download.linux32 }}">Download</a>
-  <div class="download-size">{{ site.download.linux32-size }}</div>
+  <a href="{{ page.download.linux32 }}">Download</a>
+  <div class="download-size">{{ page.download.linux32-size }}</div>
 </div>
 
 </div>
