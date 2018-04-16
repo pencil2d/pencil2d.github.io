@@ -57,6 +57,10 @@ In this new version, Pencil2D takes much less time to save/load projects. On the
 
 Also we hope this change can make the "auto-save" feature less annoying and doesn't let it interrupt you from animating too long.
 
+### Quick Reference Guide
+
+Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's a handy pocket-sized guide that contains the instructions for all bacis functionalities. (Made By Radhika sundararaman)
+
 ### Other Improvements
 
 * Can turn each sound layer on/off separately by switching visibility.
