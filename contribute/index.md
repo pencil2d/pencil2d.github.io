@@ -16,18 +16,18 @@ If you like this software, and you want it to get better, you can help!
 
 **Reporting Bugs** is one of the easiest and most effective ways to improve Pencil2D.
 
-Please report the bugs you found to **[Pencil2D Issue Tracker][3]**. It is a place with a list of tasks across all aspect of Pencil2D, includes bugs, feature requests and progress of tasks. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
+Please report the bug to **[Pencil2D Issue Tracker][3]**. The issue tracker is the place where our developers organize tasks, bugs, and feature requests. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
 
 ## Translate Pencil2D
 
 Pencil2D has been translated into more than 10 languages by many generous volunteer translators from all over the world.
-Join us on **[Transifex][4]** to translate Pencil2D to your language!
+Join us on **[Transifex][4]** to translate Pencil2D to your language or improve the existing translations!
 
 ## Contributing code
 
-Do you like programming? Get started quickly with our [development document][1] and start building and fixing bugs in just a few steps. 
+Do you like programming? Pencil2D is developed in **C++** and **Qt Framework**. Get started with our [development document][1] and start building and fixing bugs in just a few steps.
 
-Pencil2D is developed in **C++** and **Qt Framework**. If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
+If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
 
 
 [0]: https://github.com/pencil2d/pencil
