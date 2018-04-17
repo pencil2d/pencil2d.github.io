@@ -55,7 +55,7 @@ As a result, a 1321-frame project which used **1.8GB RAM** in v0.6 now never tak
 
 ## Faster Project Load/Save
 
-In this new version, Pencil2D takes much less time to save/load projects. On the loading side, Pencil2D loads only a few key frames at beginning so you can start animating without waiting for all frames to load at once. On the saving side, Pencil2D saves edited frames only and skip those unchanged frames. It will make a big difference when you are working on a large project with hundreds of frames.
+In this new version, Pencil2D takes much less time to save/load projects. On the loading side, Pencil2D loads only a few key frames at beginning so you can start animating without waiting for all frames to load at once. On the saving side, Pencil2D saves edited frames only and skips those unchanged frames. It will make a big difference when you are working on a large project with hundreds of frames.
 
 Also we hope this change can make the "auto-save" feature less annoying and doesn't let it interrupt you from animating too long.
 
