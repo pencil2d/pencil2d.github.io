@@ -8,12 +8,12 @@ download:
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-win32-0.6.1.1.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-mac-0.6.1.1.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-linux-amd64-0.6.1.1.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/0.6.0/pencil2d-linux-i386-0.6.0.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-linux-i386-0.6.1.1.AppImage
   win64-size: 49.1MB
   win32-size: 35.4MB
   mac-size: 41.1MB
   linux64-size: 37.8MB
-  linux32-size: 58.3MB
+  linux32-size: 58.9MB
 ---
 
 ## Current Stable Version (v0.6.1)
