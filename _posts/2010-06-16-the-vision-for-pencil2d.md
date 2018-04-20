@@ -21,7 +21,9 @@ Another fundamental of traditional animation is to be able to organise separate 
 
 ![v0.4 screenshot](/images/pascal-vision-d-001.jpg)
 
-It was a huge jump from the previous versions. A lot of the original software was rewritten at this stage. Although incomplete, buggy, and still very unsatisfactory at many levels as an animation programme, it had the capacity to produce decent animations. At that time, Patrick told me that he was pleased to follow these developments but did not have the time or capacity to get further involved in them, so he kindly agreed to grant me administration of the project. This was perfect timing as I had already invested a lot of efforts (in particular on the vector side) and started developing a personal vision of what the application should be in its final version. I considered creating a new project with a new name, but failing to find anything better than “Pencil”, I kept the existing sourceforge project. I supplemented it with a newly designed website, a forum, and later and wiki to get more feedback and public attention.
+It was a huge jump from the previous versions. A lot of the original software was rewritten at this stage. Although incomplete, buggy, and still very unsatisfactory at many levels as an animation programme, it had the capacity to produce decent animations.
+
+At that time, Patrick told me that he was pleased to follow these developments but did not have the time or capacity to get further involved in them, so he kindly agreed to grant me administration of the project. This was perfect timing as I had already invested a lot of efforts (in particular on the vector side) and started developing a personal vision of what the application should be in its final version. I considered creating a new project with a new name, but failing to find anything better than “Pencil”, I kept the existing sourceforge project. I supplemented it with a newly designed website, a forum, and later and wiki to get more feedback and public attention.
 
 From then, I brought many refinements (some of them being quite unknown such as curved gradients) and got some occasional help from people such as Benjamin Raverdy, and Mark Schmelzenbach, although I remained mostly the only developer. The latest version v0.4.4 to date (released in early 2008) looks like this:
 
@@ -122,5 +124,45 @@ The idea behind the different usage environments is to display (or possibly alte
 For example, the current interface of Pencil is dedicated to drawing animations. It has the following elements : A layer/timeline palette displaying both layers and their associated tracks, a colour palette, a tool palette, a parameter/option palette, and a display palette. A menu bar (or a function bar with buttons when using a tablet) contains the basic file/edit functions (open, save, import, export, undo, redo) and some more specific functions.
 
 ![Pencil2D UI](/images/pascal-vision-d-008.jpg)
+
+Switching to a purely drawing/picture editing usage will make the timeline irrelevant. However, it will still be necessarily to access layers. The interface would switch to something like this:
+
+![Pencil2D UI](/images/pascal-vision-d-009.jpg)
+
+Switching to a purely video editing usage will make the drawing tools irrelevant. The interface would switch to something like this:
+
+![Pencil2D UI](/images/pascal-vision-d-010.jpg)
+
+Switching to a note-taking environment might look like this:
+
+![Pencil2D UI](/images/pascal-vision-d-011.jpg)
+
+This versatility is quite interesting, although it raises many questions.
+
+Obviously the same kind of information cannot always be displayed in different environments (an animation is not quite a note which is not quite a picture). This would call for creating variants of the Pencil format for each usage, which would effectively correspond to having a suite of different applications just like OpenOffice. Another, possibly more fruitful approach is to allow the Pencil document format to have a section for each kind of environment. For example, the same file could contain a section of animation and a section of notes of handwritten ideas, instructions, or sketches which could be copied and pasted in the animation section. Of course, if a file contains only one section, it would open by default in the corresponding environment. In the case of creating a new document or opening a documents with several sections, a splash screen would ask the user which environment to load first.
+
+Can this be done in practice? The danger of this approach is that Pencil become an overweight application. While it might be acceptable to wait several seconds to load a full-featured animation programme, it might be less so in the case of a quick image-editing programme or note-taking application. One possible solution would be a light-weight core that could dynamically load only those modules which are required for a given usage. The effectiveness of this approach should be investigated.
+
+Other practical questions arise about the interface. For example, the onion-layer buttons allow to display/hide previous and next images in semi-transparency, which is a traditional useful trick to draw animation. It may be seen first as a display feature. However, it does not make sense in usages which do not involve time and the notion of previous and next image. In that sense, it should be included in the timeline (which disappears when switching to non-time related usages). On the other hand, it would hardly be useful in, say, video-editing mode. Defining where and when the elements appear obviously requires some thinking.
+
+# 4. The animating environment
+
+The following describes specifically the animation environment, which is Pencil's current main goal and prority.
+
+## 4.1 Drawing
+
+### 4.1.1 Raster and Vector Layers
+
+Pencil has two drawing modes: raster and vector. Although it is advisable for the user to know the difference between the two, it is essentially a technical difference about how drawings made by the user are encoded and stored in the programme. In most applications, the choice of one of these two technical implementations heavily influences the way the user can input and interact with the drawing. As a result, raster graphics programmes and vector graphics programmes usually have quite different interfaces and tools.
+
+In Pencil, I want to break with this tradition and offer a common interface which is close and to the natural drawing experience. Other conventional tools more specific to raster or vector modes might be added as a special set for more advanced or conservative users. 
+
+There are many styles of 2D animations, from the conventional American celluloid style to the Russian sketch/paint style, and Pencil will give some freedom in that respect. Yet the celluloid style is the most common one and will be taken as a reference. We will assume the following steps: 
+
+- sketch/pencil/line tests
+- draw clean lines and temporary lines
+- fill areas with colours
+
+![Drawing Process](/images/pascal-vision-d-012.jpg)
 
 to be continued...
