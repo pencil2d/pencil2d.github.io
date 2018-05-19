@@ -14,13 +14,13 @@ If you like this software, and you want it to get better, you can help!
 
 ## Report a bug
 
-**Reporting Bugs** is one of the easiest and most effective ways to improve Pencil2D.
+**[Reporting Bugs][3]** is one of the easiest and most effective ways to improve Pencil2D.
 
 Please report the bug to **[Pencil2D Issue Tracker][3]**. The issue tracker is the place where our developers organize tasks, bugs, and feature requests. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
 
 ## Translate Pencil2D
 
-Pencil2D has been translated into more than 10 languages by many generous volunteer translators from all over the world.
+Pencil2D has been translated into more than 10 languages by many volunteer translators from all over the world.
 Join us on **[Transifex][4]** to translate Pencil2D to your language or improve the existing translations!
 
 ## Contributing code
