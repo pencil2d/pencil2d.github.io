@@ -3,7 +3,7 @@ layout: post
 title: "Introducing Pencil2D 0.6"
 tagline: ""
 categories: "Release Note"
-image: /images/pencil_icon.png
+image: {{ "/images/pencil_icon.png" | relative_url }}
 author: "The Pencil2D team"
 published: true
 comments: true
@@ -15,7 +15,7 @@ Christmas is getting close, and it’s about time to unwrap one of the presents 
 
 **Pencil2D 0.6 was released today!**
 
-Please download it [here](http://pencil2d.github.io/download/). Let’s take a look at what’s inside.
+Please download it [here]({{ "/download/" | relative_url }}). Let’s take a look at what’s inside.
 
 ## 0.6 is much more stable than 0.5.4
 
@@ -152,5 +152,5 @@ There is still a lot of work to do. If Pencil2D is not yet available in your lan
 
 Pencil2D is a free and open source project. Please consider supporting the project by joining our [community][4]. Further information please visit [Contribute][5] page.
 
-[4]: /community
-[5]: /contribute
+[4]: {{ "/community" | relative_url }}
+[5]: {{ "/contribute" | relative_url }}

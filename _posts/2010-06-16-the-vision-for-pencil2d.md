@@ -11,7 +11,7 @@ comments: true
 
 Pencil was originally an application created by Patrick Corrieri by the end of 2005 under the name “Pencil Planner”. It was a simple yet effective pencil test (a.k.a. line test) programme. It included a drawing area, a single-track timeline where keyframes could be added, previous and next onion skins. The drawing tools were a pencil and an eraser, along with a colour chooser. The animation could be played at a specified frame rate, and in addition it was possible to add a background image and a background sound. It was developed under Qt 3 and made available on Macintosh and then Windows platforms under GPL license. The Mac version could output QuickTime files. There were two releases v0.1 and v0.2. This is a screenshot of v0.2:
 
-![v0.2 screenshot]({{ site.baseurl }}/images/pascal-vision-d-000.jpg)
+![v0.2 screenshot]({{ "/images/pascal-vision-d-000.jpg" | relative_url }})
 
 When I became aware of this programme, I realised that it could be evolved into an application for making traditional animations rather than just pencil tests. Obviously what was needed was more drawing tools to fill shapes with colours, and some selection tools to move things around. I got in touch with Patrick, and started implementing those functions, along with cleaning the original code.
 
@@ -19,7 +19,7 @@ I also implemented tablet support. This became v0.3 of Pencil, released in Octob
 
 Another fundamental of traditional animation is to be able to organise separate elements (background, character, or parts of it) into different superimposed layers. This definitely called for the possibility of superimposing layers. On the other hand, I also convinced myself that vector graphics rather than raster (bitmap) graphics were useful for making animated drawings. Vector graphics can be rendered at any resolution, can easily be deformed and resized, colours can be readjusted, etc. They are quite well suited to render the traditional animation style: contours filled with some colours – inherited from the “cell(uloid)” style. Therefore I decided to introduce not only raster layers, but vector layers as well. Yet I wanted vector drawing to have the same artistic feel as raster drawing, so I implemented the same tools for both layers – although some of them such as the pencil and brush behaved differently.This lead to v0.4 released in January 2007. Below is a screenshot:
 
-![v0.4 screenshot]({{ site.baseurl }}/images/pascal-vision-d-001.jpg)
+![v0.4 screenshot]({{ "/images/pascal-vision-d-001.jpg" | relative_url }})
 
 It was a huge jump from the previous versions. A lot of the original software was rewritten at this stage. Although incomplete, buggy, and still very unsatisfactory at many levels as an animation programme, it had the capacity to produce decent animations.
 
@@ -27,7 +27,7 @@ At that time, Patrick told me that he was pleased to follow these developments b
 
 From then, I brought many refinements (some of them being quite unknown such as curved gradients) and got some occasional help from people such as Benjamin Raverdy, and Mark Schmelzenbach, although I remained mostly the only developer. The latest version v0.4.4 to date (released in early 2008) looks like this:
 
-![v0.4.4 scrrenshot]({{ site.baseurl }}/images/pascal-vision-d-002.jpg)
+![v0.4.4 scrrenshot]({{ "/images/pascal-vision-d-002.jpg" | relative_url }})
 
 As of May 2010, this version is downloaded about 1000 times a day, according to the Sourceforge statistics.
 
@@ -89,7 +89,7 @@ However, these are not the primary goal of Pencil at present.
 
 Finally, Pencil might be the basis for an integrated solution for animation project management, often referred to as "animation studio".
 
-![Animation Studio]({{ site.baseurl }}/images/pascal-vision-d-004.jpg)
+![Animation Studio]({{ "/images/pascal-vision-d-004.jpg" | relative_url }})
 
 In order to allow the secondary usages, Pencil will be designed in a very modular way from v0.5 and beyond.
 
@@ -105,9 +105,9 @@ Tools, options, and other technical elements should appear around this area in a
 
 In that respect, the current Windows version has some unnecessary embossing lines and approximate layout which leaves an uncomfortable impression. The Mac version displays unnecessary boxes around each tool.
 
-![]({{ site.baseurl }}/images/pascal-vision-d-005.jpg)
-![]({{ site.baseurl }}/images/pascal-vision-d-006.jpg)
-![]({{ site.baseurl }}/images/pascal-vision-d-007.jpg)
+![]({{ "/images/pascal-vision-d-005.jpg" | relative_url }})
+![]({{ "/images/pascal-vision-d-006.jpg" | relative_url }})
+![]({{ "/images/pascal-vision-d-007.jpg" | relative_url }})
 
 --------
 
@@ -123,19 +123,19 @@ The idea behind the different usage environments is to display (or possibly alte
 
 For example, the current interface of Pencil is dedicated to drawing animations. It has the following elements : A layer/timeline palette displaying both layers and their associated tracks, a colour palette, a tool palette, a parameter/option palette, and a display palette. A menu bar (or a function bar with buttons when using a tablet) contains the basic file/edit functions (open, save, import, export, undo, redo) and some more specific functions.
 
-![Pencil2D UI]({{ site.baseurl }}/images/pascal-vision-d-008.jpg)
+![Pencil2D UI]({{ "/images/pascal-vision-d-008.jpg" | relative_url }})
 
 Switching to a purely drawing/picture editing usage will make the timeline irrelevant. However, it will still be necessarily to access layers. The interface would switch to something like this:
 
-![Pencil2D UI]({{ site.baseurl }}/images/pascal-vision-d-009.jpg)
+![Pencil2D UI]({{ "/images/pascal-vision-d-009.jpg" | relative_url }})
 
 Switching to a purely video editing usage will make the drawing tools irrelevant. The interface would switch to something like this:
 
-![Pencil2D UI]({{ site.baseurl }}/images/pascal-vision-d-010.jpg)
+![Pencil2D UI]({{ "/images/pascal-vision-d-010.jpg" | relative_url }})
 
 Switching to a note-taking environment might look like this:
 
-![Pencil2D UI]({{ site.baseurl }}/images/pascal-vision-d-011.jpg)
+![Pencil2D UI]({{ "/images/pascal-vision-d-011.jpg" | relative_url }})
 
 This versatility is quite interesting, although it raises many questions.
 
@@ -163,6 +163,6 @@ There are many styles of 2D animations, from the conventional American celluloid
 - draw clean lines and temporary lines
 - fill areas with colours
 
-![Drawing Process]({{ site.baseurl }}/images/pascal-vision-d-012.jpg)
+![Drawing Process]({{ "/images/pascal-vision-d-012.jpg" | relative_url }})
 
 to be continued...

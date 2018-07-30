@@ -3,13 +3,13 @@ layout: post
 title: "Maintenance Release: Pencil2D 0.6.1"
 tagline: ""
 categories: "Release Note"
-image: "/images/pencil_icon.png"
+image: "{{ "/images/pencil_icon.png" | relative_url }}"
 author: "The Pencil2D team"
 published: true
 comments: true
 ---
 
-We are excited to announce our first maintenance release after v0.6 with dozens of bug fixes and improvements. Please go to our [Download Page](https://pencil2d.org/download) and download the new version.
+We are excited to announce our first maintenance release after v0.6 with dozens of bug fixes and improvements. Please go to our [Download Page]({{ "/download" | relative_url }}) and download the new version.
 
 ## What's new in v0.6.1
 
@@ -19,7 +19,7 @@ Although it is a maintenance release but still something to be excited about. Wi
 
 While we have smashed numerous bugs, improved and added several new features, we also decided to give the original Pencil2D a facelift.
 
-<img src="/images/pencil2d-logo.png" style="float:left;">
+<img src="{{ "/images/pencil2d-logo.png" | relative_url }}" style="float:left;">
 
 Since our project is a fork of the old Pencil animation drawing project by **Pascal Naidon**, we decided that it was time to change the appearance of Pencil2D, make it feel like it truly belongs to us.
 
@@ -31,7 +31,7 @@ In that sense we've given the icon a needed facelift, making it both stand out f
 
 Although they have been available for a while via the nightly builds, the new tool icons has finally arrived!
 
-![toolicons](/images/shiny-new-tools.png)
+![toolicons]({{ "/images/shiny-new-tools.png" | relative_url }})
 
 ## Dock (ception)
 
@@ -39,7 +39,7 @@ With great customization comes even more flexibility in docking!
 
 
 <video width="800" height="590" autoplay loop style="border:solid 3px #999">
-  <source src="/images/docking.mp4" type="video/mp4">
+  <source src="{{ "/images/docking.mp4" | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -49,7 +49,7 @@ Exporting movie is blazing fast now. Exporting a 1321-frame project to mp4 was t
 
 ## Lowering Memory Usage
 
-We heard some of our users said, Pencil2D became very unstable when they created more than 700 frames. This is probably casued by high memory usage and we decided to improve it.
+We heard some of our users said, Pencil2D became very unstable when they created more than 700 frames. This is probably caused by high memory usage and we decided to improve it.
 
 As a result, a 1321-frame project which used **1.8GB RAM** in v0.6 now never takes more than **400MB RAM**. We hope this change could bring you better experiences on low-end devices.
 
@@ -99,4 +99,4 @@ Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's 
 
 ## Help improve Pencil2D
 
-Pencil2D is developed by passionate people on their spare time. If you like this software, and you want it to get better, you can help! Please visit [Contribute Page](/contribute) or [Community](/community) for further information.
+Pencil2D is developed by passionate people on their spare time. If you like this software, and you want it to get better, you can help! Please visit [Contribute Page]({{ "/contribute" | relative_url }}) or [Community]({{ "/community" | relative_url }}) for further information.
