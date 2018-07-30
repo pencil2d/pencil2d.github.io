@@ -3,7 +3,7 @@ description: "An easy, intuitive tool to make 2D hand-drawn animations."
 show_downloads: true
 
 baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://pencil2d.github.io" # change this to the base hostname & protocol for your site
+url: "https://pencil2d.org" # change this to the base hostname & protocol for your site
 
 permalink: /:year/:month/:title.html
 
@@ -40,4 +40,3 @@ github:
 
 bitbucket:
   url: "https://bitbucket.org/chchwy/pencil2d"
-
