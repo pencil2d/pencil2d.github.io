@@ -103,7 +103,58 @@
       margin-right: 10px;
       margin-left: 10px;
     }
+  }
 
+  .dropdown-content {
+    display: none;
+  }
+  @media screen and (min-width: 609px) {
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      .dropdown-content {
+        background-color: $header-heading-color;
+        border: 1px solid $grey-color-light;
+        border-top: none;
+        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+        display: block;
+
+        visibility: hidden;
+        transform-origin: top;
+        -webkit-transform-origin: top;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+
+        transition: transform 01.25s ease;
+        -webkit-transition: transform 0.25s ease;
+        -moz-transition: transform 0.25s ease;
+        -o-transition: transform 0.25s ease;
+
+        min-width: 160px;
+
+        .page-link {
+          display: block;
+          margin-top: 10px;
+          margin-left: 10px;
+
+          &:last-child {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &:hover {
+        .dropdown-content {
+          visibility: visible;
+          transform: scaleY(1);
+          -webkit-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+        }
+      }
+    }
   }
 }
 
