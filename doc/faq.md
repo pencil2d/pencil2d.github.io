@@ -59,7 +59,7 @@ On every version you can access it like this:
 
 **EDIT > PREFERENCES > FILES > Enable Autosave [ ] (click checkbox)**
 
-![Autosave Preferences](http://i.imgur.com/CaRcfof.png)
+![Autosave Preferences]({{ "/images/autosave.png" | relative_url }})
 
 **Note** Change the “Number of modifications before autosaving” to affect how often Pencil2D will save automatically. As seen on the picture, in this case after 15 strokes or commands (like moving or clearing a frame), you’ll get your file auto-saved. You can modify this value and have Pencil2D wait up to 99 steps for the auto-save to be triggered.
 
@@ -118,23 +118,23 @@ User **Jeetman** has contributed with this small workaround while the developmen
 
 Here is a quick fix for **HDTV display problems**. This may work for all HDTV’s, but I know that it definitely works on a SAMSUNG HDTV with recommended screen setting of 3840 x 2160. This may also work on other programs. I used this fix to correctly display the paint program that I use (paint shop pro X6) as well.
 
-[Pencil2D Text / Icons Random Size](https://imgur.com/B4foGNT)
+![Pencil2D Text / Icons Random Size]({{ "/images/high-dpi-problem.jpg" | relative_url }})
 
 If you’ve installed Penci2D and are using Windows 10 and an HDTV, Your screen display may look like the picture above.
 
-[Pencil2D Shortcut](https://imgur.com/vuimYoi)
+<img alt="Pencil2D Shortcut" src="{{ "/images/shortcut.jpg" | relative_url }}" style="width: 120px;">
 
 To fix this, find your Pencil2D shortcut which is usually on the desktop but can be on the taskbar or in your start up.
 
-[Pencil2D shortcut Properties](https://imgur.com/uZMJZ5m)
+<img alt="Pencil2D shortcut Properties" src="{{ "/images/properties.jpg" | relative_url }}" style="width: 400px;">
 
 Once you locate your Pencil2D shortcut, right-click on the Pencil2D shortcut, click on properties.
 
-[Shortcut Compatibility Tab](https://imgur.com/7CGHznT)
+<img alt="Shortcut Compatibility Tab" src="{{ "/images/shortcut-compatibility.jpg" | relative_url }}" style="width: 400px;">
 
 The properties menu will open. Left-click on the ‘Compatibility’ tab on the top.
 
-[OS Compatibility Menu](https://imgur.com/VCa6jlt)
+<img alt="OS Compatibility Menu" src="{{ "/images/compatibility-mode.jpg" | relative_url }}" style="width: 400px;">
 
 The Compatibility menu will come up. Do the following:
 
@@ -147,7 +147,7 @@ Under Settings: ‘Override high DPI scaling behavior’ – CHECK THE BOX
 
 Under Settings: ‘Scaling performed by’ change ‘Application’ to ‘System’ by left-clicking the flyout and choosing ‘System’. Click Apply then OK.
 
-[Fixed Pencil2D Compatibility](https://imgur.com/PEjjKnG)
+![Fixed Pencil2D Compatibility]({{ "/images/high-dpi-scaled.jpg" | relative_url }})
 
 Run Pencil2D (from the shortcut icon you just modified). Your display should look as shown above.
 
