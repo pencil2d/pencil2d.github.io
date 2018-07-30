@@ -17,7 +17,7 @@ Although it is a maintenance release but still something to be excited about. Wi
 
 ## Pencil2D as a brand
 
-While we have smashed numerous bugs, improvemented and added several new features, we also decided to give the original Pencil2D a facelift.
+While we have smashed numerous bugs, improved and added several new features, we also decided to give the original Pencil2D a facelift.
 
 <img src="/images/pencil2d-logo.png" style="float:left;">
 
@@ -61,7 +61,7 @@ Also we hope this change can make the "auto-save" feature less annoying and does
 
 ## Quick Reference Guide
 
-Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's a handy pocket-sized guide that contains the instructions for all bacis functionalities. (By Radhika sundararaman)
+Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's a handy pocket-sized guide that contains the instructions for all basic functionalities. (By Radhika Sundararaman)
 
 ## Localization
 
@@ -92,7 +92,7 @@ Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's 
 * Duplicate key wasn't working in some cases.
 * App crashed when duplicating a sound key.
 * Can't save `.pcl` multiple times after importing sound layers.
-* The framerate wasn't accurate when playing animation. 
+* The framerate wasn't accurate when playing animation.
 * The app stalled when using dotted cursor and zooming-in very much.
 * Vector outlines are not drawn when Horizontal Flip and Show Outlines Only are activated. By [Martin van Zijl](https://github.com/martinvanzijl)
 * Some shortcuts are broken, file extensions are case-sensitive in image sequence import By [Nick](https://github.com/Spark01)
@@ -100,5 +100,3 @@ Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's 
 ## Help improve Pencil2D
 
 Pencil2D is developed by passionate people on their spare time. If you like this software, and you want it to get better, you can help! Please visit [Contribute Page](/contribute) or [Community](/community) for further information.
-
-
