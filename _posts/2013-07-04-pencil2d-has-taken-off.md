@@ -41,5 +41,4 @@ The Pencil2D team
 
 PS : thanks to [Kathryn][6] for having reviewed this text !
 
-[6]: http://www.pencil2d.org/members/perspexsphinx/
-
+[6]: https://discuss.pencil2d.org/u/perspexsphinx/
