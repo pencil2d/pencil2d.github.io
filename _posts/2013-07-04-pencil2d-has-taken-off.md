@@ -29,7 +29,7 @@ Pencil2D is just starting out, but there is a feeling around here that things ar
 
 We would love you to join our [Pencil2D community][5]. We also need you to test Pencil2D, spread the word about it and report bugs, as well as eventually contribute to its code: Matt is actually the only developer working on it, and he surely needs some help !
 
-[5]: http://pencil2d.github.io/community/ "Community"
+[5]: {{ "/community" | relative_url }} "Community"
 
 You are receiving this e-mail because you are registered on the Pencil2D website. As this is our first newsletter, we have sent it to all our members. In the future, however, only those who subscribe to the newsletter will receive it, and there will only be a few newsletters per year. Please make sure that you have signed up (the subscription form is in the right sidebar of the website) !
 
