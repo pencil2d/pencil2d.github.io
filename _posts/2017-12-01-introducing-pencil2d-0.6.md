@@ -3,7 +3,7 @@ layout: post
 title: "Introducing Pencil2D 0.6"
 tagline: ""
 categories: "Release Note"
-image: {{ "/images/pencil_icon.png" | relative_url }}
+image: "/images/pencil_icon.png"
 author: "The Pencil2D team"
 published: true
 comments: true
