@@ -9,7 +9,7 @@ published: true
 comments: true
 ---
 
-<img src="/images/pencil2d_horizontal_banner_1024x256_trans.png">
+<img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}">
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
