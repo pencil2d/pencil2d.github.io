@@ -129,10 +129,10 @@
         -webkit-transform: scaleY(0);
         -ms-transform: scaleY(0);
 
-        transition: transform 0.25s ease;
-        -webkit-transition: transform 0.25s ease;
-        -moz-transition: transform 0.25s ease;
-        -o-transition: transform 0.25s ease;
+        transition: transform 0.25s ease, visibility 0.25s step-end;
+        -webkit-transition: transform 0.25s ease, visibility 0.25s step-end;
+        -moz-transition: transform 0.25s ease, visibility 0.25s step-end;
+        -o-transition: transform 0.25s ease, visibility 0.25s step-end;
 
         min-width: 160px;
 
@@ -152,6 +152,10 @@
           transform: scaleY(1);
           -webkit-transform: scaleY(1);
           -ms-transform: scaleY(1);
+          transition: transform 0.25s ease, visibility 0.25s step-start;
+          -webkit-transition: transform 0.25s ease, visibility 0.25s step-start;
+          -moz-transition: transform 0.25s ease, visibility 0.25s step-start;
+          -o-transition: transform 0.25s ease, visibility 0.25s step-start;
         }
       }
     }
