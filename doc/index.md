@@ -5,7 +5,7 @@ tagline: Getting Started with Pencil2D
 redirect_from: /documentation/
 tutorial_link: "/doc/tutorials.html"
 faq_link: "/doc/faq.html"
-user_manual_link: "/doc/user_manual.html"
+user_manual_link: "/doc/user-manual.html"
 ---
 
 > We are looking for community's support to help improve the documentation. Pencil2D cannot grow and attract more users without you. [Join us](https://discuss.pencil2d.org/t/help-wanted-user-documentation/2565)!
