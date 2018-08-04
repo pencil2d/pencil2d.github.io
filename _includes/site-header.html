@@ -6,9 +6,9 @@
 
     {% assign dt = site.time | date: '%m %d' %}
     {% if dt == '02 14' %}
-      <img src="{{ "/images/pencil_icon_valentines.png" | relative_url }}" style="float:left; width:54px; margin-right: 10px;">
+      <img src="{{ "/images/pencil_icon_valentines.png" | relative_url }}" style="float:left; width:54px; margin-right: 10px;" title="Happy Valentine's Day" alt="Pencil2D Icon">
     {% else %}
-      <img src="{{ "/images/pencil_icon.png" | relative_url }}" style="float:left; width:54px; margin-right: 10px;">
+      <img src="{{ "/images/pencil_icon.png" | relative_url }}" style="float:left; width:54px; margin-right: 10px;" alt="Pencil2D Icon">
     {% endif %}
     {% if page.layout != 'home' %}
       <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>

@@ -19,7 +19,7 @@ Although it is a maintenance release but still something to be excited about. Wi
 
 While we have smashed numerous bugs, improved and added several new features, we also decided to give the original Pencil2D a facelift.
 
-<img src="{{ "/images/pencil2d-logo.png" | relative_url }}" style="float:left;">
+<img src="{{ "/images/pencil2d-logo.png" | relative_url }}" style="float:left;" alt="Pencil2D Logo">
 
 Since our project is a fork of the old Pencil animation drawing project by **Pascal Naidon**, we decided that it was time to change the appearance of Pencil2D, make it feel like it truly belongs to us.
 
@@ -31,7 +31,7 @@ In that sense we've given the icon a needed facelift, making it both stand out f
 
 Although they have been available for a while via the nightly builds, the new tool icons has finally arrived!
 
-![toolicons]({{ "/images/shiny-new-tools.png" | relative_url }})
+![Tool icons]({{ "/images/shiny-new-tools.png" | relative_url }})
 
 ## Dock (ception)
 
