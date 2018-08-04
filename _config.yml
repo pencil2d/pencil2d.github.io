@@ -17,6 +17,7 @@ cayman-blog:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 #  - jekyll-feed
 
 theme: # leave it empty
