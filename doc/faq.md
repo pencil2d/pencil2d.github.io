@@ -108,7 +108,7 @@ If you want to flip /mirror your **ARTWORK** permanently you can do the followin
 
 1) Pick the **Select Tool (V)**
 2) Select the artwork you want to mirror
-3) With the selection still visible, use the menu command: 
+3) With the selection still visible, use the menu command:
 
 **EDIT > Selection > Flip X / Flip Y**
 
@@ -140,7 +140,7 @@ The Compatibility menu will come up. Do the following:
 
 Under the ‘Compatibility Mode’-‘Run this compatibility mode for:’ – CHECK THE BOX
 
-Verify ‘Windows 8’ is selected. If not, left click the flyout and select Windows 8 
+Verify ‘Windows 8’ is selected. If not, left click the flyout and select Windows 8
 _(Note: You can also use compatibility with Windows 7)_
 
 Under Settings: ‘Override high DPI scaling behavior’ – CHECK THE BOX
@@ -162,10 +162,10 @@ We are looking for ways to optimize Pencil2D, but improving your computer is par
 + ICore-5 (3rd Generation or Above) or comparable CPU architecture
 + 4GB of RAM
 
-2. When working we recommend that you work with Individual Files for your CUTS / SHOTS / SCENES, instead of doing a full length video on a single file. 
+2. When working we recommend that you work with Individual Files for your CUTS / SHOTS / SCENES, instead of doing a full length video on a single file.
 + Separate your animation into smaller chunks that contain only ONE scene or cut each. Do this according to your storyboard / beatboard, so you can keep track of each scene requirements.
 
-3. Professional digital artists and animators in studio environments use a **numbered nomenclature** to name their files. Usually each saved file name is suffixed by a double, triple or even quad digit number. **e.g** `my_pencil_file_0001.pclx` 
+3. Professional digital artists and animators in studio environments use a **numbered nomenclature** to name their files. Usually each saved file name is suffixed by a double, triple or even quad digit number. **e.g** `my_pencil_file_0001.pclx`
 + You should attempt to make habit of saving your progress with the next number in sequence at major milestones (i.e keyframes, breakdowns, inbetweens, ink n' paint, etc). This way you can prevent to lose your work in the rare case that Pencil2D crashes and corrupts your save.
 + In the future we will attempt to automate this process as well, since it’s good practice to save it that way regardless of stability issues of any given software.
 

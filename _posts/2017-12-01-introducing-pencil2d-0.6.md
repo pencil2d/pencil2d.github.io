@@ -9,7 +9,7 @@ published: true
 comments: true
 ---
 
-<img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}">
+<img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
@@ -35,7 +35,7 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
   <td>Previous versions</td><td>v0.6</td>
 </tr>
 <tr>
-<td><img src="/images/color054.png" style="" style="border:solid 1px #999"></td>
+<td><img src="/images/color054.png" style="" style="border:solid 1px #999" alt="Old color wheel screenshot"></td>
 <td>
   <video width="166" height="314" autoplay loop style="border:solid 1px #999">
     <source src="/images/color-wheel.mp4" type="video/mp4">
@@ -49,12 +49,12 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 It’s now possible to show your palette as a grid, which is handy for those who don’t rely on labelling their colors. In addition, you can now also change the size of the swatches.
 
-<img src="/images/color-grid.gif" style="border:solid 1px #999">
+<img src="/images/color-grid.gif" style="border:solid 1px #999" alt="Color grid demo">
 <div style="clear:both"></div>
 
 ## Colored Onion skins
 
-<img src="/images/color-onionskin.png" style="border:solid 1px #999;float:right">
+<img src="/images/color-onionskin.png" style="border:solid 1px #999;float:right" alt="Onion skin example">
 
 Hard to know what are in previous frames or next frames? Display the onion skins of "previous frames" as **red** and the onion skins of "next frames" as **blue** to see them clearly.
 

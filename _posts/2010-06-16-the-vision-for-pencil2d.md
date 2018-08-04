@@ -58,7 +58,7 @@ As I once wrote on the Pencil website, I have always liked drawing and the art o
 
 Displaying pictures and playing sound is an ability that computers quickly acquired. As a result, a lot of animation software naturally emerged over time. However the usual input systems (keyboard and mouse) used by computers, along with conventional software design, have kept those programmes remote from the original drawing experience of traditional animation. Fortunately, pen tablets and later tablet PC appeared and made it possible to get an experience much closer to actual drawing. Still I found that existing animation programmes were either
 
-<img src="/images/pascal-vision-d-003.jpg" style="float:right">
+<img src="/images/pascal-vision-d-003.jpg" style="float:right" alt="Drawing tablet">
 
 - not taking advantage of the tablet
 - not recreating the drawing experience of traditional animation, or not completely satisfactory in their design
@@ -105,9 +105,9 @@ Tools, options, and other technical elements should appear around this area in a
 
 In that respect, the current Windows version has some unnecessary embossing lines and approximate layout which leaves an uncomfortable impression. The Mac version displays unnecessary boxes around each tool.
 
-![]({{ "/images/pascal-vision-d-005.jpg" | relative_url }})
-![]({{ "/images/pascal-vision-d-006.jpg" | relative_url }})
-![]({{ "/images/pascal-vision-d-007.jpg" | relative_url }})
+![Key and onion skin buttons]({{ "/images/pascal-vision-d-005.jpg" | relative_url }})
+![Timeline separator]({{ "/images/pascal-vision-d-006.jpg" | relative_url }})
+![Toolbox icons]({{ "/images/pascal-vision-d-007.jpg" | relative_url }})
 
 --------
 
