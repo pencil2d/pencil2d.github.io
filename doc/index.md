@@ -17,26 +17,26 @@ user_manual_link: "/doc/user-manual.html"
 <div class="tiles" style="text-align:center">
 
   <div class="doc-tile">
-    <a href="{{ page.tutorial_link }}" >
+    <a href="{{ page.tutorial_link | relative_url }}" >
       {% include iconmonstr-video-2.svg %}
     </a>
-    <a href="{{ page.tutorial_link }}" ><h2 class="doc-title">Tutorials</h2></a>
+    <a href="{{ page.tutorial_link | relative_url }}" ><h2 class="doc-title">Tutorials</h2></a>
     A series of video tutorials for beginners
   </div>
 
   <div class="doc-tile">
-    <a href="{{ page.faq_link }}">
+    <a href="{{ page.faq_link | relative_url }}">
       {% include iconmonstr-help-4.svg %}
     </a>
-    <a href="{{ page.faq_link }}"><h2 class="doc-title">FAQ</h2></a>
+    <a href="{{ page.faq_link | relative_url }}"><h2 class="doc-title">FAQ</h2></a>
     Frequently asked questions <br/><br/>
   </div>
 
   <div class="doc-tile">
-    <a href="{{ page.user_manual_link }}">
+    <a href="{{ page.user_manual_link | relative_url }}">
       {% include iconmonstr-book-11.svg %}
     </a>
-    <a href="{{ page.user_manual_link }}"><h2 class="doc-title">User's Manual</h2></a>
+    <a href="{{ page.user_manual_link | relative_url }}"><h2 class="doc-title">User's Manual</h2></a>
     Walk you through the basics of using Pencil2D
   </div>
 
