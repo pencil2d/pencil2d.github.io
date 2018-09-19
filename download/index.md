@@ -92,7 +92,9 @@ sudo apt-get install pencil2d
 brew cask install pencil2d
 ```
 
-<br><hr>
+<br>
+------------------------
+
 ## v0.6.2-RC1  (17 September 2018)
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
