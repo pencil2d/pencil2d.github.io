@@ -91,6 +91,16 @@ sudo apt-get install pencil2d
 ```
 brew cask install pencil2d
 ```
+## Pencil2D 0.6.2 RC1  (17 September 2018)
+
+| Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
+| :--------------: | :---------------: | :-------------: | :---------------: |
+| [Download][7]    | [Download][8]     | [Download][9]   | [Download][10]     |
+
+[7]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-win64-v0.6.2-rc1.zip
+[8]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-win32-v0.6.2-rc1.zip
+[9]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-mac-v0.6.2-rc1.zip
+[10]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-linux-amd64-v0.6.2-rc1.AppImage
 
 ## Nightly build <a name="nightlybuild"></a>
 
