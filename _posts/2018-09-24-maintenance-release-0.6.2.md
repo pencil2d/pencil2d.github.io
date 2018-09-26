@@ -13,7 +13,7 @@ Welcome to Pencil2D v0.6.2. In this version, we fixed a rather critical file-sav
 
 ## What's new in v0.6.2
 
-<img src="/images/pencil2d-logo.png" style="float:left;">
+<img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
 
 ### New Colour inspector
 
@@ -21,16 +21,16 @@ Welcome to Pencil2D v0.6.2. In this version, we fixed a rather critical file-sav
 
 A completely overhauled colour inspector. 
 
-![preferences window > timeline section](/images/properties_timeline.png)
-
-On the Preferences window, timeline section, we have added some new features.
 
 ### Auto Keyframe Insertion
 
 Pencil2D now comes equipped with different behaviors for automatic keyframe creation. You can switch between these behaviors on your preferences and they will take effect when drawing on an empty frame on the timeline to either:
+
 + Add New (blank) keyframe
 + Duplicate the previous keyframe
 + Keep drawing on the previous keyframe (default behavior)
+
+![preferences window > timeline section](/images/properties_timeline.png)
 
 A huge thank you to Martin Van Zijl for implementing this feature!
 
@@ -58,6 +58,14 @@ A couple of users (especially from Windows platform) [reported](https://github.c
 - [#1039][1039] Added command line completion for bash and zsh
 - [#1051][1051]: Auto-crop bitmap images
 
+[954]: https://github.com/pencil2d/pencil/issues/954
+[971]: https://github.com/pencil2d/pencil/issues/971
+[975]: https://github.com/pencil2d/pencil/issues/975
+[997]: https://github.com/pencil2d/pencil/issues/997
+[1028]: https://github.com/pencil2d/pencil/issues/1028
+[1039]: https://github.com/pencil2d/pencil/issues/1039
+[1051]: https://github.com/pencil2d/pencil/issues/1051
+
 ## Fixes
 
 - [#948][948]: Remove `.tiff` format support since it failed always.
@@ -70,22 +78,30 @@ A couple of users (especially from Windows platform) [reported](https://github.c
 - [#1058][1058]: Vector eraser tool calculated the distance incorrectly.
 - [#1060][1060]: The sound of movie always start from the first frame even if specifying an export range.
 
+[948]: https://github.com/pencil2d/pencil/issues/948
+[949]: https://github.com/pencil2d/pencil/issues/949
+[955]: https://github.com/pencil2d/pencil/issues/955
+[970]: https://github.com/pencil2d/pencil/issues/970
+[999]: https://github.com/pencil2d/pencil/issues/999
+[1038]: https://github.com/pencil2d/pencil/issues/1038
+[1043]: https://github.com/pencil2d/pencil/issues/1043
+[1058]: https://github.com/pencil2d/pencil/issues/1058
+[1060]: https://github.com/pencil2d/pencil/issues/1060
+
 ## Translations
 
 - New languages Added: Estonian, Polish and Simplified Chinese.
 
+## Known Issues
+
+- Color Palette: First Swatch is unchangeable. Cannot use Repalce Command. Use the other swatches to create your own colors or change it by editing the palette via XML.
+- Color Palette: Swatches will only update using the Replace command when having a vector layer active. (Note: Create your custom palettes with a vector layer selected)
+- Selection Tool: Pressing `ALT + TAB` / `APPLE + TAB` / `SHIFT + TAB`, or changing application focus in your preferred OS while having a selection active will ERASE the selection contents and in some rare instances will crash Pencil2D.
+- Selection Tool: Rotation: Using the SELECT ALL command (CTRL + A) and rotating a selection, will store the rotation transformation, if you press `CTRL+A` again and click with the MOVE TOOL on the selection, it will apply the stored value and rotate the selection again. Despite possible use cases this is a bug.
+- Smudge Tool: Bitmap: cannot UNDO smudge tool at the moment.
+- Blur Tool (Bitmap): Pressing `ALT` with smudge tool doesn’t work, Do not use it. Use other drawing tools for smudge effects.
+- Vector Fill modifies stroke width: To fill a stroke you need to have the stroke selected and use the Fill tool, however this tool has a “stroke thickness” mode where it will reset to a uniform stroke width of the size shown in the options panel.
+
 ## Help improve Pencil2D
 
 Pencil2D is developed by passionate people on their spare time. If you like this software, and you want it to get better, you can help! Please visit [Contribute Page](/contribute) or [Community](/community) for further information.
-
-##Known Issues
-
-- Color Palette - First Swatch is unchangeable. Cannot use Repalce Command. Use the other swatches to create your own colors or change it by editing the palette via XML
-- Color Palette - Swatches will only update using the Replace command when having a vector layer active. (Note: Create your custom palettes with a vector layer selected)
-- Selection Tool - Application Focus: Pressing ALT + TAB / APPLE + TAB / SUPER + TAB, or changing application focus in your preferred OS while having a selection active will ERASE the selection contents and in some rare instances will crash Pencil2D.
-- Selection Tool - Rotation: Using the SELECT ALL command (CTRL + A) and rotating a selection, will store the rotation transformation, if you press CTRAL + A again and click with the MOVE TOOL on the selection, it will apply the stored value and rotate the selection again. Despite possible use cases this is a bug.
-- Smudge Tool - Bitmap: You can’t UNDO the smudge tool.
-- Blur Tool - Bitmap: Pressing ALT when using the smudge tool invokes the Blur Tool. However It doesn’t work, DO.NOT.USE. Use Krita or GIMP for smudge or related effects.
-- Vector Fill modifies stroke width: To fill a stroke you need to have the stroke selected and use the Fill tool, however this tool has a “stroke thickness” mode where it will reset to a uniform stroke width of the size shown in the options panel.
-
-
