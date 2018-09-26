@@ -4,22 +4,22 @@ title: Download
 tagline: Let's start animating immediately! 
 comments: false
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-win64-0.6.1.1.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-win32-0.6.1.1.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-mac-0.6.1.1.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-linux-amd64-0.6.1.1.AppImage
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win64-0.6.2.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win32-0.6.2.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-mac-0.6.2.zip
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-amd64-0.6.2.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-linux-i386-0.6.1.1.AppImage
-  win64-size: 49.1MB
-  win32-size: 35.4MB
-  mac-size: 41.1MB
-  linux64-size: 37.8MB
+  win64-size: 49.2MB
+  win32-size: 43.9MB
+  mac-size: 44.3MB
+  linux64-size: 38MB
   linux32-size: 58.9MB
 ---
 
-## Current Stable Version (v0.6.1)
+## Current Stable Version (v0.6.2)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 16 April 2018. 
+Last Updated on 26 September 2018. 
 See <a href="/2018/04/maintenance-release-0.6.1.html">What's New</a> in v0.6.1
 </blockquote>
 
@@ -93,18 +93,6 @@ brew cask install pencil2d
 ```
 
 <br>
-------------------------
-
-## v0.6.2-RC1  (17 September 2018)
-
-| Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
-| :--------------: | :---------------: | :-------------: | :---------------: |
-| [Download][7]    | [Download][8]     | [Download][9]   | [Download][10]     |
-
-[7]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-win64-v0.6.2-rc1.zip
-[8]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-win32-v0.6.2-rc1.zip
-[9]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-mac-v0.6.2-rc1.zip
-[10]: https://github.com/pencil2d/pencil/releases/download/v0.6.2-rc1/pencil2d-linux-amd64-v0.6.2-rc1.AppImage
 
 ## Nightly build <a name="nightlybuild"></a>
 
@@ -135,7 +123,7 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
     Please follow the instructions of this [Microsoft Help Page](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
 
-- **Pencil 2D can't be opened because it is from an unidentified developer.**
+- **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
     Right click on the file and press `Open`.
 
