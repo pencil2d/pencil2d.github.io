@@ -21,7 +21,6 @@ Welcome to Pencil2D v0.6.2. In this version, we fixed a rather critical file-sav
 
 A completely overhauled colour inspector. 
 
-
 ### Auto Keyframe Insertion
 
 Pencil2D now comes equipped with different behaviors for automatic keyframe creation. You can switch between these behaviors on your preferences and they will take effect when drawing on an empty frame on the timeline to either:
@@ -34,13 +33,15 @@ Pencil2D now comes equipped with different behaviors for automatic keyframe crea
 
 A huge thank you to Martin Van Zijl for implementing this feature!
 
-### Export a GIF
+### Import/Export a GIF
 
-It is probably one of the most asked questions: "Can I export my animation as a gif?" Yes, surely you can. The gif export is working since v0.6, but not many people can find it.
+It is probably one of the most asked questions: "Can I export my animation as a gif?" Yes, you sure can. GIF Import/Export is working since v0.6, but many people had difficulties finding it so we have made this option more visible in both Import / Export related menus.
+
+![import / export menus > animated gif](/images/gif_import_export.jpg)
 
 ### Import/Export Gimp Palette
 
-Now Pencil2D supports the Gimp palette format 
+Now Pencil2D supports the GIMP (.gpl) palette format.
 
 ### File-saving process
 
@@ -94,13 +95,16 @@ A couple of users (especially from Windows platform) [reported](https://github.c
 
 ## Known Issues
 
-- Color Palette: First Swatch is unchangeable. Cannot use Repalce Command. Use the other swatches to create your own colors or change it by editing the palette via XML.
-- Color Palette: Swatches will only update using the Replace command when having a vector layer active. (Note: Create your custom palettes with a vector layer selected)
-- Selection Tool: Pressing `ALT + TAB` / `APPLE + TAB` / `SHIFT + TAB`, or changing application focus in your preferred OS while having a selection active will ERASE the selection contents and in some rare instances will crash Pencil2D.
-- Selection Tool: Rotation: Using the SELECT ALL command (CTRL + A) and rotating a selection, will store the rotation transformation, if you press `CTRL+A` again and click with the MOVE TOOL on the selection, it will apply the stored value and rotate the selection again. Despite possible use cases this is a bug.
-- Smudge Tool: Bitmap: cannot UNDO smudge tool at the moment.
-- Blur Tool (Bitmap): Pressing `ALT` with smudge tool doesn’t work, Do not use it. Use other drawing tools for smudge effects.
-- Vector Fill modifies stroke width: To fill a stroke you need to have the stroke selected and use the Fill tool, however this tool has a “stroke thickness” mode where it will reset to a uniform stroke width of the size shown in the options panel.
+- Color Palette (Bitmap): First Swatch is unchangeable. Can't use Replace Command. Use the other swatches to create your own colors or change it by editing the palette in a vector layer or via XML.
+- Color Palette (Bitmap): Swatches will only update using the Replace command when having a vector layer active. (Note: Create your custom palettes with a vector layer selected)
+- Selection Tool: Pressing `ALT + TAB` / `APPLE + TAB` / `SHIFT + TAB`, or changing application focus in your OS while having a selection active will ERASE the selection contents and in some rare instances will crash Pencil2D.
+- Selection Tool (Rotation): Using the SELECT ALL command (CTRL + A) and rotating a selection, will store the rotation transformation, if you press `CTRL+A` again and click with the MOVE TOOL on the selection, it will apply the stored value and rotate the selection again. Despite possible use cases this is a bug.
+- Undo: Undoing a drawing modification made on an empty frame creates a keyframe on that frame.
+- Undo: Undoing moving a keyframe to a new frame will create a blank keyframe on the place where it used to be
+- Undo, Smudge Tool (Bitmap): You cannot UNDO smudge tool at the moment.
+- Blur Tool (Bitmap): Pressing `ALT` with smudge tool doesn’t work, Do not use it. Use other drawing apps for smudge effects.
+- Fill Tool (Vector): Filling a stroke requires the stroke to be selected.
+- Fill Tool (Vector): “stroke thickness” option will reset pressure sensitive lines width.
 
 ## Help improve Pencil2D
 
