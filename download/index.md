@@ -8,12 +8,12 @@ download:
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win32-0.6.2.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-mac-0.6.2.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-amd64-0.6.2.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.1.1/pencil2d-linux-i386-0.6.1.1.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-i386-0.6.2.AppImage
   win64-size: 49.2MB
   win32-size: 43.9MB
   mac-size: 44.3MB
   linux64-size: 38MB
-  linux32-size: 58.9MB
+  linux32-size: 63.8MB
 ---
 
 ## Current Stable Version (v0.6.2)
@@ -78,7 +78,7 @@ Having trouble running the program? please see the
 
 ### Arch Linux
 
-Pencil2D is available for Arch Linux through the package [pencil2d](https://aur.archlinux.org/packages/pencil2d) on the AUR. Please follow [the tutorial](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) if you are not yet familiar with the process of installing packages from AUR.
+Pencil2D is available through the package [pencil2d](https://aur.archlinux.org/packages/pencil2d) on the AUR. Please follow [the tutorial](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) if you are not yet familiar with the process of installing packages from AUR.
 
 ### Debian & Ubuntu
 
@@ -106,6 +106,8 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 [1]: https://goo.gl/0rbHu6
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
+
+<br>
 
 ## Troubleshooting {#troubleshooting}
 
