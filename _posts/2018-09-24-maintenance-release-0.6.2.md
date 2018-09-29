@@ -55,9 +55,9 @@ This is probably one of the most asked questions: **Can I export my animation as
 
 Pencil2D now supports the GIMP (.gpl) palette format.
 
-###  Saving & Loading Corrupted Projects
+###  Project Corruption - Saving & Loading Files
 
-We received a series of [bug reports](https://github.com/pencil2d/pencil/labels/bug%3A%20file-save) (especially from Windows platform) where users encountered errors while saving (and sometimes loading) a file that prohibited them from opening it again. We paid great attention on this issue and worked hard to make sure you can save and load your work without further inconvenience. We have extensively tested this issue and consider it has been fixed for most foreseeable scenarios. However, we **urge all our users to consider following** [Pencil2D file corruption prevention / recovery guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-recovery-guide/3105) to avoid losing work in the odd chance.
+We received a series of [bug reports](https://github.com/pencil2d/pencil/labels/bug%3A%20file-save) (especially from Windows platform) where users encountered errors while saving (and sometimes loading) a file that prohibited them from opening it again. We paid great attention on this issue and worked hard to make sure you can save and load your work without further inconvenience. We have extensively tested this issue and consider it has been fixed for most foreseeable scenarios. However, we **urge all our users to consider following** the [Pencil2D file corruption prevention / recovery guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-recovery-guide/3105) to avoid losing work in the odd chance.
 
 _**Note:** Most corrupted projects are by definition not recoverable, but there are ways to partially recover certain parts. Read the guide for more info._
 
