@@ -31,7 +31,7 @@ To improve the creation of custom palettes we implemented **Add, Replace** and *
 
 ![color palette swatch replace](/images/color_swatch_replace.gif)
 
-Since this workflow tweak is a work in progress please see our known issues section for some caveats we are currently fixing.
+Since this workflow tweak is a work in progress please see our **known issues** section to learn some of the caveats we are currently fixing.
 
 ### Auto Keyframe Insertion
 
@@ -55,9 +55,11 @@ This is probably one of the most asked questions: **Can I export my animation as
 
 Pencil2D now supports the GIMP (.gpl) palette format.
 
-###  Corrupted projects
+###  Saving & Loading Corrupted Projects
 
-We got a series of [bug reports](https://github.com/pencil2d/pencil/labels/bug%3A%20file-save) (especially from Windows platform) that users encountered errors while saving a file and not able to open it again. We paid great attention on this issue and work hard to make sure you can save your work flawlessly. In this version, we are pretty confident that this issue has been fixed for most foreseeable scenarios. However, we urge all our users to consider following the [Pencil2D file corruption prevention / recovery guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-recovery-guide/3105) to avoid losing work in the odd chance.
+We received a series of [bug reports](https://github.com/pencil2d/pencil/labels/bug%3A%20file-save) (especially from Windows platform) where users encountered errors while saving (and sometimes loading) a file that prohibited them from opening it again. We paid great attention on this issue and worked hard to make sure you can save and load your work without further inconvenience. We have extensively tested this issue and consider it has been fixed for most foreseeable scenarios. However, we **urge all our users to consider following** [Pencil2D file corruption prevention / recovery guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-recovery-guide/3105) to avoid losing work in the odd chance.
+
+_**Note:** Most corrupted projects are by definition not recoverable, but there are ways to partially recover certain parts. Read the guide for more info._
 
 ## Enhancements
 
