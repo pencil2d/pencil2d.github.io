@@ -21,7 +21,17 @@ In this version, we fixed a rather critical file-saving issue. We encourage all 
 
 ![img color inspector](/images/pencil2d-color-inspector.gif)
 
-A completely overhauled color inspector.
+A completely overhauled color inspector. We changed the spinboxes for interactive sliders and a more stylish way to change between **HSV / RGB** color spaces. This improvement will let you preview colors and _alpha_ values much more easily than before.
+
+### New Color Palette Workflow (WIP)
+
+Previously you could change a selected swatch color through the color inspector, but this caused unpredictable alterations to already used colors on both bitmap and vector layers. We are working to improve how swatch colors are handled to preserve custom palettes while drawing.
+
+To improve the creation of custom palettes we implemented **Add, Replace** and **Remove** commands through a **contextual menu**, plus you can now select and delete multiple colors at the same time in both **list** and **grid** display mode.
+
+![color palette swatch replace](/images/color_swatch_replace.gif)
+
+Since this workflow tweak is a work in progress please see our known issues section for some caveats we are currently fixing.
 
 ### Auto Keyframe Insertion
 
