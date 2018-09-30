@@ -20,7 +20,7 @@ download:
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 26 September 2018. 
-See <a href="/2018/04/maintenance-release-0.6.1.html">What's New</a> in v0.6.1
+See <a href="/2018/09/maintenance-release-0.6.2.html">What's New</a> in v0.6.2
 </blockquote>
 
 <div class="download-tiles">
