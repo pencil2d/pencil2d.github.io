@@ -5,8 +5,8 @@ tagline: ""
 categories: "Release Note"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
 author: "The Pencil2D team"
-published: false
-comments: false
+published: true
+comments: true
 ---
 
 Welcome to Pencil2D v0.6.2!
