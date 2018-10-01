@@ -14,6 +14,7 @@ download:
   mac-size: 44.3MB
   linux64-size: 38MB
   linux32-size: 63.8MB
+nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
 ## Current Stable Version (v0.6.2)
@@ -96,7 +97,7 @@ brew cask install pencil2d
 
 ## Nightly build <a name="nightlybuild"></a>
 
-Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`. See [What's New](https://discuss.pencil2d.org/t/pencil2d-nightly-build-2018/2566) in nightly builds.
+Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`. See [What's New]({{ nightly-link }}) in nightly builds.
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
