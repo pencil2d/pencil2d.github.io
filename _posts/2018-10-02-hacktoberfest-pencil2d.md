@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Pencil2D in Hacktoberfest 2018!"
-tagline: "Contribute to Pencil2D for a chance to earn a free gift from Digital Ocean!"
+tagline: "A chance to earn a free gift from Digital Ocean!"
 categories: "FOSS Events"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
 author: "The Pencil2D team"
-published: false
+published: true
 comments: true
 ---
 
