@@ -19,11 +19,13 @@ We are pleased to be participating in Hacktoberfest this year and we are calling
 
 # Getting Started
 
- Hacktoberfest is a month-long celebration of open source software run by Digital Ocean in partnership with GitHub and Twilio. It is open to anyone. To qualify for a prize you must submit five quality pull requests to public GitHub repositories. This does not have to be one of our repositories, but of course we would be very happy if you do decide to work with us. You can sign up anytime between October 1 and October 31 at https://hacktoberfest.digitalocean.com. To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: https://hacktoberfest.digitalocean.com/faq. Remember that the due date for all PRs is October 31st!
+_**Hacktoberfest** is a month-long celebration of open source software run by Digital Ocean in partnership with GitHub and Twilio_. It is open to anyone. To qualify for a prize you must submit five quality pull requests to public GitHub repositories. This does not have to be one of our repositories, but of course we would be very happy if you do decide to work with us. 
+You can sign up anytime between **October 1st and October 31st** at https://hacktoberfest.digitalocean.com. To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: https://hacktoberfest.digitalocean.com/faq. Remember that **the due date for all PRs is October 31st!**
 
 # Pencil2D's Developer's Guide
 
-To learn how to get started with Pencil2D's codebase please visit our dedicated [Pencil2D Documentation Page](https://www.pencil2d.org/pencil-docs/docs/) or our [Github Developer Wiki](https://github.com/pencil2d/pencil/wiki). At the [pencil2d/pencil Github repository](https://github.com/pencil2d/pencil/) you can find our source code and many issues we need help with.
+To learn how to get started with Pencil2D's codebase please visit our dedicated [Pencil2D Documentation Page](https://www.pencil2d.org/pencil-docs/docs/) or our [Github Developer Wiki](https://github.com/pencil2d/pencil/wiki).
+At the [pencil2d/pencil Github repository](https://github.com/pencil2d/pencil/) you can find our source code and many issues we need help with.
 
 ## Recommended Issues
 
@@ -32,13 +34,13 @@ We have added a [Hacktoberfest label](https://github.com/pencil2d/pencil/issues?
 # I Can't Program, How Can I Participate?
 
 While Pencil2D is constantly in need of programmers to help implement new features and fix bugs in the software, there are other things you help us with:
-- We are in need of documentation to help users learn the ropes of Pencil2D. If have worked with Pencil2D lots, this could be the perfect task for you. For more details contact us on one of our official channels (see Getting Help).
-- We may be looking for some animations to demo key features of the the software. If you animate and are interested in helping with this, contact us for more information (see Getting Help).
-- If you are fluent in a foreign language you can help by translate and proofread the messages in Pencil2D into your language. You can find and help with our translations on the [Transifex platform](https://www.transifex.com/pencil2d/pencil2d/).
-- If you are experienced with web development but not C++, our website is also has an open source repository available [here](https://github.com/pencil2d/pencil2d.github.io). We don't have many things to work on for it at the moment, but have a look around our site and let us know if there is something you think you can improve upon.
+- We are in need of **documentation** to help users learn the ropes of Pencil2D. If have worked with Pencil2D lots, this could be the perfect task for you. For more details contact us on one of our official channels (see Getting Help).
+- We may be looking for some animation files to **demo** key features of the the software. If you animate and are interested in helping with this, contact us for more information (see Getting Help).
+- If you are fluent in a foreign language you can help by **translating** and **proofreading** the messages in Pencil2D into your language. You can find and help with our translations on the [Transifex platform](https://www.transifex.com/pencil2d/pencil2d/).
+- If you are experienced with **web development** but not C++, our website is also has an open source [repository available here](https://github.com/pencil2d/pencil2d.github.io). We don't have many things to work on for it at the moment, but have a look around our site and let us know if there is something you think you can improve upon.
 - Get creative! Think about what you are good at and if you can use skills to help us in any way. Are you an artist? Maybe you can make create mockups for parts of our interface. Work in advertising? Maybe you can provide some suggestions for marketing our software. Even simple things like spreading the word or thanking the developers can be more helpful than you think (although these won't help you get the t-shirt).
 
-In order for your work to count towards a free t-shirt from Digital Ocean, you will need to submit something called a pull request. If you have no idea how to do this, we can help walk you through the process, see Getting Help for more information.
+**Note:** In order for your work to count towards a free t-shirt from Digital Ocean, you will need to submit something called a **pull request**. If you have no idea how to do this, we can help walk you through the process, see **Getting Help** below for more information.
 
 # Tracking our progress
 
@@ -46,9 +48,9 @@ You can also visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pen
 
 # Github Repository (N)ettiquete
 
-+ **To avoid duplicate work** from participants that want to implement the same issues, we highly recommend you _"claim"_ an issue by commenting on the issue(s) you want to work on in Github. Task assignment will be handled on a first come, first serve basis. Make sure you explicitly mention you will be working on it for Hacktoberfest so we can keep track of it.
+**To avoid duplicate work** from participants that want to implement the same issues, we highly recommend you _"claim"_ an issue by commenting on the issue(s) you want to work on in Github. Task assignment will be handled on a first come, first serve basis. Make sure you explicitly mention you will be working on it for Hacktoberfest so we can keep track of it.
 
-If you want to work on a feature or fix that does not have a corresponding issue, please submit one before starting to allow for input from our main developers and to avoid duplicate or unnecessary work.
+If you want to work on a **feature** or **fix** that does not have a corresponding issue, please **submit one before starting** to get input from our main developers and avoid duplicate or unnecessary work.
 
 If two people do end up submitting pull requests for fixing the same feature, both will count towards your Hacktoberfest progress, but we will probably only use the better of the two implementations. If both submissions are identical, the PR that was submitted later will be considered to be plagiarized and will not count towards your Hacktoberfest progress.
 
