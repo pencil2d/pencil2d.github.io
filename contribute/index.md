@@ -14,9 +14,9 @@ If you like this software, and you want it to get better, you can help!
 
 ## Report a bug
 
-**[Reporting Bugs][3]** is one of the easiest and most effective ways to improve Pencil2D.
+**[Reporting bugs][3]** is one of the easiest and most effective ways to improve Pencil2D.
 
-Please report the bug to **[Pencil2D Issue Tracker][3]**. The issue tracker is the place where our developers organize tasks, bugs, and feature requests. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
+Please report the bug to **[Pencil2D Issue Tracker][3]**, a place where our developers organize tasks, bugs, and features. Don't forget to **describe the exact steps to reproduce** so developers can work on it effectively.
 
 ## Translate Pencil2D
 
