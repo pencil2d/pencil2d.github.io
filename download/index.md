@@ -116,11 +116,11 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
     1. Right click on the file you just downloaded and select `Extract all`.
     2. Go to the location you just extract to, find `Pencil2D.exe` and double click on it.
-    <br><br>
+    <br>
 
 - **msvcp140.dll is missing**
 
-    Install `vcredist_x64.exe` or `vcredist_x86.exe`, you can find it in the same folder of Pencil2D.exe after unzip it.
+    Double click and install `vcredist_x64.exe` or `vcredist_x86.exe` inside the **Pencil2D** folder.
 
 - **api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
