@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Download
-tagline: Let's start animating immediately! 
+tagline: Let's start animating immediately!
 comments: false
 download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win64-0.6.2.zip
@@ -20,7 +20,7 @@ nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ## Current Stable Version (v0.6.2)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 26 September 2018. 
+Last Updated on 26 September 2018.
 See <a href="/2018/09/maintenance-release-0.6.2.html">What's New</a> in v0.6.2
 </blockquote>
 
@@ -28,7 +28,7 @@ See <a href="/2018/09/maintenance-release-0.6.2.html">What's New</a> in v0.6.2
 <div></div>
 <div class="download-tile">
   <a href="{{ page.download.win64 }}">
-    {% include win_icon.svg %} 
+    {% include win_icon.svg %}
   </a><br>
   Windows 64 bit <br>
   <a href="{{ page.download.win64 }}">Download</a>
@@ -87,6 +87,12 @@ Pencil2D is available through the package [pencil2d](https://aur.archlinux.org/p
 sudo apt-get install pencil2d
 ```
 
+### Fedora 28+
+
+```
+sudo dnf install Pencil2D
+```
+
 ### Homebrew Cask (macOS)
 
 ```
@@ -95,7 +101,7 @@ brew cask install pencil2d
 
 <br>
 
-## Nightly build <a name="nightlybuild"></a>
+## Nightly Build <a name="nightlybuild"></a>
 
 Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`. See [What's New]({{ nightly-link }}) in nightly builds.
 
@@ -130,4 +136,4 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
     Right click on the file and press `Open`.
 
-Still getting in trouble? Please go to [Pencil2D forum](https://discuss.pencil2d.org/c/support). 
+Still getting in trouble? Please go to [Pencil2D forum](https://discuss.pencil2d.org/c/support).
