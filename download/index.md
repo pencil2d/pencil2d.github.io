@@ -93,6 +93,18 @@ sudo apt-get install pencil2d
 sudo dnf install Pencil2D
 ```
 
+### FreeBSD
+
+Package:
+```
+pkg install pencil2d
+```
+
+Port:
+```
+cd /usr/ports/graphics/pencil2d/ && make install clean
+```
+
 ### Homebrew Cask (macOS)
 
 ```
