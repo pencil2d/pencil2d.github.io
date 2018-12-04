@@ -37,7 +37,7 @@ However, we encourage you to try the latest Nightly Builds whenever you encounte
 
 TL;DR - Double click on the Camera Layer.
 
-Pencil2D has a infinite canvas, the bright rectangle at the center is the camera. It's a preview area when you export your animation to a video & image. So you are actually change the size of a camera, not the canvas. You can move the camera around on the infinite canvas and set keyframes of camera positions. For more info please check [this tutorial](https://www.pencil2d.org/doc/tutorials.html#ca).
+Pencil2D has a infinite canvas, the bright rectangle at the center is the camera, a preview area when you export your animation to a video & image. So double-clicking on the camera layer is actually change the size of a camera, not the canvas. You can draw outside the camera border and move the camera around on the infinite canvas, set keyframes of camera positions on Timeline. For more info please check [this tutorial](https://www.pencil2d.org/doc/tutorials.html#ca).
 
 ## I like Pencil2D but... it is a bit 'buggy', what can i do?
 
