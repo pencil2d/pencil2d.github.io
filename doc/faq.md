@@ -11,7 +11,7 @@ comments: true
 
 ## The program can't start because some .dll file is missing!
 
-Depending on the name of the missing file, this error can occur for different reasons. Please see [the Troubleshooting section of our download page](/download/#troubleshooting) for some of the most common cases. If your particular case isn't solved there, please [let us know](/community/).
+Depending on the name of the missing file, this error can occur for different reasons. Please check [the Troubleshooting Guide](/download/#troubleshooting) for some of the most common cases. If your particular case isn't solved there, please [let us know](/community/).
 
 ## Where's the [Insert OS here] version? Why isn't my [OS] version updated?
 
@@ -21,9 +21,9 @@ At the time of writing, Pencil2D can run on:
 - MacOS 10.10 Yosemite or later versions
 - Linux Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later version
 
-It's rather difficult to get Pencil2D working on some older OS like Windows XP or Mac OS 10.9, particularly since the devs are not able to access these old Operating Systems.
+It's rather difficult to get Pencil2D working on some older OS like Windows XP or Mac OS 10.9, particularly since the devs don't have these old Operating Systems.
 
-If you have these old machines and you'd like to help, please consider giving some of your time to improve this wonderful tool!
+If you own a old machine and you'd like to help, please contact the devs!
 
 ## I hear about "Nightly Builds" so what is it?
 
@@ -32,6 +32,12 @@ Nightly Builds are the most up-to-date, experimental versions that reflects the 
 However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
 
 **Nightly Builds** [DOWNLOAD HERE](/download/#nightlybuild)
+
+## How to change the size of the canvas?
+
+TL;DR - Double click on the Camera Layer.
+
+Pencil2D has a infinite canvas, the bright rectangle at the center is the camera. It's a preview area when you export your animation to a video & image. So you are actually change the size of a camera, not the canvas. You can move the camera around on the infinite canvas and set keyframes of camera positions. For more info please check [this tutorial](https://www.pencil2d.org/doc/tutorials.html#ca).
 
 ## I like Pencil2D but... it is a bit 'buggy', what can i do?
 
@@ -171,8 +177,9 @@ We are looking for ways to optimize Pencil2D, but improving your computer is par
 
 ## I can only see 240 frames, is there a way to increase the timeline frame length?
 
-Yes, Pencil2D can currently display up to **10,000 thousand frames**. To enable more frames to be displayed on the timeline go to:
+Yes, Pencil2D can currently display up to **10,000 thousand frames**. The timeline will auto extend when you reach the end of current spaces.
 
+To enable more frames manually please go to:
 **EDIT > PREFERENCES > TIMELINE > Timeline size in Frames**
 
 However we advice that you **DON'T** force Pencil2D to work with more than 1500+ frames per file, unless you are prepared for possible issues during work in the editor and during export that can arise from high memory use. We understand this might seem like a rather strict limitation, but it’s a safe boundary limit before things can start to go out of control.
