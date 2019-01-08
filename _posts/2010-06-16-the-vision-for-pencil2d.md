@@ -165,4 +165,71 @@ There are many styles of 2D animations, from the conventional American celluloid
 
 ![Drawing Process]({{ "/images/pascal-vision-d-012.jpg" | relative_url }})
 
+The basic drawing tools should be able to perform these basic tasks. These tasks are in fact quite separate, and it is convenient to perform  them in different layers. For example, pencil tests are initial drawings  which are later used to draw clean lines, and eventually hidden from  the final view.
+
+Temporary lines (dotted lines above) might also be used to define  boundaries of colour areas, and then hidden from the final view. In  raster mode, for clean results, it is necessary to put colours in a  separate layer so that they do not mess up with the line art. These are  some of the reasons why Pencil introduced layers.
+
+Layers are like transparent sheets of paper on which one can draw  different elements that can be shown or hidden by placing or removing  the sheets. For convenience these sheets do not have a definite size, it  is possible to draw anywhere, as far as one wishes. Because of their  different nature, both raster and vector graphics could have been  contained in a single layer, but I decided to create separate kinds of  layers for raster and vector graphics.
+
+While it makes sense to have different characters or backgrounds on  separate layers, it is also clear that for a given character, line  tests, clean lines and colours are just successive steps of a single  entity. It might become confusing to have so many layers for each step. I  considered two solutions:
+
+- Probably  the most generic solution to this problem is the ability to group  several layers into a single one, visualised as a single entity (for  example, a character) and whose internal layers can be displayed when  necessary.
+- A second solution is to define within a layer several “sublayers” corresponding to each step, namely: sketch, clean, fill.
+
+The first solution is very generic. It gives a lot of freedom to the  user to organise layers the way they want, but I am afraid this solution  is not intuitive enough for everyone, and might still be a hassle to  deal with (having to create and group layers by hand, select the  appropriate layer at the appropriate time many times, etc).
+
+I therefore advocate the second solution which is slightly more  preemptive, but will probably simplify the user’s workflow. It is  explained in the next section. That being said, the idea of grouping  layers should also be implemented in the long run as it is needed for  other purposes,  namely making different layers behave in a similar way. I will detail this idea in section 4.2.4.
+ 
+### 4.1.2 Sublayers
+
+The idea is that for any drawn element (such as a character or part of it), there is a single layer, which contains 4 sublayers:
+
+- sublayer for line tests (sketch)
+- sublayer for clean lines (clean)
+- sublayer for temporary lines (temp)
+- sublayer for colour fills (fill)
+
+In terms of rendering, sublayers are ordered as follow: sketch, fill, temp, clean, with the clean sublayer being the foremost sublayer. (Note: these names are provisional).
+A GUI element (in the display options or on the drawing canvas) will indicate and let one choose which sublayer one is working on. Selecting one drawing tool will often select the appropriate sublayer. In other words, most drawing tools keep memory of which sublayer they are acting on.
+
+While this can be changed by the user, drawing tools will by default act on the most useful sublayer(s), thus a beginner will not need to pay attention about sublayers at first, and will then learn their meaning as they use the tools. This should also save the user some time.
+
+The GUI element may look something like this:
+
+![Sublayer type](/images/pascal-vision-d-013.jpg)
+
+where the triangle indicates which sublayer is active, and the sublayer buttons can be used to show or hide a particular sublayer. In this example, the fill sublayer is empty, the sketch sublayer is hidden, and the temp and clean sublayers are visible. The clean sublayer is active. Hovering the mouse below one of the non-active sublayers will make a grey triangle appear. (This interface is inspired from the channel selection in MidiSwing). Text labels could be replaced by icons if they are suggestive enough.
+
+When a camera layer is active, sketch sublayers of all layers will be hidden automatically unless clean and fill sublayers are empty. This should save time for the user as they do not have to hide and show each sublayers manually.
+
+Note of implementation: in vector mode, the sublayer separation “naturally” exists because all different vector elements are distinct entities. On the contrary, different elements of a raster graphics are parts of the same of pixel matrix and there is no way to distinguish them, apart from storing them in different matrices (raster). The notion of sublayer is implemented differently for raster and vector graphics but should appear essentially the same for end users.
+
+### 4.1.3 Drawing Tools
+
+The number of basic drawing tools is intentionally limited for simplicity. These tools should behave more or less the same, whether in raster or vector layers. The precise behaviour might not be exactly the same, but it is important that the goal and meaning of the tools are the same. Ideally the vector tools should change as little as possible the input from the user (i.e. a stroke should not change shape just after being drawn), to recreate the sensation of a faithful drawing tool.
+
+Other tools more specific to raster or vector graphics may be available as an advanced mode. Tools often found in other programmes such as geometric figures (rectangles, ellipses, polygons) and text are intentionally absent from the set of basic tools, as they provide little benefit to traditional animation. They may be provided as optional advanced tools (or as basic tools in other usage environments such as drawing and note-taking).
+
+#### Pencil
+
+The pencil tool is defaulted to the sketch sublayer.
+
+In the sketch and clean sublayers, it operates as a usual pencil. By default, it has constant width and opacity depending on the stylus pressure. Some extra options, such as a slightly shaky appearance due to the simulated graininess of the paper, would be nice (plugins?).
+
+In the temp sublayer, it draws dotted lines which are displayed only when the fill sublayer is active. These lines are used to draw invisible contours of areas to be filled with some colour.
+
+#### Pen
+
+The pen tool is defaulted to the clean sublayer.
+
+It is used to draw clean lines. By default it has variable width and full opacity with stylus pressure.
+
+Some extra options, such as a slightly shaky appearance due to the simulated graininess of the paper, would be nice (plugins?).
+
+#### Lines 
+
+The line tool is defaulted to the clean sublayer.
+
+It is used to draw either straight lines (when two points are clicked), or curved lines (when more than two points are entered). This is particularly convenient to draw clean lines when a tablet is not available, and only the mouse can be used.
+
 to be continued...
