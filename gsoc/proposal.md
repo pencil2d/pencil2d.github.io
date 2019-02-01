@@ -2,7 +2,7 @@
 layout: page
 title: Pencil2D Proposal Guidelines
 tagline: Google Summer of Code 2019
-comments: true
+comments: false
 ---
 
 <style type="text/css">
