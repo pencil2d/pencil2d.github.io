@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: gsoc
 title: Google Summer of Code 2019
-tagline: <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" alt="Google Summer of Code Logo"/>
 comments: false
 ---
 
@@ -18,6 +17,8 @@ You can find out more details about the program at
 # Applying as a Student
 
 If our organization application is accepted this year, students will have until
-April 9th to submit a proposal to us. For details of the proposal, see our
-dedicated [proposal page](proposal.html). Ideas for your proposal can be found
-on our [ideas page](ideas.html). We look forward to hearing from you!
+April 9th to submit a proposal to us. You should read [the student guide from
+Google](http://g.co/gsoc/resources/manual) first if you have not already. For
+details of the proposal, see our dedicated [proposal page](proposal.html).
+Ideas for your proposal can be found on our [ideas page](ideas.html). We look
+forward to hearing from you!

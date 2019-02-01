@@ -67,10 +67,25 @@
     {% if page.layout == 'post' %}
       {% assign page-tagline = page.tagline | escape  %}
     {% endif %}
+    {% if page.layout == 'gsoc' %}
+      {% assign page-tagline = page.tagline | escape  %}
+    {% endif %}
 
     <section class="page-header">
-      <h1 class="project-name">{{ page-title }}</h1>
-      <h2 class="project-tagline">{{ page-tagline }}</h2>
+      <h1 class="project-name">
+        {% if page.layout == 'gsoc' %}
+          {% unless page-tagline %}
+            <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
+          {% endunless %}
+        {% endif %}
+        {{ page-title }}
+      </h1>
+      <h2 class="project-tagline">
+        {% if page.layout == 'gsoc' and page-tagline %}
+            <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
+        {% endif %}
+        {{ page-tagline }}
+      </h2>
       {% if page.layout == 'home' %}
           <a href="/download" class="btn">Download now!</a>
           <a href="/doc/tutorials.html" class="btn">Tutorials</a>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: gsoc
 title: Pencil2D Proposal Guidelines
 tagline: Google Summer of Code 2019
 comments: false
