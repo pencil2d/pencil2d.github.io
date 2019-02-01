@@ -5,6 +5,8 @@ tagline: Google Summer of Code 2019
 comments: false
 ---
 
+<h6><a href="index.html">&lt; Pencil2D GSoC Homepage</a></h6>
+
 <style type="text/css">
 #references > cite {
   font-style: normal;
