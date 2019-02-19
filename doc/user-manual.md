@@ -15,7 +15,7 @@ The guidelines we give here are just that. It's a guide. There is no right or wr
 Until then you can rely on our recommendations.
 ## The user interface ##
 Before we go to animation, let's have a quick glance at the user interface. 
-
+![Pencil2D User Interface](/_manualimages/pencil2dFull.png)
 In the top you have the menu bar. Here you can load and save files, import images, add layers and much more.
 
 In the bottom you'll find the time-line, that keeps track of your key-frames. 
