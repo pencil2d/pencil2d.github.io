@@ -16,7 +16,7 @@ Until then you can rely on our recommendations.
 ## The user interface ##
 Before we go to animation, let's have a quick glance at the user interface. 
 
-![Pencil2D User Interface](/doc/_manualimages/pencil2dFull.png)
+![Pencil2D User Interface](doc/_manualimages/pencil2dFull.png)
 
 In the top you have the menu bar. Here you can load and save files, import images, add layers and much more.
 
