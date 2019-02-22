@@ -5,6 +5,8 @@ tagline: Walk you through the basics of using Pencil2D
 comments: false
 ---
 
+{% include toc.html %}
+
 # Welcome! #
 You want to animate - and we are here to help. If you don't find the answers you need here, please ask at our [Discord server](https://discordapp.com/invite/8FxdV2g) or our [forum](https://discuss.pencil2d.org/).
 
