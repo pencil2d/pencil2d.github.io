@@ -42,3 +42,22 @@ Go to frame 3. Press the Add key-frame button. Draw a small circle a little to t
 Go to frame 1 again. Press the Play icon, and hooray! - you've made your first animation.
 
 If you find it cumbersome to press Add key-frame every time you want a new key-frame, you can make your life easier. Go to the menu and pick Preferences. Press the Time-line icon. Where it says "When drawing on an empty frame:" you choose the first option "Create a new key-frame". Now, every time you go to an empty frame and start drawing, a new key-frame will be created on that frame.
+
+## Onion skin ##
+
+To help your animation process, you can turn onion skin on or off. Onion skin is the ability to see the previous and/or next keyframes. In the Preferences you can set the number of drawings to show and their transparency.
+
+![Onion skin in the preferences]({{ "/doc/images/onionskin_preferences.png" | relative_url }})
+
+You can choose to have up to 60 keyframes shown as onion skin, but we recommend that you choose one or two drawings. The transparency is a matter of taste. Values between 15 % and 50 % seems to be a good choice.
+
+![Onion skin in Display options]({{ "/doc/images/onionskin_displayOptions.png" | relative_url }})
+
+In the Display Options dock, you can turn onion skin on and off. Here you can also set the color of the previous drawings to red, and the next drawings to blue. This color coding can be very helpful. Here is how a simple ball-animation looks like with red and blue onion skin.
+
+![Onion skin in animation]({{ "/doc/images/onionskin_animation.png" | relative_url }})
+
+If you press this button on the timeline: ![Onion skin on timeline]({{ "/doc/images/onionskin_timeline.png" | relative_url }}) the onion skin doesn't show the previous and next keyframe, but the previous and next frame. In the following illustration you can see that this is no help.
+
+![Onion skin in animation]({{ "/doc/images/onionskin_animation2.png" | relative_url }})
+
