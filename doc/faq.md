@@ -9,25 +9,28 @@ comments: true
 
 {% include toc.html %}
 
-## The program can't start because some .dll file is missing!
+## The program can't start because some .dll files are missing!
 
 Depending on the name of the missing file, this error can occur for different reasons. Please check [the Troubleshooting Guide](/download/#troubleshooting) for some of the most common cases. If your particular case isn't solved there, please [let us know](/community/).
 
-## Where's the [Insert OS here] version? Why isn't my [OS] version updated?
+## Where's the [Insert OS here] version? Why isn't my [OS] version included?
 
 At the time of writing, Pencil2D can run on:
 
 - Windows 7 or later versions
-- MacOS 10.10 Yosemite or later versions
+- macOS 10.11[^note] (El Capitan) or later versions
 - Linux Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later version
+- FreeBSD (via Ports)
 
-It's rather difficult to get Pencil2D working on some older OS like Windows XP or Mac OS 10.9, particularly since the devs don't have these old Operating Systems.
+It's rather difficult to get Pencil2D working on some older OS like Windows XP or Mac OS 10.9, particularly since the devs don't have these old Operating Systems. Pencil2D also depends on the technology used to build the software (QT Framework) to provide proper support to most operating systems.
 
-If you own a old machine and you'd like to help, please contact the devs!
+If you own a old machine and you'd like to help compile for specific OS versions, [please contact the devs](/community/)!
+
+[^note]: Developers are looking into alternate methods to deploy for older versions of macOS.
 
 ## I hear about "Nightly Builds" so what is it?
 
-Nightly Builds are the most up-to-date, experimental versions that reflects the current development progress. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you might have to understand the nightly builds are not final versions and can break easily.
+Nightly Builds are the most up-to-date, experimental versions that reflects the current state of the pencil2D application development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds are not final versions and sometimes they can break more easily.
 
 However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
 
@@ -45,7 +48,7 @@ We feel you, but every great piece of software you might know began in a humble 
 
 Pencil2D won't get hot just by looking at it, in fact there's more chances that you'll hate it the more you look at it. We need YOU for miracles to happen! [Consider donating your time](/contribute/) to report bugs, create art or just hang out with us at the forum while we wait for the next release.
 
-For more information on how to contribute to Pencil2D please visit the **[Contribute](http://pencil2d.github.io/contribute/)** Page.
+For more information on how to contribute to Pencil2D please visit the **[Contribute](/contribute/)** Page.
 
 ## Understanding Pencil2D Save files *.PCL (Legacy) & *.PCLX
 
@@ -70,6 +73,12 @@ On every version you can access it like this:
 **Note** Change the “Number of modifications before autosaving” to affect how often Pencil2D will save automatically. As seen on the picture, in this case after 15 strokes or commands (like moving or clearing a frame), you’ll get your file auto-saved. You can modify this value and have Pencil2D wait up to 99 steps for the auto-save to be triggered.
 
 Note that before auto-save can work properly you HAVE to save your file manually at least once (i.e give it a name and specify a location to be saved on your computer). However, if you have the auto-save option enabled, and you have not saved your file at least once, once auto-save activates you’ll be prompted to save your file for the first time.
+
+**Avoiding Memory Overload Crashes**
+
+No matter the kind of work you're doing, be it a doodle or a full youtube episode, please, save your new files at the beginning of your work session at least **once**. We recently found that people were having constant crashes when working on files with many frames, but they were not saving at least once. 
+
+The problem is that if you do not save, all the drawings will be stored in the RAM, and there's a limit to how much it can store, after reaching that limit your computer memory will not accept any more data and Pencil2D WILL crash.
 
 ## I can’t seem to import videos, what's up?
 
@@ -159,7 +168,9 @@ Run Pencil2D (from the shortcut icon you just modified). Your display should loo
 
 ## Pencil Crashed and my files are unusable / corrupted!
 
-_**A proper crash recovery has already been put in our development plan, we won't let you wait too long!**_
+_**A proper crash recovery has already been put in our development plans, we won't let you wait too long!**_
+
+_Please follow the **[Pencil2D Project File Corruption Prevention / Partial Recovery Guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-partial-recovery-guide/3105)** to avoid losing work._
 
 We are looking for ways to optimize Pencil2D, but improving your computer is paramount for any graphics creation software. Meanwhile please read the following advice to prevent losing work when experiencing similar issues:
 
