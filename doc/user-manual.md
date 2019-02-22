@@ -16,7 +16,7 @@ Until then you can rely on our recommendations.
 ## The user interface ##
 Before we go to animation, let's have a quick glance at the user interface. 
 
-![Pencil2D User Interface](_manualimages/pencil2dFull.png)
+![Pencil2D User Interface]({{ "/doc/_manualimages/pencil2dFull.png" | relative_url }})
 
 In the top you have the menu bar. Here you can load and save files, import images, add layers and much more.
 
@@ -27,7 +27,7 @@ To the left and right you'll find dockable windows, where you can select tools, 
 In the middle you have the canvas. The canvas is unlimited in size. The white rectangle in the middle of the canvas, is the camera field. When you open Pencil2D the first time, this size will be 800x600 pixels, but you can change it by double-clicking on the camera layer. *Remember* that the bigger camera field you choose, the more RAM and computer power you use and need.
 ## Let's animate! ##
 
-![Add key-frame](_manualimages/addDeleteKeys.png)
+![Add key-frame]({{ "/doc/_manualimages/addDeleteKeys.png" | relative_url }})
 
 Right above the time-line you'll find these buttons.  Here you can Add, Remove and Duplicate key-frames.
 
