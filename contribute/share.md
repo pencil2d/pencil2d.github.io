@@ -11,6 +11,14 @@ comments: false
   padding: 2em 0.5em 2em 0.5em;
 }
 
+#optional {
+  margin-bottom: 1em;
+}
+
+#submit {
+  display: none;
+}
+
 .remove-btn {
   float: right;
   display: inline-block;
@@ -19,6 +27,7 @@ comments: false
 .btn, .btn:hover {
 	background: rgb(20,95,179);
 	border-color: rgb(67,128,196);
+  padding: 0.5rem 1rem;
 }
 
 .success {
@@ -27,6 +36,20 @@ comments: false
 
 .fail {
   color: #FF0000;
+}
+
+input[type=text] {
+	display: inline-block;
+	width: auto;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
 }
 
 .progress {
@@ -95,20 +118,19 @@ All public uses of your project will be accompanied with proper attribution to y
 ### Project File Submission
 
 <div class="container">
+  <p>To get started, click the button below and select the project files you want to share with us. You can select .pclx files directly, but if you are using the older .pcl format, please zip the .pcl file and the corresponding .data folder together before uploading.</p>
   <span class="btn btn-success fileinput-button">
     <span>Add files...</span>
     <!-- The file input field used as target for the file upload widget -->
     <input id="fileupload" type="file" name="files[]" multiple>
   </span>
-  <br>
-  <br>
   <!-- The global progress bar -->
   <div id="progress" class="progress">
     <div class="progress-bar progress-bar-success"></div>
   </div>
   <!-- The container for the uploaded files -->
   <div id="files" class="files"></div>
-  <div>
+  <div id="optional">
     <h4>Optional Information</h4>
     <label>Creator (for attribution): <input type="text" id="creator"></label><br />
     <label><input type="checkbox" id="public"> <em>Make my work public.</em> By checking this box you agree to provide your projects to us under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY license</a>.</label>
@@ -204,6 +226,7 @@ $(function () {
           }
           node.appendTo(data.context);
         });
+        $('#submit').show();
     }).on('fileuploadprocessalways', function (e, data) {
         var index = data.index,
             file = data.files[index],
@@ -240,7 +263,7 @@ $(function () {
           activeData.submit();
         }
         else {
-          $("#submit").text('Upload');
+          $("#submit").hide().text('Submit');
         }
     }).on('fileuploadfail', function (e, data) {
         $.each(data.files, function (index) {
@@ -250,7 +273,7 @@ $(function () {
         });
         allData.shift();
         activeData = null;
-        $("#submit").text('Upload');
+        $("#submit").hide().text('Submit');
     }).prop('disabled', !$.support.fileInput)
         .parent().addClass($.support.fileInput ? undefined : 'disabled');
 });
