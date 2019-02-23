@@ -2,15 +2,23 @@
 layout: page
 title: Contribute
 tagline: "Pencil2D is an open source project, developed 100% by volunteers."
-comments: true
+comments: false
 ---
 
 Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, community-driven free and open source project.
 
-## You can help improve Pencil2D, too!
+# You can help improve Pencil2D, too!
 
 Pencil2D is developed by passionate people on their spare time.
 If you like this software, and you want it to get better, you can help!
+
+## Share your work with us
+
+We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them [here](share.md). Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publicaly (giving you full credit of course).
+
+## Share your work with the world
+
+If you've made things with Pencil2D upload them online (to video sharing sites or social media for example) and share them with the world! Saying that your work was made with Pencil2D in the description or credits helps spread the word about our program and shows how it can be used. We love to sees all the wonderful things that people are creating with Pencil2D!
 
 ## Report a bug
 
