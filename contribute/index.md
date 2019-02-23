@@ -14,7 +14,7 @@ If you like this software, and you want it to get better, you can help!
 
 ## Share your work with us
 
-We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them [here](share.md). Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publicaly (giving you full credit of course).
+We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them **[here](share.md)**. Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publicaly (giving you full credit of course).
 
 ## Share your work with the world
 

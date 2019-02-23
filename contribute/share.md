@@ -5,6 +5,76 @@ tagline: "Help Pencil2D development by sharing your projects with us."
 comments: false
 ---
 
+<style>
+.container {
+  border: 1px solid #ccc;
+  padding: 2em 0.5em 2em 0.5em;
+}
+
+.remove-btn {
+  float: right;
+  display: inline-block;
+}
+
+.btn, .btn:hover {
+	background: rgb(20,95,179);
+	border-color: rgb(67,128,196);
+}
+
+.success {
+  color: #5cb85c;
+}
+
+.fail {
+  color: #FF0000;
+}
+
+.progress {
+	height: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: @font-size-small;
+  line-height: @line-height-computed;
+  color: @progress-bar-color;
+  text-align: center;
+  background-color: @progress-bar-bg;
+  .box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
+  .transition(width .6s ease);
+}
+
+.progress-bar-success {
+	background-color: #5cb85c;
+}
+
+.fileinput-button {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.fileinput-button input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 200px !important;
+	direction: ltr;
+	cursor: pointer;
+}
+</style>
+
 Hello and thank you for your interest in helping to improve Pencil2D! You can use the form below to easily share project files with us.
 
 ### Why do we want your Pencil2D projects?
@@ -22,11 +92,10 @@ If you opt-in to licensing your work publicaly, we may also use your project for
 - Screenshots for our official user manuals.
 All public uses of your project will be accompanied with proper attribution to you.
 
-### Project file submission
+### Project File Submission
 
 <div class="container">
   <span class="btn btn-success fileinput-button">
-    <i class="glyphicon glyphicon-plus"></i>
     <span>Add files...</span>
     <!-- The file input field used as target for the file upload widget -->
     <input id="fileupload" type="file" name="files[]" multiple>
@@ -39,6 +108,12 @@ All public uses of your project will be accompanied with proper attribution to y
   </div>
   <!-- The container for the uploaded files -->
   <div id="files" class="files"></div>
+  <div>
+    <h4>Optional Information</h4>
+    <label>Creator (for attribution): <input type="text" id="creator"></label><br />
+    <label><input type="checkbox" id="public"> <em>Make my work public.</em> By checking this box you agree to provide your projects to us under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY license</a>.</label>
+  </div>
+  <button id="submit" class="btn">Submit</button>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
@@ -53,11 +128,44 @@ All public uses of your project will be accompanied with proper attribution to y
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.28.0/js/jquery.fileupload-validate.min.js" integrity="sha256-c96UMs+q+WrxgiUMpS0QQWEZvJrgmErvOV6T4UsiK/A=" crossorigin="anonymous"></script>
 
 <script>
+activeData = null;
+allData = [];
 $(function () {
     'use strict';
     // Change this to the location of your server-side upload handler:
-    var url = "http://pencil2dupload.ddns.net/jQuery-File-Upload/server/php/',
-        uploadButton = $('<button/>')
+    var url = 'https://squarechair.net/p2dupload/jQuery-File-Upload/server/php/';
+    $('#submit').on('click', function() {
+      var $this = $(this);
+      if(activeData) {
+        activeData.abort();
+        $this.text('Upload');
+      }
+      else {
+        $this.text('Cancel');
+        activeData = allData[0];
+        if(activeData) {
+          activeData.submit();
+        }
+      }
+    });
+    var removeButton = $('<span>X</span>')
+      .addClass('remove-btn')
+      .on('click', function () {
+        $(this).parent().parent().remove();
+        /*var $this = $(this),
+            data = $this.data();
+        $this
+            .off('click')
+            .text('Abort')
+            .on('click', function () {
+                $this.remove();
+                data.abort();
+            });
+        data.submit().always(function () {
+            $this.remove();
+        });*/
+      });
+        /*uploadButton = $('<button/>')
             .addClass('btn btn-primary')
             .prop('disabled', true)
             .text('Processing...')
@@ -74,28 +182,27 @@ $(function () {
                 data.submit().always(function () {
                     $this.remove();
                 });
-            });
+            });*/
     $('#fileupload').fileupload({
         url: url,
         dataType: 'json',
         autoUpload: false,
         acceptFileTypes: /(\.|\/)(pclx|zip)$/i,
         maxFileSize: 2000000000,
-        // Enable image resizing, except for Android and Opera,
-        // which actually support image resizing, but fail to
-        // send Blob objects via XHR requests:
+        maxChunkSize: 1000000,
         disableImageResize: true
+    }).on('fileuploadsubmit', function (e, data) {
+      var input = $('#input');
+      data.formData = { 'creator': $('#creator').val(), 'public': $('#public').is(':checked') };
     }).on('fileuploadadd', function (e, data) {
         data.context = $('<div/>').appendTo('#files');
         $.each(data.files, function (index, file) {
-            var node = $('<p/>')
-                    .append($('<span/>').text(file.name));
-            if (!index) {
-                node
-                    .append('<br>')
-                    .append(uploadButton.clone(true).data(data));
-            }
-            node.appendTo(data.context);
+          allData.push(data);
+          var node = $('<p/>').append($('<span/>').text(file.name));
+          if (!index) {
+            node.append(removeButton.clone(true).data(data));
+          }
+          node.appendTo(data.context);
         });
     }).on('fileuploadprocessalways', function (e, data) {
         var index = data.index,
@@ -109,12 +216,7 @@ $(function () {
         if (file.error) {
             node
                 .append('<br>')
-                .append($('<span class="text-danger"/>').text(file.error));
-        }
-        if (index + 1 === data.files.length) {
-            data.context.find('button')
-                .text('Upload')
-                .prop('disabled', !!data.files.error);
+                .append($('<div class="fail"/>').text(file.error));
         }
     }).on('fileuploadprogressall', function (e, data) {
         var progress = parseInt(data.loaded / data.total * 100, 10);
@@ -125,25 +227,30 @@ $(function () {
     }).on('fileuploaddone', function (e, data) {
         $.each(data.result.files, function (index, file) {
             if (file.url) {
-                var link = $('<a>')
-                    .attr('target', '_blank')
-                    .prop('href', file.url);
-                $(data.context.children()[index])
-                    .wrap(link);
+                $(data.context.children()[index]).addClass("success");
             } else if (file.error) {
-                var error = $('<span class="text-danger"/>').text(file.error);
-                $(data.context.children()[index])
-                    .append('<br>')
+                var error = $('<div/>').text(file.error);
+                $(data.context.children()[index]).addClass("fail")
                     .append(error);
             }
         });
+        allData.shift();
+        activeData = allData[0];
+        if(activeData) {
+          activeData.submit();
+        }
+        else {
+          $("#submit").text('Upload');
+        }
     }).on('fileuploadfail', function (e, data) {
         $.each(data.files, function (index) {
-            var error = $('<span class="text-danger"/>').text('File upload failed.');
-            $(data.context.children()[index])
-                .append('<br>')
+            var error = $('<div/>').text('File upload failed.');
+            $(data.context.children()[index]).addClass("fail")
                 .append(error);
         });
+        allData.shift();
+        activeData = null;
+        $("#submit").text('Upload');
     }).prop('disabled', !$.support.fileInput)
         .parent().addClass($.support.fileInput ? undefined : 'disabled');
 });
