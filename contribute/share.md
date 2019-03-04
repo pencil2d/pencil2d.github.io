@@ -211,7 +211,7 @@ $(function () {
         autoUpload: false,
         acceptFileTypes: /(\.|\/)(pclx|zip)$/i,
         maxFileSize: 2000000000,
-        maxChunkSize: 1000000,
+        maxChunkSize: 50000000,
         disableImageResize: true
     }).on('fileuploadsubmit', function (e, data) {
       var input = $('#input');
