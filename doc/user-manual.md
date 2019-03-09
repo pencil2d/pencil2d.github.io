@@ -71,7 +71,7 @@ Most of the tasks in Pencil2D have shortcuts, and you can see the shortcuts in t
 
 Press the Shortcut icon at the bottom, and you’ll see this list. Here are the shortcuts for the tools: 
 
-![Add key-frame]({{ "/doc/images/pref_shortcuts.png" | relative_url }})
+![Preferences shortcuts]({{ "/doc/images/pref_shortcuts.png" | relative_url }})
 
 ## Edit the shortcuts ## 
 
@@ -79,11 +79,11 @@ All these shortcuts are editable, so you can customize it your needs.
 
 Here are the shortcuts for the tools: 
 
-![Add key-frame]({{ "/doc/images/pref_shortcuts_tools.png" | relative_url }})
+![Tool shortcuts]({{ "/doc/images/pref_shortcuts_tools.png" | relative_url }})
 
 If you want to change the shortcut for the Select tool, which is ‘V’, you can do it directly, by selecting the ToolSelect in the shortcuts window and then placing the cursor in the shortcut text box, and enter the new shortcut, or you can delete it first by pressing ‘Clear’ and then enter the new shortcut in the text box. 
 
 Here we have cleared the shortcut for ToolSelect, and want to enter the new shortcut. We place the cursor in the textbox and press ‘E’. Unfortunately, the ‘E’ is taken by the Eraser tool, so you are given the choice of overwrite the shortcut or cancelling.  
 
-![Add key-frame]({{ "/doc/images/pref_shortcuts_warning.png" | relative_url }})
+![shortcuts warning]({{ "/doc/images/pref_shortcuts_warning.png" | relative_url }})
 
