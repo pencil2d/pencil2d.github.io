@@ -67,11 +67,11 @@ When you animate, you often need the same tasks done. That could be to change fr
 
 Most of the tasks in Pencil2D have shortcuts, and you can see the shortcuts in the menu or in the Preferences. Let’s look into the Preferences. 
 
-Image… 
+![Preferences]({{ "/doc/images/preferences.png" | relative_url }})
 
 Press the Shortcut icon at the bottom, and you’ll see this list. Here are the shortcuts for the tools: 
 
-Image… 
+![Add key-frame]({{ "/doc/images/pref_shortcuts.png" | relative_url }})
 
 ## Edit the shortcuts ## 
 
@@ -79,14 +79,11 @@ All these shortcuts are editable, so you can customize it your needs.
 
 Here are the shortcuts for the tools: 
 
-Image... 
+![Add key-frame]({{ "/doc/images/pref_shortcuts_tools.png" | relative_url }})
 
 If you want to change the shortcut for the Select tool, which is ‘V’, you can do it directly, by selecting the ToolSelect in the shortcuts window and then placing the cursor in the shortcut text box, and enter the new shortcut, or you can delete it first by pressing ‘Clear’ and then enter the new shortcut in the text box. 
 
-Here we have cleared the shortcut for ToolSelect 
+Here we have cleared the shortcut for ToolSelect, and want to enter the new shortcut. We place the cursor in the textbox and press ‘E’. Unfortunately, the ‘E’ is taken by the Eraser tool, so you are given the choice of overwrite the shortcut or cancelling.  
 
-Image... 
+![Add key-frame]({{ "/doc/images/pref_shortcuts_warning.png" | relative_url }})
 
-We then want to enter the new shortcut. We place the cursor in the textbox and press ‘E’. Unfortunately, the ‘E’ is taken by the Eraser tool, so you are given the choice of replacing the shortcut or cancelling.  
-
-Image... 
