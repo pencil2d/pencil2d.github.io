@@ -69,7 +69,7 @@ Most of the tasks in Pencil2D have shortcuts, and you can see the shortcuts in t
 
 ![Preferences]({{ "/doc/images/preferences.png" | relative_url }})
 
-Press the Shortcut icon at the bottom, and you’ll see this list. Here are the shortcuts for the tools: 
+Press the Shortcut icon at the bottom, and you’ll see this list.
 
 ![Preferences shortcuts]({{ "/doc/images/pref_shortcuts.png" | relative_url }})
 
