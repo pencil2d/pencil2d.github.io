@@ -5,7 +5,7 @@ tagline: "Contribute to Pencil2D development with YOUR art!"
 categories: "News"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
 author: "The Pencil2D team"
-published: false
+published: true
 comments: false
 ---
 
