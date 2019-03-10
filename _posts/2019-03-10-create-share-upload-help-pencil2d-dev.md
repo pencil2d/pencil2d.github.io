@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Share your work & help Pencil2D"
 tagline: "Contribute to Pencil2D development with YOUR art!"
 categories: "News"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
@@ -15,15 +15,17 @@ comments: false
 
 # Today me, Tomorrow you
 
-Lately we've been really quiet mainly because we're hard at work with the inminent arrival of new release version 0.6.3 _(it's coming soon, promise)_. We've also had several proposals and implementations of interesting features over the past months, some of them are currently in the works, while others are pending thorough review & approval. 
+Lately we've been really quiet mainly because we're hard at work with the inminent release of version 0.6.3 _(it's coming soon, promise)_. We've also had several proposals and implementations of interesting features submitted by our contributors over the past months, some of them are currently in the works, while others are pending thorough review & approval.
 
 With all of this workload it's very hard for us to thoroughly test and inspect every little nook and cranny of the software which is why we now turn to you, our faithful community, for assistance. We are in need of YOUR help!
 
-Through the life of this project we've found that people just like you have been willing to use Pencil2D for vastly different projects, ranging from slide presentations to web banners, all the way to short films and videogame sprite graphics animation. There are too many different uses to consider and we can't cope with testing all the possibilities to keep Pencil2D stable for all of these choices, so in order to help with the in-depth testing and development process required, we're looking to collect all kinds of voluntarily submitted project files _(*.pcl or *.pclx files)_ from you, our beloved users.
+Through the development of this project we've found that users have applied Pencil2D in very different settings ranging from slide presentations to web banners, all the way to short films and videogame sprite graphics animation.
+
+There are too many different uses for us to create tests for all of them, so in order to help create a comprehensive,  in-depth testing and development process, we're looking to collect all kinds of voluntarily submitted project files _(*.pcl or *.pclx files)_ from you, our beloved users.
 
 # Sharing is Caring
 
-If you've used Pencil2D before and still have some of your pencil2d animation project files lying around, we would be very grateful if you could please consider sharing them with us.
+If you've used Pencil2D before and still have some of your animation project files lying around, we would be very grateful if you could please consider sharing them with us.
 
 For this we have created a simple form to you to upload** your project files.
 
