@@ -5,6 +5,24 @@ tagline: "Pencil2D is an open source project, developed 100% by volunteers."
 comments: false
 ---
 
+<style>
+#upload-action {
+  line-height: 2rem;
+  display: block;
+}
+
+#upload-action img {
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.btn, .btn:hover {
+	background: rgb(20,95,179);
+	border-color: rgb(67,128,196);
+  padding: 0.5rem 1rem;
+}
+</style>
+
 Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, community-driven free and open source project.
 
 # You can help improve Pencil2D, too!
@@ -14,7 +32,9 @@ If you like this software, and you want it to get better, you can help!
 
 ## Share your work with us
 
-We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them **[here](share.md)**. Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publically (giving you full credit of course).
+We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them here:
+<button class="btn" id="upload-action" onclick="window.location.href='{{ "/contribute/share.html" | relative_url }}'"><img src="{{ "/images/upload_icon.svg" | relative_url }}" /> Upload your Pencil2D Projects</button>
+Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publically (giving you full credit of course).
 
 ## Share your work with the world
 

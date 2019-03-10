@@ -100,21 +100,6 @@ input[type=text] {
 
 Hello and thank you for your interest in helping to improve Pencil2D! You can use the form below to easily share project files with us.
 
-### Why do we want your Pencil2D projects?
-
-Some people may wonder why we are looking for other people's project files when we can just create our own. Unfortunately, creating animations takes lots of time and effort which could be used to improve the software. Furthermore, even if we did make our own animations to test Pencil2D with, they may not accurately reflect the types or variety of animations that our users are typically using Pencil2D for. Everything from your hardware, to Pencil2D version, to computer settings can potentially affect your project in ways that our developers can't mimic. To assure that *your projects* on in *your environment* work as well as possible, there is really no substitute for testing new versions and features with *your work*.
-
-You may also wonder what exactly we will do with your project. By default, when your project has been uploaded it will be shared with a trusted set of developers and quality assurance testers who have agreed not to use or share your work for anything other than testing various aspects of Pencil2D. Here are examples of some things we might use your project to:
-- Gather statistics on average project length, file sizes, camera resolutions, and other settings to make more informed design decisions.
-- Test new version of the program to assure that your projects continue to be usable in future versions of Pencil2D.
-- Test a wide assortment of new features. Some of the features that we currently wish to run tests on could result in lower file sizes, higher export quality, and lower resource consumption for your animations.
-
-If you opt-in to licensing your work publicaly, we may also use your project for things such as:
-- Videos showcasing examples of animation that can be created with Pencil2D, similar to [our first user showcase](https://www.youtube.com/watch?v=aa9PCu_UZpg).
-- Video tutorials demonstrating how to use features in Pencil2D.
-- Screenshots for our official user manuals.
-All public uses of your project will be accompanied with proper attribution to you.
-
 ### Project File Submission
 
 <div class="container">
@@ -137,6 +122,21 @@ All public uses of your project will be accompanied with proper attribution to y
   </div>
   <button id="submit" class="btn">Submit</button>
 </div>
+
+### Why do we want your Pencil2D projects?
+
+Some people may wonder why we are looking for other people's project files when we can just create our own. Unfortunately, creating animations takes lots of time and effort which could be used to improve the software. Furthermore, even if we did make our own animations to test Pencil2D with, they may not accurately reflect the types or variety of animations that our users are typically using Pencil2D for. Everything from your hardware, to Pencil2D version, to computer settings can potentially affect your project in ways that our developers can't mimic. To assure that *your projects* on in *your environment* work as well as possible, there is really no substitute for testing new versions and features with *your work*.
+
+You may also wonder what exactly we will do with your project. By default, when your project has been uploaded it will be shared with a trusted set of developers and quality assurance testers who have agreed not to use or share your work for anything other than testing various aspects of Pencil2D. Here are examples of some things we might use your project to:
+- Gather statistics on average project length, file sizes, camera resolutions, and other settings to make more informed design decisions.
+- Test new version of the program to assure that your projects continue to be usable in future versions of Pencil2D.
+- Test a wide assortment of new features. Some of the features that we currently wish to run tests on could result in lower file sizes, higher export quality, and lower resource consumption for your animations.
+
+If you opt-in to licensing your work publicaly, we may also use your project for things such as:
+- Videos showcasing examples of animation that can be created with Pencil2D, similar to [our first user showcase](https://www.youtube.com/watch?v=aa9PCu_UZpg).
+- Video tutorials demonstrating how to use features in Pencil2D.
+- Screenshots for our official user manuals.
+All public uses of your project will be accompanied with proper attribution to you.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
