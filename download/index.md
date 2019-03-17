@@ -4,23 +4,23 @@ title: Download
 tagline: Let's start animating immediately!
 comments: false
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win64-0.6.2.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-win32-0.6.2.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-mac-0.6.2.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-amd64-0.6.2.AppImage
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-win64-0.6.3.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-win32-0.6.3.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-mac-0.6.3.zip
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-linux-amd64-0.6.3.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-i386-0.6.2.AppImage
-  win64-size: 49.2MB
+  win64-size: 49.3MB
   win32-size: 43.9MB
-  mac-size: 44.3MB
-  linux64-size: 38MB
+  mac-size: 44.9MB
+  linux64-size: 38.1MB
   linux32-size: 63.8MB
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
-## Current Stable Version (v0.6.2)
+## Current Stable Version (v0.6.3)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 26 September 2018.
+Last Updated on 17 March 2019.
 See <a href="/2018/09/maintenance-release-0.6.2.html">What's New</a> in v0.6.2
 </blockquote>
 
