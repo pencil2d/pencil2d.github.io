@@ -21,7 +21,7 @@ nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 17 March 2019.
-See <a href="/2018/09/maintenance-release-0.6.2.html">What's New</a> in v0.6.2
+See <a href="/2019/03/pencil2d-0.6.3-release.html">What's New</a> in v0.6.3
 </blockquote>
 
 <div class="download-tiles">
