@@ -6,7 +6,7 @@ categories: "News"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
 author: "The Pencil2D team"
 published: true
-comments: false
+comments: true
 ---
 
 <div style="text-align: center;">
