@@ -8,12 +8,12 @@ download:
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-win32-0.6.3.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-mac-0.6.3.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-linux-amd64-0.6.3.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.2/pencil2d-linux-i386-0.6.2.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-linux-i386-0.6.3.AppImage
   win64-size: 49.3MB
   win32-size: 43.9MB
   mac-size: 44.9MB
   linux64-size: 38.1MB
-  linux32-size: 63.8MB
+  linux32-size: 39.2MB
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
