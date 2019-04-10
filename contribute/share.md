@@ -38,7 +38,7 @@ comments: false
   color: #FF0000;
 }
 
-input[type=text] {
+input[type=text], textarea {
 	display: inline-block;
 	width: auto;
 	height: calc(1.5em + 0.75rem + 2px);
@@ -50,6 +50,11 @@ input[type=text] {
 	background-clip: padding-box;
 	border: 1px solid #ced4da;
 	border-radius: 0.25rem;
+}
+
+textarea {
+  width: 100%;
+  height: 4rem;
 }
 
 .progress {
@@ -118,6 +123,7 @@ Hello and thank you for your interest in helping to improve Pencil2D! You can us
   <div id="optional">
     <h4>Optional Information</h4>
     <label>Creator (for attribution): <input type="text" id="creator"></label><br />
+    <label>Comments:<br /><textarea id="comments"></textarea></label><br />
     <label><input type="checkbox" id="public"> <em>Make my work public.</em> By checking this box you agree to provide your projects to us under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY license</a>.</label>
   </div>
   <button id="submit" class="btn">Submit</button>
@@ -215,7 +221,7 @@ $(function () {
         disableImageResize: true
     }).on('fileuploadsubmit', function (e, data) {
       var input = $('#input');
-      data.formData = { 'creator': $('#creator').val(), 'public': $('#public').is(':checked') };
+      data.formData = { 'creator': $('#creator').val(), 'public': $('#public').is(':checked'), 'comments': $('#comments').val() };
     }).on('fileuploadadd', function (e, data) {
         data.context = $('<div/>').appendTo('#files');
         $.each(data.files, function (index, file) {
