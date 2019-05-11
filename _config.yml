@@ -2,8 +2,8 @@ title: "Pencil2D Animation"
 description: "An easy, intuitive tool to make 2D hand-drawn animations."
 show_downloads: true
 
-baseurl: "/pencil2d.github.io" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://scribblemaniac.github.io" # change this to the base hostname & protocol for your site
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://www.pencil2d.org" # change this to the base hostname & protocol for your site
 
 permalink: /:year/:month/:title.html
 
