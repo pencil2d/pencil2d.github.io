@@ -17,7 +17,7 @@ download:
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
-## Current Stable Version (v0.6.3)
+## Current Stable Version (v0.6.4)
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 31 May 2019.
