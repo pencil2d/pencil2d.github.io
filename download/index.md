@@ -4,14 +4,14 @@ title: Download
 tagline: Let's start animating immediately!
 comments: false
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-win64-0.6.3.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-win32-0.6.3.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-mac-0.6.3.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-linux-amd64-0.6.3.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.3/pencil2d-linux-i386-0.6.3.AppImage
-  win64-size: 49.3MB
-  win32-size: 43.9MB
-  mac-size: 44.9MB
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-0.6.4.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-0.6.4.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-0.6.4.zip
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-linux-amd64-0.6.4.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/Pencil2D-linux-i386-0.6.4.AppImage
+  win64-size: 55.5MB
+  win32-size: 48.1MB
+  mac-size: 56.7MB
   linux64-size: 38.1MB
   linux32-size: 39.2MB
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
@@ -20,8 +20,8 @@ nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ## Current Stable Version (v0.6.3)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 17 March 2019.
-See <a href="/2019/03/pencil2d-0.6.3-release.html">What's New</a> in v0.6.3
+Last Updated on 31 May 2019.
+See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
 </blockquote>
 
 <div class="download-tiles">
