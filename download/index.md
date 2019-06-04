@@ -3,6 +3,7 @@ layout: page
 title: Download
 tagline: Let's start animating immediately!
 comments: false
+tabs: true
 download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-0.6.4.zip
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-0.6.4.zip
@@ -77,39 +78,54 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
 Having trouble running the program? please see the
 <a href="#troubleshooting">Troubleshooting</a>.
 
-### Arch Linux
+<br>
+## Other ways to install Pencil2D
 
-Pencil2D is available through the package [pencil2d](https://aur.archlinux.org/packages/pencil2d) on the AUR. Please follow [the tutorial](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) if you are not yet familiar with the process of installing packages from AUR.
 
-### Debian & Ubuntu
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
+  <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
+  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 28+</button>
+  <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
+  <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
+  <button class="tablinks" onclick="openTab(event, 'cask')">Homebrew Cask</button>
+</div>
 
-```
-sudo apt-get install pencil2d
-```
+<div id="arch" class="tabcontent">
+<h3>Arch Linux</h3>
+Pencil2D is available through the package <a hre="https://aur.archlinux.org/packages/pencil2d">pencil2d</a> on the AUR. Please follow <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages">the tutorial</a> if you are not yet familiar with the process of installing packages from AUR.
+</div>
 
-### Fedora 28+
+<div id="debian" class="tabcontent">
+<h3>Debian/Ubuntu</h3>
+<pre>sudo apt-get install pencil2d</pre>
+</div>
 
-```
-sudo dnf install Pencil2D
-```
+<div id="fedora" class="tabcontent">
+<h3>Fedora 28+</h3>
+<pre>sudo dnf install Pencil2D</pre>
+</div>
 
-### FreeBSD
+<div id="flatpak" class="tabcontent">
+<h3>Flatpak</h3>
+Install:
+<pre>flatpak install flathub org.pencil2d.Pencil2D</pre>
+Run:
+<pre>flatpak run org.pencil2d.Pencil2D</pre>
+</div>
 
-Package:
-```
-pkg install pencil2d
-```
+<div id="freebsd" class="tabcontent">
+<h4>Package:</h4>
+<pre>pkg install pencil2d</pre>
+<h4>Port:</h4>
+<pre>cd /usr/ports/graphics/pencil2d/ && make install clean</pre>
+</div>
 
-Port:
-```
-cd /usr/ports/graphics/pencil2d/ && make install clean
-```
-
-### Homebrew Cask (macOS)
-
-```
-brew cask install pencil2d
-```
+<div id="cask" class="tabcontent">
+<h3>Homebrew Cask</h3>
+<pre>brew cask install pencil2d</pre>
+</div>
+<script>document.getElementById("defaultTab").click();</script>
 
 <br>
 
