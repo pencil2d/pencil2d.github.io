@@ -6,15 +6,13 @@ comments: false
 tabs: true
 download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-0.6.4.zip
+  win64legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-legacy-0.6.4.zip
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-0.6.4.zip
+  win32legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-legacy-0.6.4.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-0.6.4.zip
+  maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-legacy-0.6.4.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-linux-amd64-0.6.4.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/Pencil2D-linux-i386-0.6.4.AppImage
-  win64-size: 55.5MB
-  win32-size: 48.1MB
-  mac-size: 56.7MB
-  linux64-size: 38.1MB
-  linux32-size: 39.2MB
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
@@ -31,45 +29,36 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
   </a><br>
-  Windows 64 bit <br>
-  <a href="{{ page.download.win64 }}">Download</a>
-  <div class="download-size">{{ page.download.win64-size }}</div>
+  Windows 7+<br>
+  <a href="{{ page.download.win64 }}">64-bit</a><br>
+  <a href="{{ page.download.win32 }}">32-bit</a>
 </div>
 
-<div class="download-tile">
+<!--<div class="download-tile">
   <a href="{{ page.download.win32 }}">
-    {% include win_icon.svg %}
+    {% include vista_icon.svg %}
   </a><br>
-  Windows 32 bit <br>
-  <a href="{{ page.download.win32 }}">Download</a>
-  <div class="download-size">{{ page.download.win32-size }}</div>
-</div>
+  Windows XP/Vista<br>
+  <a href="{{ page.download.win64legacy }}">64-bit</a><br>
+  <a href="{{ page.download.win32legacy }}">32-bit</a>
+</div>-->
 
 <div class="download-tile">
   <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
   </a><br>
   Mac <br>
-  <a href="{{ page.download.mac }}">Download</a>
-  <div class="download-size">{{ page.download.mac-size }}</div>
+  <a href="{{ page.download.mac }}">10.12+</a><br>
+  <a href="{{ page.download.maclegacy }}">10.7-10.11</a>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
-  Linux 64 bit<br>
-  <a href="{{ page.download.linux64 }}">Download</a>
-  <div class="download-size">{{ page.download.linux64-size }}</div>
-</div>
-
-<div class="download-tile">
-  <a href="{{ page.download.linux32 }}">
-    {% include linux_icon.svg %}
-  </a><br>
-  Linux 32 bit<br>
-  <a href="{{ page.download.linux32 }}">Download</a>
-  <div class="download-size">{{ page.download.linux32-size }}</div>
+  Linux<br>
+  <a href="{{ page.download.linux64 }}">64-bit</a><br>
+  <a href="{{ page.download.linux32 }}">32-bit</a>
 </div>
 
 </div>
