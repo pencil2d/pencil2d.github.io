@@ -19,11 +19,11 @@ layout: home
   </div>
   <div class="tile">
     <h2>Cross-Platform</h2>
-    <p>Pencil2D is cross-platform and runs on Windows, Mac OSX, Linux & Free BSD.</p>
+    <p>Pencil2D is cross-platform and runs on Windows, macOS, Linux & FreeBSD.</p>
   </div>
   <div class="tile">
     <h2>Open Source & Free</h2>
-    <p>Pencil2D is completely open source and free to use even commercially!</p>
+    <p>Pencil2D is completely open source and free to use, even commercially!</p>
   </div>
   <div style="clear:both"></div>
 </div>
