@@ -7,7 +7,6 @@ forum_link: https://discuss.pencil2d.org/
 fb_link: https://www.facebook.com/groups/709024775972087/
 discord_link: https://discord.gg/8FxdV2g
 youtube_link: https://www.youtube.com/channel/UCexMjl4rq8OyzAc7C03uKCQ/playlists
-google_plus_link: https://plus.google.com/communities/101311036131376070915
 tumblr_link: https://www.tumblr.com/tagged/pencil2d
 ---
 
@@ -34,12 +33,6 @@ tumblr_link: https://www.tumblr.com/tagged/pencil2d
   <a href="{{ page.youtube_link }}" target="_blank"><img src="/images/community-youtube.jpg" alt="Youtube Screenshot"></a>
     <a href="{{ page.youtube_link }}" target="_blank"><h2 class="post-title">Youtube</h2></a>
     Watch animations made in Pencil2D
-  </div>
-
-  <div class="community-tile">
-    <a href="{{ page.google_plus_link }}" target="_blank"><img src="/images/community-googleplus.jpg" alt="Google+ Screenshot"></a>
-    <a href="{{ page.google_plus_link }}" target="_blank"><h2 class="post-title">Google+</h2></a>
-    Great place to meet other Pencil2D users
   </div>
 
   <div class="community-tile">
