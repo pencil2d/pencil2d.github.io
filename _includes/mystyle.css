@@ -81,10 +81,10 @@
     }
     .download-tile {
         float: left;
-        width: 18%;
+        width: 21%;
         border: solid 1px ccc;
-        padding: 2em 0.5em 2em 0.5em;
-        margin: 1%;
+        padding: 2em 1em 2em 1em;
+        margin: 2%;
         box-sizing: border-box;
         font-size: 0.9em;
     }
