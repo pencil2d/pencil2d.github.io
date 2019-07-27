@@ -8,7 +8,7 @@ download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-0.6.4.hotfix.1.zip
   win64legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-legacy-0.6.4.zip
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-0.6.4.hotfix.1.zip
-  win32legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win32-legacy-0.6.4.zip
+  winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-winxp-0.6.4.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-0.6.4.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-legacy-0.6.4.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-linux-amd64-0.6.4.AppImage
@@ -29,19 +29,18 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
   </a><br>
-  Windows 7+<br>
+  Windows 7/8/10<br>
   <a href="{{ page.download.win64 }}">64-bit</a><br>
   <a href="{{ page.download.win32 }}">32-bit</a>
 </div>
 
-<!--<div class="download-tile">
+<div class="download-tile">
   <a href="{{ page.download.win32 }}">
     {% include vista_icon.svg %}
   </a><br>
   Windows XP/Vista<br>
-  <a href="{{ page.download.win64legacy }}">64-bit</a><br>
-  <a href="{{ page.download.win32legacy }}">32-bit</a>
-</div>-->
+  <a href="{{ page.download.winxp }}">32-bit</a>
+</div>
 
 <div class="download-tile">
   <a href="{{ page.download.mac }}">
