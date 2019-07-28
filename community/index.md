@@ -7,7 +7,7 @@ forum_link: https://discuss.pencil2d.org/
 fb_link: https://www.facebook.com/groups/709024775972087/
 discord_link: https://discord.gg/8FxdV2g
 youtube_link: https://www.youtube.com/channel/UCexMjl4rq8OyzAc7C03uKCQ/playlists
-tumblr_link: https://www.tumblr.com/tagged/pencil2d
+tumblr_link: https://pencil2d-software.tumblr.com/
 ---
 
 <div class="tiles" style="text-align:center">
@@ -38,7 +38,7 @@ tumblr_link: https://www.tumblr.com/tagged/pencil2d
   <div class="community-tile">
     <a href="{{ page.tumblr_link }}" target="_blank"><img src="{{ "/images/community-tumblr.jpg" | relative_url }}" alt="Tumblr Screenshot"></a>
     <a href="{{ page.tumblr_link }}" target="_blank"><h2 class="post-title">Tumblr</h2></a>
-    All animation works with tag #pencil2d
+    Animation works on Thumblr
   </div>
 
 </div>
