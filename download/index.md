@@ -29,8 +29,8 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
   </a><br>
-  Windows 7/8/10<br>
-  <a href="{{ page.download.win64 }}">64-bit</a><br>
+  Windows 7/8/10<br><br>
+  <a href="{{ page.download.win64 }}">64-bit</a> |
   <a href="{{ page.download.win32 }}">32-bit</a>
 </div>
 
@@ -38,8 +38,8 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
   <a href="{{ page.download.win32 }}">
     {% include vista_icon.svg %}
   </a><br>
-  Windows XP/Vista<br>
-  <a href="{{ page.download.winxp }}">32-bit</a>
+  Windows XP/Vista<br><br>
+  <a href="{{ page.download.winxp }}">32-bit</a><br>
 </div>
 
 <div class="download-tile">
@@ -55,8 +55,8 @@ See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4
   <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
-  Linux<br>
-  <a href="{{ page.download.linux64 }}">64-bit</a><br>
+  Linux<br><br>
+  <a href="{{ page.download.linux64 }}">64-bit</a> |
   <a href="{{ page.download.linux32 }}">32-bit</a>
 </div>
 
