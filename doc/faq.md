@@ -17,18 +17,16 @@ Depending on the name of the missing file, this error can occur for different re
 
 At the time of writing, Pencil2D can run on:
 
-- Windows 7 or later versions
-- macOS 10.12[***](https://www.pencil2d.org/doc/faq.html#deploying-to-older-macOS-versions) (Sierra) or later versions
+- Windows 7/8/10 (experimental support for Windows XP/Vista)
+- macOS 10.12 Sierra or later versions (experimental support for 10.7 Lion)
 - Linux Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later version
-- FreeBSD (via Ports)
+- FreeBSD
 
-### ***Deploying to older macOS versions
+### Legacy system support
 
-Developers are currently looking into alternate methods to deploy Pencil2D on older versions of macOS.
+Currently we are providing experimental support for legacy systems like Windows XP and macOS Mavericks.
 
-It's rather difficult to get Pencil2D working on some older OS like Windows XP or Mac OS 10.9, particularly since the devs don't have these old Operating Systems anymore. Pencil2D also depends on the technology used to build the software (QT Framework) to provide proper support to most operating systems.
-
-However if you own a older machine that can only have 10.11 and under macOS versions, and you'd like to help compile for those specific OS versions, [please contact the devs](/community/)! and follow our [macOS build guide](https://www.pencil2d.org/pencil-docs/docs/build__mac_8md_source.html) on the  developer documentation for more info.
+We urgently need users' feedback from these systems since the devs don't have these old Operating Systems anymore. If you own a older machine that can run macOS 10.7-10.11 or Windows XP, and you'd like to help test, [please contact the devs](/community/)!
 
 ## I hear about "Nightly Builds" so what is it?
 
@@ -97,11 +95,11 @@ It will be a lot bigger, BUT, you will be able to import the file now!
 
 ## Hey, I can’t seem to export videos?
 
-Please make sure to use the latest version (0.6 or later) to export videos in MP4 or AVI. We use FFMPEG for this process.
+Please make sure you are using the latest version (0.6 or later) to export videos. We use FFMPEG for this process.
 
 ## I was told it was possible to export GIF's but I can’t seem to find this option?
 
-You have to use the video export command:
+Use the video export command:
 **FILE > EXPORT > MOVIE... > Export Options Dialog**
 
 In the export options click on **browse** to give your file a name. You can also change the type of file to **GIF**.
