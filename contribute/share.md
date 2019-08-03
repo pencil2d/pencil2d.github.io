@@ -103,31 +103,14 @@ textarea {
 }
 </style>
 
-Hello and thank you for your interest in helping to improve Pencil2D! You can use the form below to easily share project files with us.
-
-### Project File Submission
-
-<div class="container">
-  <p>To get started, click the button below and select the project files you want to share with us. You can select .pclx files directly, but if you are using the older .pcl format, please zip the .pcl file and the corresponding .data folder together before uploading.</p>
-  <span class="btn btn-success fileinput-button">
-    <span>Add files...</span>
-    <!-- The file input field used as target for the file upload widget -->
-    <input id="fileupload" type="file" name="files[]" multiple>
-  </span>
-  <!-- The global progress bar -->
-  <div id="progress" class="progress">
-    <div class="progress-bar progress-bar-success"></div>
-  </div>
-  <!-- The container for the uploaded files -->
-  <div id="files" class="files"></div>
-  <div id="optional">
-    <h4>Optional Information</h4>
-    <label>Creator (for attribution): <input type="text" id="creator"></label><br />
-    <label>Comments:<br /><textarea id="comments"></textarea></label><br />
-    <label><input type="checkbox" id="public"> <em>Make my work public.</em> By checking this box you agree to provide your projects to us under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY license</a>.</label>
-  </div>
-  <button id="submit" class="btn">Submit</button>
-</div>
+Hello and thank you for your interest in helping to improve Pencil2D! Unfortunately
+this service will be down for an extented period of time due to technical difficulties. We do
+not know exactly when we will be able to get this working again, but it will likely not be before
+August 15th, 2019. In the mean time, you can still share problematic projects with the Pencil2D
+development team by using a third-party upload service such as [MEGA](https://mega.nz/),
+[Google Drive](https://drive.google.com), or [WeTransfer](https://wetransfer.com/) and sharing the
+link privately by [email](mailto:pencil2danimation@gmail.com) or by message on one our <a href="{{ "/community/" | relative_url }}">community
+platforms</a>.
 
 ### Why do we want your Pencil2D projects?
 
