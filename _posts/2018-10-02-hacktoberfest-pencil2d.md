@@ -12,14 +12,14 @@ comments: true
 <div style="text-align: center;">
   <img style="display:inline-block;" src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner"><br>
   <strong style="text-align:center;line-height:1;font-size:200px;display:block">+</strong><br>
-  <img style="display:inline-block;" src="https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png" alt="Hacktoberfest Logo">
+  <img style="display:inline-block;" src="{{ "/images/hacktoberfest-2018.png" | relative_url }}" alt="Hacktoberfest Logo">
 </div>
 
 We are pleased to be participating in Hacktoberfest this year and we are calling on everyone to use this opportunity to help make Pencil2D better while earning a free t-shirt! We are mostly in need of C++ developers, but even if you have no programming experience you may still be able to help us in other ways, so read on!
 
 # Getting Started
 
-_**Hacktoberfest** is a month-long celebration of open source software run by Digital Ocean in partnership with GitHub and Twilio_. It is open to anyone. To qualify for a prize you must submit five quality pull requests to public GitHub repositories. This does not have to be one of our repositories, but of course we would be very happy if you do decide to work with us. 
+_**Hacktoberfest** is a month-long celebration of open source software run by Digital Ocean in partnership with GitHub and Twilio_. It is open to anyone. To qualify for a prize you must submit five quality pull requests to public GitHub repositories. This does not have to be one of our repositories, but of course we would be very happy if you do decide to work with us.
 You can sign up anytime between **October 1st and October 31st** at https://hacktoberfest.digitalocean.com. To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: https://hacktoberfest.digitalocean.com/faq. Remember that **the due date for all PRs is October 31st!**
 
 # Pencil2D's Developer's Guide
