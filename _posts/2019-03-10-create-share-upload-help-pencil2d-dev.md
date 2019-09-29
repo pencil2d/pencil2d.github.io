@@ -29,7 +29,9 @@ If you've used Pencil2D before and still have some of your animation project fil
 
 For this we have created a simple form to you to upload** your project files.
 
-And you can read all related information in our Share Projects page: **[https://pencil2d.org/contribute/share](https://pencil2d.org/contribute/share)**
+And you can read all related information in our **Share Projects** page:
+
+**[https://pencil2d.org/contribute/share](https://pencil2d.org/contribute/share)**
 
 ****_Note: You can ONLY upload *.PCL or *.PCLX files, any other file will be rejected by the system._**
 
