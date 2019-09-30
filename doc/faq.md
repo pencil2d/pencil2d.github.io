@@ -50,16 +50,6 @@ Pencil2D won't get hot just by looking at it, in fact there's more chances that 
 
 For more information on how to contribute to Pencil2D please visit the **[Contribute](/contribute/)** Page.
 
-## Understanding Pencil2D Save files *.PCL (Legacy) & *.PCLX
-
-When you save your animation file in Pencil2D there are several things that you'll get.
-
-1. Pencil2D saves a **.PCL** file that is exclusive to the software. It is **not** an image or a video file, that means it does **not** hold inside any of image or sound you imported or created. It's more like an address book, which locates all those resources you've created or imported!
-
-2. A New folder is automatically created in the same location next to your .PCL file. It's name should be like something like this `MyFileName.pcl.data`. This folder contains all of your actual drawn keyframes saved as numbered .PNG images! as well as Your current colour palette info plus your "vector shapes" information are included there as .xml and .vec files respectively. If you import sound for example (see partial solution below), you'll also see a copy of the actual sound file in this folder. All of the resources in the folder are absolutely necessary for Pencil2D to understand how your animation is going to be displayed when you preview it inside the program.
-
-3. The **.PCLX** file from 0.6+ on the other hand is basically a container. It’s a compressed ZIP file that holds both the .PCL file and it’s associated DATA folder. You can extract it effortlessly by common zip tools like Winrar or 7zip if you rename the .PCLX extention to .ZIP (e.g `myAnimation.PCLX` -> `myAnimation.ZIP`)
-
 ## Pencil2D keeps crashing / Something happened and I couldn't save my work!
 
 Fortunately Pencil2D has an autosave feature for those moments when you forget to save!
@@ -70,9 +60,11 @@ On every version you can access it like this:
 
 ![Autosave Preferences]({{ "/images/autosave.png" | relative_url }})
 
-**Note** Change the “Number of modifications before autosaving” to affect how often Pencil2D will save automatically. As seen on the picture, in this case after 15 strokes or commands (like moving or clearing a frame), you’ll get your file auto-saved. You can modify this value and have Pencil2D wait up to 99 steps for the auto-save to be triggered.
+**Note** Change the “Number of modifications before autosaving” to affect how often Pencil2D will save automatically. As seen on the picture, in this case after 15 strokes or commands (like moving or clearing a frame), you’ll get your file auto-saved. You can modify this value to a **maximum** of **1024 steps** (0.6.5+) until the auto-save is triggered.
 
-Note that before auto-save can work properly you HAVE to save your file manually at least once (i.e give it a name and specify a location to be saved on your computer). However, if you have the auto-save option enabled, and you have not saved your file at least once, once auto-save activates you’ll be prompted to save your file for the first time.
+Note that before auto-save can work properly you HAVE to **save your file manually at least once** (i.e give it a name and specify a location to be saved on your computer). If you have the auto-save option enabled, and you have not saved your file at least once, once auto-save activates you’ll be prompted to save your file for the first time.
+
+If you don't save at least once, you run the risk of getting a crash due to memory overload, particularly in low end computers (see below).
 
 **Avoiding Memory Overload Crashes**
 
@@ -80,29 +72,60 @@ No matter the kind of work you're doing, be it a doodle or a full youtube episod
 
 The problem is that if you do not save, all the drawings will be stored in the RAM, and there's a limit to how much it can store, after reaching that limit your computer memory will not accept any more data and Pencil2D WILL crash.
 
+## Does Pencil2D have a text tool?
+
+Unfortunately not yet, but we are aware of this requirement and will work towards implementing once other critical issues have been solved.
+
+## Does Pencil2D have a shape tool?
+
+Unfortunately not right now, we are aware of the need behind this tool and will work towards implementing once other critical issues have been solved.
+
 ## I can’t seem to import videos, what's up?
 
 This functionality has not been implemented yet, it's on our to-do list at the moment. If you'd like to see what features are coming feel fee to visit our **[Official Feature Request Tracker](https://github.com/pencil2d/pencil/issues/540)**
 
 ## When I import sounds, I can see it on the layer, but I can’t hear anything?
 
-Please download Pencil2D 0.6 or later version and check it again. If you still can't hear the sound, we offer you a small workaround. Please download a free program called audacity (http://www.audacityteam.org/download/windows/).
+Please download Pencil2D 0.6.4 or later version and check it again. If you still can't hear the sound, we offer you a small workaround. Please download a free audio editor Audacity (http://www.audacityteam.org/download/).
 
   1. Open the file you want with it.
-  2. The re-export it as a WAV file. It appears as WAV(Microsoft) PCM 16bit signed.
+  2. The re-export it as a WAV file. It appears as WAV (Microsoft) PCM 16bit signed.
 
 It will be a lot bigger, BUT, you will be able to import the file now!
 
-## Hey, I can’t seem to export videos?
+If you want to convert back to a readable **MP3 file**, you have to download an [additional plug-in](https://manual.audacityteam.org/man/faq_installing_the_lame_mp3_encoder.html) for Audacity.
 
-Please make sure you are using the latest version (0.6 or later) to export videos. We use FFMPEG for this process.
+## My sound is off-sync after exporting a video
+
+Pencil2D developers have worked heavily in the audio syncinc issue however there can be a small delay form how you preview it in the editor vs how it sound in a video player. To workaround this please finalize your video using a video editor. There are free alternatives that can help you shift the sound track appropriately and export.
+
+## Can’t export videos.
+
+Please make sure you are using the latest version (0.6.4 or later) to export videos. We use FFMPEG for this process.
+
+**For users with spanish language localization (and perhaps other languages)**
+
+There's a bug in version predating 0.6.5 which impedes users to export videos when having the interface To fix this you have to explicitly add the filetype to the video name when browsing for an output folder after using the "browse" button. 
+
+If you see your file named only as `"MyAnimation"` please rename it to `"MyAnimation.FileType"` _(e.g FileType -> MP4, AVI, WebM, etc)_ and make sure the filetype extension is visible in the file address bar before exporting, otherwise Pencil2D will export an empty file and not a video, as it can convert the animation. **This has been fixed in version 0.6.5+**
 
 ## I was told it was possible to export GIF's but I can’t seem to find this option?
 
-Use the video export command:
-**FILE > EXPORT > MOVIE... > Export Options Dialog**
+Use the dedicated GIF export action command:
+**File > Export > Animated GIF... > Export Options Dialog**
 
-In the export options click on **browse** to give your file a name. You can also change the type of file to **GIF**.
+In the export options click on **browse** to give your file a name (and make sure the filetype is attached to the name)
+
+**Open-Source--**
++ [OpenShot](https://openshot.org)
++ [KDEnlive](https://kdenlive.org/en/)
++ [Shotcut](https://shotcut.org)
++ [Olive (Beta)](https://olivevideoeditor.org)
+
+**Free**
++ [Lightworks](https://lwks.com)
++ [Hitfilm Express](https://fxhome.com/hitfilm-express)
++ [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
 
 ## Can I copy and paste in place specific content from one frame to another inside Pencil2D?
 
@@ -112,7 +135,7 @@ Once you've copied or cut the artwork, Go to a new frame you have already create
 
 ## Can I flip / mirror my drawings?
 
-Yes, in version 0.6 you can flip your drawings either vertically or horizontally.
+Yes, in version 0.6.0 and above you can flip your **drawings** either vertically or horizontally.
 
 If you want to flip the **VIEW** (meaning you only mirror how you see the canvas) you can use the menu commands:
 
@@ -127,7 +150,7 @@ If you want to flip /mirror your **ARTWORK** permanently you can do the followin
 
 **EDIT > Selection > Flip X / Flip Y**
 
-## I have a Hi-DPi screen / high resolution desktop but the text in Pencil2D is all wonky / Icons are too small
+## I have a Hi-DPi screen / high resolution desktop, but text is wonky / icons are too small in Pencil2D
 
 User **Jeetman** has contributed with this small workaround while the development team improves compatibility with high resolution displays:
 
@@ -186,9 +209,11 @@ We are looking for ways to optimize Pencil2D, but improving your computer is par
 + You should attempt to make habit of saving your progress with the next number in sequence at major milestones (i.e keyframes, breakdowns, inbetweens, ink n' paint, etc). This way you can prevent to lose your work in the rare case that Pencil2D crashes and corrupts your save.
 + In the future we will attempt to automate this process as well, since it’s good practice to save it that way regardless of stability issues of any given software.
 
-## I can only see 240 frames, is there a way to increase the timeline frame length?
+## How to increase the timeline frame length? I can only see 240 frames.
 
-Yes, Pencil2D can currently display up to **10,000 thousand frames**. The timeline will auto extend when you reach the end of current spaces.
+Pencil2D can currently display up to **10,000 thousand frames**.
+
+But don't worry the timeline will auto extend when you place a keyframe towards the end of timeline panel display space.
 
 To enable more frames manually please go to:
 **EDIT > PREFERENCES > TIMELINE > Timeline size in Frames**
@@ -196,6 +221,16 @@ To enable more frames manually please go to:
 However we advice that you **DON'T** force Pencil2D to work with more than 1500+ frames per file, unless you are prepared for possible issues during work in the editor and during export that can arise from high memory use. We understand this might seem like a rather strict limitation, but it’s a safe boundary limit before things can start to go out of control.
 
 We will be working to optimize and improve the amount of frames you can work with and export at any given time, but we ask you to work smart. Remember the more frames and layers you have, the more memory Pencil2D WILL use, and the chance of crashing WILL increase particularly on low-end computers.
+
+## Understanding Pencil2D Save files *.PCL (Legacy) & *.PCLX
+
+When you save your animation file in Pencil2D there are several things that you'll get.
+
+1. Pencil2D saves a **.PCL** file that is exclusive to the software. It is **not** an image or a video file, that means it does **not** hold inside any of image or sound you imported or created. It's more like an address book, which locates all those resources you've created or imported!
+
+2. A New folder is automatically created in the same location next to your .PCL file. It's name should be like something like this `MyFileName.pcl.data`. This folder contains all of your actual drawn keyframes saved as numbered .PNG images! as well as Your current colour palette info plus your "vector shapes" information are included there as .xml and .vec files respectively. If you import sound for example (see partial solution below), you'll also see a copy of the actual sound file in this folder. All of the resources in the folder are absolutely necessary for Pencil2D to understand how your animation is going to be displayed when you preview it inside the program.
+
+3. The **.PCLX** file from 0.6+ on the other hand is basically a container. It’s a compressed ZIP file that holds both the .PCL file and it’s associated DATA folder. You can extract it effortlessly by common zip tools like Winrar or 7zip if you rename the .PCLX extention to .ZIP (e.g `myAnimation.PCLX` -> `myAnimation.ZIP`)
 
 --------
 Some of the original FAQ solutions were contributed by user Piggy, chchwy, Jeetman and morr.
