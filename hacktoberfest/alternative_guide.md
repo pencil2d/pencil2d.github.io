@@ -56,7 +56,7 @@ We have some work-in-progress documentation for our users where you can discover
 + [Tutorials (Community)](https://www.pencil2d.org/doc/tutorials.html) _A compilation of old & new community tutorials on using Pencil2D._
 + [FAQ](https://www.pencil2d.org/doc/faq.html) _Frequently Asked Questions; In need of an update._
 
-# Tracking our Progress
+# Tracking Our Progress
 
 Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/10) for limited-time only to see what work has been done for Hacktoberfest! We will also post some updates on our [official social media channels](/community.html) to share what people have contributed as part of Hacktoberfest.
 

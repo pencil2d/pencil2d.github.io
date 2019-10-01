@@ -84,7 +84,7 @@
         {% endif %}
         {% if page.layout == 'hacktoberfest' %}
           {% unless page-tagline %}
-            <img src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
+            <img src="{{ "/images/hacktoberfest-icon.png" | relative_url }}" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
           {% endunless %}
         {% endif %}
         {{ page-title }}
@@ -94,7 +94,7 @@
             <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
         {% endif %}
         {% if page.layout == 'hacktoberfest' and page-tagline %}
-            <img src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
+            <img src="{{ "/images/hacktoberfest-icon.png" | relative_url }}" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
         {% endif %}
         {{ page-tagline }}
       </h2>

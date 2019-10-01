@@ -13,4 +13,5 @@ comments: false
 Our greatest need is for developers, but we also have tasks for people to participate in this event even if they do not know how to program. We have created a guide for both of these groups of contributors to help people get started with Hacktoberfest. Please choose the appropriate guide for your skills if you are interested in learning more:
 
 [Guide for Developer Contributors](developers_guide.html)
+
 [Guide for Non-Developer Contributors](alternative_guide.html)

@@ -17,7 +17,7 @@ _**Hacktoberfest** is a month-long celebration of open source software run by Di
 + Hacktoberfest is open to everyone in our global community.
 + To participate, four pull requests must be submitted to public GitHub repositories.
 + You can sign up anytime between **October 1st** and **October 31st**. 
-+ PR’s will be due on October 31st!
++ PRs will be due on October 31st!
 
 **How do I Join?**
 1. First, register at http://hacktoberfest.digitalocean.com 
@@ -51,7 +51,7 @@ We have different ways of interacting with the repository issues
 
 _**Note:** You are not required to choose only from the suggested issues that carry these labels, any valid pull request that you submit will count towards your prize._
 
-# Tracking our progress
+# Tracking Our Progress
 
 Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/10) for limited-time only to see what work has been done for Hacktoberfest! We will also post some updates on our [official social media channels](/community.html) to share what people have contributed as part of Hacktoberfest.
 
