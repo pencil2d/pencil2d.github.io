@@ -5,28 +5,14 @@ tagline: "Hacktoberfest 2019"
 comments: false
 ---
 
-Pencil2D is proud to participate actively in Digital Ocean's Hacktoberfest event, during which you can receive a free T-shirt for contributing to our project (or any other open source project).
-
-This guide will walk you through all the things you need to know to participate in this as a non-developer. If you do know how to program in C++, we encourage you to use your programming expertise to help us as we are always in need of programmers to fix bugs and add new enhancements. We have created [a guide specifically for developers](/hacktoberfest/developers_guide.html) that you should look at if this is what you are interested in doing.
-
 # Getting Started
 
-**What is Hacktoberfest?**
+Pencil2D is proud to participate actively in Digital Ocean's Hacktoberfest event, during which you can receive a free T-shirt for contributing to our project (or any other open source project).
 
-_**Hacktoberfest** is a month-long celebration of open source software run by DigitalOcean and DEV._
-+ Hacktoberfest is open to everyone in our global community.
-+ To participate, four pull requests must be submitted to public GitHub repositories.
-+ You can sign up anytime between **October 1st** and **October 31st**. 
-+ PR’s will be due on October 31st!
+This guide will walk you through all the things you need to know to participate in this as a **non-developer**. 
 
-**How do I Join?**
-1. First, register at http://hacktoberfest.digitalocean.com 
-2. Then, visit our Github repository at https://github.com/pencil2d/pencil/issues/
-3. Submit at least four PRs (Pull Requests) to our repository. You can look for open issues labeled [**Hacktoberfest**](https://github.com/pencil2d/pencil/issues?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest) for inspiration. Quality contributions are encouraged!
-
-_**Note:** Contributions can be made to any public repository. While it doesn’t have to be ours, we would be very happy if you decide to work with us. ;-)_
-
-To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: https://hacktoberfest.digitalocean.com/faq.
+> _If you do know how to program in C++, we have created a guide [specifically for developers](/hacktoberfest/developers_guide.html) that you can look at. 
+> We kindly encourage you to use your programming expertise to help us, as we are always in need of programmers to fix bugs and add new enhancements to improve the application further._
 
 # Github? Pull Requests? What are these?
 
