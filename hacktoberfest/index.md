@@ -32,7 +32,7 @@ We are greatly in need of human talent, specifically developers, but we also hav
 
 # Contribution Guides
 Please choose the appropriate guide for your skills if you are interested in contributing:
-[Guide for Developer Contributors](developers_guide.html)
-[Guide for Non-Developer Contributors](alternative_guide.html)
+- [Guide for Developer Contributors](developers_guide.html)
+- [Guide for Non-Developer Contributors](alternative_guide.html)
 
 > _Note: Pencil2D is not related or sponsored by Digital Ocean in any way. We are simply promoting their event which has a beneficial impact in the open-source community and should not be considered as corporate endorsement of any kind to our project._
