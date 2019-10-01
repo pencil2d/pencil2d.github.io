@@ -5,28 +5,14 @@ tagline: "Hacktoberfest 2019"
 comments: false
 ---
 
-Pencil2D is proud to participate actively in Digital Ocean's Hacktoberfest event, during which you can receive a free T-shirt for contributing to our project (or any other open source project).
-
-This guide will walk you through all the things you need to know to participate in this as a developer. If you do not know how to program in C++, you will have to learn if you want to help program Pencil2D, or you can contribute through other means (please see [this alternative guide](/hacktoberfest/alternative_guide.html) if this is what you are interested in doing). Experience with Qt is also useful, but you can probably learn it as you work or find tasks that do not require modifying the GUI very much.
-
 # Getting Started
 
-**What is Hacktoberfest?**
+Pencil2D is proud to participate actively in Digital Ocean's Hacktoberfest event, during which you can receive a free T-shirt for contributing to our project (or any other open source project).
 
-_**Hacktoberfest** is a month-long celebration of open source software run by DigitalOcean and DEV._
-+ Hacktoberfest is open to everyone in our global community.
-+ To participate, four pull requests must be submitted to public GitHub repositories.
-+ You can sign up anytime between **October 1st** and **October 31st**. 
-+ PRs will be due on October 31st!
+This guide will walk you through all the things you need to know to participate in this as a **developer**. 
 
-**How do I Join?**
-1. First, register at http://hacktoberfest.digitalocean.com 
-2. Then, visit our Github repository at https://github.com/pencil2d/pencil/issues/
-3. Submit at least four PRs (Pull Requests) to our repository. You can look for open issues labeled [**Hacktoberfest**](https://github.com/pencil2d/pencil/issues?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest) for inspiration. Quality contributions are encouraged!
-
-_**Note:** Contributions can be made to any public repository. While it doesn’t have to be ours, we would be very happy if you decide to work with us. ;-)_
-
-To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: https://hacktoberfest.digitalocean.com/faq.
+> _If you do not know how to program in C++ & Qt framework, and you want to help program Pencil2D source, you'd have to learn about these technologies prior to your contribution, but you can probably learn these as you work or find tasks that do not require modifying the GUI (Graphical User Interface) very much._
+> _If you want to contribute through other means please visit our [alternative contribution guide](/hacktoberfest/alternative_guide.html)_
 
 # Pencil2D's Developer Guides
 
