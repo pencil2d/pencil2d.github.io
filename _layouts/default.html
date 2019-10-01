@@ -71,6 +71,9 @@
     {% if page.layout == 'gsoc' %}
       {% assign page-tagline = page.tagline | escape  %}
     {% endif %}
+    {% if page.layout == 'hacktoberfest' %}
+      {% assign page-tagline = page.tagline | escape  %}
+    {% endif %}
 
     <section class="page-header">
       <h1 class="project-name">
@@ -79,11 +82,19 @@
             <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
           {% endunless %}
         {% endif %}
+        {% if page.layout == 'hacktoberfest' %}
+          {% unless page-tagline %}
+            <img src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
+          {% endunless %}
+        {% endif %}
         {{ page-title }}
       </h1>
       <h2 class="project-tagline">
         {% if page.layout == 'gsoc' and page-tagline %}
             <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
+        {% endif %}
+        {% if page.layout == 'hacktoberfest' and page-tagline %}
+            <img src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
         {% endif %}
         {{ page-tagline }}
       </h2>

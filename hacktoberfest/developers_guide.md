@@ -1,23 +1,13 @@
 ---
-layout: post
-title: "Pencil2D in Hacktoberfest 2019!"
-tagline: "A chance to earn a free gift from Digital Ocean!"
-categories: "FOSS Events"
-image: '{{ "/images/pencil_icon.png" | relative_url }}'
-author: "The Pencil2D team"
-published: false
-comments: true
+layout: hacktoberfest
+title: "Guide for Developer Contributors"
+tagline: "Hacktoberfest 2019"
+comments: false
 ---
 
-<div style="text-align: center;">
-  <img style="display:inline-block;" src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" alt="Hacktoberfest Logo"><br>
-  <strong style="text-align:center;line-height:1;font-size:200px;display:block">+</strong><br>
-  <img style="display:inline-block;" src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
-</div>
+Pencil2D is proud to participate actively in Digital Ocean's Hacktoberfest event, during which you can receive a free T-shirt for contributing to our project (or any other open source project).
 
-We are pleased to be accepting Hacktoberfest 2019 participants this year and we are calling on everyone to use this opportunity to help improve Pencil2D while getting a chance to earn a free t-shirt! (woo!) 
-
-We are always in need of C++ / Qt developers, but even if you have no programming experience you may still be able to help us in other ways, so read on!
+This guide will walk you through all the things you need to know to participate in this as a developer. If you do not know how to program in C++, you will have to learn if you want to help program Pencil2D, or you can contribute through other means (please see [this alternative guide](/hacktoberfest/alternative_guide.html) if this is what you are interested in doing). Experience with Qt is also useful, but you can probably learn it as you work or find tasks that do not require modifying the GUI very much.
 
 # Getting Started
 
@@ -40,17 +30,17 @@ To learn more about Hacktoberfest and how to participate, please visit their **F
 
 # Pencil2D's Developer Guides
 
-To learn how to get started with Pencil2D's codebase please the following links:
+To learn how to get started with Pencil2D's codebase please have a look at the following links:
 + [Pencil2D Documentation Page](https://www.pencil2d.org/pencil-docs/docs/) _Here you'll find development setup guides for all major OS, as well as the Doxygen generated documentation from source comments._
-+ [Github Developer Wiki](https://github.com/pencil2d/pencil/wiki) _This is a mirror of the Pencil2D docs, use it if the other link is not working for you, or viceversa._
++ [Github Developer Wiki](https://github.com/pencil2d/pencil/wiki) _This is a mirror of the Pencil2D docs, use it if the other link is not working for you, or vice versa._
 + [pencil2d/pencil Github repository](https://github.com/pencil2d/pencil/) _Here you can find our source code and various issues we need help with._
 
 # Pencil2D's User Guides
 
-We also have a work-in-progress front-end for our users where you should find how to use Pencil2D.
+We have some work-in-progress documentation for our users where you can discover how to use Pencil2D:
 + [User Manual](https://www.pencil2d.org/doc/user-manual.html) _A WIP effort to write a simple hands-on guide to learn the basic usage of Pencil2D._
 + [Tutorials (Community)](https://www.pencil2d.org/doc/tutorials.html) _A compilation of old & new community tutorials on using Pencil2D._
-+ [FAQ](https://www.pencil2d.org/doc/faq.html) _Frequently Asked Questions; need an update._
++ [FAQ](https://www.pencil2d.org/doc/faq.html) _Frequently Asked Questions; In need of an update._
 
 ## Recommended Issues
 
@@ -61,23 +51,9 @@ We have different ways of interacting with the repository issues
 
 _**Note:** You are not required to choose only from the suggested issues that carry these labels, any valid pull request that you submit will count towards your prize._
 
-# I Can't Program, How Can I Participate?
-
-Don't worry there are other things you help us with:
-- We are in need of **documentation contributions** to help new users learn the ropes of Pencil2D. Please visit our [Pencil2D website repository](https://github.com/pencil2d/pencil2d.github.io), and read the documentation [CONTRIBUTING](https://github.com/pencil2d/pencil2d.github.io/tree/master/doc/CONTRIBUTING.md) file for a detailed guide on how to contribute to our different documentation media.
-- We're interested in high quality animation files to **demo** key features of the the software. If you are an animator and are interested in helping with this, contact us to se which features are prone to be demoed.
-- If you are fluent in a foreign language you can help by **translating** and **proofreading** the messages in Pencil2D into your language. You can find and help with our translations on the [Transifex platform](https://www.transifex.com/pencil2d/pencil2d/).
-- If you are experienced with **web development**, our website also has an open source repository [available here](https://github.com/pencil2d/pencil2d.github.io). It is a static website so we don't have many things to work on for it at the moment, but have a look around our site and let us know if there is something you think you can improve upon.
-- Get creative! Think about what you are good at and if you can use skills to help us in any way. 
-  - Are you an artist? Maybe you can make create mockups for parts of our interface. 
-  - Work in advertising? Maybe you can provide some suggestions for marketing our software. 
-  - Even simple things like spreading the word on social media or thanking the developers can be more helpful than you think (although these won't help you get the t-shirt ;-) ).
-
-_For additional details on any of these points please contact us on one of our official channels (see [Getting Help](https://www.pencil2d.org/2019-09-29-hacktoberfest-2019-pencil2d#getting-help))._
-
 # Tracking our progress
 
-Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/10) for limited-time only to see what work has been done for Hacktoberfest!
+Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/10) for limited-time only to see what work has been done for Hacktoberfest! We will also post some updates on our [official social media channels](/community.html) to share what people have contributed as part of Hacktoberfest.
 
 # Github Repository (N)ettiquete
 
@@ -97,9 +73,8 @@ Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone
 If you want to participate in Hacktoberfest with us but are having issues at any point, you can contact us and we will do our best to help you.
 
 + You can reach us on any of our [official channels](https://www.pencil2d.org/community/). 
-+ If you are a developer, the best places to get help are
++ The best places to get help with development are:
   + [#pencil2d freenode official IRC channel](https://webchat.freenode.net/?channels=#pencil2d)
-  + [Pencil2D Official Discord server](https://discord.gg/8FxdV2g) in the #general-development channel. 
-+ If you are not a developer, to get help for Hacktoberfest you can user our [forum](https://discuss.pencil2d.org) or [Discord server](https://discord.gg/8FxdV2g) `#general` channel.
+  + [Pencil2D Official Discord server](https://discord.gg/8FxdV2g) in the `#general-development` channel.
 
 _Note: Pencil2D is not related or sponsored by Digital Ocean in any way. We are simply promoting their event which has a beneficial impact in the open-source community and should not be considered as corporate endorsement of any kind to our project._
