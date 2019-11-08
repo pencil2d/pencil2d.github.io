@@ -69,7 +69,6 @@ Having trouble running the program? please see the
 <br>
 ## Other ways to install Pencil2D
 
-
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
   <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
@@ -146,7 +145,11 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
 - **api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
-    Please follow the instructions of this [Microsoft Help Page](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
+    Download and install the following windows updates:
+    - Win7 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51137
+    - Win7 64bit: https://www.microsoft.com/en-US/download/details.aspx?id=51161
+    - Win8 32bit: https://www.microsoft.com/en-ph/download/details.aspx?id=51106
+    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109
 
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
