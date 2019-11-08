@@ -2,7 +2,7 @@
 layout: page
 title: Download
 tagline: Let's start animating immediately!
-comments: false
+comments: true
 tabs: true
 download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-0.6.4.hotfix.1.zip
