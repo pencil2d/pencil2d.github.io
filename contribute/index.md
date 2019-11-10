@@ -32,13 +32,16 @@ If you like this software, and you want it to get better, you can help!
 
 ## Share your work with us
 
-We are actively searching for project files (.pclx and .pcl files) created by our users. These user files can helps us to understand how people are using our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. If you have used Pencil2D before and are willing to share your projects with our development and quality assurance personnel, please take a minute to upload them here:
+Share your projects with our development and quality assurance personnel, please upload them here:
 <button class="btn" id="upload-action" onclick="window.location.href='{{ "/contribute/share.html" | relative_url }}'"><img src="{{ "/images/upload_icon.svg" | relative_url }}" /> Upload your Pencil2D Projects</button>
-Do not worry about the quality of your animations, we will not judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publically (giving you full credit of course).
+
+We are actively searching for project files (.pclx and .pcl files) created by our users. These projects will helps us to understand how people use our application and to catch bugs or test new features with real-world projects to improve the overall experience for our users. 
+
+Do not worry about the quality of your animations, we will never judge you, our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publically (giving you full credit of course).
 
 ## Share your work with the world
 
-If you've made things with Pencil2D upload them online (to video sharing sites or social media for example) and share them with the world! Saying that your work was made with Pencil2D in the description or credits helps spread the word about our program and shows how it can be used. We love to sees all the wonderful things that people are creating with Pencil2D!
+Share your animations with the world! (to video sharing sites or social media for example) Saying that your work was made with Pencil2D in the description or credits helps spread the word about our program and shows how it can be used. We love to sees all the wonderful things that people are creating with Pencil2D!
 
 ## Report a bug
 
