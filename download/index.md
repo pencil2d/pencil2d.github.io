@@ -102,9 +102,10 @@ Run:
 </div>
 
 <div id="freebsd" class="tabcontent">
-<h4>Package:</h4>
+  <h3>FreeBSD</h3>
+  Package:
 <pre>pkg install pencil2d</pre>
-<h4>Port:</h4>
+Port:
 <pre>cd /usr/ports/graphics/pencil2d/ && make install clean</pre>
 </div>
 
@@ -147,10 +148,10 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
     Download and install the following windows updates:
     - Win7 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51137
-    - Win7 64bit: https://www.microsoft.com/en-US/download/details.aspx?id=51161
-    - Win8 32bit: https://www.microsoft.com/en-ph/download/details.aspx?id=51106
-    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109
-
+    - Win7 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51161
+    - Win8 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51106
+    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109 <br>
+ 
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
     Right click on the file and press `Open`.
