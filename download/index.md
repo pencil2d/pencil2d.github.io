@@ -150,7 +150,7 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
     - Win7 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51137
     - Win7 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51161
     - Win8 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51106
-    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109 <br>
+    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109 <br><br>
  
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
