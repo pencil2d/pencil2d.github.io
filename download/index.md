@@ -80,7 +80,7 @@ Having trouble running the program? please see the
 
 <div id="arch" class="tabcontent">
 <h3>Arch Linux</h3>
-Pencil2D is available through the package <a href="https://aur.archlinux.org/packages/pencil2d">pencil2d</a> on the AUR. Please follow <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages">the tutorial</a> if you are not yet familiar with the process of installing packages from AUR.
+<pre>sudo pacman -S pencil2d</pre>
 </div>
 
 <div id="debian" class="tabcontent">
