@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Maintenance Release: Pencil2D 0.6.2"
+title: "Pencil2D 0.6.2 Now Available"
 tagline: ""
 categories: "Release Note"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
