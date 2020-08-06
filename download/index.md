@@ -8,7 +8,7 @@ download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-win64-0.6.5.zip
   win64legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-legacy-0.6.4.zip
   win32: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-win32-0.6.5.zip
-  winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-winxp-0.6.4.zip
+  winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-winxp-0.6.5.zip
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-mac-0.6.5.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-legacy-0.6.4.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-amd64-0.6.5.AppImage
