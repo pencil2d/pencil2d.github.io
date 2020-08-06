@@ -138,7 +138,8 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 
     1. Right click on the file you just downloaded and select `Extract all`.
     2. Go to the location you just extract to, find `Pencil2D.exe` and double click on it.
-    <br>
+  
+  <br>
 
 - **msvcp140.dll is missing**
 
@@ -147,10 +148,10 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 - **api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
     Download and install the following windows updates:
-    - Win7 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51137
-    - Win7 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51161
-    - Win8 32bit: https://www.microsoft.com/en-us/download/details.aspx?id=51106
-    - Win8 64bit: https://www.microsoft.com/en-us/download/details.aspx?id=51109 <br><br>
+    - Win7 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51137>
+    - Win7 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51161>
+    - Win8 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51106>
+    - Win8 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51109> <br><br>
  
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
