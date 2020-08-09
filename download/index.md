@@ -12,7 +12,7 @@ download:
   mac: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-mac-0.6.5.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-legacy-0.6.4.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-amd64-0.6.5.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.4/Pencil2D-linux-i386-0.6.4.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-i386-0.6.5.AppImage
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 ---
 
