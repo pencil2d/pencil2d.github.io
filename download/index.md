@@ -47,8 +47,8 @@ Last Updated on 31 July 2020.
     {% include mac_icon.svg %}
   </a><br>
   Mac <br>
-  <a href="{{ page.download.mac }}">10.12+</a><br>
-  <a href="{{ page.download.maclegacy }}">10.7-10.11</a>
+  <a href="{{ page.download.mac }}">10.13+</a><br>
+  <a href="{{ page.download.maclegacy }}">10.7-10.12</a>
 </div>
 
 <div class="download-tile">
