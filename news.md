@@ -19,7 +19,7 @@ tagline:
         <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
     </h2>
 
-    <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+    <span>{{ post.excerpt | strip_html | truncatewords: 30 }}</span>
 
     </li>
 {% endfor %}
