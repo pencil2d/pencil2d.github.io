@@ -14,13 +14,14 @@ download:
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-amd64-0.6.5.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-i386-0.6.5.AppImage
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
+release-note-link: /2019/05/pencil2d-0.6.4-release.html
 ---
 
 ## Current Stable Version (v0.6.5)
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 31 July 2020.
-<!--See <a href="/2019/05/pencil2d-0.6.4-release.html">What's New</a> in v0.6.4 -->
+See <a href="{{ page.release-note-link }}">What's New</a> in v0.6.5
 </blockquote>
 
 <div class="download-tiles">
