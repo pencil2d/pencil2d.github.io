@@ -4,10 +4,6 @@ title: News
 tagline: 
 ---
 
-<h2>Latest Posts</h2>
-
-<div>&nbsp;</div>
-
 <ul class="post-list">
 {% for post in site.posts %}
     <li>
