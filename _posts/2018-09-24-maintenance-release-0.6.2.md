@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pencil2D 0.6.2 Now Available"
+title: "Pencil2D v0.6.2 Now Available"
 tagline: ""
 categories: "Release Note"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
@@ -9,9 +9,7 @@ published: true
 comments: true
 ---
 
-Welcome to Pencil2D v0.6.2!
-
-In this version, we fixed a rather critical file-saving issue. We encourage all users to **upgrade to v0.6.2 as soon as possible** to avoid any chance that you may lose your work accidentally. Additionally, Pencil2D v0.6.2 comes with heaps of improvements and fixes. [Download it now]({{ "/download" | relative_url }}) and enjoy animating.
+Pencil2D v0.6.2 is here! In this version, we fixed a rather critical file-saving issue. We encourage all users to **upgrade to v0.6.2 as soon as possible** to avoid any chance that you may lose your work accidentally. Additionally, Pencil2D v0.6.2 comes with heaps of improvements and fixes. [Download it now]({{ "/download" | relative_url }}) and enjoy animating.
 
 <img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
 

@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "Pencil2D Translations Moved to Transifex!"
-author: "Matt Chang"
+author: "The Pencil2D team"
 published: true
 comments: true
 ---
-
-Hello friends of Pencil2D,
 
 The translation platform of Pencil2D has moved to **[Transifex][0]**. From now on, all work on translations will happen there. You can still access to the old [OneSky project][1] but it will no longer be maintained and updated.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Maintenance Release: Pencil2D 0.6.1"
+title: "Maintenance Release: Pencil2D v0.6.1"
 tagline: ""
 categories: "Release Note"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
@@ -13,7 +13,7 @@ We are excited to announce our first maintenance release after v0.6 with dozens 
 
 ## What's new in v0.6.1
 
-Although it is a maintenance release but still something to be excited about. With Pencil2D v.6.1, you will get a better, faster, lighter Pencil2D in many aspects. Here are some of the highlights of this release:
+Although it is a maintenance release but still something to be excited about. With Pencil2D v0.6.1, you will get a better, faster, lighter Pencil2D in many aspects. Here are some of the highlights of this release:
 
 ## Pencil2D as a brand
 

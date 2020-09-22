@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing Pencil2D 0.6"
+title: "Introducing Pencil2D v0.6"
 tagline: ""
 categories: "Release Note"
 image: '{{ "/images/pencil_icon.png" | relative_url }}'
@@ -8,7 +8,6 @@ author: "The Pencil2D team"
 published: true
 comments: true
 ---
-
 <img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
@@ -19,7 +18,7 @@ Please download it [here]({{ "/download/" | relative_url }}). Let’s take a loo
 
 ## 0.6 is much more stable than 0.5.4
 
-Thanks to all the [contributors][0], tons of bugs have been fixed in the 0.6. We can say with confidence that Pencil2D 0.6 is more stable than old 0.5.4. Now you can simply enjoy animating without worrying too much about losing your work.
+Thanks to all the [contributors][0], tons of bugs have been fixed in the 0.6. We can say with confidence that Pencil2D v0.6 is more stable than old v0.5.4. Now you can simply enjoy animating without worrying too much about losing your work.
 
 But please keep in mind, there are still some [known issues](#known_issues) and developers are working hard to resolve them. Please don't hesitate to [tell us][1] if you encounter any issues. Your report will help us make Pencil2D better.
 
@@ -28,7 +27,7 @@ But please keep in mind, there are still some [known issues](#known_issues) and 
 
 ## Color Wheel
 
- Take a look at the new Color Wheel! Choosing colors is not frustrating anymoe.
+Take a look at the new Color Wheel! Choosing colors is not frustrating anymoe.
 <br>
 <table>
 <tr>
