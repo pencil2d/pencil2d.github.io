@@ -1,7 +1,7 @@
 ---
 layout: hacktoberfest
 title: "Guide for Developer Contributors"
-tagline: "Hacktoberfest 2019"
+tagline: "Hacktoberfest 2020"
 comments: false
 ---
 
@@ -31,15 +31,15 @@ We have some work-in-progress documentation for our users where you can discover
 ## Recommended Issues
 
 We have different ways of interacting with the repository issues
-1. We have a [Hacktoberfest label](https://github.com/pencil2d/pencil/issues?q=is%3Aissue+is%3Aopen+label%3Ahacktoberfest) for issues that new developers should be able to implement during the duration of this event.
-2. If those issues are claimed, or do not interest you, we suggest you browse through our [Enhancement label](https://github.com/pencil2d/pencil/labels/enhancement). This label has important quality of life improvements for the project and may have a similar level of difficulty Hacktoberfest issues, just be prepared to dip yourself more into the code! 
-3. For seasoned developers that want to continue supporting the project we can also recommend the [request: core](https://github.com/pencil2d/pencil/labels/request%3A%20core) and the [bug](https://github.com/pencil2d/pencil/labels/bug) labels.
+1. We have a [Hacktoberfest label](https://github.com/pencil2d/pencil/labels/Hacktoberfest) for issues that new developers should be able to implement during the duration of this event.
+2. If those issues are claimed, or do not interest you, we suggest you browse through our [Enhancement label](https://github.com/pencil2d/pencil/labels/Enhancement). This label has important quality of life improvements for the project and may have a similar level of difficulty Hacktoberfest issues, just be prepared to dip yourself more into the code! 
+3. For seasoned developers that want to continue supporting the project we can also recommend the [Feature Request](https://github.com/pencil2d/pencil/labels/Feature%20Request) and the [Bug](https://github.com/pencil2d/pencil/labels/Bug) labels.
 
 _**Note:** You are not required to choose only from the suggested issues that carry these labels, any valid pull request that you submit will count towards your prize._
 
 # Tracking Our Progress
 
-Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/10) for limited-time only to see what work has been done for Hacktoberfest! We will also post some updates on our [official social media channels](/community.html) to share what people have contributed as part of Hacktoberfest.
+Visit our [Hacktoberfest Milestone](https://github.com/pencil2d/pencil/milestone/13) for the duration of the event to see what work is being done for Hacktoberfest! If there's enough participation, we will also consider posting some updates on our [official social media channels](/community.html) to share the Hacktoberfest contributions to our users.
 
 # Github Repository (N)ettiquete
 
