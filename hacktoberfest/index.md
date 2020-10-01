@@ -5,7 +5,7 @@ comments: false
 ---
 
 <div style="text-align: center;">
-  <img style="display:inline-block;" src="{{ "/images/hacktoberfest-2019.svg" | relative_url }}" alt="Hacktoberfest Logo">
+  <img style="display:inline-block;" src="{{ "/images/hacktoberfest-full-logo.svg" | relative_url }}" alt="Hacktoberfest Logo">
 </div>
 
 # **What is Hacktoberfest?**
