@@ -17,13 +17,13 @@ _**Hacktoberfest** is a month-long celebration of open source software run by Di
 + PRs **will be due** on October 31st!
 
 **How do I Join?**
-1. First, register at http://hacktoberfest.digitalocean.com 
-2. Then, visit our Github repository at https://github.com/pencil2d/pencil/issues/
+1. First, register at <http://hacktoberfest.digitalocean.com>
+2. Then, visit our Github repository at <https://github.com/pencil2d/pencil/issues/>
 3. Submit at least **four (4) PRs (Pull Requests)** to our repository. Quality contributions are encouraged! 
 
 > _**Note:** Contributions can be made to any public repository. While it doesn’t have to be ours, we would be very happy if you decide to work with us. ;-)_
 
-To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: [https://hacktoberfest.digitalocean.com/faq](https://hacktoberfest.digitalocean.com/faq).
+To learn more about Hacktoberfest and how to participate, please visit their **FAQ**: <https://hacktoberfest.digitalocean.com/faq>
 
 # Pencil2D & Hacktoberfest
 Every year we take this opportunity to welcome potential Pencil2D contributors and we thought it was a great idea to reward them for helping us to make Pencil2D better! As such we'll be taking part of this recurrent event in the foreseeable future.
