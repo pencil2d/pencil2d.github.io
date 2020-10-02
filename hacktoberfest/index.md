@@ -1,6 +1,6 @@
 ---
 layout: hacktoberfest
-title: "Hacktoberfest 2019"
+title: "Hacktoberfest 2020"
 comments: false
 ---
 

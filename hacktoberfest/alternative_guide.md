@@ -1,7 +1,7 @@
 ---
 layout: hacktoberfest
 title: "Guide for Non-Developer Contributors"
-tagline: "Hacktoberfest 2019"
+tagline: "Hacktoberfest 2020"
 comments: false
 ---
 
