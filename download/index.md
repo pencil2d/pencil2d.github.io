@@ -5,23 +5,22 @@ tagline: Let's start animating immediately!
 comments: false
 tabs: true
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-win64-0.6.5.zip
-  win64legacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-win64-legacy-0.6.4.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-win32-0.6.5.zip
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-win64-0.6.6.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-win32-0.6.6.zip
   winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-winxp-0.6.5.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-mac-0.6.5.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-mac-0.6.6.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.4/pencil2d-mac-legacy-0.6.4.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-amd64-0.6.5.AppImage
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-amd64-0.6.6.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.5/pencil2d-linux-i386-0.6.5.AppImage
 nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
-release-note-link: /2019/05/pencil2d-0.6.4-release.html
+release-note-link: /2020/07/pencil2d-0.6.5-release.html
 ---
 
-## Current Stable Version (v0.6.5)
+## Current Stable Version (v0.6.6)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 31 July 2020.
-See <a href="{{ page.release-note-link }}">What's New</a> in v0.6.5
+Last Updated on 17 Feb 2021.
+<a href="{{ page.release-note-link }}">What's New</a>
 </blockquote>
 
 <div class="download-tiles">
@@ -120,7 +119,7 @@ Port:
 
 ## Nightly Build <a name="nightlybuild"></a>
 
-Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`. See [What's New]({{ nightly-link }}) in nightly builds.
+Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
 
 | Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
 | :--------------: | :---------------: | :-------------: | :---------------: |
