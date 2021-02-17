@@ -20,7 +20,7 @@ release-note-link: /2020/07/pencil2d-0.6.5-release.html
 
 <blockquote style="color:#898989;font-size:0.8em">
 Last Updated on 17 Feb 2021.
-<a href="{{ page.release-note-link }}">What's New</a>
+<!-- <a href="{{ page.release-note-link }}">What's New?</a> -->
 </blockquote>
 
 <div class="download-tiles">
