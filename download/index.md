@@ -111,7 +111,7 @@ Port:
 
 <div id="cask" class="tabcontent">
 <h3>Homebrew Cask</h3>
-<pre>brew cask install pencil2d</pre>
+<pre>brew install --cask pencil2d</pre>
 </div>
 <script>document.getElementById("defaultTab").click();</script>
 
