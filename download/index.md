@@ -114,9 +114,7 @@ Port:
 <pre>brew install --cask pencil2d</pre>
 </div>
 <script>document.getElementById("defaultTab").click();</script>
-
 <br>
-
 ## Nightly Build <a name="nightlybuild"></a>
 
 Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
@@ -131,7 +129,14 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 [3]: https://goo.gl/NQuJYr
 
 <br>
+### Older Pencil2D Versions
 
+All older versions of Pencil2D are available on [Github Releases][gh-releases] or [Bitbucket Downloads][bb-downloads].
+
+[gh-releases]: https://github.com/pencil2d/pencil/releases
+[bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
+
+<br>
 ## Troubleshooting {#troubleshooting}
 
 - **Qt5Widgets.dll was not found**
