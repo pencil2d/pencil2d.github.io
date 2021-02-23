@@ -71,7 +71,7 @@ Having trouble running the program? please see the
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
   <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
-  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 28+</button>
+  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
   <button class="tablinks" onclick="openTab(event, 'cask')">Homebrew Cask</button>
