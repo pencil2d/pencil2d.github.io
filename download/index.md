@@ -113,7 +113,7 @@ Port:
 <pre>brew install --cask pencil2d</pre>
 </div>
 <script>document.getElementById("defaultTab").click();</script>
-<br>
+
 ## Nightly Build <a name="nightlybuild"></a>
 
 Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
@@ -127,23 +127,12 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 [2]: https://goo.gl/PXsLCI
 [3]: https://goo.gl/NQuJYr
 
-<br>
-### Older Pencil2D Versions
-
-All older versions of Pencil2D are available on [Github Releases][gh-releases] or [Bitbucket Downloads][bb-downloads].
-
-[gh-releases]: https://github.com/pencil2d/pencil/releases
-[bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
-
-<br>
 ## Troubleshooting {#troubleshooting}
 
 - **Qt5Widgets.dll was not found**
 
     1. Right click on the file you just downloaded and select `Extract all`.
     2. Go to the location you just extract to, find `Pencil2D.exe` and double click on it.
-  
-  <br>
 
 - **msvcp140.dll is missing**
 
@@ -162,3 +151,10 @@ All older versions of Pencil2D are available on [Github Releases][gh-releases] o
     Right click on the file and press `Open`.
 
 Still getting in trouble? Please go to [Pencil2D forum](https://discuss.pencil2d.org/c/support).
+
+## Older Pencil2D Versions
+
+All older versions of Pencil2D are available on [Github Releases][gh-releases] or [Bitbucket Downloads][bb-downloads].
+
+[gh-releases]: https://github.com/pencil2d/pencil/releases
+[bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
