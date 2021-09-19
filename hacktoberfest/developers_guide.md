@@ -60,7 +60,7 @@ If you want to participate in Hacktoberfest with us but are having issues at any
 
 + You can reach us on any of our [official channels](https://www.pencil2d.org/community/). 
 + The best places to get help with development are:
-  + [#pencil2d freenode official IRC channel](https://webchat.freenode.net/?channels=#pencil2d)
+  + [#pencil2d Libera Chat official IRC channel](https://web.libera.chat/#pencil2d)
   + [Pencil2D Official Discord server](https://discord.gg/8FxdV2g) in the `#general-development` channel.
 
 _Note: Pencil2D is not related or sponsored by Digital Ocean in any way. We are simply promoting their event which has a beneficial impact in the open-source community and should not be considered as corporate endorsement of any kind to our project._
