@@ -61,16 +61,19 @@ a certain build is not available for your operating system, please check the pre
       })
     }
 
-    function error() {
+    function showError() {
       document.getElementById("nightly-loading").textContent = "Unable to retrieve Nightly Builds. Please try again later.";
     }
 
     Promise.all([
+      // Fetch workflow runs
       fetch("https://api.github.com/repos/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}/runs?branch={{page.nightly-branch}}&per_page={{page.fetch-limit}}", {
         headers: {
           "Accept": "application/vnd.github.v3+json"
         }
       }).then(response => response.json()),
+
+      // ...and files for all OSes on Google Drive
       fetchGoogleDriveFiles("{{page.windows-x86-parent}}").then(response => response.json()),
       fetchGoogleDriveFiles("{{page.windows-x86-64-parent}}").then(response => response.json()),
       fetchGoogleDriveFiles("{{page.macos-parent}}").then(response => response.json()),
@@ -82,15 +85,18 @@ a certain build is not available for your operating system, please check the pre
           "message" in macosFiles ||
           "message" in linuxFiles) {
         // Messages are bad news, it means we got an error
-        error();
+        showError();
         return;
       }
+
       const aggregatedData = {};
+
+      // Collect all the per-OS download links for each run
       for (let [os, folder] of [["win32", win32Files], ["win64", win64Files], ["macos", macosFiles], ["linux", linuxFiles]]) {
         for (let file of folder.files) {
           const match = file.originalFilename.match(/^pencil2d-\w+-(\d+)-\d{4}-\d{2}-\d{2}.(zip|AppImage)$/);
           if (match === null) {
-            console.log(`${file.originalFilename} didn't match`);
+            // File name didn't match, don't know what to do with it
             continue;
           }
           const runNumber = match[1];
@@ -100,46 +106,67 @@ a certain build is not available for your operating system, please check the pre
           aggregatedData[runNumber][os] = file.webContentLink;
         }
       }
+
+      // Add the metadata for all the runs that we have files for
       for (let run of runs.workflow_runs) {
         if (run.run_number in aggregatedData) {
           aggregatedData[run.run_number]["commit"] = run.head_commit
           aggregatedData[run.run_number]["run_url"] = run.html_url
         }
       }
+
+      // Let's "render" our data
       const nightlyList = document.getElementById("nightly-builds");
-      let open = true;
+      let detailsOpen = true;
       for (let [runNumber, data] of Object.entries(aggregatedData).sort((a, b) => Math.sign(b[0] - a[0]))) {
-        const el = document.createElement("li");
-        el.value = runNumber;
+        const buildItem = document.createElement("li");
+        buildItem.value = runNumber;
         const details = document.createElement("details");
-        details.open = open;
-        open = false;
+        // Open the first entry by default
+        details.open = detailsOpen;
+        detailsOpen = false;
         const summary = document.createElement("summary");
         if ("commit" in data) {
+          // Build summary - timestamp + (linked) commit message
           summary.appendChild(document.createTextNode(`${data.commit.timestamp.replace("T", "_").replace("Z", "")} \u2013 `));
           const commitLink = document.createElement("a");
-          commitLink.appendChild(document.createTextNode(data.commit.message.split("\n")[0]));
+
+          let commitMessage = data.commit.message.split("\n").shift();
+          if (commitMessage.length > 72) {
+            // Make sure commit message is no longer than 72 characters (like GitHub)
+            commitMessage = commitMessage.substring(0, 69) + "...";
+          }
+
+          commitLink.appendChild(document.createTextNode(commitMessage));
           commitLink.href = `https://github.com/{{page.nightly-repo}}/commit/${data.commit.id}`;
           summary.appendChild(commitLink);
         } else {
+          // Got no metadata about this run :(
           summary.appendChild(document.createTextNode("Unable to retrieve information"));
         }
         details.appendChild(summary);
+
+        // Add the actual details area...
         const linkList = document.createElement("ul");
+
+        // ...with the download links...
         const downloadList = document.createElement("li");
         let text = "Download for ";
         for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["macos", "macOS"], ["linux", "Linux"]]) {
           if (os in data === false) {
             continue; // No download for this OS
           }
+
           downloadList.appendChild(document.createTextNode(text));
+          text = ' \u2022 '; // bullet
           const downloadLink = document.createElement("a");
           downloadLink.appendChild(document.createTextNode(osName));
           downloadLink.href = data[os];
           downloadList.appendChild(downloadLink);
-          text = ' \u2022 ';
         }
         linkList.appendChild(downloadList);
+
+        // ...and the link to the build details
         if ("run_url" in data) {
           const buildDetails = document.createElement("li");
           buildDetails.appendChild(document.createTextNode("View "));
@@ -149,12 +176,14 @@ a certain build is not available for your operating system, please check the pre
           buildDetails.appendChild(detailsLink);
           linkList.appendChild(buildDetails);
         }
+
         details.appendChild(linkList);
-        el.appendChild(details);
-        nightlyList.appendChild(el);
+        buildItem.appendChild(details);
+        nightlyList.appendChild(buildItem);
       }
+      // Remove the loading message
       document.getElementById("nightly-loading").remove();
     })
-    .catch(error);
+    .catch(showError);
   })();
 </script>
