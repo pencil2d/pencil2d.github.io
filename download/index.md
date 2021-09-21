@@ -122,10 +122,10 @@ Nightly builds are the bleeding edge versions of Pencil2D, which contains the mo
 | :--------------: | :---------------: | :-------------: | :---------------: |
 | [Download][0]    | [Download][1]     | [Download][2]   | [Download][3]     |
 
-[0]: https://goo.gl/5pZXED
-[1]: https://goo.gl/0rbHu6
-[2]: https://goo.gl/PXsLCI
-[3]: https://goo.gl/NQuJYr
+[0]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CSVlqc3JNQV9hVGs?resourcekey=0-mfeDpkYVm70KrOvKYM7UVw&usp=sharing
+[1]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CcUEwS1R0WFhwM0E?resourcekey=0-7hr0hkLkSBVdEkaeb-okdg&usp=sharing
+[2]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CeVpTY294cXdLZ2c?resourcekey=0-OH02kleYDbtzlw3UbxFMZA&usp=sharing
+[3]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CcU1WOFpCOFBvVXc?resourcekey=0-2L-INjRPsn2ANX4MZIGU0Q&usp=sharing
 
 ## Troubleshooting {#troubleshooting}
 
