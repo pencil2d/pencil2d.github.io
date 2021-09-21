@@ -34,7 +34,7 @@ Nightly Builds are the most up-to-date, experimental versions that reflects the 
 
 However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
 
-**Nightly Builds** [DOWNLOAD HERE](/download/#nightlybuild)
+**Nightly Builds** [DOWNLOAD HERE](/download/nightly/)
 
 ## How to change the size of the canvas?
 
