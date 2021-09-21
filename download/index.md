@@ -114,18 +114,10 @@ Port:
 </div>
 <script>document.getElementById("defaultTab").click();</script>
 
-## Nightly Build <a name="nightlybuild"></a>
+## Nightly Builds {#nightlybuild}
 
-Nightly builds are the bleeding edge versions of Pencil2D, which contains the most recent fixes and features. The following links will direct you to Google Drive, please right-click on a file and select `Download`. The filename is `pencil2d-OS-year-month-date`.
-
-| Windows 64 bit   | Windows 32 bit    | Mac             | Linux             |
-| :--------------: | :---------------: | :-------------: | :---------------: |
-| [Download][0]    | [Download][1]     | [Download][2]   | [Download][3]     |
-
-[0]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CSVlqc3JNQV9hVGs?resourcekey=0-mfeDpkYVm70KrOvKYM7UVw&usp=sharing
-[1]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CcUEwS1R0WFhwM0E?resourcekey=0-7hr0hkLkSBVdEkaeb-okdg&usp=sharing
-[2]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CeVpTY294cXdLZ2c?resourcekey=0-OH02kleYDbtzlw3UbxFMZA&usp=sharing
-[3]: https://drive.google.com/drive/folders/0BxdcdOiOmg-CcU1WOFpCOFBvVXc?resourcekey=0-2L-INjRPsn2ANX4MZIGU0Q&usp=sharing
+Nightly Builds are the bleeding edge versions of Pencil2D which contain the most recent fixes and features.
+You can find them on our [Nightly Build download page](nightly/).
 
 ## Troubleshooting {#troubleshooting}
 
