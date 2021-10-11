@@ -3,8 +3,7 @@ layout: post
 title: "Pencil2D in Hacktoberfest 2020"
 tagline: "Support open source and pick a limited edition T-shirt!"
 categories: "FOSS Events"
-image: '{{ "/images/pencil_icon.png" | relative_url }}'
-author: "The Pencil2D team"
+author: "The Pencil2D Team"
 published: true
 comments: false
 ---

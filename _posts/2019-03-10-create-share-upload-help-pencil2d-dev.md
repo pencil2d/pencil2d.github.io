@@ -3,8 +3,7 @@ layout: post
 title: "Share your work & help Pencil2D"
 tagline: "Contribute to Pencil2D development with YOUR art!"
 categories: "News"
-image: '{{ "/images/pencil_icon.png" | relative_url }}'
-author: "The Pencil2D team"
+author: "The Pencil2D Team"
 published: true
 comments: true
 ---

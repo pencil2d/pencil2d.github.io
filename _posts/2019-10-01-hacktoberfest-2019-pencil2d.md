@@ -3,8 +3,7 @@ layout: post
 title: "Pencil2D in Hacktoberfest 2019!"
 tagline: "A chance to earn a free gift from Digital Ocean!"
 categories: "FOSS Events"
-image: '{{ "/images/pencil_icon.png" | relative_url }}'
-author: "The Pencil2D team"
+author: "The Pencil2D Team"
 published: true
 comments: true
 ---

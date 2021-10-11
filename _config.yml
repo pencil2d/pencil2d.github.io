@@ -1,4 +1,5 @@
 title: "Pencil2D Animation"
+tagline: "Open Source animation software"
 description: "An easy, intuitive tool to make 2D hand-drawn animations."
 show_downloads: true
 
@@ -6,8 +7,6 @@ baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empt
 url: "https://www.pencil2d.org" # change this to the base hostname & protocol for your site
 
 permalink: /:year/:month/:title.html
-
-# exclude: [ "/forums" ]
 
 google_analytics: UA-5266256-7
 # cayman-blog date format
@@ -17,23 +16,23 @@ cayman-blog:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
 #  - jekyll-feed
 
 theme: # leave it empty
 
 # social
-author: "Pencil2D"
-image: /images/pencil_icon.png
+author: "The Pencil2D Team"
+defaults:
+  - values:
+      image: /images/pencil_icon.png
 
 twitter:
   username: pencil2d
-#  site:
 facebook:
-  #publisher: 1592372034171500
-  #profile_id: 1809805629
+  publisher: 1379437495650288
   #app_id: 1798910940422432 # cayman-blog
-  authors: pencil2dsoft
   #admins:
 github:
   owner_url: "https://github.com/pencil2d/pencil"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pencil2D Translations Moved to Transifex!"
-author: "The Pencil2D team"
+author: "The Pencil2D Team"
 published: true
 comments: true
 ---
