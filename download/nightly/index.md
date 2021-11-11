@@ -75,9 +75,6 @@ The following links will direct you to Google Drive folders. Please right-click 
 </div>
 </noscript>
 
-> Loading...
-{:#nightly-loading}
-
 <ol id="nightly-builds"></ol>
 
 <script>
@@ -96,6 +93,14 @@ The following links will direct you to Google Drive folders. Please right-click 
       nightlyLoading.textContent = "Unable to retrieve Nightly Builds. Please try again later.";
       const buildDirs = document.getElementById("build-dirs");
       nightlyLoading.appendChild(buildDirs);
+    }
+    
+    // Add loading message
+    {
+      const nightlyBuilds = document.getElementById("nightly-builds");
+      const nightlyLoading = document.createElement("blockquote");
+      nightlyLoading.appendChild(document.createTextNode("Loading\u2026"));
+      nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
 
     Promise.all([
