@@ -49,8 +49,7 @@ a certain build is not available for your operating system, please check the pre
 }
 </style>
 
-<noscript>
-<div id="build-dirs">
+<noscript id="build-dirs">
 <h2>Build Directories</h2>
 The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.
 
@@ -72,7 +71,6 @@ The following links will direct you to Google Drive folders. Please right-click 
     </tr>
   </tbody>
 </table>
-</div>
 </noscript>
 
 <ol id="nightly-builds"></ol>
@@ -91,8 +89,9 @@ The following links will direct you to Google Drive folders. Please right-click 
     function showError() {
       const nightlyLoading = document.getElementById("nightly-loading");
       nightlyLoading.textContent = "Unable to retrieve Nightly Builds. Please try again later.";
-      const buildDirs = document.getElementById("build-dirs");
-      nightlyLoading.appendChild(buildDirs);
+      const buildDirs = document.createElement("div");
+      buildDirs.innerHTML = document.getElementById("build-dirs").innerHTML;
+      nightlyLoading.parentNode.insertBefore(buildDirs, nightlyLoading);
     }
     
     // Add loading message
