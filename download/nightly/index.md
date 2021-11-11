@@ -36,6 +36,10 @@ a certain build is not available for your operating system, please check the pre
 #nightly-builds summary {
   cursor: pointer;
   display: list-item;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 #nightly-builds ul {
   padding-left: 2em;
@@ -132,14 +136,7 @@ a certain build is not available for your operating system, please check the pre
           dateMessage.title = timestamp.toLocaleString(undefined, {"dateStyle": "long", "timeStyle": "long"});
           summary.appendChild(dateMessage);
           const commitLink = document.createElement("a");
-
-          let commitMessage = data.commit.message.split("\n").shift();
-          if (commitMessage.length > 72) {
-            // Make sure commit message is no longer than 72 characters (like GitHub)
-            commitMessage = commitMessage.substring(0, 69) + "...";
-          }
-
-          commitLink.appendChild(document.createTextNode(commitMessage));
+          commitLink.appendChild(document.createTextNode(data.commit.message.split("\n")[0]));
           commitLink.href = `https://github.com/{{page.nightly-repo}}/commit/${data.commit.id}`;
           summary.appendChild(commitLink);
         } else {
