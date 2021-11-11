@@ -49,10 +49,37 @@ a certain build is not available for your operating system, please check the pre
 }
 </style>
 
+<noscript>
+<div id="build-dirs">
+<h2>Build Directories</h2>
+The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Windows (64-bit)</th>
+      <th style="text-align: center">Windows (32-bit)</th>
+      <th style="text-align: center">macOS</th>
+      <th style="text-align: center">Linux (64-bit)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CSVlqc3JNQV9hVGs?resourcekey=0-mfeDpkYVm70KrOvKYM7UVw&usp=sharing">Download</a></td>
+      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CcUEwS1R0WFhwM0E?resourcekey=0-7hr0hkLkSBVdEkaeb-okdg&usp=sharing">Download</a></td>
+      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CeVpTY294cXdLZ2c?resourcekey=0-OH02kleYDbtzlw3UbxFMZA&usp=sharing">Download</a></td>
+      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CcU1WOFpCOFBvVXc?resourcekey=0-2L-INjRPsn2ANX4MZIGU0Q&usp=sharing">Download</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</noscript>
+
 > Loading...
 {:#nightly-loading}
 
 <ol id="nightly-builds"></ol>
+
 <script>
   "use strict";
   (function() {
@@ -65,7 +92,10 @@ a certain build is not available for your operating system, please check the pre
     }
 
     function showError() {
-      document.getElementById("nightly-loading").textContent = "Unable to retrieve Nightly Builds. Please try again later.";
+      const nightlyLoading = document.getElementById("nightly-loading");
+      nightlyLoading.textContent = "Unable to retrieve Nightly Builds. Please try again later.";
+      const buildDirs = document.getElementById("build-dirs");
+      nightlyLoading.appendChild(buildDirs);
     }
 
     Promise.all([
@@ -151,7 +181,7 @@ a certain build is not available for your operating system, please check the pre
         // ...with the download links...
         const downloadList = document.createElement("li");
         let text = "Download for ";
-        for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["macos", "macOS"], ["linux", "Linux"]]) {
+        for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["macos", "macOS"], ["linux", "Linux (64-bit)"]]) {
           if (os in data === false) {
             continue; // No download for this OS
           }
