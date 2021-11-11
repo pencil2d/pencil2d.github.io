@@ -127,7 +127,10 @@ a certain build is not available for your operating system, please check the pre
         const summary = document.createElement("summary");
         if ("commit" in data) {
           // Build summary - timestamp + (linked) commit message
-          summary.appendChild(document.createTextNode(`${data.commit.timestamp.replace("T", "_").replace("Z", "")} \u2013 `));
+          const timestamp = new Date(data.commit.timestamp);
+          const dateMessage = document.createTextNode(timestamp.toLocaleString(undefined, {"dateStyle": "medium"}) + " \u2013 ");
+          dateMessage.title = timestamp.toLocaleString(undefined, {"dateStyle": "long", "timeStyle": "long"});
+          summary.appendChild(dateMessage);
           const commitLink = document.createElement("a");
 
           let commitMessage = data.commit.message.split("\n").shift();
