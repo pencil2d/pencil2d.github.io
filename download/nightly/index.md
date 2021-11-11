@@ -5,7 +5,6 @@ tagline: Download bleeding edge builds of Pencil2D
 comments: false
 fetch-limit: 100
 nightly-repo: pencil2d/pencil
-nightly-branch: master
 nightly-workflow: ci.yml
 drive-api-key: AIzaSyD2z_aPwUD5HFRHUtFKihgoEWv3nZnzsik
 windows-x86-parent: 0BxdcdOiOmg-CcUEwS1R0WFhwM0E
@@ -67,7 +66,7 @@ a certain build is not available for your operating system, please check the pre
 
     Promise.all([
       // Fetch workflow runs
-      fetch("https://api.github.com/repos/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}/runs?branch={{page.nightly-branch}}&per_page={{page.fetch-limit}}", {
+      fetch("https://api.github.com/repos/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}/runs?per_page={{page.fetch-limit}}", {
         headers: {
           "Accept": "application/vnd.github.v3+json"
         }
