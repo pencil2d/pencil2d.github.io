@@ -93,7 +93,7 @@ The following links will direct you to Google Drive folders. Please right-click 
       buildDirs.innerHTML = document.getElementById("build-dirs").innerHTML;
       nightlyLoading.parentNode.insertBefore(buildDirs, nightlyLoading);
     }
-    
+
     // Add loading message
     {
       const nightlyBuilds = document.getElementById("nightly-builds");
@@ -166,7 +166,8 @@ The following links will direct you to Google Drive folders. Please right-click 
         if ("commit" in data) {
           // Build summary - timestamp + (linked) commit message
           const timestamp = new Date(data.commit.timestamp);
-          const dateMessage = document.createTextNode(timestamp.toLocaleString(undefined, {"dateStyle": "medium"}) + " \u2013 ");
+          const dateMessage = document.createElement("span")
+          dateMessage.textContent = timestamp.toLocaleString(undefined, {"dateStyle": "medium"}) + " \u2013 ";
           dateMessage.title = timestamp.toLocaleString(undefined, {"dateStyle": "long", "timeStyle": "long"});
           summary.appendChild(dateMessage);
           const commitLink = document.createElement("a");
