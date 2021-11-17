@@ -16,7 +16,7 @@ resource-keys: 0BxdcdOiOmg-CcUEwS1R0WFhwM0E/0-7hr0hkLkSBVdEkaeb-okdg,0BxdcdOiOmg
 
 <noscript id="build-dirs">
 <h2>Build Directories</h2>
-The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.
+<p>The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.</p>
 
 <table>
   <thead>
@@ -58,7 +58,7 @@ The following links will direct you to Google Drive folders. Please right-click 
       buildDirs.innerHTML = document.getElementById("build-dirs").innerHTML;
       nightlyLoading.parentNode.insertBefore(buildDirs, nightlyLoading);
     }
-    
+
     // Add loading message
     {
       const nightlyBuilds = document.getElementById("nightly-builds");
@@ -67,7 +67,7 @@ The following links will direct you to Google Drive folders. Please right-click 
       nightlyLoading.appendChild(document.createTextNode("Redirecting, please wait\u2026"));
       nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
-    
+
     let os, arch = 64;
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("os")) {
@@ -86,13 +86,13 @@ The following links will direct you to Google Drive folders. Please right-click 
       showError();
       return;
     }
-    
+
     const driveMap = {
       "windows": { 32: "{{page.windows-x86-parent}}", 64: "{{page.windows-x86-64-parent}}" },
       "linux": { 64: "{{page.linux-parent}}" },
       "macos": { 64: "{{page.macos-parent}}" }
     }
-    
+
     if ((os in driveMap && arch in driveMap[os]) === false) {
       showError();
       return;
@@ -105,7 +105,7 @@ The following links will direct you to Google Drive folders. Please right-click 
         showError();
         return;
       }
-      
+
       let maxRunNumber = 0, maxRun = null;
       for (let file of folder.files) {
         const match = file.originalFilename.match(/^pencil2d-\w+-(\d+)-\d{4}-\d{2}-\d{2}.(zip|AppImage)$/);
@@ -119,10 +119,10 @@ The following links will direct you to Google Drive folders. Please right-click 
           maxRun = file;
         }
       }
-      
+
       if (maxRunNumber > 0) {
         window.location.href = maxRun.webContentLink;
-        
+
         const nightlyLoading = document.getElementById("nightly-loading");
         nightlyLoading.textContent = "Thank you for your patience. If you are not redirected shortly, please click ";
         const manualRedirect = document.createElement("a");

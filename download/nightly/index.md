@@ -51,7 +51,7 @@ a certain build is not available for your operating system, please check the pre
 
 <noscript id="build-dirs">
 <h2>Build Directories</h2>
-The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.
+<p>The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.</p>
 
 <table>
   <thead>
