@@ -98,6 +98,7 @@ The following links will direct you to Google Drive folders. Please right-click 
     {
       const nightlyBuilds = document.getElementById("nightly-builds");
       const nightlyLoading = document.createElement("blockquote");
+      nightlyLoading.id = "nightly-loading";
       nightlyLoading.appendChild(document.createTextNode("Loading\u2026"));
       nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
