@@ -188,8 +188,8 @@ a certain build is not available for your operating system, please check the pre
             // Build summary - timestamp + (linked) commit message
             const timestamp = new Date(data.commit.timestamp);
             const dateMessage = document.createElement("span")
-            dateMessage.textContent = timestamp.toLocaleString(undefined, {"dateStyle": "medium"}) + " \u2013 ";
-            dateMessage.title = timestamp.toLocaleString(undefined, {"dateStyle": "long", "timeStyle": "long"});
+            dateMessage.textContent = timestamp.toLocaleString("en-US", {"dateStyle": "medium"}) + " \u2013 ";
+            dateMessage.title = timestamp.toLocaleString("en-US", {"dateStyle": "long", "timeStyle": "long"});
             summary.appendChild(dateMessage);
             const commitLink = document.createElement("a");
             commitLink.appendChild(document.createTextNode(data.commit.message.split("\n")[0]));
