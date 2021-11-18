@@ -67,10 +67,10 @@ a certain build is not available for your operating system, please check the pre
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CSVlqc3JNQV9hVGs?resourcekey=0-mfeDpkYVm70KrOvKYM7UVw&usp=sharing">Download</a></td>
-      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CcUEwS1R0WFhwM0E?resourcekey=0-7hr0hkLkSBVdEkaeb-okdg&usp=sharing">Download</a></td>
-      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CeVpTY294cXdLZ2c?resourcekey=0-OH02kleYDbtzlw3UbxFMZA&usp=sharing">Download</a></td>
-      <td style="text-align: center"><a href="https://drive.google.com/drive/folders/0BxdcdOiOmg-CcU1WOFpCOFBvVXc?resourcekey=0-2L-INjRPsn2ANX4MZIGU0Q&usp=sharing">Download</a></td>
+    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.windows-x86-64-parent}}?resourcekey={{page.windows-x86-64-resource-key}}&usp=sharing">Download</a></td>
+    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.windows-x86-parent}}?resourcekey={{page.windows-x86-64-resource-key}}&usp=sharing">Download</a></td>
+    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.macos-parent}}?resourcekey={{page.macos-resource-key}}&usp=sharing">Download</a></td>
+    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.linux-parent}}?resourcekey={{page.linux-resource-key}}&usp=sharing">Download</a></td>
     </tr>
   </tbody>
 </table>
