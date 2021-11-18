@@ -39,11 +39,15 @@ a certain build is not available for your operating system, please check the pre
 #nightly-builds summary {
   cursor: pointer;
   display: list-item;
+  width: 100%;
+}
+
+#nightly-builds details:not([open]) summary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
 }
+
 #nightly-builds ul {
   padding-left: 2em;
 }
