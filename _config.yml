@@ -22,11 +22,53 @@ plugins:
 
 theme: # leave it empty
 
+supported_languages:
+  - en
+#  - fr
+
+language_endonyms:
+  en: "English"
+  fr: "Français"
+
+language_flags:
+  en: "\U0001F1FA\U0001F1F8"
+  fr: "\U0001F1EB\U0001F1F7"
+
 # social
 author: "The Pencil2D Team"
 defaults:
   - values:
       image: /images/pencil_icon.png
+      comments: false
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      language: en
+  -
+    scope:
+      path: "_translations"
+    values:
+      untranslated: true
+  -
+    scope:
+      path: "_translations/fr"
+    values:
+      language: fr
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      language: en
+      permalink: /news/:year/:month/:title
+  -
+    scope:
+      path: "_translations/fr/_posts"
+    values:
+      layout: "post"
+      permalink: /fr/nouvelles/:year/:month/:title
 
 twitter:
   username: pencil2d
@@ -40,3 +82,8 @@ github:
 
 bitbucket:
   url: "https://bitbucket.org/chchwy/pencil2d"
+
+collections:
+  translations:
+    output: true
+    permalink: :path:output_ext

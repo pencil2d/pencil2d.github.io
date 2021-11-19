@@ -10,11 +10,7 @@
     {% else %}
       <img src="{{ "/images/pencil_icon.png" | relative_url }}" style="float:left; width:54px; margin-right: 10px;" alt="Pencil2D Icon">
     {% endif %}
-    {% if page.layout != 'home' %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% else %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
+    <a class="site-title" href="{{ translated_pages | where: "ref", "home" | map: "url" | first | relative_url }}">{{ site.title | escape }}</a>
 
     {% if page_paths %}
       <nav class="site-nav">
@@ -30,27 +26,41 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ "/download" | relative_url }}">Download</a>
+          <a class="page-link" href="{{ translated_pages | where: "ref", "download" | map: "url" | first | relative_url }}">{{ translations.download[page.language] }}</a>
           <div class="dropdown">
-            <a class="page-link" href="{{ "/community" | relative_url }}">Community</a>
+            <a class="page-link" href="{{ translated_pages | where: "ref", "community" | map: "url" | first | relative_url }}">{{ translations.community[page.language] }}</a>
             <div class="dropdown-content">
-              <a class="page-link" href="https://discuss.pencil2d.org/">Forum</a>
-              <a class="page-link" href="https://www.facebook.com/groups/709024775972087/">Facebook</a>
-              <a class="page-link" href="https://discord.gg/8FxdV2g">Discord</a>
-              <a class="page-link" href="https://www.youtube.com/channel/UCexMjl4rq8OyzAc7C03uKCQ/playlists">Youtube</a>
-              <a class="page-link" href="https://pencil2d-software.tumblr.com/">Tumblr</a>
+              <a class="page-link" href="https://discuss.pencil2d.org/">{{ translations.forum[page.language] }}</a>
+              <a class="page-link" href="https://www.facebook.com/groups/709024775972087/">{{ translations.facebook[page.language] }}</a>
+              <a class="page-link" href="https://discord.gg/8FxdV2g">{{ translations.discord[page.language] }}</a>
+              <a class="page-link" href="https://www.youtube.com/channel/UCexMjl4rq8OyzAc7C03uKCQ/playlists">{{ translations.youtube[page.language] }}</a>
+              <a class="page-link" href="https://pencil2d-software.tumblr.com/">{{ translations.tumblr[page.language] }}</a>
             </div>
           </div>
-          <a class="page-link" href="{{ "/news.html" | relative_url }}">News</a>
+          <a class="page-link" href="{{ translated_pages | where: "ref", "news" | map: "url" | first | relative_url }}">{{ translations.news[page.language] }}</a>
           <div class="dropdown">
-            <a class="page-link" href="{{ "/doc" | relative_url }}">Docs</a>
+            <a class="page-link" href="{{ translated_pages | where: "ref", "docs" | map: "url" | first | relative_url }}">{{ translations.docs[page.language] }}</a>
             <div class="dropdown-content">
-              <a class="page-link" href="{{ "/doc/tutorials.html" | relative_url }}">Tutorials</a>
-              <a class="page-link" href="{{ "/doc/faq.html" | relative_url }}">FAQ</a>
-              <a class="page-link" href="{{ "/doc/user-manual.html" | relative_url }}">User's Manual</a>
+              <a class="page-link" href="{{ translated_pages | where: "ref", "tutorials" | map: "url" | first | relative_url }}">{{ translations.tutorials[page.language] }}</a>
+              <a class="page-link" href="{{ translated_pages | where: "ref", "docs" | map: "url" | first | relative_url }}">{{ translations.faq[page.language] }}</a>
+              <a class="page-link" href="{{ translated_pages | where: "ref", "user_manual" | map: "url" | first | relative_url }}">{{ translations.user_manual[page.language] }}</a>
             </div>
           </div>
-          <a class="page-link" href="{{ "/contribute" | relative_url }}">Contribute</a>
+          <a class="page-link" href="{{ translated_pages | where: "ref", "contribute" | map: "url" | first | relative_url }}">{{ translations.contribute[page.language] }}</a>
+          {% if page.language %}
+          <div class="dropdown">
+            <a class="page-link" href="">{{site.language_flags[page.language]}}</a>
+            <div class="dropdown-content">
+              {% for language in site.supported_languages %}
+                {% if page.ref %}
+                  <a class="page-link" href="{{ site.documents | concat: site.pages | where: "language", language | where: "ref", page.ref | map: "url" | first | relative_url }}">{{ site.language_flags[language] }} {{ site.language_endonyms[language] }}</a>
+                {% else %}
+                  <a class="page-link" href="{{ site.documents | concat: site.pages | where: "language", language | where: "ref", "home" | map: "url" | first | relative_url }}">{{ site.language_flags[language] }} {{ site.language_endonyms[language] }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
         </div>
       </nav>
     {% endif %}

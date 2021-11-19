@@ -1,0 +1,1 @@
+{% assign translated_pages = site.documents | concat: site.pages | where: "language", page.language | uniq %}
