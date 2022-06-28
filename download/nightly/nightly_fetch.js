@@ -15,18 +15,40 @@ class NightlyBuildFetcher {
     });
   }
 
-  addGithubActionsResource(repo, workflow, label) {
+  addGithubActionsArtifactsResource(repo, workflow, label) {
     this.resources.push({
       "label": label,
-      "type": "githubActions",
+      "type": "githubActionsArtifacts",
+      "repo": repo,
+      "workflow": workflow
+    });
+  }
+
+  addGithubActionsRunsResource(repo, workflow, label) {
+    this.resources.push({
+      "label": label,
+      "type": "githubActionsRuns",
       "repo": repo,
       "workflow": workflow
     });
   }
 
   fetchAll() {
+    function fetchGithubArtifacts(resource) {
+      return fetch(`https://api.github.com/repos/${resource.repo}/actions/artifacts?per_page=${this.fetchLimit}`, {
+        headers: {
+          "Accept": "application/vnd.github.v3+json"
+        }
+      }).then(response => {
+        if (response.ok)
+          return response.json();
+        else
+          throw new Error(response.statusText);
+      });
+    }
+
     function fetchGithubRuns(resource) {
-      return fetch(`https://api.github.com/repos/${resource.repo}/actions/workflows/${resource.workflow}/runs?per_page=${this.fetchLimit}`, {
+      return fetch(`https://api.github.com/repos/${resource.repo}/actions/workflows/${resource.workflow}/runs?branch=master&exclude_pull_requests=true&per_page=${this.fetchLimit}`, {
         headers: {
           "Accept": "application/vnd.github.v3+json"
         }
@@ -52,7 +74,8 @@ class NightlyBuildFetcher {
     }
 
     const fetchMap = {
-      "githubActions": fetchGithubRuns,
+      "githubActionsArtifacts": fetchGithubArtifacts,
+      "githubActionsRuns": fetchGithubRuns,
       "googleDrive": fetchGoogleDriveFiles
     };
 

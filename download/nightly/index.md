@@ -57,8 +57,8 @@ a certain build is not available for your operating system, please check the pre
 </style>
 
 <noscript id="build-dirs">
-<h2>Nightly Build Directories</h2>
-<p>The following links will direct you to Google Drive folders. Please right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.</p>
+<h2>Browsing Nightly Build Manually</h2>
+<p>To browse current nightly builds manually, please <a href="https://github.com/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}?query=branch%3Amaster">visit GitHub</a>. To browse older nightly builds manually, please use the Google Drive links below. Right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.</p>
 
 <table>
   <thead>
@@ -124,7 +124,8 @@ a certain build is not available for your operating system, please check the pre
     }
 
     const fetcher = new NightlyBuildFetcher("{{page.drive-api-key}}", {{page.fetch-limit}});
-    fetcher.addGithubActionsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "runs");
+    fetcher.addGithubActionsRunsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "runs");
+    fetcher.addGithubActionsArtifactsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "artifacts");
     fetcher.addGDriveResource("{{page.windows-x86-parent}}", "{{page.windows-x86-resource-key}}", "win32");
     fetcher.addGDriveResource("{{page.windows-x86-64-parent}}", "{{page.windows-x86-64-resource-key}}", "win64");
     fetcher.addGDriveResource("{{page.macos-parent}}", "{{page.macos-resource-key}}", "macos");
@@ -139,24 +140,25 @@ a certain build is not available for your operating system, please check the pre
         const aggregatedData = {};
 
         // Collect all the per-OS download links for each run
-        for (let os of ["win32", "win64", "macos", "linux"]) {
+        for (let os of ["artifacts", "win32", "win64", "macos", "linux"]) {
           if (!(os in fetch_results)) {
             showWarning(`Warning: Could not get data for ${os}`);
             continue;
           }
           const folder = fetch_results[os];
 
-          for (let file of folder.files) {
-            const match = file.originalFilename.match(/^pencil2d-\w+-(\d+)-\d{4}-\d{2}-\d{2}.(zip|AppImage)$/);
-            if (match === null) {
+          for (let file of (folder.files || folder.artifacts)) {
+            const match = (file.originalFilename || file.name).match(/^pencil2d-(\w+)-(\d+)-\d{4}-\d{2}-\d{2}(\.zip|\.AppImage)?$/);
+            if (match === null || file.expired) {
               // File name didn't match, don't know what to do with it
               continue;
             }
-            const runNumber = match[1];
+            os = match[1];
+            const runNumber = match[2];
             if (runNumber in aggregatedData === false) {
               aggregatedData[runNumber] = {};
             }
-            aggregatedData[runNumber][os] = file.webContentLink;
+            aggregatedData[runNumber][os] = file.webContentLink || `https://get.pencil2d.org/@{{page.nightly-repo|split:"/"|first}}/${file.id}`;
           }
         }
 
@@ -177,6 +179,10 @@ a certain build is not available for your operating system, please check the pre
 
         let detailsOpen = true;
         for (let [runNumber, data] of Object.entries(aggregatedData).sort((a, b) => Math.sign(b[0] - a[0]))) {
+          if (!("commit" in data)) {
+            // Skip PR builds, builds from other branches, etc.
+            continue;
+          }
           const buildItem = document.createElement("li");
           buildItem.value = runNumber;
           const details = document.createElement("details");
@@ -184,21 +190,16 @@ a certain build is not available for your operating system, please check the pre
           details.open = detailsOpen;
           detailsOpen = false;
           const summary = document.createElement("summary");
-          if ("commit" in data) {
-            // Build summary - timestamp + (linked) commit message
-            const timestamp = new Date(data.commit.timestamp);
-            const dateMessage = document.createElement("span")
-            dateMessage.textContent = timestamp.toLocaleString("en-US", {"dateStyle": "medium"}) + " \u2013 ";
-            dateMessage.title = timestamp.toLocaleString("en-US", {"dateStyle": "long", "timeStyle": "long"});
-            summary.appendChild(dateMessage);
-            const commitLink = document.createElement("a");
-            commitLink.appendChild(document.createTextNode(data.commit.message.split("\n")[0]));
-            commitLink.href = `https://github.com/{{page.nightly-repo}}/commit/${data.commit.id}`;
-            summary.appendChild(commitLink);
-          } else {
-            // Got no metadata about this run :(
-            summary.appendChild(document.createTextNode("Unable to retrieve information"));
-          }
+          // Build summary - timestamp + (linked) commit message
+          const timestamp = new Date(data.commit.timestamp);
+          const dateMessage = document.createElement("span")
+          dateMessage.textContent = timestamp.toLocaleString("en-US", {"dateStyle": "medium"}) + " \u2013 ";
+          dateMessage.title = timestamp.toLocaleString("en-US", {"dateStyle": "long", "timeStyle": "long"});
+          summary.appendChild(dateMessage);
+          const commitLink = document.createElement("a");
+          commitLink.appendChild(document.createTextNode(data.commit.message.split("\n")[0]));
+          commitLink.href = `https://github.com/{{page.nightly-repo}}/commit/${data.commit.id}`;
+          summary.appendChild(commitLink);
           details.appendChild(summary);
 
           // Add the actual details area...
@@ -207,7 +208,7 @@ a certain build is not available for your operating system, please check the pre
           // ...with the download links...
           const downloadList = document.createElement("li");
           let text = "Download for ";
-          for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["macos", "macOS"], ["linux", "Linux (64-bit)"]]) {
+          for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["mac", "macOS"], ["linux", "Linux (64-bit)"]]) {
             if (os in data === false) {
               continue; // No download for this OS
             }
