@@ -174,7 +174,7 @@ a certain build is not available for your operating system, please check the pre
           // ...with the download links...
           const downloadList = document.createElement("li");
           let text = "Download for ";
-          for (let [os, osName] of [["win32", "Windows (32-bit)"], ["win64", "Windows (64-bit)"], ["mac", "macOS"], ["linux", "Linux (64-bit)"]]) {
+          for (let [os, osName] of [["win64", "Windows (64-bit)"], ["win32", "Windows (32-bit)"], ["mac", "macOS"], ["linux", "Linux (64-bit)"]]) {
             if (os in data === false) {
               continue; // No download for this OS
             }
