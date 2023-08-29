@@ -6,15 +6,6 @@ comments: false
 fetch-limit: 100
 nightly-repo: pencil2d/pencil
 nightly-workflow: ci.yml
-drive-api-key: AIzaSyD2z_aPwUD5HFRHUtFKihgoEWv3nZnzsik
-windows-x86-parent: 0BxdcdOiOmg-CcUEwS1R0WFhwM0E
-windows-x86-resource-key: 0-7hr0hkLkSBVdEkaeb-okdg
-windows-x86-64-parent: 0BxdcdOiOmg-CSVlqc3JNQV9hVGs
-windows-x86-64-resource-key: 0-mfeDpkYVm70KrOvKYM7UVw
-macos-parent: 0BxdcdOiOmg-CeVpTY294cXdLZ2c
-macos-resource-key: 0-OH02kleYDbtzlw3UbxFMZA
-linux-parent: 0BxdcdOiOmg-CcU1WOFpCOFBvVXc
-linux-resource-key: 0-2L-INjRPsn2ANX4MZIGU0Q
 ---
 
 Nightly Builds are created automatically whenever the Pencil2D source code is updated and are therefore the most
@@ -58,26 +49,7 @@ a certain build is not available for your operating system, please check the pre
 
 <noscript id="build-dirs">
 <h2>Browsing Nightly Build Manually</h2>
-<p>To browse current nightly builds manually, please <a href="https://github.com/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}?query=branch%3Amaster">visit GitHub</a>. To browse older nightly builds manually, please use the Google Drive links below. Right-click on a file listed and select <code>Download</code>. The naming format is <code>pencil2d-OS-buildnumber-year-month-day</code>.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Windows (64-bit)</th>
-      <th style="text-align: center">Windows (32-bit)</th>
-      <th style="text-align: center">macOS</th>
-      <th style="text-align: center">Linux (64-bit)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.windows-x86-64-parent}}?resourcekey={{page.windows-x86-64-resource-key}}&usp=sharing">Download</a></td>
-    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.windows-x86-parent}}?resourcekey={{page.windows-x86-64-resource-key}}&usp=sharing">Download</a></td>
-    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.macos-parent}}?resourcekey={{page.macos-resource-key}}&usp=sharing">Download</a></td>
-    <td style="text-align: center"><a href="https://drive.google.com/drive/folders/{{page.linux-parent}}?resourcekey={{page.linux-resource-key}}&usp=sharing">Download</a></td>
-    </tr>
-  </tbody>
-</table>
+<p>To browse current nightly builds manually, please <a href="https://github.com/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}?query=branch%3Amaster">visit GitHub</a>.</p>
 </noscript>
 
 <ol id="nightly-builds"></ol>
@@ -123,13 +95,9 @@ a certain build is not available for your operating system, please check the pre
       nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
 
-    const fetcher = new NightlyBuildFetcher("{{page.drive-api-key}}", {{page.fetch-limit}});
+    const fetcher = new NightlyBuildFetcher(null, {{page.fetch-limit}});
     fetcher.addGithubActionsRunsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "runs");
     fetcher.addGithubActionsArtifactsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "artifacts");
-    fetcher.addGDriveResource("{{page.windows-x86-parent}}", "{{page.windows-x86-resource-key}}", "win32");
-    fetcher.addGDriveResource("{{page.windows-x86-64-parent}}", "{{page.windows-x86-64-resource-key}}", "win64");
-    fetcher.addGDriveResource("{{page.macos-parent}}", "{{page.macos-resource-key}}", "macos");
-    fetcher.addGDriveResource("{{page.linux-parent}}", "{{page.linux-resource-key}}", "linux");
 
     fetcher.fetchAll().then(fetch_results => {
       if (Object.keys(fetch_results).length <= 1) {
@@ -140,26 +108,24 @@ a certain build is not available for your operating system, please check the pre
         const aggregatedData = {};
 
         // Collect all the per-OS download links for each run
-        for (let os of ["artifacts", "win32", "win64", "macos", "linux"]) {
-          if (!(os in fetch_results)) {
-            showWarning(`Warning: Could not get data for ${os}`);
+        if (!("artifacts" in fetch_results)) {
+          showError("There was an error automatically retrieving the nightly build data.");
+          return;
+        }
+        const folder = fetch_results.artifacts;
+
+        for (let file of folder.artifacts) {
+          const match = file.name.match(/^pencil2d-(\w+)-(\d+)-\d{4}-\d{2}-\d{2}(\.zip|\.AppImage)?$/);
+          if (match === null || file.expired) {
+            // File name didn't match, don't know what to do with it
             continue;
           }
-          const folder = fetch_results[os];
-
-          for (let file of (folder.files || folder.artifacts)) {
-            const match = (file.originalFilename || file.name).match(/^pencil2d-(\w+)-(\d+)-\d{4}-\d{2}-\d{2}(\.zip|\.AppImage)?$/);
-            if (match === null || file.expired) {
-              // File name didn't match, don't know what to do with it
-              continue;
-            }
-            os = match[1];
-            const runNumber = match[2];
-            if (runNumber in aggregatedData === false) {
-              aggregatedData[runNumber] = {};
-            }
-            aggregatedData[runNumber][os] = file.webContentLink || `https://get.pencil2d.org/@{{page.nightly-repo|split:"/"|first}}/${file.id}`;
+          let os = match[1];
+          const runNumber = match[2];
+          if (runNumber in aggregatedData === false) {
+            aggregatedData[runNumber] = {};
           }
+          aggregatedData[runNumber][os] = `https://get.pencil2d.org/@{{page.nightly-repo|split:"/"|first}}/${file.id}`;
         }
 
         // Add the metadata for all the runs that we have files for
