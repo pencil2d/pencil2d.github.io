@@ -63,7 +63,7 @@ class NightlyBuildFetcher {
     }
 
     function fetchGithubRuns(resource) {
-      return fetch(`https://api.github.com/repos/${resource.repo}/actions/workflows/${resource.workflow}/runs?branch=master&exclude_pull_requests=true&per_page=${this.fetchLimit}`, {
+      return fetch(`https://api.github.com/repos/${resource.repo}/actions/workflows/${resource.workflow}/runs?branch=master&event=push&exclude_pull_requests=true&per_page=${this.fetchLimit}`, {
         headers: {
           "Accept": "application/vnd.github.v3+json"
         }
