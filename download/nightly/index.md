@@ -132,7 +132,7 @@ a certain build is not available for your operating system, please check the pre
         for (let run of fetch_results["runs"].workflow_runs) {
           // Make sure to check the repo name as well - the GitHub API seems to include PRs under certain circumstances
           // even though it's not supposed to
-          if (run.run_number in aggregatedData && run.repository.full_name === "{{page.nightly-repo}}") {
+          if (run.run_number in aggregatedData && run.head_repository.full_name === "{{page.nightly-repo}}") {
             aggregatedData[run.run_number]["commit"] = run.head_commit
             aggregatedData[run.run_number]["run_url"] = run.html_url
           }
