@@ -28,33 +28,24 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
   </a><br>
-  Windows 7/8/10<br><br>
+  Windows 7+<br>
   <a href="{{ page.download.win64 }}">64-bit</a> |
   <a href="{{ page.download.win32 }}">32-bit</a>
-</div>
-
-<div class="download-tile">
-  <a href="{{ page.download.win32 }}">
-    {% include vista_icon.svg %}
-  </a><br>
-  Windows XP/Vista<br><br>
-  <a href="{{ page.download.winxp }}">32-bit</a><br>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
   </a><br>
-  Mac <br>
-  <a href="{{ page.download.mac }}">10.13+</a><br>
-  <a href="{{ page.download.maclegacy }}">10.7-10.12</a>
+  Mac 10.13+<br>
+  <a href="{{ page.download.mac }}">Intel</a><br>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
-  Linux<br><br>
+  Linux<br>
   <a href="{{ page.download.linux64 }}">64-bit</a> |
   <a href="{{ page.download.linux32 }}">32-bit</a>
 </div>
@@ -74,7 +65,9 @@ Having trouble running the program? please see the
   <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 28+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
+  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7-10.12</button>
   <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
+  <button class="tablinks" onclick="openTab(event, 'windows-legacy')">Windows XP/Vista</button>
 </div>
 
 <hr style="margin: 0 2rem;">
@@ -105,8 +98,18 @@ Having trouble running the program? please see the
 <pre>cd /usr/ports/graphics/pencil2d/ && make install clean</pre>
 </div>
 
+<div id="mac-legacy" class="tabcontent">
+<div class="warning-box"><span style="font-weight: bold;">&#9888; Warning:</span> This is a legacy build. Legacy builds do not contain the latest security fixes and we may not be able to provide the same level of support for any issues you encounter while using them. Use at your own discretion.</div>
+<p>Download the legacy Pencil2D app <a href="{{ page.download.maclegacy }}">here</a> for Mac OS X/macOS versions 10.7 up to and including 10.12.</p>
+</div>
+
 <div id="cask" class="tabcontent">
 <pre>brew install --cask pencil2d</pre>
+</div>
+
+<div id="windows-legacy" class="tabcontent">
+<div class="warning-box"><span style="font-weight: bold;">&#9888; Warning:</span> This is a legacy build. Legacy builds do not contain the latest security fixes and we may not be able to provide the same level of support for any issues you encounter while using them. Use at your own discretion.</div>
+<p>Download the legacy Pencil2D app <a href="{{ page.download.winxp }}">here</a> for Windows XP and Vista.</p>
 </div>
 
 <script>document.getElementById("defaultTab").click();</script>
