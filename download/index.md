@@ -88,8 +88,9 @@ Having trouble running the program? please see the
 </div>
 
 <div id="fedora" class="tabcontent">
-<h3>Fedora 28+</h3>
+<h3>Fedora 26+</h3>
 <pre>sudo dnf install Pencil2D</pre>
+By default, this package uses ffmpeg-free, which has limited codec support. You can <a href="https://docs.fedoraproject.org/en-US/quick-docs/openh264/" target="_blank">install OpenH264</a> to just add support for the AVC/H.264 codec, currently the most common video codec. If you want better support for this and other non-free codecs, you can <a href="https://rpmfusion.org/Howto/Multimedia" target="_blank">use the RPM Fusion ffmpeg package</a>.
 </div>
 
 <div id="flatpak" class="tabcontent">
@@ -137,7 +138,7 @@ You can find them on our [Nightly Build download page](nightly/).
     - Win7 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51161>
     - Win8 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51106>
     - Win8 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51109> <br><br>
- 
+
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
     Right click on the file and press `Open`.
