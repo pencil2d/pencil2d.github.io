@@ -28,33 +28,24 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
   </a><br>
-  Windows 7/8/10<br><br>
+  Windows 7+<br>
   <a href="{{ page.download.win64 }}">64-bit</a> |
   <a href="{{ page.download.win32 }}">32-bit</a>
-</div>
-
-<div class="download-tile">
-  <a href="{{ page.download.win32 }}">
-    {% include vista_icon.svg %}
-  </a><br>
-  Windows XP/Vista<br><br>
-  <a href="{{ page.download.winxp }}">32-bit</a><br>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
   </a><br>
-  Mac <br>
-  <a href="{{ page.download.mac }}">10.13+</a><br>
-  <a href="{{ page.download.maclegacy }}">10.7-10.12</a>
+  Mac 10.13+<br>
+  <a href="{{ page.download.mac }}">Intel</a><br>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
   </a><br>
-  Linux<br><br>
+  Linux<br>
   <a href="{{ page.download.linux64 }}">64-bit</a> |
   <a href="{{ page.download.linux32 }}">32-bit</a>
 </div>
@@ -68,51 +59,60 @@ Having trouble running the program? please see the
 <br>
 ## Other ways to install Pencil2D
 
-<div class="tab">
+<div class="tabs">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
   <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
-  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora</button>
+  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 26+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
-  <button class="tablinks" onclick="openTab(event, 'cask')">Homebrew Cask</button>
+  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7-10.12</button>
+  <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
+  <button class="tablinks" onclick="openTab(event, 'windows-legacy')">Windows XP/Vista</button>
 </div>
 
+<hr style="margin: 0 2rem;">
+
 <div id="arch" class="tabcontent">
-<h3>Arch Linux</h3>
 <pre>sudo pacman -S pencil2d</pre>
 </div>
 
 <div id="debian" class="tabcontent">
-<h3>Debian/Ubuntu</h3>
 <pre>sudo apt-get install pencil2d</pre>
 </div>
 
 <div id="fedora" class="tabcontent">
-<h3>Fedora 26+</h3>
 <pre>sudo dnf install Pencil2D</pre>
-By default, this package uses ffmpeg-free, which has limited codec support. You can <a href="https://docs.fedoraproject.org/en-US/quick-docs/openh264/" target="_blank">install OpenH264</a> to just add support for the AVC/H.264 codec, currently the most common video codec. If you want better support for this and other non-free codecs, you can <a href="https://rpmfusion.org/Howto/Multimedia" target="_blank">use the RPM Fusion ffmpeg package</a>.
+<p>By default, this package uses ffmpeg-free, which has limited codec support. You can <a href="https://docs.fedoraproject.org/en-US/quick-docs/openh264/" target="_blank">install OpenH264</a> to just add support for the AVC/H.264 codec, currently the most common video codec. If you want better support for this and other non-free codecs, you can <a href="https://rpmfusion.org/Howto/Multimedia" target="_blank">use the RPM Fusion ffmpeg package</a>.</p>
 </div>
 
 <div id="flatpak" class="tabcontent">
-<h3>Flatpak</h3>
-Install:
+<p>Install:</p>
 <pre>flatpak install flathub org.pencil2d.Pencil2D</pre>
-Run:
+<p>Run:</p>
 <pre>flatpak run org.pencil2d.Pencil2D</pre>
 </div>
 
 <div id="freebsd" class="tabcontent">
-  <h3>FreeBSD</h3>
-  Package:
+<p>Package:</p>
 <pre>pkg install pencil2d</pre>
-Port:
+<p>Port:</p>
 <pre>cd /usr/ports/graphics/pencil2d/ && make install clean</pre>
 </div>
 
+<div id="mac-legacy" class="tabcontent">
+<div class="warning-box"><span style="font-weight: bold;">&#9888; Warning:</span> This is a legacy build. Legacy builds do not contain the latest security fixes and we may not be able to provide the same level of support for any issues you encounter while using them. Use at your own discretion.</div>
+<p>Download the legacy Pencil2D app <a href="{{ page.download.maclegacy }}">here</a> for Mac OS X/macOS versions 10.7 up to and including 10.12.</p>
+</div>
+
 <div id="cask" class="tabcontent">
-<h3>Homebrew Cask</h3>
 <pre>brew install --cask pencil2d</pre>
 </div>
+
+<div id="windows-legacy" class="tabcontent">
+<div class="warning-box"><span style="font-weight: bold;">&#9888; Warning:</span> This is a legacy build. Legacy builds do not contain the latest security fixes and we may not be able to provide the same level of support for any issues you encounter while using them. Use at your own discretion.</div>
+<p>Download the legacy Pencil2D app <a href="{{ page.download.winxp }}">here</a> for Windows XP and Vista.</p>
+</div>
+
 <script>document.getElementById("defaultTab").click();</script>
 
 ## Nightly Builds {#nightlybuild}
