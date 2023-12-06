@@ -23,30 +23,35 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
 </blockquote>
 
 <div class="download-tiles">
-<div></div>
+
 <div class="download-tile">
   <a href="{{ page.download.win64 }}">
     {% include win_icon.svg %}
-  </a><br>
-  Windows 7+<br>
-  <a href="{{ page.download.win64 }}">64-bit</a> |
+  </a>
+  <h3>Windows 7+</h3>
+  <hr>
+  <a href="{{ page.download.win64 }}">64-bit</a>
+  <span class="vertical-separator"></span>
   <a href="{{ page.download.win32 }}">32-bit</a>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
-  </a><br>
-  Mac 10.13+<br>
+  </a>
+  <h3>macOS 10.13+</h3>
+  <hr>
   <a href="{{ page.download.mac }}">Intel</a><br>
 </div>
 
 <div class="download-tile">
   <a href="{{ page.download.linux64 }}">
     {% include linux_icon.svg %}
-  </a><br>
-  Linux<br>
-  <a href="{{ page.download.linux64 }}">64-bit</a> |
+  </a>
+  <h3>Linux</h3>
+  <hr>
+  <a href="{{ page.download.linux64 }}">64-bit</a>
+  <span class="vertical-separator"></span>
   <a href="{{ page.download.linux32 }}">32-bit</a>
 </div>
 

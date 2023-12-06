@@ -4,7 +4,7 @@
     max-width:68em;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:1.618em
+    margin-bottom:1.618em;
 }
 
 .tile h2 {
@@ -21,13 +21,30 @@
 }
 
 .download-tile {
-    float: left;
-    width: 98%;
+    width: 100%;
     border: solid 1px #ccc;
+    border-radius: 0.5rem;
     padding: 1em 0.5em 0.5em 0.5em;
     margin: 1% !important;
     box-sizing: border-box;
     font-size: 0.9em;
+}
+
+.download-tile h3 {
+    margin: 0.5rem 0;
+}
+
+.download-tile hr {
+    margin: 0 0 0.5rem;
+    vertical-align: sub;
+}
+
+.download-tile .vertical-separator {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: #eff0f1;
+    margin: 0 0.3em;
 }
 
 .doc-tile {
@@ -39,7 +56,7 @@
 }
 
 .warning-box {
-    dislay: block;
+    display: block;
     padding: 14px;
     border: 1px solid #faebcc;
     border-radius: 0.5rem;
@@ -58,15 +75,6 @@
         width: 45%;
         margin-right:5%;
         border: solid 1px #999;
-    }
-    .download-tile {
-        float: left;
-        width: 31%;
-        border: solid 1px #ccc;
-        padding: 2em 0.5em 2em 0.5em;
-        margin: 1%;
-        box-sizing: border-box;
-        font-size: 0.9em;
     }
     .doc-tile {
         float: left;
@@ -88,21 +96,18 @@
         margin-right:2%;
         border: solid 1px #ccc;
     }
-    .download-tile {
-        float: left;
-        width: 21%;
-        border: solid 1px ccc;
-        padding: 2em 1em 2em 1em;
-        margin: 2%;
-        box-sizing: border-box;
-        font-size: 0.9em;
-    }
     .doc-tile {
         float: left;
         width: 31%;
         margin-right:2%;
         border: solid 1px #ccc;
     }
+}
+
+@media screen and (min-width: 35em) {
+  .download-tile {
+    width: 10em;
+  }
 }
 
 .toc {
@@ -197,6 +202,9 @@
 .download-tiles {
     text-align: center;
     margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .doc-title { padding-top: 1em; }
