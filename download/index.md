@@ -68,50 +68,47 @@ Having trouble running the program? please see the
 <br>
 ## Other ways to install Pencil2D
 
-<div class="tab">
+<div class="tabs">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
   <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
-  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora</button>
+  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 28+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
-  <button class="tablinks" onclick="openTab(event, 'cask')">Homebrew Cask</button>
+  <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
 </div>
 
+<hr style="margin: 0 2rem;">
+
 <div id="arch" class="tabcontent">
-<h3>Arch Linux</h3>
 <pre>sudo pacman -S pencil2d</pre>
 </div>
 
 <div id="debian" class="tabcontent">
-<h3>Debian/Ubuntu</h3>
 <pre>sudo apt-get install pencil2d</pre>
 </div>
 
 <div id="fedora" class="tabcontent">
-<h3>Fedora 28+</h3>
 <pre>sudo dnf install Pencil2D</pre>
 </div>
 
 <div id="flatpak" class="tabcontent">
-<h3>Flatpak</h3>
-Install:
+<p>Install:</p>
 <pre>flatpak install flathub org.pencil2d.Pencil2D</pre>
-Run:
+<p>Run:</p>
 <pre>flatpak run org.pencil2d.Pencil2D</pre>
 </div>
 
 <div id="freebsd" class="tabcontent">
-  <h3>FreeBSD</h3>
-  Package:
+<p>Package:</p>
 <pre>pkg install pencil2d</pre>
-Port:
+<p>Port:</p>
 <pre>cd /usr/ports/graphics/pencil2d/ && make install clean</pre>
 </div>
 
 <div id="cask" class="tabcontent">
-<h3>Homebrew Cask</h3>
 <pre>brew install --cask pencil2d</pre>
 </div>
+
 <script>document.getElementById("defaultTab").click();</script>
 
 ## Nightly Builds {#nightlybuild}
@@ -137,7 +134,7 @@ You can find them on our [Nightly Build download page](nightly/).
     - Win7 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51161>
     - Win8 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51106>
     - Win8 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51109> <br><br>
- 
+
 - **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
 
     Right click on the file and press `Open`.
