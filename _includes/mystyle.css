@@ -31,11 +31,11 @@
 }
 
 .download-tile {
-    width: 100%;
+    width: 12rem;
     border: solid 1px #ccc;
     border-radius: 0.5rem;
     padding: 1em 0.5em 0.5em 0.5em;
-    margin: 1% !important;
+    margin: 0.5rem !important;
     box-sizing: border-box;
     font-size: 0.9em;
 }
@@ -52,6 +52,10 @@
     height: 1.2em;
     background-color: #eff0f1;
     margin: 0 0.3em;
+    vertical-align: sub;
+}
+.download-tile a {
+  white-space: nowrap;
 }
 
 .doc-tile {
@@ -107,12 +111,6 @@
         margin-right:2%;
         border: solid 1px #ccc;
     }
-}
-
-@media screen and (min-width: 35em) {
-  .download-tile {
-    width: 10em;
-  }
 }
 
 .toc {

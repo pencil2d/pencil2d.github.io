@@ -58,8 +58,7 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
 </div>
 <div style="clear:both"></div>
 
-Having trouble running the program? please see the
-<a href="#troubleshooting">Troubleshooting</a>.
+Having trouble running the program? Please see <a href="#troubleshooting">Troubleshooting</a>.
 
 <br>
 ## Other ways to install Pencil2D
