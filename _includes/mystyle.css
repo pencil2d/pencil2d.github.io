@@ -1,10 +1,8 @@
-
-
 .tile {
     max-width:68em;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:1.618em
+    margin-bottom:1.618em;
 }
 
 .tile h2 {
@@ -13,21 +11,51 @@
 .tile p { font-size: 0.9em; }
 
 .community-tile {
-    max-width:68em;
-    margin-left:auto;
-    margin-right:auto;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
     margin-bottom:1.618em;
     padding-bottom: 1em;
+    overflow: hidden;
+}
+.community-tile img {
+    border-bottom: 1px solid #ccc;
+}
+.community-tile h2 {
+    margin-bottom: 0.5rem;
+}
+.community-tile hr {
+    margin: 0 1rem;
+}
+.community-tile p {
+    margin: 0.5rem;
 }
 
 .download-tile {
-    float: left;
-    width: 98%;
+    width: 12rem;
     border: solid 1px #ccc;
+    border-radius: 0.5rem;
     padding: 1em 0.5em 0.5em 0.5em;
-    margin: 1% !important;
+    margin: 0.5rem !important;
     box-sizing: border-box;
     font-size: 0.9em;
+}
+.download-tile h3 {
+    margin: 0.5rem 0;
+}
+.download-tile hr {
+    margin: 0 0 0.5rem;
+    vertical-align: sub;
+}
+.download-tile .vertical-separator {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: #eff0f1;
+    margin: 0 0.3em;
+    vertical-align: sub;
+}
+.download-tile a {
+  white-space: nowrap;
 }
 
 .doc-tile {
@@ -54,19 +82,9 @@
         margin-right: 5%;
     }
     .community-tile {
-        float: left;
         width: 45%;
         margin-right:5%;
         border: solid 1px #999;
-    }
-    .download-tile {
-        float: left;
-        width: 31%;
-        border: solid 1px #ccc;
-        padding: 2em 0.5em 2em 0.5em;
-        margin: 1%;
-        box-sizing: border-box;
-        font-size: 0.9em;
     }
     .doc-tile {
         float: left;
@@ -83,19 +101,9 @@
         margin-right: 2%;
     }
     .community-tile {
-        float: left;
         width: 31%;
         margin-right:2%;
         border: solid 1px #ccc;
-    }
-    .download-tile {
-        float: left;
-        width: 21%;
-        border: solid 1px ccc;
-        padding: 2em 1em 2em 1em;
-        margin: 2%;
-        box-sizing: border-box;
-        font-size: 0.9em;
     }
     .doc-tile {
         float: left;
@@ -194,9 +202,19 @@
     }
 }
 
+.community-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .download-tiles {
     text-align: center;
     margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .doc-title { padding-top: 1em; }
