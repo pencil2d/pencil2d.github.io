@@ -60,8 +60,7 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
 
 Having trouble running the program? Please see <a href="#troubleshooting">Troubleshooting</a>.
 
-<br>
-## Other ways to install Pencil2D
+## Other Ways to Install Pencil2D
 
 <div class="tabs">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
@@ -69,7 +68,7 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
   <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 26+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
-  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7-10.12</button>
+  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7&ndash;10.12</button>
   <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
   <button class="tablinks" onclick="openTab(event, 'windows-legacy')">Windows XP/Vista</button>
 </div>
@@ -119,39 +118,33 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
 
 <script>document.getElementById("defaultTab").click();</script>
 
-## Nightly Builds {#nightlybuild}
+## Other Versions
 
-Nightly Builds are the bleeding edge versions of Pencil2D which contain the most recent fixes and features.
-You can find them on our [Nightly Build download page](nightly/).
+- <a name="nightlybuild" />**Nightly Builds** are experimental bleeding edge versions of Pencil2D which
+  contain the most recent fixes and features. You can find them on our [Nightly Build download page](nightly/).
+- **Older versions** of Pencil2D are available from [our GitHub Releases][gh-releases].
 
 ## Troubleshooting {#troubleshooting}
 
-- **Qt5Widgets.dll was not found**
+- **Windows: Qt5Widgets.dll was not found**
 
-    1. Right click on the file you just downloaded and select `Extract all`.
-    2. Go to the location you just extract to, find `Pencil2D.exe` and double click on it.
+    1. Right click on the file you just downloaded and select `Extract All…`.
+    2. Go to the location you just extract to, find `pencil2d.exe` and double click on it.
 
-- **msvcp140.dll is missing**
+- **Windows: MSVCP140.dll is missing**
 
-    Double click and install `vcredist_x64.exe` or `vcredist_x86.exe` inside the **Pencil2D** folder.
+    Double click and install `vc_redist.x64.exe` or `vc_redist.x86.exe` inside the Pencil2D folder.
 
-- **api-ms-win-crt-runtime-l1-1-0.dll is missing**
+- **Windows: api-ms-win-crt-runtime-l1-1-0.dll is missing**
 
-    Download and install the following windows updates:
-    - Win7 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51137>
-    - Win7 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51161>
-    - Win8 32bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51106>
-    - Win8 64bit: <https://www.microsoft.com/en-us/download/details.aspx?id=51109> <br><br>
+    Download and install Windows update KB3118401 as detailed in
+    [this support article](https://support.microsoft.com/kb/KB3118401#ID0EFH).
 
-- **Pencil 2D can't be opened because it is from an unidentified developer. (Mac users)**
+- **macOS: Pencil2D can't be opened because it is from an unidentified developer**
 
     Right click on the file and press `Open`.
 
-Still getting in trouble? Please go to [Pencil2D forum](https://discuss.pencil2d.org/c/support).
-
-## Older Pencil2D Versions
-
-All older versions of Pencil2D are available on [Github Releases][gh-releases] or [Bitbucket Downloads][bb-downloads].
+Still having trouble? Please go to the [Pencil2D forum](https://discuss.pencil2d.org/c/support).
 
 [gh-releases]: https://github.com/pencil2d/pencil/releases
 [bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
