@@ -66,7 +66,7 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
 <div class="tabs">
   <button class="tablinks" onclick="openTab(event, 'arch')" id="defaultTab">Arch Linux</button>
   <button class="tablinks" onclick="openTab(event, 'debian')">Debian/Ubuntu</button>
-  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 28+</button>
+  <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 26+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
   <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7-10.12</button>
@@ -86,6 +86,7 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
 
 <div id="fedora" class="tabcontent">
 <pre>sudo dnf install Pencil2D</pre>
+<p>By default, this package uses ffmpeg-free, which has limited codec support. You can <a href="https://docs.fedoraproject.org/en-US/quick-docs/openh264/" target="_blank">install OpenH264</a> to just add support for the AVC/H.264 codec, currently the most common video codec. If you want better support for this and other non-free codecs, you can <a href="https://rpmfusion.org/Howto/Multimedia" target="_blank">use the RPM Fusion ffmpeg package</a>.</p>
 </div>
 
 <div id="flatpak" class="tabcontent">
