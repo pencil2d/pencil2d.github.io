@@ -25,7 +25,7 @@
     width: 98%;
     border: solid 1px #ccc;
     padding: 1em 0.5em 0.5em 0.5em;
-    margin: 1%;
+    margin: 1% !important;
     box-sizing: border-box;
     font-size: 0.9em;
 }
@@ -36,6 +36,15 @@
     margin-right:auto;
     margin-bottom:1.618em;
     padding: 2em 0.5em 2em 0.5em;
+}
+
+.warning-box {
+    display: block;
+    padding: 14px;
+    border: 1px solid #faebcc;
+    border-radius: 0.5rem;
+    background-color: #fcf8e3;
+    font-size: 0.8rem;
 }
 
 @media screen and (min-width: 30em) and (max-width: 42em) {
