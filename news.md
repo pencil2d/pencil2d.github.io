@@ -1,11 +1,13 @@
 ---
 layout: page
+ref: news
 title: News
-tagline: 
+tagline:
 ---
-
+{% include translated_pages %}
+{% assign siteposts = translated_pages | where: 'layout', 'post' | sort: 'date' | reverse %}
 <ul class="post-list">
-{% for post in site.posts %}
+{% for post in siteposts %}
     <li>
 
     {% assign date_format = site.cayman-blog.date_format | default: "%-d %b, %Y" %}
@@ -15,7 +17,7 @@ tagline:
         <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
     </h2>
 
-    <span>{{ post.excerpt | strip_html | truncatewords: 70 }}</span>
+    <span>{{ post.content | strip_html | truncatewords: 70 }}</span>
 
     </li>
 {% endfor %}

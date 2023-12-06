@@ -1,8 +1,8 @@
 ---
 layout: page
+ref: download
 title: Download
 tagline: Let's start animating immediately!
-comments: false
 tabs: true
 download:
   win64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-win64-0.6.6.zip
@@ -12,14 +12,13 @@ download:
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-mac-legacy-0.6.6.zip
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-amd64-0.6.6.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-i386-0.6.6.AppImage
-nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
-release-note-link: /2021/02/pencil2d-0.6.6-release.html
 ---
+{% include translated_pages %}
 
 ## Current Stable Version (v0.6.6)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?</a>
+Last Updated on 17 Feb 2021. <a href="{{ translated_pages | where: "ref", "news-0_6_6_release" | map: "url" | first | relative_url }}">What's New?</a>
 </blockquote>
 
 <div class="download-tiles">
@@ -118,7 +117,7 @@ Port:
 ## Nightly Builds {#nightlybuild}
 
 Nightly Builds are the bleeding edge versions of Pencil2D which contain the most recent fixes and features.
-You can find them on our [Nightly Build download page](nightly/).
+You can find them on our [Nightly Build download page]({{ translated_pages | where: "ref", "nightly" | map: "url" | first | relative_url }}).
 
 ## Troubleshooting {#troubleshooting}
 

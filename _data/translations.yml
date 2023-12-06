@@ -1,0 +1,63 @@
+untranslated_warning:
+  en: "Warning: This page has not been completely translated. If you can help, please contribute at <a href='https://github.com/pencil2d/pencil2d.github.io'>https://github.com/pencil2d/pencil2d.github.io</a>"
+  fr: "Attention : Cette page n'a pas été traduite complètement. Si vous pouvez nous aider, s'il vous plaît contribuer à <a href='https://github.com/pencil2d/pencil2d.github.io'>https://github.com/pencil2d/pencil2d.github.io</a>"
+download:
+  en: "Download"
+  fr: "Télécharger"
+community:
+  en: "Community"
+  fr: "Communauté"
+forum:
+  en: "Forum"
+  fr: "Forum"
+facebook:
+  en: "Facebook"
+  fr: "Facebook"
+discord:
+  en: "Discord"
+  fr: "Discord"
+youtube:
+  en: "YouTube"
+  fr: "YouTube"
+tumblr:
+  en: "Tumblr"
+  fr: "Tumblr"
+news:
+  en: "News"
+  fr: "Nouvelles"
+docs:
+  en: "Docs"
+  fr: "Docs"
+tutorials:
+  en: "Tutorials"
+  fr: "Tutoriels"
+faq:
+  en: "FAQ"
+  fr: "FAQ"
+user_manual:
+  en: "User's Manual"
+  fr: "Manuel d'Util"
+contribute:
+  en: "Contribute"
+  fr: "Contribuer"
+download_now:
+  en: "Download Now!"
+  fr: "Téléchargez maintenant!"
+whats_new:
+  en: "What's New?"
+  fr: "Quoi de neuf?"
+disqus_no_javascript:
+  en: "Please enable JavaScript to view the comments powered by Disqus."
+  fr: "S'il vous plaît activer JavaScript pour voir les commentaires fournis par Disqus."
+p404_title:
+  en: "404 Error"
+  fr: "404 Erreur"
+p404_tagline:
+  en: "Ah snap! We could not find what you are looking for!"
+  fr: "Oh mon dieu! Nous ne pouvons pas trouver que vous voulez!"
+p404_body:
+  en: "Return to the home page and try again."
+  fr: "Retournez au accueil et essayez encore."
+p404_go_home:
+  en: "Go to the Home Page"
+  fr: "Allez au accueil"

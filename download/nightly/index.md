@@ -1,8 +1,8 @@
 ---
 layout: page
+ref: nightly
 title: Nightly Builds
 tagline: Download bleeding edge builds of Pencil2D
-comments: false
 fetch-limit: 100
 nightly-repo: pencil2d/pencil
 nightly-workflow: ci.yml

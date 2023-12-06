@@ -24,3 +24,15 @@ site-footer .my-svg-icon:hover {
     color: #005cc0;
     fill: #005cc0;
 }
+
+.untranslated-warning {
+	background-color: #d9534f;
+	padding: 0.7rem;
+	border-radius: 0.25rem;
+	color: white;
+	margin-bottom: 3rem;
+}
+
+.site-header > .wrapper {
+  max-width: calc(100% - 160*2px);
+}

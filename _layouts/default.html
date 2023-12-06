@@ -1,5 +1,7 @@
+{% include translations %}
+{% include translated_pages %}
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html itemscope itemtype="http://schema.org/WebPage" lang="{{ page.language | default: "en" }}">
   <head>
     <!-- Non social metatags -->
     <meta charset="utf-8">
@@ -51,31 +53,25 @@
 
     <section class="page-header">
       <h1 class="project-name">
-        {% if page.layout == 'gsoc' %}
+        {% if page.logo %}
           {% unless page-tagline %}
-            <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
-          {% endunless %}
-        {% endif %}
-        {% if page.layout == 'hacktoberfest' %}
-          {% unless page-tagline %}
-            <img src="{{ "/images/hacktoberfest-icon.svg" | relative_url }}" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
+            <img src="{{ page.logo | relative_url }}" style="height: 4rem;vertical-align: middle;" alt="" aria-hidden="true" />
           {% endunless %}
         {% endif %}
         {{ page.title | default: site.title | escape }}
       </h1>
+      {% if page.tagline %}
       <h2 class="project-tagline">
-        {% if page.layout == 'gsoc' and page-tagline %}
-            <img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
+        {% if page.logo %}
+          <img src="{{ page.logo | relative_url }}" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
         {% endif %}
-        {% if page.layout == 'hacktoberfest' and page-tagline %}
-            <img src="{{ "/images/hacktoberfest-icon.png" | relative_url }}" style="height: 2rem;vertical-align: middle;" alt="" aria-hidden="true" />
-        {% endif %}
-        {{ page-tagline }}
+        {{ page.tagline | escape }}
       </h2>
-      {% if page.layout == 'home' %}
-          <a href="/download" class="btn">Download now!</a>
-          <a href="/doc/tutorials.html" class="btn">Tutorials</a>
-          <a href="/2021/02/pencil2d-0.6.6-release.html" class="btn">What's New?</a>
+      {% endif %}
+      {% if page.ref == "home" %}
+      <a href="{{ translated_pages | where: "ref", "download" | map: "url" | first | relative_url }}" class="btn">{{ translations.download_now[page.language] }}</a>
+      <a href="{{ translated_pages | where: "ref", "tutorials" | map: "url" | first | relative_url }}" class="btn">{{ translations.tutorials[page.language] }}</a>
+      <a href="{{ translated_pages | where: "layout", "post" | sort: "date" | map: "url" | last | relative_url }}" class="btn">{{ translations.whats_new[page.language] }}</a>
       {% endif %}
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
@@ -94,6 +90,10 @@
     </section>
 
     <section class="main-content">
+
+      {% if page.untranslated %}
+      <div class="untranslated-warning">{{ translations.untranslated_warning[page.language] }}</div>
+      {% endif %}
 
       {{ content }}
 
