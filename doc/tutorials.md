@@ -13,7 +13,7 @@ tagline: Learn how to use & animate with Pencil2D!
 | -----------------------------------------------| ------------------ |
 | [Pencil2D Tutorial: The Basics](#griffy)       | English            |
 | [Traditional Animation Workflows](#david)      | English            |
-| [How to rotate image](#rotate)                 | English            |
+| [How to Rotate An Image](#rotate)              | English            |
 | [Scrolling background in Camera layer](#ca)    | No Audio           |
 | [Other Pencil English Tutorials](#pcleng)      | English            |
 | [Spanish Pencil2D Video Tutorials](#pclspa)    | Spanish            |
@@ -34,8 +34,7 @@ tagline: Learn how to use & animate with Pencil2D!
 <hr>
 
 # <a name="rotate"></a> How to Rotate an Image
-
-{% include youtubePlayer.html vid="8AzdWEDPBG0" %}
+{% include youtubePlayer.html vid="c4AH-gmEvXg" %}
 
 <hr>
 
