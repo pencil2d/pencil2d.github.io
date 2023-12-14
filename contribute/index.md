@@ -57,14 +57,14 @@ Join us on **[Transifex][4]** to translate Pencil2D to your language or improve 
 
 ## Contributing code
 
-Do you like programming? Pencil2D is developed in **C++** and **Qt Framework**. Get started with our [development document][1] and start building and fixing bugs in just a few steps.
+Do you like programming? Pencil2D is developed in **C++** using the **Qt Framework**. Get started with our [developer documentation][1] and start building and fixing bugs in just a few steps.
 
-If you have any difficulties getting involved or finding answers to your questions, please bring those questions to the [discord chat room][5] so that we can help you.
+If you have any difficulties getting involved or finding answers to your questions, please bring those questions to our [Discord server][5] so that we can help you.
 
 
 [0]: https://github.com/pencil2d/pencil
-[1]: https://github.com/pencil2d/pencil/wiki  "Development Wiki"
+[1]: https://dev.pencil2d.org/  "Developer documentation"
 [2]: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html "GPLv2"
 [3]: https://github.com/pencil2d/pencil/issues "Issue Tracker"
 [4]: https://www.transifex.com/pencil2d/pencil2d/ "Transifex"
-[5]: https://discord.gg/8FxdV2g "Discord Pencil2D"
+[5]: https://discord.gg/8FxdV2g "Pencil2D Discord server"

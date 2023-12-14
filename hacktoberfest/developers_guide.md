@@ -17,9 +17,8 @@ This guide will walk you through all the things you need to know to participate 
 # Pencil2D's Developer Guides
 
 To learn how to get started with Pencil2D's codebase please have a look at the following links:
-+ [Pencil2D Documentation Page](https://www.pencil2d.org/pencil-docs/docs/) _Here you'll find development setup guides for all major OS, as well as the Doxygen generated documentation from source comments._
-+ [Github Developer Wiki](https://github.com/pencil2d/pencil/wiki) _This is a mirror of the Pencil2D docs, use it if the other link is not working for you, or vice versa._
-+ [pencil2d/pencil Github repository](https://github.com/pencil2d/pencil/) _Here you can find our source code and various issues we need help with._
++ [Pencil2D Documentation Page](https://dev.pencil2d.org/) _Here you'll find development setup guides for all major OS, as well as the Doxygen generated documentation from source comments._
++ [pencil2d/pencil GitHub repository](https://github.com/pencil2d/pencil/) _Here you can find our source code and various issues we need help with._
 
 # Pencil2D's User Guides
 
