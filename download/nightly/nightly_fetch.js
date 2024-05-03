@@ -1,18 +1,8 @@
 "use strict";
 class NightlyBuildFetcher {
-  constructor(gDriveKey, fetchLimit) {
+  constructor(fetchLimit) {
     this.fetchLimit = fetchLimit;
-    this.gDriveKey = gDriveKey;
     this.resources = [];
-  }
-
-  addGDriveResource(parentId, resourceId, label) {
-    this.resources.push({
-      "label": label,
-      "type": "googleDrive",
-      "parentId": parentId,
-      "resourceId": resourceId
-    });
   }
 
   addGithubActionsArtifactsResource(repo, workflow, label) {
@@ -75,23 +65,9 @@ class NightlyBuildFetcher {
       });
     }
 
-    function fetchGoogleDriveFiles(resource) {
-      return fetch(`https://content.googleapis.com/drive/v3/files?q=%22${resource.parentId}%22%20in%20parents&fields=files(originalFilename,webContentLink)&pageSize=${this.fetchLimit}&key=${this.gDriveKey}`, {
-        headers: {
-          "X-Goog-Drive-Resource-Keys": `${resource.parentId}/${resource.resourceId}`
-        }
-      }).then(response => {
-        if (response.ok)
-          return response.json();
-        else
-          return Promise.reject(new Error(response.statusText));
-      });
-    }
-
     const fetchMap = {
       "githubActionsArtifacts": fetchGithubArtifacts,
-      "githubActionsRuns": fetchGithubRuns,
-      "googleDrive": fetchGoogleDriveFiles
+      "githubActionsRuns": fetchGithubRuns
     };
 
     let promises = [];

@@ -95,7 +95,7 @@ a certain build is not available for your operating system, please check the pre
       nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
 
-    const fetcher = new NightlyBuildFetcher(null, {{page.fetch-limit}});
+    const fetcher = new NightlyBuildFetcher({{page.fetch-limit}});
     fetcher.addGithubActionsRunsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "runs");
     fetcher.addGithubActionsArtifactsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "artifacts");
 
