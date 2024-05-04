@@ -12,7 +12,7 @@ Nightly Builds are created automatically whenever the Pencil2D source code is up
 up-to-date versions of Pencil2D. They usually contain new fixes and features that have not made it into a stable release
 yet, however they can also contain new bugs.
 
-We provide Nightly Builds for Windows (32-bit and 64-bit), macOS and Linux (64-bit). However, because these downloads
+We provide Nightly Builds for Windows (32-bit and 64-bit), macOS (Intel and Apple Silicon) and Linux (64-bit). However, because these downloads
 are created in an automated process, it is possible for the build to temporarily fail on some operating systems. In case
 a certain build is not available for your operating system, please check the preceding builds.
 
@@ -95,7 +95,7 @@ a certain build is not available for your operating system, please check the pre
       nightlyBuilds.parentNode.insertBefore(nightlyLoading, nightlyBuilds);
     }
 
-    const fetcher = new NightlyBuildFetcher(null, {{page.fetch-limit}});
+    const fetcher = new NightlyBuildFetcher({{page.fetch-limit}});
     fetcher.addGithubActionsRunsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "runs");
     fetcher.addGithubActionsArtifactsResource("{{page.nightly-repo}}", "{{page.nightly-workflow}}", "artifacts");
 
@@ -115,7 +115,7 @@ a certain build is not available for your operating system, please check the pre
         const folder = fetch_results.artifacts;
 
         for (let file of folder.artifacts) {
-          const match = file.name.match(/^pencil2d-(\w+)-(\d+)-\d{4}-\d{2}-\d{2}(\.zip|\.AppImage)?$/);
+          const match = file.name.match(/^pencil2d-(\w+(?:-\w+)?)-(\d+)-\d{4}-\d{2}-\d{2}(?:\.zip|\.AppImage)?$/);
           if (match === null || file.expired) {
             // File name didn't match, don't know what to do with it
             continue;
@@ -176,7 +176,7 @@ a certain build is not available for your operating system, please check the pre
           // ...with the download links...
           const downloadList = document.createElement("li");
           let text = "Download for ";
-          for (let [os, osName] of [["win64", "Windows (64-bit)"], ["win32", "Windows (32-bit)"], ["mac", "macOS"], ["linux", "Linux (64-bit)"]]) {
+          for (let [os, osName] of [["win64", "Windows (64-bit)"], ["win32", "Windows (32-bit)"], ["mac", "macOS"], ["mac-x86_64", "macOS Intel"], ["mac-arm64", "macOS Apple Silicon"], ["linux", "Linux (64-bit)"]]) {
             if (os in data === false) {
               continue; // No download for this OS
             }
