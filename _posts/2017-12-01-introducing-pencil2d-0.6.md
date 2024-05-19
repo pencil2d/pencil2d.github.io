@@ -6,12 +6,15 @@ categories: "Release Note"
 author: "The Pencil2D Team"
 published: true
 comments: true
+excerpt_separator: <!-- excerpt end -->
 ---
 <img src="{{ "/images/pencil2d_horizontal_banner_1024x256_trans.png" | relative_url }}" alt="Pencil2D Banner">
 
 Christmas is getting close, and it’s about time to unwrap one of the presents for you. So yes, it has finally happened:
 
 **Pencil2D 0.6 was released today!**
+
+<!-- excerpt end -->
 
 Please download it [here]({{ "/download/" | relative_url }}). Let’s take a look at what’s inside.
 
