@@ -30,16 +30,6 @@ Thank you for your interest in Pencil2D! **Pencil2D** is a not-for-profit, commu
 Pencil2D is developed by passionate people on their spare time.
 If you like this software, and you want it to get better, you can help!
 
-## Share your work with us
-
-<button class="btn" id="upload-action" onclick="window.location.href='{{ "/contribute/share.html" | relative_url }}'"><img src="{{ "/images/upload_icon.svg" | relative_url }}" /> Upload your Pencil2D Projects</button>
-
-Share your projects with us to help development.
-
-We are actively searching for project files (.pclx and .pcl files) created by our users. These real-world projects will helps us to understand how people use our application. And they will be used for catching bugs or testing new features to improve the overall experience. 
-
-Do not worry about the quality of your animations, we will never judge you. Our only interest is making sure you have the best experience possible. If you give us permission, we may also share your work publically (giving you full credit of course).
-
 ## Share your work with the world
 
 Upload your animations to social media, and say that your work was made with Pencil2D! It helps spread the word about our program and shows how it can be used. We love to sees all the wonderful things that people are creating with Pencil2D!
