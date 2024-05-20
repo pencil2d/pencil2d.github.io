@@ -8,13 +8,13 @@ published: false
 comments: false
 ---
 
-It's been a while since we last posted an update here, but we're back with some exciting news. We've been hard at work on Pencil2D and we'd like to take a moment to showcase one of the may new features that will be included in the next version of Pencil2D: a complete redesign of our icon set!
+It's been a while since we last posted an update here, but we're back with some exciting news. We've been hard at work on Pencil2D and we'd like to take a moment to showcase one of the many new features that will be included in the next version of Pencil2D: a complete redesign of our icon set!
 
 | Old | New |
 | --- | --- |
 | [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ "/images/icon-redesign-old.png" | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}){:target="_blank"} | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ "/images/icon-redesign-new.png" | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}){:target="_blank"} |
 
-The redesign process started with [Pull Request #1361](https://github.com/pencil2d/pencil/pull/1361){:target="_blank"} by [Fatih20](https://github.com/Fatih20){:target="_blank"} back in May 2020 and then was completed mostly by our core developer [MrStevns](https://github.com/MrStevns){:target="_blank"}. This was a long journey that required reworking all the icons in the interfaceto give a more coherent feel to the application.
+The redesign process started with [Pull Request #1361](https://github.com/pencil2d/pencil/pull/1361){:target="_blank"} by [Fatih20](https://github.com/Fatih20){:target="_blank"} back in May 2020 and then was completed mostly by our core developer [MrStevns](https://github.com/MrStevns){:target="_blank"}. This was a long journey that required reworking all the icons in the interface to give a more coherent feel to the application.
 
 To see the new icons in action now, please [download the experimental nightly builds from our website]({{ "/download/nightly/" | relative_url }}). Aside from the icons, they also come with many other exciting improvements that will be part of the next version!
 
@@ -41,8 +41,8 @@ With that in mind, the following became the guiding technical and design princip
 
 The palette currently consists of 26 colors, where blue and shades of gray have the greatest amount of variation.
 This palette was designed for use with Pencil2D's default light mode interface.
-As such, not all colors in this palette will work well on a dark mode user interface (which is currently not available on most platforms).
-We will need to create second palette to adapt the icons with dark mode in the future.
+Therefore, not all colors in this palette will work well on a dark mode user interface (which is currently not available on most platforms).
+We will need to create a second palette to adapt the icons with dark mode in the future.
 
 ## Color Grouping
 
@@ -91,7 +91,7 @@ Consider this example of an icon with a 1 pixel solid black border to see just w
 | Pixel aligned | Not pixel aligned |
 | ------------- | ----------------- |
 | ![A closeup of the one point perspective icon showing the icon outline adhering to pixel boundaries even at a low resolution]({{ "/images/icon-redesign-pixel-alignment-good.png" | relative_url }}){:width="378"} | ![A closeup of the one point perspective icon where the outline does not align with the pixel grid and is therefore drawn across multiple pixels at a low resolution]({{ "/images/icon-redesign-pixel-alignment-bad.png" | relative_url }}){:width="378"} |
-| Border dimensions: 17 x 17 | Border dimensions: 17.5 x 17.5 |
+| Border dimensions: 17 × 17 | Border dimensions: 17.5 × 17.5 |
 | Border Top-Left Position: (2.5, 2.5) | Border Top-Left Position: (2.5, 2.5) |
 
 ### SVG Limitations
@@ -166,7 +166,7 @@ With that, we should be ready to import the icon and display it with Qt.
 
 ### Verifying the Result
 
-The Qt framework officially supports the [SVG 1.2 Tiny](http://www.w3.org/TR/SVGMobile12) specification, which means that not all fancy features that vector applications utilize will be supported. As such, if an icon ends up looking off, has a blank background, or does not show at all, we need to go back to the application and simplify the SVG until it looks correct.
+The Qt framework officially supports the [SVG 1.2 Tiny](http://www.w3.org/TR/SVGMobile12) specification, which means that not all fancy features that vector applications utilize will be supported. Therefore, if an icon ends up looking off, has a blank background, or does not show at all, we need to go back to the application and simplify the SVG until it looks correct.
 
 ## Want to Join the Fun?
 
