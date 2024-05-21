@@ -4,7 +4,8 @@ title: "Behind the Scenes: Pencil2D's New Icon Set"
 tagline: ""
 categories: "Behind the Scenes"
 author: "The Pencil2D Team"
-published: false
+date: "2024-05-21"
+published: true
 comments: false
 ---
 
