@@ -13,9 +13,9 @@ It's been a while since we last posted an update here, but we're back with some 
 
 | Old | New |
 | --- | --- |
-| [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ "/images/icon-redesign-old.png" | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}){:target="_blank"} | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ "/images/icon-redesign-new.png" | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}){:target="_blank"} |
+| [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ "/images/icon-redesign-old.png" | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}) | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ "/images/icon-redesign-new.png" | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}) |
 
-The redesign process started with [Pull Request #1361](https://github.com/pencil2d/pencil/pull/1361){:target="_blank"} by [Fatih20](https://github.com/Fatih20){:target="_blank"} back in May 2020 and then was completed mostly by our core developer [MrStevns](https://github.com/MrStevns){:target="_blank"}. This was a long journey that required reworking all the icons in the interface to give a more coherent feel to the application.
+The redesign process started with [Pull Request #1361](https://github.com/pencil2d/pencil/pull/1361) by [Fatih20](https://github.com/Fatih20) back in May 2020 and then was completed mostly by our core developer [MrStevns](https://github.com/MrStevns). This was a long journey that required reworking all the icons in the interface to give a more coherent feel to the application.
 
 To see the new icons in action now, please [download the experimental nightly builds from our website]({{ "/download/nightly/" | relative_url }}). Aside from the icons, they also come with many other exciting improvements that will be part of the next version!
 
@@ -32,7 +32,7 @@ With that in mind, the following became the guiding technical and design princip
 * The icons should have an outline.
 * The icons should stick to the [palette](#palette) whenever possible. We don't want to introduce new colors unnecessarily.
 * The icons should be [optimized for low-resolution display](#optimizing-for-low-resolution-display). This will ensure that the icon looks representative on any display.
-* The icons should not contain gradients, soft shadows and other effects to create depth. Instead, stick to sharp shades and highlights, similar to [cel shading](https://en.wikipedia.org/wiki/Cel_shading){:target="_blank"}.
+* The icons should not contain gradients, soft shadows and other effects to create depth. Instead, stick to sharp shades and highlights, similar to [cel shading](https://en.wikipedia.org/wiki/Cel_shading).
 * The icons' XML hierarchies should be as flat as possible, i.e. avoid grouping elements whenever possible and don't rely on clipping functionality.
 * The icons should be [compressed](#exporting-to-svg) as much as possible.
 
@@ -51,12 +51,12 @@ We will need to create a second palette to adapt the icons with dark mode in the
 
 Instead of plastering the interface with colors in all directions, which can feel nauseating to some, we figured that by utilizing the same colors for icons that share similar functionality, we can visualize how they're grouped together.
 
-The inspiration comes from [Affinity Designer]({{ "/images/icon-redesign-color-grouping-affinity-designer.png" | relative_url }}){:target="_blank"}, which uses a similar approach.
+The inspiration comes from [Affinity Designer]({{ "/images/icon-redesign-color-grouping-affinity-designer.png" | relative_url }}), which uses a similar approach.
 
 ## Similarity Through Overlays
 
 An aspect of the old interface that I liked and wanted to preserve was that the same icon could be re-used for similar actions, i.e. deleting a keyframe, layer, or color.
-Although I still wanted each icon to convey more about their specific use, I couldn't quite put my finger on how to do it... until I stumbled upon the [Icon Guidelines for Haiku OS](https://www.haiku-os.org/development/icon-guidelines){:target="_blank"}:
+Although I still wanted each icon to convey more about their specific use, I couldn't quite put my finger on how to do it... until I stumbled upon the [Icon Guidelines for Haiku OS](https://www.haiku-os.org/development/icon-guidelines):
 
 > Some of the system icons use overlays to further differentiate between file system objects for the user's benefit. These objects are generally the same type and get the same base icon. A good example are the many standard folders. Since the overlays need to be reasonably clear at 16x16 icon size
 
@@ -75,7 +75,7 @@ We ended up doing that for the color palette add and remove icons.
 
 ## Technical Aspects
 
-Besides designing the icons in the first place, we still needed to make those SVG icons look good in the context of our application, which utilizes the [Qt Framework](https://www.qt.io/product/framework){:target="_blank"} to render the graphical user interface. In this section we'll go over optimization techniques, limitations of the Qt SVG support, and export considerations.
+Besides designing the icons in the first place, we still needed to make those SVG icons look good in the context of our application, which utilizes the [Qt Framework](https://www.qt.io/product/framework) to render the graphical user interface. In this section we'll go over optimization techniques, limitations of the Qt SVG support, and export considerations.
 
 ### Optimizing for Low-Resolution Display
 
@@ -133,7 +133,7 @@ Once the icon has been exported, we have a decent baseline. In my case, this is 
 While we could stop here and call it a day, we might as well go all the way and apply some compression, so we can, with a clean conscience, say we did our utmost to make sure that the SVG icon will be rendered with as little overhead as possible.
 
 Fortunately, there are plenty of tools on the internet to help us compress our icons.
-My usual approach is to first use [Vecta Nano](https://vecta.io/nano){:target="_blank"} and then [SVGOMG](https://jakearchibald.github.io/svgomg/){:target="_blank"}, although the combination does not always result in a smaller size.
+My usual approach is to first use [Vecta Nano](https://vecta.io/nano) and then [SVGOMG](https://jakearchibald.github.io/svgomg/), although the combination does not always result in a smaller size.
 
 ![A screenshot of Vecta Nano compression results, showing a 51.2% size reduction]({{ "/images/icon-redesign-compression.png" | relative_url }}){:width="369"}
 
@@ -173,4 +173,4 @@ The Qt framework officially supports the [SVG 1.2 Tiny](http://www.w3.org/TR/SVG
 
 Like this new icon set, all improvements to Pencil2D are developed by passionate volunteers in their spare time. You can also become a volunteer and contribute in various ways, not just through graphic design or programming! Please check out the [Contribute page]({{ "/contribute/" | relative_url }}) to learn more.
 
-If you have any questions or feedback, please feel free to reach out to us on [our forum](https://discuss.pencil2d.org/){:target="_blank"} or [Discord](https://discord.gg/8FxdV2g){:target="_blank"}.
+If you have any questions or feedback, please feel free to reach out to us on [our forum](https://discuss.pencil2d.org/) or [Discord](https://discord.gg/8FxdV2g).
