@@ -93,7 +93,7 @@ Consider this example of an icon with a 1 pixel solid black border to see just w
 | ------------- | ----------------- |
 | ![A closeup of the one point perspective icon showing the icon outline adhering to pixel boundaries even at a low resolution]({{ "/images/icon-redesign-pixel-alignment-good.png" | relative_url }}){:width="378"} | ![A closeup of the one point perspective icon where the outline does not align with the pixel grid and is therefore drawn across multiple pixels at a low resolution]({{ "/images/icon-redesign-pixel-alignment-bad.png" | relative_url }}){:width="378"} |
 | Border dimensions: 17 × 17 | Border dimensions: 17.5 × 17.5 |
-| Border Top-Left Position: (2.5, 2.5) | Border Top-Left Position: (2.5, 2.5) |
+| Border Top-Left Position: (2.5, 2.5) | Border Top-Left Position: (2, 2) |
 
 ### SVG Limitations
 
