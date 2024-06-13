@@ -58,8 +58,6 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
 </div>
 <div style="clear:both"></div>
 
-Having trouble running the program? Please see <a href="#troubleshooting">Troubleshooting</a>.
-
 ## Other Ways to Install Pencil2D
 
 <div class="tabs">
@@ -118,11 +116,19 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
 
 <script>document.getElementById("defaultTab").click();</script>
 
-## Other Versions
 
-- <a name="nightlybuild" />**Nightly Builds** are experimental bleeding edge versions of Pencil2D which
-  contain the most recent fixes and features. You can find them on our [Nightly Build download page](nightly/).
-- **Older versions** of Pencil2D are available from [our GitHub Releases][gh-releases].
+## Nightly Builds
+
+Nightly Builds are the bleeding edge versions of Pencil2D which contain the most recent fixes and features.
+You can find them on our [Nightly Build download page](nightly/).
+
+
+## Older versions
+
+Previous Pencil2D releases are available on [the GitHub Releases][gh-releases].
+
+[gh-releases]: https://github.com/pencil2d/pencil/releases
+[bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
 
 ## Troubleshooting {#troubleshooting}
 
@@ -146,5 +152,3 @@ Having trouble running the program? Please see <a href="#troubleshooting">Troubl
 
 Still having trouble? Please go to the [Pencil2D forum](https://discuss.pencil2d.org/c/support).
 
-[gh-releases]: https://github.com/pencil2d/pencil/releases
-[bb-downloads]: https://bitbucket.org/chchwy/pencil2d/downloads/
