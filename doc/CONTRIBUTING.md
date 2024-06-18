@@ -1,24 +1,25 @@
 ---
 layout: page
 title: Documentation Contribution Guide
-tagline: Contribute to Pencil2D by improving all kinds of documentation!
+tagline: Improving all kinds of documentation!
 comments: false
 ---
 
-> _This is the contribution guide for user & developer documentation media & technical writing for Pencil2D_
+This is the contribution guide for user & developer documentation media & technical writing for Pencil2D
 
-> _If you're interested in donating your time through other tasks including programming, consider reviewing our [**Contribute**](/contribute/) page._
-
-> _If you need to contact please visit our [**Community**](/community/) driven hubs. For real-time contact we're available through [**Discord**](https://discord.gg/8FxdV2g) and you can use our dedicated [**Forum**](https://discuss.pencil2d.org/) for in-depth discussions on these topics during your contribution time._
+> If you're interested in donating your time through other tasks including programming, consider reviewing our [**Contribute**](/contribute/) page.
+> If you need to contact please visit our [**Community**](/community/) driven hubs. For real-time contact we're available through [**Discord**](https://discord.gg/8FxdV2g) and you can use our dedicated [**Forum**](https://discuss.pencil2d.org/) for in-depth discussions.
 
 {% include toc.html %}
 
 # **Documentation Contribution Guide**
 
 ### Quick Reference Guide (_single task claim_)
+
 It’s a hand-out style guide that comes with the software, and presents key concepts that allow the user to get up and running with Pencil2D.
 
 **Tasks**
+
 - Update to the latest version of Pencil2D. Since _0.6.5_ is due to be released before december 2019 so please use the source code compiled version or the nightly builds to work your screenshots
 - The guide should be "platform agnostic" however we can't avoid the quirks of either operating system, so please include OS specific screenshots in key points (such as macOS preferences showing in the apple menu)
 - It should include a “cheat-sheet” for keyboard shortcuts

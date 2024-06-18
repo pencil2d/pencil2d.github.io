@@ -119,8 +119,8 @@ Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?<
 
 ## Nightly Builds
 
-Nightly Builds are the bleeding edge versions of Pencil2D which contain the most recent fixes and features.
-You can find them on our [Nightly Build download page](nightly/).
+Nightly Builds are the bleeding edge versions of Pencil2D which have the most recent fixes and features.
+Find them on our [Nightly Build download page](nightly/).
 
 
 ## Older versions
