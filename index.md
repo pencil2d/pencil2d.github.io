@@ -28,6 +28,3 @@ layout: home
   <div style="clear:both"></div>
 </div>
 
-<div style="">
-<iframe class="showreel" src="https://www.youtube.com/embed/ma52j9B1kEM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
