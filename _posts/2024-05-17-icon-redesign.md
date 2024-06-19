@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Behind the Scenes: Pencil2D's New Icon Set"
+title: "🎬Behind the Scenes: Pencil2D's New Icon Set"
 tagline: ""
 categories: "Behind the Scenes"
 author: "The Pencil2D Team"
