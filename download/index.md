@@ -16,6 +16,8 @@ nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
 release-note-link: /2021/02/pencil2d-0.6.6-release.html
 ---
 
+> v0.7.0 RC1 is now available for testing! [Check it out here]({{ "/2024/06/pencil2d-0.7.0-rc1-release.html" | relative_url }}).
+
 ## Current Stable Version (v0.6.6)
 
 <blockquote style="color:#898989;font-size:0.8em">
