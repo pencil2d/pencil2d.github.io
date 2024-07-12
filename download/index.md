@@ -5,23 +5,20 @@ tagline: Let's start animating immediately!
 comments: false
 tabs: true
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-win64-0.6.6.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-win32-0.6.6.zip
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-win64-0.7.0.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-win32-0.7.0.zip
   winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-winxp-0.6.6.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-mac-0.6.6.zip
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-mac-0.7.0.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-mac-legacy-0.6.6.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-amd64-0.6.6.AppImage
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-linux-0.7.0.AppImage
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-i386-0.6.6.AppImage
-nightly-link: https://discuss.pencil2d.org/t/pencil2d-nightly-builds-v0-6-3/3118
-release-note-link: /2021/02/pencil2d-0.6.6-release.html
+release-note-link: /2024/07/pencil2d-0.7.0-release.html
 ---
 
-> v0.7.0 RC1 is now available for testing! [Check it out here]({{ "/2024/06/pencil2d-0.7.0-rc1-release.html" | relative_url }}).
-
-## Current Stable Version (v0.6.6)
+## Current Stable Version (v0.7.0)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 17 Feb 2021. <a href="{{ page.release-note-link }}">What's New?</a>
+Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's New?</a> -->
 </blockquote>
 
 <div class="download-tiles">
