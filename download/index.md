@@ -38,7 +38,7 @@ Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's
   <a href="{{ page.download.mac }}">
     {% include mac_icon.svg %}
   </a>
-  <h3>macOS 10.13+</h3>
+  <h3>macOS 10.14+</h3>
   <hr>
   <a href="{{ page.download.mac }}">Intel</a><br>
 </div>
@@ -65,7 +65,7 @@ Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's
   <button class="tablinks" onclick="openTab(event, 'fedora')">Fedora 26+</button>
   <button class="tablinks" onclick="openTab(event, 'flatpak')">Flatpak</button>
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
-  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7&ndash;10.12</button>
+  <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7&ndash;10.13</button>
   <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
   <button class="tablinks" onclick="openTab(event, 'windows-legacy')">Windows XP/Vista</button>
 </div>
@@ -101,7 +101,7 @@ Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's
 
 <div id="mac-legacy" class="tabcontent">
 <div class="warning-box"><span style="font-weight: bold;">&#9888; Warning:</span> This is a legacy build. Legacy builds do not contain the latest security fixes and we may not be able to provide the same level of support for any issues you encounter while using them. Use at your own discretion.</div>
-<p>Download the legacy Pencil2D app <a href="{{ page.download.maclegacy }}">here</a> for Mac OS X/macOS versions 10.7 up to and including 10.12.</p>
+<p>Download the legacy Pencil2D app <a href="{{ page.download.maclegacy }}">here</a> for Mac OS X/macOS versions 10.7 up to and including 10.13.</p>
 </div>
 
 <div id="cask" class="tabcontent">
