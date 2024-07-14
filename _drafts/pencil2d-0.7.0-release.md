@@ -51,7 +51,7 @@ _______________________________________________
 ### Adjustable Layer/Keyframe opacity - [#1355](https://github.com/pencil2d/pencil/pull/1355), [#459](https://github.com/pencil2d/pencil/issues/459)
 Back in 2020, David Lamhauge made a proposal on how to introduce adjustable layer/keyframe opacity, which has always been a much requested feature. The proposal made it into our master branch on the 10 of March 2021.
 
-<img width="287" alt="image" src="{{ "/images/pencil2d-0.7.0-opacity.png" | relative_url }}">
+<img width="287" alt="image" src="{{ '/images/pencil2d-0.7.0-opacity.png' | relative_url }}">
 
 #### Opacity
 When you open the window, you have a few options to choose from, giving you more control over how you can change the opacity of one or more keyframes.
@@ -74,7 +74,7 @@ The result should be an item going from 100% to 0% or 0 to 100%.
 
 You can however also choose to fade using a relative opacity, say if your first frame has an opacity of 50% and you select "fade in", the following frames will gradually increase their opacity until the last is fully opaque.
 
-### Camera system makeover [#1584](https://github.com/pencil2d/pencil/pull/1584), [#1587](https://github.com/pencil2d/pencil/pull/1587), [#1732](https://github.com/pencil2d/pencil/pull/1732), [#1738](https://github.com/pencil2d/pencil/pull/1738)
+### Camera system makeover - [#1584](https://github.com/pencil2d/pencil/pull/1584), [#1587](https://github.com/pencil2d/pencil/pull/1587), [#1732](https://github.com/pencil2d/pencil/pull/1732), [#1738](https://github.com/pencil2d/pencil/pull/1738)
 The camera system has had a huge makeover. We have added features ranging from an entirely new and better way to interact with the camera to having a wide range of easings for you to move the camera around. You will also be able to visually see the keyframe path on the canvas as well as interact with it.
 
 ***What's new:***
@@ -83,7 +83,7 @@ The camera system has had a huge makeover. We have added features ranging from a
 + The ability to see interpolations on the canvas
 + A wide range of easings to choose from:
 
-<video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-camera.mp4" | relative_url }}"/>
+<p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera.mp4' | relative_url }}" /> </p>
 
 We always try to keep the interface as simple as possible in Pencil2D. As such, there are no new tools you have to learn to use the camera; instead, the existing tools in the toolbox change depending on the layer type.
 
@@ -94,23 +94,26 @@ Where the old camera system was a part of the viewport, making it more of a WYSI
 
 | Translate | Rotate | Scale |
 | --------- | ------ | ----- |
-| <video autoplay controls height=200 src="{{ "/images/pencil2d-0.7.0-camera-translate.mp4" | relative_url }}"/> | <video controls autoplay height=200 src="{{ "/images/pencil2d-0.7.0-camera-rotate.mp4" | relative_url }}"/> | <video autoplay controls height=200 src="{{ "/images/pencil2d-0.7.0-camera-scale.mp4" | relative_url }}"/> |
+| <video autoplay controls height=200 src="{{ '/images/pencil2d-0.7.0-camera-translate.mp4' | relative_url }}"/> | <video controls autoplay height=200 src="{{ '/images/pencil2d-0.7.0-camera-rotate.mp4' | relative_url }}"/> | <video autoplay controls height=200 src="{{ '/images/pencil2d-0.7.0-camera-scale.mp4' | relative_url }}"/> |
 | Moving the camera is as simple as dragging it anywhere within the bounds of its area. | To rotate the camera, click and hold on the top circular handle. | To change the perceived size of the camera, click and hold-drag on any of the squared corners. Dragging diagonally outward will make objects seem smaller, while dragging inward will make objects appear larger. |
 
 #### Camera tool options
 To house some of the new camera features, we've added camera functionalities to the options panel. From the panel, you will be able to reset the camera's current transformations, either all of them or one by one.
 
-<img width="277" alt="image" src="{{ "/images/pencil2d-0.7.0-camera-options.png" | relative_url }}"> <video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-camera-options.mp4" | relative_url }}" />
+<p style="display: flex;"><img width="277" alt="image" src="{{ '/images/pencil2d-0.7.0-camera-options.png' | relative_url }}"><video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-options.mp4' | relative_url }}"/> </p>
 
-When you click on the "Show path" checkbox, an entirely new feature unfolds. You will now be able to see and interact with the camera's curve on the canvas.
+When you click on the ***Show path*** checkbox, an entirely new feature unfolds. You will now be able to see and interact with the camera's curve on the canvas.
 
-<video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-camera-path.mp4" | relative_url }}"/>
+<br> 
 
+##### Onion skinning
 Onion skinning is a vital feature in animation; being able to see what has and what will occur allows the animator to make changes with ease, so naturally, like with the other layer types, you can now utilize the functions of the onion skin panel for camera keyframes too.
 
-For example, if you only care about seeing the previous and/or next keyframe, you can enable "Show keyframe only," which will hide in-between interpolations, or if you only want to see the previous keyframe, simply toggle "Previous frames."
+<p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-path.mp4' | relative_url }}"/> </p>
 
-<video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-camera-onion-skins.mp4" | relative_url }}"/>
+For example, if you only care about seeing the previous and/or next keyframe, you can enable ***Show keyframe only***, which will hide in-between interpolations, or if you only want to see the previous keyframe, simply toggle ***Previous Frames***.
+
+<p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-onion-skins.mp4' | relative_url }}"/> </p>
 
 To enable interaction with a keyframe path, you first have to scrub to an in-between frame. While the timeline scrubber is in between keyframes, you can change the trajectory of one or multiple paths.
 
@@ -119,7 +122,7 @@ If you need to change the position of the camera again, simply scrub back to the
 #### Camera easings
 Previously, it was only possible to make linear-based movements for the camera, which, while being an okay starting point, didn't allow for much flexibility. Linear-based movement is considered to be anything but organic; as such, it's not something you should rely too much on; instead, experiment with the new easing types we've added, such as "In: Slow", "In: Fast" and then "Out: Faster".
 
-<video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-camera-easings.mp4" | relative_url }}"/>
+<p> <video autoplay controls height=500 src="{{ '/images/pencil2d-0.7.0-camera-easings.mp4' | relative_url }}"/></p>
 
 This feature is currently only possible to access through the timeline, via a new right-click menu. From the menu, you can select from a wide range of easing types to control the movement of the camera. Whether you're trying to ease in, out, in-out, or out-in, we have you covered. You can see the current easing type at the top of the menu, as well as near the handle on the canvas.
 
@@ -127,13 +130,13 @@ This feature is currently only possible to access through the timeline, via a ne
 This feature allows you to reposition the content of multiple keyframes, across multiple layers.
 
 To access it, locate the "Animation" menu in the top bar, and find the item called "Reposition Selected Frames".
-<img width="1000" alt="image" src="{{ "/images/pencil2d-0.7.0-reposition-selected-frames-interface.png" | relative_url }}">
+<img width="1000" alt="image" src="{{ '/images/pencil2d-0.7.0-reposition-selected-frames-interface.png' | relative_url }}">
 
 Clicking on the menu item reveals the "Reposition Frames" dialog. The top half of the dialog shows which keyframes are selected.
 The bottom half makes it possible to reposition keyframes across other layers.
 
 Here's how it works:
-<video autoplay controls height=400 src="{{ "/images/pencil2d-0.7.0-reposition-selected-frames-showcase.mp4" | relative_url }}"/>
+<p><video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-reposition-selected-frames-showcase.mp4' | relative_url }}"/></p>
 
 In the video you can see that the content of the keyframe 1 of "Bitmap Layer 2" are being moved from the top left corner, to the bottom left corner and afterwards the same process is being applied to the other keyframes.
 
@@ -188,7 +191,7 @@ A few quality of life improvements that this gave birth to:
 
 Previously when you had created a selection and moved your object without deselecting and wanting to change layer, you would get a blocking dialog, requiring you to deny or accept the current transformation.
 
-<img width="532" alt="image" src="{{ "/images/pencil2d-0.7.0-selection-dialog.png" | relative_url }}">
+<img width="532" alt="image" src="{{ '/images/pencil2d-0.7.0-selection-dialog.png' | relative_url }}">
 
 Now because of the reworked logic, this is no longer neccesary and we can instead just apply the change immediately and change layer.
 
