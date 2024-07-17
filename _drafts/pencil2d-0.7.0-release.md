@@ -46,11 +46,20 @@ Many thanks to all the people who helped to make this release possible.
 [anpanring]: https://github.com/anpanring
 [musicinmybrain]: https://github.com/musicinmybrain
 [CSinclair89]: https://github.com/CSinclair89
+[Fatih20]: https://github.com/Fatih20
 
-[Chchwy] - [Scribblemaniac] - [MrStevns] - [Davidlamhauge] - [Josemoreno] - [J5lx] - [iynaur] - [aeroc7] - [v404] - [donarturo11] - [anpanring] - [musicinmybrain] - [CSinclair89]
+[Chchwy] - [Scribblemaniac] - [MrStevns] - [Davidlamhauge] - [Josemoreno] - [J5lx] - [iynaur] - [aeroc7] - [v404] - [donarturo11] - [anpanring] - [musicinmybrain] - [CSinclair89] - [Fatih20]
 
 _______________________________________________
 ## Feature Highlights
+
+### Icon Redesign - [#1356](https://github.com/pencil2d/pencil/issues/1356), [#1361](https://github.com/pencil2d/pencil/pull/1361)
+
+Thanks to the efforts of Fatih20 and MrStevns, this version comes with a brand new icon set that, unlike before, features a consistent design throughout the entire application! Make sure to check out [our behind the scenes blog post]({% post_url 2024-05-17-icon-redesign %}) to learn more about the work that went into this redesign.
+
+| Old | New |
+| --- | --- |
+| [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ "/images/icon-redesign-old.png" | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}) | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ "/images/icon-redesign-new.png" | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}) |
 
 ### Adjustable Layer/Keyframe Opacity - [#1355](https://github.com/pencil2d/pencil/pull/1355), [#459](https://github.com/pencil2d/pencil/issues/459)
 Back in 2020, David Lamhauge made a proposal on how to introduce adjustable layer/keyframe opacity, which has always been a much requested feature. The proposal made it into our master branch on the 10 of March 2021.
@@ -224,8 +233,6 @@ _________________________________________
 ## Enhancements/Changes
 ### Interface:
 + Introduced a comprehensive new icon set - [#1356](https://github.com/pencil2d/pencil/issues/1356), [#1361](https://github.com/pencil2d/pencil/pull/1361)
-
-  Check out [our behind the scenes blog post]({% post_url 2024-05-17-icon-redesign %}) to learn more about the work that went into this redesign!
 + Replaced the zoom text on the status bar with an interactive control - [#1442](https://github.com/pencil2d/pencil/pull/1442)
 + Added help text for the currently active tool to the status bar - [#1442](https://github.com/pencil2d/pencil/pull/1442)
 + Added toolbars for commonly used actions - [#1468](https://github.com/pencil2d/pencil/pull/1468)
