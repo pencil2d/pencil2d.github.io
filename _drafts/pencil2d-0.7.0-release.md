@@ -9,7 +9,7 @@ comments: false
 excerpt_separator: <!-- excerpt end -->
 ---
 
-It's been long overdue... but here it is: Pencil2D release 0.7.0!
+It's been long overdue… but here it is: Pencil2D release 0.7.0!
 
 We've been working on this release for more than two years, a release which packs **nearly 500 commits**, and boy do we have things to show! A much awaited re-designed camera system, timeline dragging and exposure improvements, adjustable layer opacity, repositioning content of multiple frames, perspective grids and more.
 
@@ -70,7 +70,7 @@ Allows you to change the opacity of one or more selected keyframes.
 Allows you to change the opacity of all keyframes on that specific layer.
 
 #### Fade In / Fade Out
-Imagine a classic scenario where you want to make an item disappear over a few keyframes, previously this couldn't be done except by using a brush with an alpha value, and gradually drawing it with less alpha. The amount of work that required in Pencil2D made it a non starter... Well now it's finally possible!
+Imagine a classic scenario where you want to make an item disappear over a few keyframes, previously this couldn't be done except by using a brush with an alpha value, and gradually drawing it with less alpha. The amount of work that required in Pencil2D made it a non starter… Well now it's finally possible!
 
 Simply start by selecting 3 or more keyframes you want to fade in or out on the timeline, then click on the "Fade in" or "Fade out" button in the Layer opacity window.
 
@@ -189,7 +189,7 @@ It's been on our TODO list for a long time but this release is finally where we 
 
 | Old                        | New                                              |
 | ---------------------------|------------------------------------------------- |
-|  ![selection-old](https://github.com/pencil2d/pencil2d.github.io/assets/1045397/3177aeba-756e-44cd-b1ab-7fe59a93e91a)     |  ![selection-new](https://github.com/pencil2d/pencil2d.github.io/assets/1045397/5569241b-3f99-4831-a2f9-68692dfff286) |
+| <video autoplay loop height="300" src="{{ "/images/pencil2d-0.7.0-selection-transform-old.mp4" }}"/> | <video autoplay loop height="300" src="{{ "/images/pencil2d-0.7.0-selection-transform-new.mp4" }}"/> |
 
 A few quality of life improvements that this gave birth to:
 
