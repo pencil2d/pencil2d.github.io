@@ -321,9 +321,23 @@ _________________________________________
 
 <Insert list of bugfixes reported in 0.6.6 or older that has been fixed.>
 
-## Known issues & Gotchas
+## Known Issues & Gotchas
 
 Here is a non-exhaustive list of bugs that we are already aware of, but were unable to fix in this release. Rest assured, we will do our best to fix all of them eventually.
+
++ The vector engine is a work in progress and does not work as intended. Much work will be required, please avoid using it for production
++ The information dialog shown when changing the application langage may display without any message under certain circumstances
++ Panning the canvas by middle- or right-click-dragging with a tablet causes the application to misbehave on Windows - [#1813](https://github.com/pencil2d/pencil/issues/1813)
+
+  To pan the canvas using a tablet without triggering this issue, perform a left-click-drag while holding the space key. When the issue has already been triggered, perform a left-click on the canvas using a mouse to return the application to its original state.
++ The command line export operation consumes more memory than using the editor - [#1117](https://github.com/pencil2d/pencil/issues/1117)
++ Users of Huion tablets may experience lag and buggy strokes - [#1133](https://github.com/pencil2d/pencil/issues/1133)
+
+  To work around the issue, try disabling the “linear optimizer” option in your tablet’s device settings if it is available. For details, please see [this forum post](https://discuss.pencil2d.org/t/difficulty-with-huion-tablet/1369/9).
++ Some users may experience perceived audio delay during playback, depending on the number of layers and frames in the project. Sound scrubbing and movie export are unaffected – [#1567](https://github.com/pencil2d/pencil/issues/1567), [#1179](https://github.com/pencil2d/pencil/issues/1179)
++ Using the smudge tool in default mode on bitmap layers adds a white background to strokes. This may cause unexpected results, so please use it with caution
++ Using the smudge tool in smooth mode on bitmap layers by pressing Alt keeps smudging the pixels rather than blurring the image
++ Using the bucket tool to fill vector a vector stroke requires the stroke to be selected
 
 \<Insert known issues>
 
