@@ -24,6 +24,10 @@ We've been working on this release for more than two years, a release which pack
 
 | Contents                        |
 | --------------------------------|
+| [Feature Highlights](#feature-highlights) |
+| [Enhancements/Changes](#enhancementschanges) |
+| [Known Issues & Gotchas](#known-issues--gotchas) |
+| [How Can I Help?](#how-can-i-help) |
 
 <br>
 
@@ -46,9 +50,9 @@ Many thanks to all the people who helped to make this release possible.
 [Chchwy] - [Scribblemaniac] - [MrStevns] - [Davidlamhauge] - [Josemoreno] - [J5lx] - [iynaur] - [aeroc7] - [v404] - [donarturo11] - [anpanring] - [musicinmybrain] - [CSinclair89]
 
 _______________________________________________
-## Feature highlights
+## Feature Highlights
 
-### Adjustable Layer/Keyframe opacity - [#1355](https://github.com/pencil2d/pencil/pull/1355), [#459](https://github.com/pencil2d/pencil/issues/459)
+### Adjustable Layer/Keyframe Opacity - [#1355](https://github.com/pencil2d/pencil/pull/1355), [#459](https://github.com/pencil2d/pencil/issues/459)
 Back in 2020, David Lamhauge made a proposal on how to introduce adjustable layer/keyframe opacity, which has always been a much requested feature. The proposal made it into our master branch on the 10 of March 2021.
 
 <img width="287" alt="image" src="{{ '/images/pencil2d-0.7.0-opacity.png' | relative_url }}">
@@ -65,7 +69,7 @@ Allows you to change the opacity of one or more selected keyframes.
 + Layer
 Allows you to change the opacity of all keyframes on that specific layer.
 
-#### Fade in / Fade out
+#### Fade In / Fade Out
 Imagine a classic scenario where you want to make an item disappear over a few keyframes, previously this couldn't be done except by using a brush with an alpha value, and gradually drawing it with less alpha. The amount of work that required in Pencil2D made it a non starter... Well now it's finally possible!
 
 Simply start by selecting 3 or more keyframes you want to fade in or out on the timeline, then click on the "Fade in" or "Fade out" button in the Layer opacity window.
@@ -74,7 +78,7 @@ The result should be an item going from 100% to 0% or 0 to 100%.
 
 You can however also choose to fade using a relative opacity, say if your first frame has an opacity of 50% and you select "fade in", the following frames will gradually increase their opacity until the last is fully opaque.
 
-### Camera system makeover - [#1584](https://github.com/pencil2d/pencil/pull/1584), [#1587](https://github.com/pencil2d/pencil/pull/1587), [#1732](https://github.com/pencil2d/pencil/pull/1732), [#1738](https://github.com/pencil2d/pencil/pull/1738)
+### Camera System Makeover - [#1584](https://github.com/pencil2d/pencil/pull/1584), [#1587](https://github.com/pencil2d/pencil/pull/1587), [#1732](https://github.com/pencil2d/pencil/pull/1732), [#1738](https://github.com/pencil2d/pencil/pull/1738)
 The camera system has had a huge makeover. We have added features ranging from an entirely new and better way to interact with the camera to having a wide range of easings for you to move the camera around. You will also be able to visually see the keyframe path on the canvas as well as interact with it.
 
 ***What's new:***
@@ -89,7 +93,7 @@ We always try to keep the interface as simple as possible in Pencil2D. As such, 
 
 To interact with the camera, select the ***Move*** tool and a keyframe on the camera layer. This will enable you to see the handles of the camera.
 
-#### Object based interaction
+#### Object-Based Interaction
 Where the old camera system was a part of the viewport, making it more of a WYSIWYG (what you see is what you get), the new system is object-based, meaning you can now modify the camera's placement, rotation, and size without altering the view.
 
 | Translate | Rotate | Scale |
@@ -97,7 +101,7 @@ Where the old camera system was a part of the viewport, making it more of a WYSI
 | <video autoplay controls height=200 src="{{ '/images/pencil2d-0.7.0-camera-translate.mp4' | relative_url }}"/> | <video controls autoplay height=200 src="{{ '/images/pencil2d-0.7.0-camera-rotate.mp4' | relative_url }}"/> | <video autoplay controls height=200 src="{{ '/images/pencil2d-0.7.0-camera-scale.mp4' | relative_url }}"/> |
 | Moving the camera is as simple as dragging it anywhere within the bounds of its area. | To rotate the camera, click and hold on the top circular handle. | To change the perceived size of the camera, click and hold-drag on any of the squared corners. Dragging diagonally outward will make objects seem smaller, while dragging inward will make objects appear larger. |
 
-#### Camera tool options
+#### Camera Tool Options
 To house some of the new camera features, we've added camera functionalities to the options panel. From the panel, you will be able to reset the camera's current transformations, either all of them or one by one.
 
 <p style="display: flex;"><img width="277" alt="image" src="{{ '/images/pencil2d-0.7.0-camera-options.png' | relative_url }}"><video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-options.mp4' | relative_url }}"/> </p>
@@ -106,7 +110,7 @@ When you click on the ***Show path*** checkbox, an entirely new feature unfolds.
 
 <br> 
 
-##### Onion skinning
+##### Onion Skinning
 Onion skinning is a vital feature in animation; being able to see what has and what will occur allows the animator to make changes with ease, so naturally, like with the other layer types, you can now utilize the functions of the onion skin panel for camera keyframes too.
 
 <p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-path.mp4' | relative_url }}"/> </p>
@@ -119,14 +123,14 @@ To enable interaction with a keyframe path, you first have to scrub to an in-bet
 
 If you need to change the position of the camera again, simply scrub back to the nearest keyframe and drag the camera elsewhere. Once a keyframe's path handle has been moved, it will stay in place until the path for that particular frame has been reset again.
 
-#### Camera easings
+#### Camera Easings
 Previously, it was only possible to make linear-based movements for the camera, which, while being an okay starting point, didn't allow for much flexibility. Linear-based movement is considered to be anything but organic; as such, it's not something you should rely too much on; instead, experiment with the new easing types we've added, such as "In: Slow", "In: Fast" and then "Out: Faster".
 
 <p> <video autoplay controls height=500 src="{{ '/images/pencil2d-0.7.0-camera-easings.mp4' | relative_url }}"/></p>
 
 This feature is currently only possible to access through the timeline, via a new right-click menu. From the menu, you can select from a wide range of easing types to control the movement of the camera. Whether you're trying to ease in, out, in-out, or out-in, we have you covered. You can see the current easing type at the top of the menu, as well as near the handle on the canvas.
 
-### Reposition content of multiple frames - [#1325](https://github.com/pencil2d/pencil/pull/1325)
+### Reposition Content of Multiple Frames - [#1325](https://github.com/pencil2d/pencil/pull/1325)
 This feature allows you to reposition the content of multiple keyframes, across multiple layers.
 
 To access it, locate the "Animation" menu in the top bar, and find the item called "Reposition Selected Frames".
@@ -145,7 +149,7 @@ Note that because of the limitations of the current undo/redo system, reposition
 ***Known issue:***
 + The cancel button doesn't work, use the close in top left/right corner depending on the platform.
 
-### Timeline UI/UX - Exposure features [#1343](https://github.com/pencil2d/pencil/pull/1343)
+### Timeline UI/UX - Exposure Features [#1343](https://github.com/pencil2d/pencil/pull/1343)
 
 Add gif or video of feature
 
@@ -167,7 +171,7 @@ Changes:
 + Reverse selection of frames.
   + Shortcuts: None as default but can be set.
 
-### Timeline UI/UX - Non destructive dragging [#1495](https://github.com/pencil2d/pencil/pull/1495)
+### Timeline UI/UX - Non-Destructive Dragging [#1495](https://github.com/pencil2d/pencil/pull/1495)
 
 Add gif or video of feature
 
@@ -178,7 +182,7 @@ Add gif or video of feature
 + What's removed
   + Ability to easily swap frames when dragging, eg. the old functionality.
 
-### Selection/Move tool improvements [#1724](https://github.com/pencil2d/pencil/pull/1724)
+### Selection/Move Tool Improvements [#1724](https://github.com/pencil2d/pencil/pull/1724)
 
 It's been on our TODO list for a long time but this release is finally where we got around to fix one obnoxious problem about the move tool. The fact that when you rotate a selection, the selection visual itself doesn't change. Fixing this problem however required reworking a lot of the selection logic but doing so also allowed us to fix a bunch of other annoying bugs, while also being able to improve the user experience.
 
@@ -197,7 +201,7 @@ Now because of the reworked logic, this is no longer neccesary and we can instea
 
 In addition to that every transform will also now be undo'able.
 
-### Perspective grids! [#1352](https://github.com/pencil2d/pencil/pull/1352)
+### Perspective Grids! [#1352](https://github.com/pencil2d/pencil/pull/1352)
 In addition to having various grid types for layout, we now also have the ability to enable one, two or three point perspective.
 
 <img width="333" alt="perspective-grid-types" src="{{ '/images/pencil2d-0.7.0-perspective-grid-types.png' | relative_url }}">
@@ -246,7 +250,7 @@ _________________________________________
 + Improved the layout of the preferences dialog for languages with long translations - [#1856](https://github.com/pencil2d/pencil/pull/1856)
 
 
-### Bucket tool:
+### Bucket Tool:
 
 + Added an option to set the fill reference layer - [#1630](https://github.com/pencil2d/pencil/pull/1630)
 + Added an option to toggle tolerance on/off - [#1630](https://github.com/pencil2d/pencil/pull/1630)
@@ -256,19 +260,19 @@ _________________________________________
 + Added an option to fill using a blend mode: Overlay/Behind/Replace - [#1590](https://github.com/pencil2d/pencil/pull/1590)
 + Removed nonsensical quick sizing support - [#1806](https://github.com/pencil2d/pencil/pull/1806)
 
-### Workflow improvements
+### Workflow Improvements
 + Aligned color palette behavior on vector and bitmap layers so that palette colors and their associated vector strokes are only updated when the replace function is used - [#1265](https://github.com/pencil2d/pencil/pull/1265)
 + Added an action to paste content from the previous frame - [#1682](https://github.com/pencil2d/pencil/pull/1682)
 + Added an action to duplicate layers - [#1690](https://github.com/pencil2d/pencil/pull/1690), [#1744](https://github.com/pencil2d/pencil/pull/1744)
 + Optimized the peg bar alignment workflow by activating the select tool, creating an initial selection and pre-selecting the first layer upon opening the dialog - [#1580](https://github.com/pencil2d/pencil/pull/1580)
 
-### Behind the curtain
+### Behind the Curtain
 + Optimized visual updates of the timeline window - [#1737](https://github.com/pencil2d/pencil/pull/1737)
 + Improved painting performance by re-rendering only modified areas - [#1761](https://github.com/pencil2d/pencil/pull/1761), [#1789](https://github.com/pencil2d/pencil/pull/1789)
 + Improved painting performance by introducing a tiled buffer - [#1776](https://github.com/pencil2d/pencil/pull/1776)
 + Reworked switching tools temporarily through modifier keys or right-clicking to be more reliable - [#1675](https://github.com/pencil2d/pencil/pull/1675)
 
-### Bugfixes
+### Bug Fixes
 
 + Fixed an issue where undoing after deleting a layer caused the program to crash - [#1412](https://github.com/pencil2d/pencil/issues/1412)
 + Fixed an issue where certain user interface controls did not display correctly when using the Direct2D platform on Windows - [#1575](https://github.com/pencil2d/pencil/pull/1575)
@@ -341,7 +345,7 @@ Here is a non-exhaustive list of bugs that we are already aware of, but were una
 
 \<Insert known issues>
 
-## How can I help?
+## How Can I help?
 
 Pencil2D is developed by passionate volunteers in their spare time. You can become one too, there are many ways to help other than programming! Please visit the [Contribute page](https://www.pencil2d.org/contribute/) for further information.
 
