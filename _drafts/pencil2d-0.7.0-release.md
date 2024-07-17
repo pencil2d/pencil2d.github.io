@@ -11,7 +11,7 @@ excerpt_separator: <!-- excerpt end -->
 
 It's been long overdue... but here it is: Pencil2D release 0.7.0!
 
-We've been working on this release for more than two years, a release which packs **more than 450 commits**, and boy do we have things to show! A much awaited re-designed camera system, timeline dragging and exposure improvements, adjustable layer opacity, repositioning content of multiple frames, perspective grids and more.
+We've been working on this release for more than two years, a release which packs **nearly 500 commits**, and boy do we have things to show! A much awaited re-designed camera system, timeline dragging and exposure improvements, adjustable layer opacity, repositioning content of multiple frames, perspective grids and more.
 
 <!-- excerpt end -->
 
@@ -241,8 +241,9 @@ _________________________________________
 + Added an option to configure keyboard shortcuts to flip the current selection - [#1816](https://github.com/pencil2d/pencil/pull/1816)
 + Improved zoom behavior for devices that report pixel-based scrolling data - [06a4495](https://github.com/pencil2d/pencil/commit/06a44959bd93c8b9dc3d2c1cb803577e29391a9f)
 + Added translations for Bulgarian, Persian, Korean, Norwegian Bokmål, Dutch (Netherlands) and Cantonese - [#1826](https://github.com/pencil2d/pencil/pull/1826)
-+ Changed the warning dialog when switching the application language to display in the new language instead of the current one - [#1836](https://github.com/pencil2d/pencil/pull/1836)
++ Changed the information dialog shown when changing the application language to display in the new language instead of the current one - [#1836](https://github.com/pencil2d/pencil/pull/1836)
 + Improved the movie export dialog to prevent exporting MP4 files in an invalid resolution - [#1833](https://github.com/pencil2d/pencil/pull/1833)
++ Improved the layout of the preferences dialog for languages with long translations - [#1856](https://github.com/pencil2d/pencil/pull/1856)
 
 
 ### Bucket tool:
@@ -289,7 +290,7 @@ _________________________________________
   Please note that in order to benefit from this bug fix in existing projects, it is necessary to re-import affected sound clips.
 + Fixed an issue where the use of valid file name extensions was not properly enforced in file save dialogs - [#1736](https://github.com/pencil2d/pencil/pull/1736)
 + Fixed several issues where the timeline was drawn incorrectly - [#1737](https://github.com/pencil2d/pencil/pull/1737)
-+ Fixed an issue where dragging the timeline with the middle mouse button could alter the frame selection - [#1737](https://github.com/pencil2d/pencil/pull/1737)
++ Fixed an issue where dragging the timeline with the middle mouse button could inadvertently alter the frame selection - [#1737](https://github.com/pencil2d/pencil/pull/1737)
 + Fixed an issue where tool windows briefly appeared and disappeared on startup before the main window was shown - [#1737](https://github.com/pencil2d/pencil/pull/1737)
 + Fixed an issue where the follow camera image import option used the wrong transform and resulted in general inaccuracies - [ebad47e](https://github.com/pencil2d/pencil/commit/ebad47ed4102818e4ca26b1d1a9318af654f61a5)
 + Fixed an issue where opening Unicode file paths failed when the program was compiled against MinGW32 - [eefd148](https://github.com/pencil2d/pencil/commit/eefd14824efa3689eb2443222ee22287240bc61b)
@@ -301,6 +302,7 @@ _________________________________________
 + Fixed an issue where importing an image did not account for certain types of potential errors - [#1801](https://github.com/pencil2d/pencil/pull/1801)
 + Fixed an issue where trying to import an image onto a hidden layer caused the program to crash if a keyframe did not already exist on the target frame - [#1820](https://github.com/pencil2d/pencil/pull/1820)
 + Fixed an issue where trying to import an image onto a hidden layer did not produce an error if a keyframe already existed on the target frame - [#1820](https://github.com/pencil2d/pencil/pull/1820)
++ Fixed an issue where opening the preferences dialog on a system using Wayland caused the program to crash under certain circumstances - [#1856](https://github.com/pencil2d/pencil/pull/1856)
 + Fixed various memory leaks
 
 
@@ -314,7 +316,7 @@ _________________________________________
 + Clarified licence of certain files incorporated from the Qt Project - [#1757](https://github.com/pencil2d/pencil/pull/1757)
 + Added a custom start menu tile for Windows versions that support them - [#1787](https://github.com/pencil2d/pencil/pull/1787)
 + Added macOS builds for Apple Silicon - [#1835](https://github.com/pencil2d/pencil/pull/1835)
-
++ Added safeguards to prevent loading resources from outside the project - [#1843](https://github.com/pencil2d/pencil/pull/1843)
 
 
 <Insert list of bugfixes reported in 0.6.6 or older that has been fixed.>
