@@ -59,7 +59,7 @@ Thanks to the efforts of Fatih20 and MrStevns, this version comes with a brand n
 
 | Old | New |
 | --- | --- |
-| [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ "/images/icon-redesign-old.png" | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}) | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ "/images/icon-redesign-new.png" | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}) |
+| [<img alt="Screenshot of Pencil2D with the old icon set" src="{{ '/images/icon-redesign-old.png' | relative_url }}">]({{ "/images/icon-redesign-old.png" | relative_url }}) | [<img alt="Screenshot of Pencil2D with the new icon set" src="{{ '/images/icon-redesign-new.png' | relative_url }}">]({{ "/images/icon-redesign-new.png" | relative_url }}) |
 
 ### Adjustable Layer/Keyframe Opacity - [#1355](https://github.com/pencil2d/pencil/pull/1355), [#459](https://github.com/pencil2d/pencil/issues/459)
 Back in 2020, David Lamhauge made a proposal on how to introduce adjustable layer/keyframe opacity, which has always been a much requested feature. The proposal made it into our master branch on the 10 of March 2021.
@@ -124,7 +124,7 @@ Onion skinning is a vital feature in animation; being able to see what has and w
 
 <p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-path.mp4' | relative_url }}"/> </p>
 
-For example, if you only care about seeing the previous and/or next keyframe, you can enable ***Show keyframe only***, which will hide in-between interpolations, or if you only want to see the previous keyframe, simply toggle ***Previous Frames***.
+For example, if you only care about seeing the previous and/or next keyframe, you can enable **Show keyframe only**, which will hide in-between interpolations, or if you only want to see the previous keyframe, simply toggle **Previous Frames**.
 
 <p> <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-camera-onion-skins.mp4' | relative_url }}"/> </p>
 
@@ -155,41 +155,59 @@ In the video you can see that the content of the keyframe 1 of "Bitmap Layer 2" 
 
 Note that because of the limitations of the current undo/redo system, repositioning may not always be undo'able.
 
-***Known issue:***
+**Known issue:**
 + The cancel button doesn't work, use the close in top left/right corner depending on the platform.
 
-### Timeline UI/UX - Exposure Features [#1343](https://github.com/pencil2d/pencil/pull/1343)
+### Timeline Improvements - [#1343](https://github.com/pencil2d/pencil/pull/1343), [#1495](https://github.com/pencil2d/pencil/pull/1495)
+The timeline logic is one of the oldest parts of Pencil2D, and that can definitely also be seen when you read the code (please don't). Even so, we've managed to improve it and implement some new features.
 
-Add gif or video of feature
+#### Increase/Decrease frame exposure
+Whenever people ask how they can increase or decrease the exposure of a keyframe, there's never been a straight-forward answer. That is because if it's the last keyframe you want to extend, then you simply place the scrubber further away from that frame and add the next keyframe. However, if you already have the keyframe surrounded by other frames and you want to extend it, then you need to first select all the frames to the right, then move them further away. If you have a several frames you want to move, then it becomes tedious.
 
-Changes:
-+ Adding frame next to current position, no matter if there's a frame or not.
-  + Happens out of the box, just place the scrubber and add a frame.
-+ Add/Remove exposure:
-  + Requirement: Frame has to be selected
-    - How to use:
-      - Shortcuts: Ctrl+'+' for add and Ctrl+'-' for subtract.
-      - Menu: Animation -> 'Timeline selection' -> Add exposure / Subtract exposure
-+ Add keyframe by double-clicking on the timeline.
-  + The frame graphic while hovering
-+ Scrubber will be shown as hollow when hovering
-+ Ability to copy/cut/paste multiple frames to timeline via standard shortcuts
-+ Ability to remove a selection of frames
-  + Shortcuts: None as default but it can be set.
-  + Cannot be undone currently! Awaiting the new undo/redo implementation.
-+ Reverse selection of frames.
-  + Shortcuts: None as default but can be set.
+As such, we've now implemented the ability to increase the exposure of one or more keyframes.
 
-### Timeline UI/UX - Non-Destructive Dragging [#1495](https://github.com/pencil2d/pencil/pull/1495)
+Here's how it works:
+<p><video autoplay controls height=100 src="{{ '/images/pencil2d-0.7.0-timeline-keyframe-exposure-showcase.mp4' | relative_url }}"/></p>
 
-Add gif or video of feature
++ When you press the **Add Exposure** action; which can either be triggered by using the configurable shortcut **Ctrl + '+'** or via the menu item in **Animation** -> **Timeline Selection** -> **Add Exposure**, you increase the exposure of the current frame by moving all the rightmost keys.
++ When you've made a selection across multiple keyframes and you press the **Add Exposure**, the exposure of all the keyframes will increase by one.
++ You can also select individual keyframes and increase the exposure of only those frames.
++ If you wish to decrease the exposure instead, simply use the **Subtract Exposure** action.
 
-+ Changes
-  + Dragging is cosmetic until the very moment you let go on the frames.
-  + Frames are slightly lifted off the track to help visualize that dragging has been initiated.'
+#### Hollow scrubber
+It's always been possible to select the keyframe underneath the scrubber, although the UI hasn't been good at showing that you could do that because the scrubber would cover the entire row. This is no longer the case.
 
-+ What's removed
-  + Ability to easily swap frames when dragging, eg. the old functionality.
+<p><video autoplay controls height=150 src="{{ '/images/pencil2d-0.7.0-timeline-hollow-scrubber-showcase.mp4' | relative_url }}"/></p>
+
+#### Double-click to add or insert a Keyframe
+Previously, you've only been able to add keyframes to the timeline through the **Add keyframe** button, which also required you to first place the scrubber on the respective key.
+
+With this new feature, however, that is no longer necessary. Instead, you simply hover over the frame where you want the keyframe to be placed, then double-click, which will add the keyframe and move the scrubber to that frame.
+
+Here's how it works:
+<p><video autoplay controls height=150 src="{{ '/images/pencil2d-0.7.0-timeline-double-click-add-keyframe-showcase.mp4' | relative_url }}"/></p>
+
+#### Copy/paste keyframes
+This is such a basic feature—one you don't even think about. We've come to expect that if you can select something, then why shouldn't you also be able to copy and paste it? There's no good reason; as such, we can finally say, YES, you can now copy and paste keyframes on the timeline.
+
+A video says more than words, though, so without further ado, let's see it in action!
+<p><video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-timeline-copy-paste-frames.mp4' | relative_url }}"/></p>
+Wow! What a time to be alive! Jokes aside, there's still room for improvement. For one, you can't undo such an action yet. Neither can you delete the keyframes in one go; you can, however, do so through the **Animation** -> **Timeline Selection** -> **Remove Frames** menu. Note that this is not undoable either. We are very close to having a new undo/redo system in place, which will allow us to get that working. More on that in the future.
+
+#### Dragging keyframes
+Previously, when dragging one or more keyframes on the timeline, when you wanted to drag across a bunch of other keyframes, what happened was that the keyframe(s) you bumped into would swap positions immediately; in some cases, this could lead to swapping keyframes unintentionally.
+
+As such, we have reworked how dragging works, with a visual enhancement too, so it's more clear what's happening.
+
+Here's how it works:
+<p><video autoplay controls height=150 src="{{ '/images/pencil2d-0.7.0-timeline-dragging-keyframes-showcase.mp4' | relative_url }}"/></p>
+As it can be seen in the video, when you drag a selection, the keyframes are lifted slightly in order to visualize that the dragging doesn't affect existing keyframes.
+
+#### Additional changes
+* When removing a Keyframe using the **Remove Keyframe** button, the scrubber will no longer scrub to the previous keyframe immediately.
+* Adding a keyframe in-between another will no longer move it to the next available spot, instead the Keyframe will be inserted.
+* We now have an action in the top bar to allow a list of selected keyframes to be reserved. You find the action in the **Animation** menu under **Timeline Selection**
+* Is it now possible to remove selected keyframes, though this is not undo'able yet, as such it's only an action found in the **Timeline Selection** sub menu.
 
 ### Selection/Move Tool Improvements [#1724](https://github.com/pencil2d/pencil/pull/1724)
 
@@ -198,7 +216,7 @@ It's been on our TODO list for a long time but this release is finally where we 
 
 | Old                        | New                                              |
 | ---------------------------|------------------------------------------------- |
-| <video autoplay loop height="300" src="{{ "/images/pencil2d-0.7.0-selection-transform-old.mp4" }}"/> | <video autoplay loop height="300" src="{{ "/images/pencil2d-0.7.0-selection-transform-new.mp4" }}"/> |
+| <video autoplay loop height="300" src="{{ '/images/pencil2d-0.7.0-selection-transform-old.mp4' }}"/> | <video autoplay loop height="300" src="{{ '/images/pencil2d-0.7.0-selection-transform-new.mp4' }}"/> |
 
 A few quality of life improvements that this gave birth to:
 
@@ -219,7 +237,11 @@ In addition to having various grid types for layout, we now also have the abilit
 | ---------------------------|------------------------| ------------------- |
 | <img width="400" alt="one-point-perspective" src="{{ '/images/pencil2d-0.7.0-one-point-perspective.png' | relative_url }} "> | <img width="400" alt="two-point-perspective" src="{{ '/images/pencil2d-0.7.0-two-point-perspective.png' | relative_url }}"> |<img width="400" alt="three-point-perspective" src="{{ '/images/pencil2d-0.7.0-three-point-perspective.png' | relative_url }}"> |
 
-To interact with a perspective grid, select the move tool and move the dot appearing on top of the vanishing point.
+| Interaction |
+|-------------|
+| <video autoplay controls height=400 src="{{ '/images/pencil2d-0.7.0-perspective-handle.mp4' | relative_url }}"/> |
+
+To interact with a perspective grid, select the move tool and move the dot appearing on top of one of its vanishing points.
 
 ### Windows Installer [#848](https://github.com/pencil2d/pencil/pull/848)
 
