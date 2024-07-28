@@ -115,7 +115,7 @@ a certain build is not available for your operating system, please check the pre
         const folder = fetch_results.artifacts;
 
         for (let file of folder.artifacts) {
-          const match = file.name.match(/^pencil2d-(\w+(?:-\w+)?)-(\d+)-\d{4}-\d{2}-\d{2}(?:\.zip|\.AppImage)?$/);
+          const match = file.name.match(/^pencil2d(?:-qt\d+)?-([\w-]+)-b(\d{1,10})-\d{4}-\d{2}-\d{2}(?:\.zip|\.AppImage)?$/);
           if (match === null || file.expired) {
             // File name didn't match, don't know what to do with it
             continue;
