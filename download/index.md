@@ -147,7 +147,10 @@ Previous Pencil2D releases are available on [the GitHub Releases][gh-releases].
 
 - **macOS: Pencil2D can't be opened because it is from an unidentified developer**
 
-    Right click on the file and press `Open`.
+    1. Right click on the file and press `Open`.
+    2. If this fails, on **MacOS 15 Sequoia**: after you’ve tried to open the application, go into Settings → Privacy & Security, scroll down to the bottom to see, '“Pencil2D” was blocked to protect your Mac.' Click “Open Anyway” next to this, and then see a dialog pop up. Finally click “Open Anyway” on the dialog and authenticate with a password if requested.
+
+
 
 Still having trouble? Please go to the [Pencil2D forum](https://discuss.pencil2d.org/c/support).
 
