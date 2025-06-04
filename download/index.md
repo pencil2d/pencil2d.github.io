@@ -67,7 +67,6 @@ Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's
   <button class="tablinks" onclick="openTab(event, 'freebsd')">FreeBSD</button>
   <button class="tablinks" onclick="openTab(event, 'mac-legacy')">macOS 10.7&ndash;10.13</button>
   <button class="tablinks" onclick="openTab(event, 'cask')">macOS (Homebrew)</button>
-  <button class="tablinks" onclick="openTab(event, 'nixos')">NixOS</button>
   <button class="tablinks" onclick="openTab(event, 'windows-legacy')">Windows XP/Vista</button>
 </div>
 
@@ -107,17 +106,6 @@ Last Updated on 12 July 2024. <!-- <a href="{{ page.release-note-link }}">What's
 
 <div id="cask" class="tabcontent">
 <pre>brew install --cask pencil2d</pre>
-</div>
-
-<div id="nixos" class="tabcontent">
-<p>NixOS Configuration:</p>
-<pre>
-  environment.systemPackages = [
-    pkgs.pencil2d
-  ];
-</pre>
-<p>nix-env:</p>
-<pre>nix-env -iA nixos.pencil2d</pre>
 </div>
 
 <div id="windows-legacy" class="tabcontent">
@@ -163,3 +151,4 @@ Previous Pencil2D releases are available on [the GitHub Releases][gh-releases].
     2. If the app still fails to open on **MacOS 15 Sequoia**: after trying to open the application, go into Settings → Privacy & Security, scroll down to the bottom to see, '“Pencil2D” was blocked to protect your Mac.' Click “Open Anyway” next to this, and then see a dialog pop up. Finally click “Open Anyway” on the dialog, and authenticate with a password if requested.
 
 Still having trouble? Please go to the [Pencil2D forum](https://discuss.pencil2d.org/c/support).
+
