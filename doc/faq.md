@@ -19,20 +19,20 @@ At the time of writing, Pencil2D can run on:
 
 - Windows 7/8/10 (experimental support for Windows XP/Vista)
 - macOS 10.12 Sierra or later versions (experimental support for 10.7 Lion)
-- Linux Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later version
+- Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later
 - FreeBSD
 
 ### Legacy system support
 
 Currently we are providing experimental support for legacy systems like Windows XP and macOS Mavericks.
 
-We urgently need users' feedback from these systems since the devs don't have these old Operating Systems anymore. If you own a older machine that can run macOS 10.7-10.11 or Windows XP, and you'd like to help test, [please contact the devs](/community/)!
+We urgently need users' feedback from these systems since the devs don't have these old operating systems anymore. If you own a older machine that can run macOS 10.7-10.11 or Windows XP, and you'd like to help test, [please contact the devs](/community/)!
 
 ## I hear about "Nightly Builds" so what is it?
 
-Nightly Builds are the most up-to-date, experimental versions that reflects the current state of the pencil2D application development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds are not final versions and sometimes they can break more easily.
+Nightly Builds are the most up-to-date, experimental versions that reflect the current state of the pencil2D application's development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds are not final versions and they break quite frequently.
 
-However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
+However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with the current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
 
 **Nightly Builds** [DOWNLOAD HERE](/download/nightly/)
 
@@ -40,9 +40,9 @@ However, we encourage you to try the latest Nightly Builds whenever you encounte
 
 TL;DR - Double click on the Camera Layer.
 
-Pencil2D has a infinite canvas, the bright rectangle at the center is the camera, a preview area when you export your animation to a video & image. So double-clicking on the camera layer is actually change the size of a camera, not the canvas. You can draw outside the camera border and move the camera around on the infinite canvas, set keyframes of camera positions on Timeline. For more info please check [this tutorial](https://www.pencil2d.org/doc/tutorials.html#ca).
+Pencil2D has a infinite canvas, the bright rectangle at the center is the camera, a preview area when you export your animation to a video & image. So double-clicking on the camera layer is actually changing the size of a camera, not the canvas. You can draw outside the camera border and move the camera around on the infinite canvas, set keyframes of camera positions on Timeline. For more info please check [this tutorial](https://www.pencil2d.org/doc/tutorials.html#ca).
 
-## I like Pencil2D but... it is a bit 'buggy', what can i do?
+## I like Pencil2D but... it is a bit 'buggy', what can I do?
 
 We feel you, but every great piece of software you might know began in a humble way. Right now Pencil2D is in need of developers experienced or willing to learn Qt framework and C++ as well as proactive users that want to help however they can.
 
@@ -82,7 +82,7 @@ Unfortunately not right now, we are aware of the need behind this tool and will 
 
 ## I can’t seem to import videos, what's up?
 
-This functionality has not been implemented yet, it's on our to-do list at the moment. If you'd like to see what features are coming feel fee to visit our **[Official Feature Request Tracker](https://github.com/pencil2d/pencil/issues/540)**
+This functionality has not been implemented yet, it's on our to-do list at the moment. If you'd like to see what features are coming, feel free to visit our **[Official Feature Request Tracker](https://github.com/pencil2d/pencil/issues/540)**
 
 ## When I import sounds, I can see it on the layer, but I can’t hear anything?
 
@@ -234,3 +234,4 @@ When you save your animation file in Pencil2D there are several things that you'
 
 --------
 Some of the original FAQ solutions were contributed by user Piggy, chchwy, Jeetman and morr.
+
