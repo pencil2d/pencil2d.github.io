@@ -19,7 +19,7 @@ At the time of writing, Pencil2D can run on:
 
 - Windows 7/8/10 (experimental support for Windows XP/Vista)
 - macOS 10.12 Sierra or later versions (experimental support for 10.7 Lion)
-- Linux including Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later
+- A variety of Linux distros, including but not limited to Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later
 - FreeBSD
 
 ### Legacy system support
@@ -32,7 +32,7 @@ We urgently need users' feedback from these systems since the devs don't have th
 
 Nightly Builds are the most up-to-date, experimental versions that reflect the current state of the pencil2D application's development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds have not been tested as thoroughly as stable versions and they may contain new bugs.
 
-However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with the current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
+However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with the current pencil2d version, to see if the problem has already been fixed. That can help our dev team avoid unnecessary or duplicate bug reports.
 
 **Nightly Builds** [DOWNLOAD HERE](/download/nightly/)
 
@@ -234,4 +234,5 @@ When you save your animation file in Pencil2D there are several things that you'
 
 --------
 Some of the original FAQ solutions were contributed by user Piggy, chchwy, Jeetman and morr.
+
 
