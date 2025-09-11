@@ -30,7 +30,7 @@ We urgently need users' feedback from these systems since the devs don't have th
 
 ## I hear about "Nightly Builds" so what is it?
 
-Nightly Builds are the most up-to-date, experimental versions that reflect the current state of the pencil2D application's development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds are not final versions and they break quite frequently.
+Nightly Builds are the most up-to-date, experimental versions that reflect the current state of the pencil2D application's development. In Nightly builds you will have the latest features and bug fixes if you like to try something new. But you have to understand the nightly builds have not been tested as thoroughly as stable versions and they may contain new bugs.
 
 However, we encourage you to try the latest Nightly Builds whenever you encounter an issue with the current pencil2d version, to see if the problem has already been fixed. That can help our dev team to avoid unnecessary or duplicate bug reports.
 
