@@ -19,7 +19,7 @@ At the time of writing, Pencil2D can run on:
 
 - Windows 7/8/10 (experimental support for Windows XP/Vista)
 - macOS 10.12 Sierra or later versions (experimental support for 10.7 Lion)
-- Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later
+- Linux including Ubuntu 16.04, OpenSUSE 42.1 and RedHat 6.6 or later
 - FreeBSD
 
 ### Legacy system support
