@@ -4,8 +4,8 @@ title: "Windows Installers Now Available in Nightly Builds!"
 tagline: ""
 categories: "News"
 author: "The Pencil2D Team"
-date: "2025-12-08"
-published: false
+date: "2025-12-14"
+published: true
 comments: false
 ---
 
