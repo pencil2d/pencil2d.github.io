@@ -9,7 +9,7 @@ published: false
 comments: false
 ---
 
-We're excited to announce that Pencil2D now has Windows installers! This long-awaited feature, developed by our core developer [Jakob](https://github.com/J5lx), is available through our [nightly builds](/download/nightly/).
+We're excited to announce that Pencil2D now has Windows installers! This long-awaited feature, developed by our core developer [Jakob](https://github.com/J5lx), is available through our [nightly builds]({{ "/download/nightly/" | relative_url }}).
 
 ## Why an Installer?
 
@@ -40,7 +40,7 @@ Special thanks to Jakob for the incredible dedication and technical expertise re
 
 ## Try It Now!
 
-The installers are currently available in our [nightly builds](/download/nightly/). We encourage Windows users to give them a try and let us know what you think!
+The installers are currently available in our [nightly builds]({{ "/download/nightly/" | relative_url}}). We encourage Windows users to give them a try and let us know what you think!
 
 **Important Note**: The nightly builds contain the latest development version of Pencil2D and may include experimental features.
 
