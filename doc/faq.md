@@ -141,13 +141,7 @@ Pencil2D developers have worked heavily in the audio syncinc issue however there
 
 ## Can’t export videos.
 
-Please make sure you are using the latest version (0.6.4 or later) to export videos. We use FFMPEG for this process.
-
-**For users with spanish language localization (and perhaps other languages)**
-
-There's a bug in version predating 0.6.5 which impedes users to export videos when having the interface To fix this you have to explicitly add the filetype to the video name when browsing for an output folder after using the "browse" button. 
-
-If you see your file named only as `"MyAnimation"` please rename it to `"MyAnimation.FileType"` _(e.g FileType -> MP4, AVI, WebM, etc)_ and make sure the filetype extension is visible in the file address bar before exporting, otherwise Pencil2D will export an empty file and not a video, as it can convert the animation. **This has been fixed in version 0.6.5+**
+Please see our [comprehensive guide to video export issues]({% link doc/video-export-troubleshooting-guide.md %}).
 
 ## I was told it was possible to export GIF's but I can’t seem to find this option?
 
