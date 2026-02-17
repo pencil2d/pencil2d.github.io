@@ -36,6 +36,14 @@ However, we encourage you to try the latest Nightly Builds whenever you encounte
 
 **Nightly Builds** [DOWNLOAD HERE](/download/nightly/)
 
+## I’m still a beginner, how do I even learn how to animate?
+
+If you are only just starting out, check out the following resources other users have shared on our forum:
+
+- [Some basic advice to get started](https://discuss.pencil2d.org/t/1074/2), as well as a list of resources you might find useful
+- [A collaborative list of learning resources](https://discuss.pencil2d.org/t/1090), including videos, books and websites
+- [An essential animation reading list](https://discuss.pencil2d.org/t/559)
+
 ## How to change the size of the canvas?
 
 TL;DR - Double click on the Camera Layer.
@@ -234,5 +242,3 @@ When you save your animation file in Pencil2D there are several things that you'
 
 --------
 Some of the original FAQ solutions were contributed by user Piggy, chchwy, Jeetman and morr.
-
-
