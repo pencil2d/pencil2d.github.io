@@ -227,7 +227,7 @@ Run Pencil2D (from the shortcut icon you just modified). Your display should loo
 
 _**A proper crash recovery has already been put in our development plans, we won't let you wait too long!**_
 
-_Please follow the **[Pencil2D Project File Corruption Prevention / Partial Recovery Guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-partial-recovery-guide/3105)** to avoid losing work._
+_Please follow the **[Pencil2D Project File Corruption Prevention / Partial Recovery Guide]({% link doc/project-file-recovery-guide.md %})** to avoid losing work._
 
 We are looking for ways to optimize Pencil2D, but improving your computer is paramount for any graphics creation software. Meanwhile please read the following advice to prevent losing work when experiencing similar issues:
 
