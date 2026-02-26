@@ -36,6 +36,14 @@ However, we encourage you to try the latest Nightly Builds whenever you encounte
 
 **Nightly Builds** [DOWNLOAD HERE](/download/nightly/)
 
+## I’m still a beginner, how do I even learn how to animate?
+
+If you are only just starting out, check out the following resources other users have shared on our forum:
+
+- [Some basic advice to get started](https://discuss.pencil2d.org/t/1074/2), as well as a list of resources you might find useful
+- [A collaborative list of learning resources](https://discuss.pencil2d.org/t/1090), including videos, books and websites
+- [An essential animation reading list](https://discuss.pencil2d.org/t/559)
+
 ## How to change the size of the canvas?
 
 TL;DR - Double click on the Camera Layer.
@@ -84,6 +92,38 @@ Unfortunately not right now, we are aware of the need behind this tool and will 
 
 This functionality has not been implemented yet, it's on our to-do list at the moment. If you'd like to see what features are coming, feel free to visit our **[Official Feature Request Tracker](https://github.com/pencil2d/pencil/issues/540)**
 
+## How do I import sound?
+
+{% comment %}
+originally posted by josemoreno at https://discuss.pencil2d.org/t/5203
+{% endcomment %}
+
+1. **Pencil2D's sound import options** <br>
+   :large_blue_circle: **A.** Go to the topbar menu **File > Import > Sound** <br>
+   :large_blue_circle: **B.** Go to menu **Layer > New Sound Layer** <br>
+   :large_blue_circle: **C.** Press **CTRL + ALT + W** <br>
+   :large_blue_circle: **D.** Press the `Layers` Plus :heavy_plus_sign: button on the left part of the **timeline widget**.
+
+   :arrow_forward:  _Option A will create a sound layer and skip to step :two: and :four: **automatically**. Other options will **only create the layer** so you have to follow the steps in order._
+2. A **name field** will appear to write. Give the sound layer a descriptive name.
+3. When a new sound layer is added, to create a **new sound container** either **press**: <br>
+   :a: The Plus :heavy_plus_sign: button next to the `Keys` label <br>
+   :b: **F7** keyboard shortcut. <br>
+   This will create a blank keyframe **and** immediately open a **file explorer / folder browser**.
+4. Find the sound file you want to import. Select it :arrow_left:. Press `Open`.
+5. If the sound loads successfully, you should see the keyframe container grow to show the entire duration of the sound.
+
+   _**Note:** You will ***not*** see a waveform; this is pending implementation._
+
+### Known Issues
+:warning: _In release version **0.6.5** currently there's an issue where you **HAVE** to add the sound by using the **add frame button** in **step #3**_ :warning:
+
+:warning: _Right now other sound formats are in preview. The only ones that we expect to work are **WAV** and **MP3's** encoded with open codecs e.g Audacity's MP3 L.A.M.E codec_ :warning:
+
+:warning: _Animation **playback** will lag incrementally in files with multiple layers and frames, so you might perceive **sound delay**. However the **audio scrubbing** feature in 0.6.5+ will provide a more accurate perception of the sound position similar to the final movie_ :warning:
+
+:red_circle: _Many sound issues have been improved or fixed in our recent test builds. Consider downloading a development test version or "nightly build" (January 2021+) from [our automated deployment repository]({% link download/nightly/index.md %}) to verify if you problem is solved._
+
 ## When I import sounds, I can see it on the layer, but I can’t hear anything?
 
 Please download Pencil2D 0.6.4 or later version and check it again. If you still can't hear the sound, we offer you a small workaround. Please download a free audio editor Audacity (http://www.audacityteam.org/download/).
@@ -101,13 +141,7 @@ Pencil2D developers have worked heavily in the audio syncinc issue however there
 
 ## Can’t export videos.
 
-Please make sure you are using the latest version (0.6.4 or later) to export videos. We use FFMPEG for this process.
-
-**For users with spanish language localization (and perhaps other languages)**
-
-There's a bug in version predating 0.6.5 which impedes users to export videos when having the interface To fix this you have to explicitly add the filetype to the video name when browsing for an output folder after using the "browse" button. 
-
-If you see your file named only as `"MyAnimation"` please rename it to `"MyAnimation.FileType"` _(e.g FileType -> MP4, AVI, WebM, etc)_ and make sure the filetype extension is visible in the file address bar before exporting, otherwise Pencil2D will export an empty file and not a video, as it can convert the animation. **This has been fixed in version 0.6.5+**
+Please see our [comprehensive guide to video export issues]({% link doc/video-export-troubleshooting-guide.md %}).
 
 ## I was told it was possible to export GIF's but I can’t seem to find this option?
 
@@ -193,7 +227,7 @@ Run Pencil2D (from the shortcut icon you just modified). Your display should loo
 
 _**A proper crash recovery has already been put in our development plans, we won't let you wait too long!**_
 
-_Please follow the **[Pencil2D Project File Corruption Prevention / Partial Recovery Guide](https://discuss.pencil2d.org/t/pencil2d-project-file-corruption-prevention-partial-recovery-guide/3105)** to avoid losing work._
+_Please follow the **[Pencil2D Project File Corruption Prevention / Partial Recovery Guide]({% link doc/project-file-recovery-guide.md %})** to avoid losing work._
 
 We are looking for ways to optimize Pencil2D, but improving your computer is paramount for any graphics creation software. Meanwhile please read the following advice to prevent losing work when experiencing similar issues:
 
@@ -234,5 +268,3 @@ When you save your animation file in Pencil2D there are several things that you'
 
 --------
 Some of the original FAQ solutions were contributed by user Piggy, chchwy, Jeetman and morr.
-
-
