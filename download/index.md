@@ -5,20 +5,20 @@ tagline: Let's start animating immediately!
 comments: false
 tabs: true
 download:
-  win64: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-win64-v0.7.1.zip
-  win32: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-win32-v0.7.1.zip
+  win64: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-win64-v0.7.2.zip
+  win32: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-win32-v0.7.2.zip
   winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-winxp-0.6.6.zip
-  mac: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-mac-v0.7.1.dmg
-  maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-mac-legacy-v0.7.0.zip
-  linux64: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-linux-amd64-v0.7.1.AppImage
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.7.1/pencil2d-linux-i386-0.7.0.AppImage
-release-note-link: /2024/07/pencil2d-0.7.0-release.html
+  maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-mac-legacy-v0.7.0.zip
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-linux-i386-0.7.0.AppImage
+  mac: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-mac-v0.7.2.dmg
+  linux64: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-linux-amd64-v0.7.2.AppImage
+release-note-link: /2024/07/pencil2d-0.7.2-release.html
 ---
 
-## Current Stable Version (v0.7.1)
+## Current Stable Version (v0.7.2)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 7th March 2026. <!-- <a href="{{ page.release-note-link }}">What's New?</a> -->
+Last Updated on 13th March 2026. <!-- <a href="{{ page.release-note-link }}">What's New?</a> -->
 </blockquote>
 
 <div class="download-tiles">
