@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows Installers Now Available in Nightly Builds!"
+title: "Windows Installers Now Available in Nightly Builds"
 tagline: ""
 categories: "News"
 author: "The Pencil2D Team"
