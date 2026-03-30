@@ -12,13 +12,13 @@ download:
   linux32: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-linux-i386-0.7.0.AppImage
   mac: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-mac-v0.7.2.dmg
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-linux-amd64-v0.7.2.AppImage
-release-note-link: /2024/07/pencil2d-0.7.2-release.html
+release-note-link: /2026/03/pencil2d-0.7.2-release.html
 ---
 
 ## Current Stable Version (v0.7.2)
 
 <blockquote style="color:#898989;font-size:0.8em">
-Last Updated on 13th March 2026. <!-- <a href="{{ page.release-note-link }}">What's New?</a> -->
+Last Updated on 13th March 2026. <a href="{{ page.release-note-link }}">What's New?</a>
 </blockquote>
 
 <div class="download-tiles">
