@@ -9,7 +9,7 @@ download:
   win32: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-win32-v0.7.2.zip
   winxp: https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-winxp-0.6.6.zip
   maclegacy: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-mac-legacy-v0.7.0.zip
-  linux32: https://github.com/pencil2d/pencil/releases/download/v0.7.0/pencil2d-linux-i386-0.7.0.AppImage
+  linux32: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-linux-i686-v0.7.2.AppImage
   mac: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-mac-v0.7.2.dmg
   linux64: https://github.com/pencil2d/pencil/releases/download/v0.7.2/pencil2d-linux-amd64-v0.7.2.AppImage
 release-note-link: /2026/03/pencil2d-0.7.2-release.html
