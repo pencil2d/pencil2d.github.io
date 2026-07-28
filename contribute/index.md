@@ -56,5 +56,5 @@ If you have any difficulties getting involved or finding answers to your questio
 [1]: https://dev.pencil2d.org/  "Developer documentation"
 [2]: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html "GPLv2"
 [3]: https://github.com/pencil2d/pencil/issues "Issue Tracker"
-[4]: https://www.transifex.com/pencil2d/pencil2d/ "Transifex"
+[4]: https://explore.transifex.com/pencil2d/pencil2d/ "Transifex"
 [5]: https://discord.gg/8FxdV2g "Pencil2D Discord server"

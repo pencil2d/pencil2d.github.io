@@ -64,7 +64,7 @@ Need help in using Pencil2D? Press `F1` for the **Quick Reference Guide**, it's 
 
 ## Localization
 
-5 new languages added: **Indonesia, Hebrew, Vietnamese, Slovenian and Portugal Portuguese**. Can't find your language or want to improve the existing translations? [Join us on Transifex](https://www.transifex.com/pencil2d/pencil2d/)!
+5 new languages added: **Indonesia, Hebrew, Vietnamese, Slovenian and Portugal Portuguese**. Can't find your language or want to improve the existing translations? [Join us on Transifex](https://explore.transifex.com/pencil2d/pencil2d/)!
 
 ## Other Improvements
 

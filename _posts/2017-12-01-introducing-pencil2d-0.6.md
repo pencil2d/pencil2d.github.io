@@ -84,7 +84,7 @@ You can also change languages in preferences if you like.
 
 There is still a lot of work to do. If Pencil2D is not yet available in your language, you can translate it or improve the existing translations by joining our [Transifex translation project][3].
 
-[3]: https://www.transifex.com/pencil2d/
+[3]: https://explore.transifex.com/pencil2d/pencil2d/
 
 ## Timeline Improvements
 
