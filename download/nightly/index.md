@@ -47,8 +47,9 @@ a certain build is not available for your operating system, please check the pre
 }
 </style>
 
+<h2>Nightly Build List</h2>
+
 <noscript id="build-dirs">
-<h2>Browsing Nightly Build Manually</h2>
 <p>To browse current nightly builds manually, please <a href="https://github.com/{{page.nightly-repo}}/actions/workflows/{{page.nightly-workflow}}?query=branch%3Amaster">visit GitHub</a>.</p>
 </noscript>
 
@@ -115,17 +116,17 @@ a certain build is not available for your operating system, please check the pre
         const folder = fetch_results.artifacts;
 
         for (let file of folder.artifacts) {
-          const match = file.name.match(/^pencil2d(?:-qt\d+)?-([\w-]+)-b(\d{1,10})-\d{4}-\d{2}-\d{2}(?:\.zip|\.AppImage)?$/);
+          const match = file.name.match(/^pencil2d-([\w-]+)-b(\d{1,10})-\d{4}-\d{2}-\d{2}(\.zip|\.exe|\.dmg|\.AppImage)?$/);
           if (match === null || file.expired) {
             // File name didn't match, don't know what to do with it
             continue;
           }
-          let os = match[1];
+          let osPackage = `${match[1]}-${match[3]?.substring(1)}`;
           const runNumber = match[2];
           if (runNumber in aggregatedData === false) {
             aggregatedData[runNumber] = {};
           }
-          aggregatedData[runNumber][os] = `https://get.pencil2d.org/@{{page.nightly-repo|split:"/"|first}}/${file.id}`;
+          aggregatedData[runNumber][osPackage] = `https://get.pencil2d.org/@{{page.nightly-repo|split:"/"|first}}/${file.id}`;
         }
 
         // Add the metadata for all the runs that we have files for
@@ -140,10 +141,6 @@ a certain build is not available for your operating system, please check the pre
 
         // Let's "render" our data
         const nightlyList = document.getElementById("nightly-builds");
-
-        const nightlyListTitle = document.createElement("h2");
-        nightlyListTitle.textContent = "Nightly Build List";
-        nightlyList.parentNode.insertBefore(nightlyListTitle, nightlyList);
 
         let detailsOpen = true;
         for (let [runNumber, data] of Object.entries(aggregatedData).sort((a, b) => Math.sign(b[0] - a[0]))) {
@@ -174,18 +171,34 @@ a certain build is not available for your operating system, please check the pre
           const linkList = document.createElement("ul");
 
           // ...with the download links...
+          const osPackageLabels = [
+            ["win64-zip", "Windows (64-bit Archive)"],
+            ["win64-exe", "Windows (64-bit Installer)"],
+            ["win32-zip", "Windows (32-bit Archive)"],
+            ["win32-exe", "Windows (32-bit Installer)"],
+            ["qt6-mac-universal-dmg", "macOS (Universal)"],
+            ["mac-x86_64-dmg", "macOS (Intel)"],
+            ["linux-AppImage", "Linux (64-bit)"],
+
+            // temporary: compat for old artifacts without file name extension
+            ["win64-undefined", "Windows (64-bit)"],
+            ["win32-undefined", "Windows (32-bit)"],
+            ["qt6-mac-universal-undefined", "macOS (Universal)"],
+            ["mac-x86_64-undefined", "macOS (Intel)"],
+            ["linux-undefined", "Linux (64-bit)"]
+          ];
           const downloadList = document.createElement("li");
           let text = "Download for ";
-          for (let [os, osName] of [["win64", "Windows (64-bit)"], ["win32", "Windows (32-bit)"], ["mac", "macOS"], ["mac-universal", "macOS (Universal)"], ["mac-x86_64", "macOS (Intel)"], ["linux", "Linux (64-bit)"]]) {
-            if (os in data === false) {
+          for (let [osPackage, label] of osPackageLabels) {
+            if (osPackage in data === false) {
               continue; // No download for this OS
             }
 
             downloadList.appendChild(document.createTextNode(text));
             text = ' \u2022 '; // bullet
             const downloadLink = document.createElement("a");
-            downloadLink.appendChild(document.createTextNode(osName));
-            downloadLink.href = data[os];
+            downloadLink.appendChild(document.createTextNode(label));
+            downloadLink.href = data[osPackage];
             downloadList.appendChild(downloadLink);
           }
           linkList.appendChild(downloadList);
