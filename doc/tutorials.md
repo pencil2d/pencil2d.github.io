@@ -5,15 +5,16 @@ comments: true
 tagline: Learn how to use & animate with Pencil2D!
 ---
 
-> If you have a specific tutorial you'd like to be made, let us know in the comments so we can review it.
-> I'f you would like to contribute a tutorial of your own, point us to it so we can feature it.
+> If you have a specific tutorial you'd like to be made,
+> let us know on [our forum](https://discuss.pencil2d.org/c/site)
+> or [our Discord server](https://discord.gg/8FxdV2g) so we can review it.
+> If you would like to contribute a tutorial of your own, point us to it so we can feature it.
 
 
 | Tutorials                                      | Language           |
 | -----------------------------------------------| ------------------ |
 | [Pencil2D Tutorial: The Basics](#griffy)       | English            |
 | [Traditional Animation Workflows](#david)      | English            |
-| [How to Rotate An Image](#rotate)              | English            |
 | [Scrolling background in Camera layer](#ca)    | No Audio           |
 | [Other Pencil English Tutorials](#pcleng)      | English            |
 | [Spanish Pencil2D Video Tutorials](#pclspa)    | Spanish            |
@@ -30,11 +31,6 @@ tagline: Learn how to use & animate with Pencil2D!
 # <a name="david"></a> Pencil2D Tutorial Series: Traditional Animation Workflows by David Lamhauge
 
 {% include youtubePlayer.html vid="videoseries?list=PLkxWc7jmDfJwAB-XC2shq1GfayZHUy-2f" %}
-
-<hr>
-
-# <a name="rotate"></a> How to Rotate an Image
-{% include youtubePlayer.html vid="c4AH-gmEvXg" %}
 
 <hr>
 
