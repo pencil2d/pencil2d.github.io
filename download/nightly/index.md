@@ -116,12 +116,12 @@ a certain build is not available for your operating system, please check the pre
         const folder = fetch_results.artifacts;
 
         for (let file of folder.artifacts) {
-          const match = file.name.match(/^pencil2d-([\w-]+)-b(\d{1,10})-\d{4}-\d{2}-\d{2}(\.zip|\.exe|\.dmg|\.AppImage)?$/);
+          const match = file.name.match(/^pencil2d-([\w-]+)-b(\d{1,10})-\d{4}-\d{2}-\d{2}(\.zip|\.exe|\.dmg|\.AppImage)$/);
           if (match === null || file.expired) {
             // File name didn't match, don't know what to do with it
             continue;
           }
-          let osPackage = `${match[1]}-${match[3]?.substring(1)}`;
+          let osPackage = `${match[1]}-${match[3].substring(1)}`;
           const runNumber = match[2];
           if (runNumber in aggregatedData === false) {
             aggregatedData[runNumber] = {};
@@ -179,13 +179,6 @@ a certain build is not available for your operating system, please check the pre
             ["qt6-mac-universal-dmg", "macOS (Universal)"],
             ["mac-x86_64-dmg", "macOS (Intel)"],
             ["linux-AppImage", "Linux (64-bit)"],
-
-            // temporary: compat for old artifacts without file name extension
-            ["win64-undefined", "Windows (64-bit)"],
-            ["win32-undefined", "Windows (32-bit)"],
-            ["qt6-mac-universal-undefined", "macOS (Universal)"],
-            ["mac-x86_64-undefined", "macOS (Intel)"],
-            ["linux-undefined", "Linux (64-bit)"]
           ];
           const downloadList = document.createElement("li");
           let text = "Download for ";
